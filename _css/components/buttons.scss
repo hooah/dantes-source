@@ -1,0 +1,377 @@
+.button {
+	display: inline-block;
+	height: 42px;
+	padding: 0px;
+	margin: 0px;
+    text-decoration: none !important;
+	
+	& > strong {
+		display: block;
+		margin: 1px;
+		padding-left: 12px;
+		padding-right: 12px;
+		font-size: 14px;
+		line-height: 40px;
+		font-family: "Open Sans", sans-serif;
+		text-transform: uppercase;
+        text-decoration: none !important;
+	}
+
+    &.button-condensed {
+        & > strong {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+
+	&.button-text-uppercase {
+		& > strong {
+			text-transform: uppercase !important;
+		}
+	}
+	
+	&.button-purple {
+		background: #4e4eaf; /* Old browsers */
+		background: -moz-linear-gradient(top,  #4e4eaf 0%, #2a2a7e 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4e4eaf), color-stop(100%,#2a2a7e)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #4e4eaf 0%,#2a2a7e 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #4e4eaf 0%,#2a2a7e 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #4e4eaf 0%,#2a2a7e 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #4e4eaf 0%,#2a2a7e 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4e4eaf', endColorstr='#2a2a7e',GradientType=0 ); /* IE6-9 */
+		border: none;
+		@include border-radius(4px);
+		box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+		
+		&.button-icon-arrow-right {
+			& > strong {
+				&:after {
+					display: block;
+					float: right;
+					content: ">";
+					margin-top: 14px;
+					margin-left: 9px;
+					width: 11px;
+					height: 13px;
+					background-image: url(../_images/sprites.png);
+					background-repeat: no-repeat;
+					background-position: -20px -56px;
+					@include no-text;
+				}
+			}
+		}
+		
+		& > strong {
+			background-color: #2e2e8c;
+			color: #fff;
+			text-shadow: 1px 1px 0px #4747cb;
+			@include border-radius(4px);
+		}
+	}
+	&.button-grey {
+		overflow: hidden;
+		margin-bottom: 10px;
+		background: #f0f0f0; /* Old browsers */
+		background: -moz-linear-gradient(top,  #f0f0f0 0%, #e7e7e7 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f0f0f0), color-stop(100%,#e7e7e7)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #f0f0f0 0%,#e7e7e7 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #f0f0f0 0%,#e7e7e7 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #f0f0f0 0%,#e7e7e7 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #f0f0f0 0%,#e7e7e7 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#e7e7e7',GradientType=0 ); /* IE6-9 */
+		border: 1px #ccc solid;
+		@include border-radius(4px);
+		box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+		
+		&.button-icon-compartment {
+			&.button-icon-arrow-right {
+				& > strong {
+					position: relative;
+					padding-right: 60px;
+
+					&:before {
+						display: block;
+						position: absolute;
+						top: -1px;
+						right: 38px;
+						width: 2px;
+						height: 42px;
+						background-color: #c6c6c5;
+						border-left: 1px #e9e9f4 solid;
+						content: "";
+						@include no-text;
+					}
+					&:after {
+						display: block;
+						float: none;
+						position: absolute;
+                        top: 12px;
+                        right: 12px;
+                        content: ">";
+                        width: 11px;
+                        height: 13px;
+						margin: 0px;
+						background-image: url(../_images/sprites.png);
+						background-repeat: no-repeat;
+                        background-position: -64px -56px;
+						@include no-text;
+					}
+				}
+			}
+		}
+		
+		&.button-icon-arrow-right {
+			& > strong {
+				padding-right: 15px;
+				
+				&:after {
+					display: block;
+					float: right;
+					content: ">";
+					margin-top: 12px;
+					margin-left: 30px;
+					width: 11px;
+					height: 13px;
+					background-image: url(../_images/sprites.png);
+					background-repeat: no-repeat;
+					background-position: -64px -56px;
+					@include no-text;
+				}
+			}
+
+            &.button-condensed {
+                & > strong {
+                    padding-right: 10px;
+
+                    &:after {
+                        margin-left: 9px;
+                    }
+                }
+            }
+		}
+
+		& > strong {
+			height: 38px;
+			margin: 0px;
+			background-color: transparent;
+			border-top: 2px #fbfbfb solid;
+			border-left: 1px #fbfbfb solid;
+			color: #333399;
+			text-shadow: none;
+			line-height: 36px;
+			text-transform: none;
+		}
+	}
+	&.button-yellow {
+		background: #f9ec70; /* Old browsers */
+		background: -moz-linear-gradient(top,  #f9ec70 0%, #e9d827 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9ec70), color-stop(100%,#e9d827)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #f9ec70 0%,#e9d827 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #f9ec70 0%,#e9d827 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #f9ec70 0%,#e9d827 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #f9ec70 0%,#e9d827 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9ec70', endColorstr='#e9d827',GradientType=0 ); /* IE6-9 */
+		border: none;
+		@include border-radius(4px);
+		box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+
+        &.button-yellow-flat {
+            background: #ffcc33;
+            filter: none;
+        }
+
+		&.button-icon-arrow-right {
+			& > strong {
+				position: relative;
+				padding-right: 60px;
+				
+				&:before {
+					display: block;
+					position: absolute;
+					top: -1px;
+					right: 38px;
+					width: 2px;
+					height: 42px;
+					background-color: #beaf1e;
+					border-left: 1px #ffff4c solid;
+					content: "";
+					@include no-text;
+				}
+				&:after {
+					display: block;
+					position: absolute;
+					top: 14px;
+					right: 12px;
+					content: ">";
+					width: 11px;
+					height: 13px;
+					background-image: url(../_images/sprites.png);
+					background-repeat: no-repeat;
+					background-position: 0px -56px;
+					@include no-text;
+				}
+			}
+		}
+
+        &.button-yellow-flat {
+            &.button-icon-arrow-right {
+                & > strong {
+                    background-color: transparent;
+                    color: #fff;
+                    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+
+                    &:before {
+                        background-color: #cca329;
+                        border-left-color: #ffde45;
+                    }
+                    &:after {
+                        background-position: -86px -56px;
+                    }
+                }
+            }
+        }
+		
+		& > strong {
+			background-color: #eedb26;
+			color: #333399;
+			text-shadow: 1px 1px 0px #f3ea38;
+			@include border-radius(4px);
+		}
+	}
+    &.button-orange {
+        background: #ff9933;
+        border: none;
+        @include border-radius(4px);
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+
+        &.button-icon-arrow-right {
+            & > strong {
+                &:after {
+                    display: block;
+                    float: right;
+                    content: ">";
+                    margin-top: 14px;
+                    margin-left: 9px;
+                    width: 11px;
+                    height: 13px;
+                    background-image: url(../_images/sprites.png);
+                    background-repeat: no-repeat;
+                    background-position: -20px -56px;
+                    @include no-text;
+                }
+            }
+        }
+
+        &.button-icon-compartment {
+            &.button-icon-arrow-right {
+                & > strong {
+                    position: relative;
+                    padding-right: 60px;
+
+                    &:before {
+                        display: block;
+                        position: absolute;
+                        top: -1px;
+                        right: 38px;
+                        width: 2px;
+                        height: 42px;
+                        background-color: #cc7a29;
+                        border-left: 1px #ffbd45 solid;
+                        content: "";
+                        @include no-text;
+                    }
+                    &:after {
+                        display: block;
+                        float: none;
+                        position: absolute;
+                        top: 14px;
+                        right: 12px;
+                        content: ">";
+                        width: 11px;
+                        height: 13px;
+                        margin: 0px;
+                        background-image: url(../_images/sprites.png);
+                        background-repeat: no-repeat;
+                        background-position: -86px -56px;
+                        @include no-text;
+                    }
+                }
+            }
+        }
+
+        & > strong {
+            background-color: transparent;
+            color: #fff;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+            @include border-radius(4px);
+        }
+    }
+    &.button-green {
+        background: #52a952;
+        border: none;
+        @include border-radius(4px);
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+
+        &.button-icon-arrow-right {
+            & > strong {
+                &:after {
+                    display: block;
+                    float: right;
+                    content: ">";
+                    margin-top: 14px;
+                    margin-left: 9px;
+                    width: 11px;
+                    height: 13px;
+                    background-image: url(../_images/sprites.png);
+                    background-repeat: no-repeat;
+                    background-position: -20px -56px;
+                    @include no-text;
+                }
+            }
+        }
+
+        &.button-icon-compartment {
+            &.button-icon-arrow-right {
+                & > strong {
+                    position: relative;
+                    padding-right: 60px;
+
+                    &:before {
+                        display: block;
+                        position: absolute;
+                        top: -1px;
+                        right: 38px;
+                        width: 2px;
+                        height: 42px;
+                        background-color: #428742;
+                        border-left: 1px #6fc76f solid;
+                        content: "";
+                        @include no-text;
+                    }
+                    &:after {
+                        display: block;
+                        float: none;
+                        position: absolute;
+                        top: 14px;
+                        right: 12px;
+                        content: ">";
+                        width: 11px;
+                        height: 13px;
+                        margin: 0px;
+                        background-image: url(../_images/sprites.png);
+                        background-repeat: no-repeat;
+                        background-position: -86px -56px;
+                        @include no-text;
+                    }
+                }
+            }
+        }
+
+        & > strong {
+            background-color: transparent;
+            color: #fff;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+            @include border-radius(4px);
+        }
+    }
+}

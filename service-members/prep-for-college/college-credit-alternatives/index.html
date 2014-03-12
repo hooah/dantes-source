@@ -1,0 +1,40 @@
+---
+layout: default
+title: College Credit Alternatives &mdash; Prep for College | Service Members
+path: ../../..
+body_class:
+social: {
+    title: "College Credit Alternatives",
+    description: "Learn more about the Joint Services Transcript (JST), certified by the American Council on Education (ACE), which replaces traditional transcripts."
+}
+footer_extra:
+header_extra:
+---
+            {% capture slide_html %}
+                                    <figure><img src="{{ page.path }}/_images/slides/educational_institutions-transferable_credits.jpg" alt="" width="948" height="420"></figure>
+                                    <figcaption>
+                                        <a href="http://www.youtube.com/watch?v=TvB68QjCV3Y" class="hero-caption-icon-video fresco text-normal-case" data-scout-stop="true" data-scout-manual="Top_page_CTA, request_transcript, request-transcript">
+                                            <h2>College Credit Alternatives</h2>
+                                            <p>Click to watch a video about the Joint Service Transcripts</p>
+                                        </a>
+                                    </figcaption>
+            {% endcapture %}
+            {% include cta.html slide=slide_html %}
+            <article class="has-sidebar">
+                <section>
+                    <div class="content row">
+                        <div class="nine">
+                            <ul class="breadcrumbs">
+                                <li><a href="{{ page.path }}/index.html">Home</a></li>
+                                <li><a href="{{ page.path }}/service-members/index.html">Service Members</a></li>
+                                <li><a href="{{ page.path }}/service-members/prep-for-college/index.html">Prep for College</a></li>
+                                <li><a href="{{ page.path }}/service-members/prep-for-college/college-credit-alternatives/index.html">College Credit Alternatives</a></li>
+                            </ul>
+                            {% include social.html %}
+
+                            {% include shared-content/transferable-credits.html %}
+                        </div>
+                        {% include aside.quicklinks.generic.html %}
+                    </div>
+                </section>
+            </article>

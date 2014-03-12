@@ -1,0 +1,78 @@
+body {
+    #container {
+        & > article {
+            &.has-sidebar {
+                & > section {
+                    & > .content {
+                        & #search-controls {
+                            overflow: hidden;
+                            margin-bottom: 30px;
+
+                            & input {
+                                height: 42px;
+                                margin-bottom: 0px;
+                                margin-right: 10px;
+                            }
+                        }
+                        & #search-results {
+                            clear: both;
+                            position: relative;
+                            margin: 0px -35px;
+
+                            & > p {
+                                padding-left: 35px;
+                                padding-right: 35px;
+                            }
+
+                            & > ul {
+                                display: block;
+                                margin: 0px;
+                                padding: 0px;
+                                list-style: none;
+
+                                & > li {
+                                    display: block;
+                                    margin: 0px 0px 20px 0px;
+                                    padding: 0px 35px 22px 35px;
+                                    border-bottom: 1px #cacaca solid;
+                                    list-style: none;
+
+                                    & > h2 {
+                                        margin-bottom: 2px;
+                                        border-bottom: 1px #cacaca solid;
+
+                                        & > a {
+                                            text-decoration: none;
+                                            font-weight: bold;
+                                            color: #339;
+
+                                            &:hover {
+                                                color: #000;
+                                            }
+                                        }
+                                    }
+                                    & > cite {
+                                        display: block;
+                                        margin-bottom: 10px;
+                                        font-style: normal;
+                                        font-size: 13px;
+                                        color: #666;
+                                    }
+
+                                    &.no-results {
+                                        border-bottom: none;
+
+                                        & > h2 {
+                                            margin-bottom: 10px;
+                                            font-weight: bold;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

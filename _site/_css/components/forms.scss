@@ -1,0 +1,79 @@
+body {
+    #container {
+        & > article {
+            & > section {
+                & > .content {
+                    .chosen-container-single .chosen-single {
+                        height: 32px;
+                        line-height: 29px;
+                    }
+                    .chosen-container .chosen-results li.highlighted {
+                        background-color: #272793;
+                        background-image: none;
+                        color: #fff;
+                    }
+                    .chosen-container-active .chosen-choices {
+                        border: 1px solid #272793;
+                    }
+                    .chosen-container-active .chosen-single {
+                        border: 1px solid #aaa;
+                        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+                    }
+
+                    fieldset {
+                        padding: 15px 0px 20px 0px;
+                        margin-top: 30px;
+                        border-color: #cacaca;
+
+                        & > legend {
+                            padding: 5px;
+                            background-color: transparent;
+                            border: none;
+                            font-size: 13px;
+                            line-height: 13px;
+                            letter-spacing: 1px;
+                            color: #000;
+                            text-transform: uppercase;
+                        }
+
+                        & > ul {
+                            display: block;
+                            margin: 0px;
+                            padding: 0px;
+                            list-style: none;
+
+                            & > li {
+                                display: block;
+                                clear: both;
+                                margin: 0px 20px 10px 0px;
+                                padding: 0px;
+                                background-image: none;
+                                list-style: none;
+
+                                &.clear {
+                                    clear: both;
+                                }
+                                &.left,
+                                &.right {
+                                    clear: none;
+                                }
+
+                                & > label {
+                                    display: block;
+                                    clear: both;
+                                    font-family: "Open Sans", sans-serif;
+                                    font-weight: bold;
+                                    font-style: normal;
+                                    text-transform: uppercase;
+                                    color: #272793;
+                                    font-size: 13px;
+                                    line-height: 13px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

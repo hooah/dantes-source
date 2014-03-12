@@ -1,0 +1,58 @@
+dl.feature-box-jump-button {
+	display: block;
+	position: relative;
+	clear: both;
+	margin: 0px;
+	padding: 40px 0px 0px 0px;
+	list-style: none;
+	
+	& > dt, 
+	& > dd {
+		display: block;
+		margin: 0px;
+		padding: 0px;
+		list-style: none;
+	}
+	& > dt {
+		float: left;
+		width: 45%;
+		font-weight: bold;
+		font-size: 15px;
+		line-height: 22px;
+	}
+	& > dd {
+		position: absolute;
+		right: 0px;
+		
+		& > .button {
+			margin-top: 3px;
+			
+			&.button-grey {
+				&.button-icon-arrow-right {
+					& > strong {
+						padding-right: 12px;
+						
+						&:after {
+							margin-left: 10px;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	&.feature-box-jump-button-no-padding {
+		padding-top: 0px;
+	}
+
+	&.feature-box-jump-button-less-padding {
+		padding-top: 20px;
+	}
+}
+
+.feature-box-button {
+    display: block;
+    clear: both;
+    padding-top: 10px;
+    text-align: center;
+}

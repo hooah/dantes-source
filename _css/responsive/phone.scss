@@ -1,0 +1,163 @@
+@media (max-width: 640px) {
+	body {
+		& #container {
+			& > article {
+				& .slim-cta-banner {
+					& > h2 {
+						background-position: -150px 0px;
+						
+						& > strong {
+							left: 110px;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	.feature-box {
+		clear: both;
+		
+		& > div {
+			width: 320px !important;
+			margin-left: auto !important;
+			margin-right: auto !important;
+
+			& > figcaption {
+				& > a {
+					& > strong {
+						/*font-size: 22px !important;*/
+						/*line-height: 22px !important;*/
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 540px) {
+	body {
+		& #container {
+			& > article {
+				& .slim-cta-banner {
+					& > h2 {
+						background-image: none;
+						
+						& > strong {
+							width: 60%;
+							left: 20px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	body {
+        & img.left.inline,
+        & img.right.inline {
+            float: none !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            margin-bottom: 10px !important;
+        }
+
+		& #container {
+            & > article {
+                & .slim-cta-banner {
+                    & > h2 {
+                        background-image: none;
+
+                        & > strong {
+                            width: 40%;
+                            left: 20px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+
+			& > article.call-to-action {
+				& > section {
+					& > .content {
+						& > .hero {
+							& > ul {
+								& > li {
+                                    & > figure {
+                                        & > img {
+                                            left: -50%;
+                                        }
+                                    }
+									& > figcaption {
+										& > div, 
+										& > a {
+											bottom: 20px;
+											left: 20px;
+											padding-right: 20px;
+											
+											&:before {
+												display: none !important;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+			& > article {
+				& > section {
+					& > .content {
+						& div.spotlight {
+							& > div {
+								& > figcaption {
+									& > header {
+										&:after {
+											display: none;
+										}
+										
+										& > span.position {
+											padding-left: 25px;
+											text-align: right;
+											font-size: 26px;
+											line-height: 26px;
+										}
+									}
+									& > section {
+										& > h3 {
+											font-size: 24px;
+											line-height: 24px;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.feature-box {
+		clear: both;
+		
+		& > div {
+			width: 240px !important;
+			margin-left: auto !important;
+			margin-right: auto !important;
+
+			& > figcaption {
+				& > a {
+					& > strong {
+						/*font-size: 18px !important;*/
+						/*line-height: 18px !important;*/
+					}
+				}
+			}
+		}
+	}
+}

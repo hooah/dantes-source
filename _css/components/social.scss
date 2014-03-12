@@ -1,0 +1,91 @@
+body {
+	#container {
+		& > article {
+			&.has-sidebar {
+				& > section {
+					& > .content {
+						& ul.social {
+							position: relative;
+							height: 38px;
+							margin: 0px -35px 27px -35px;
+							padding: 0px;
+							overflow: visible;
+							background-color: transparent;
+                            border-top: none;
+                            border-bottom: 1px #cacaca solid;
+                            border-left: none;
+                            border-right: none;
+
+                            &.standalone {
+                                margin-top: -42px;
+                            }
+
+							& > li {
+                                display: block;
+                                float: right;
+                                margin: 0px 0px 0px 18px;
+                                padding: 0px;
+                                height: 38px;
+
+								&:first-child {
+                                    margin-right: 18px;
+								}
+
+                                &.facebook {
+                                    & .fb-like {
+                                        margin-top: 8px !important;
+                                    }
+                                }
+                                &.twitter {
+                                    & iframe {
+                                        margin-top: 8px !important;
+                                    }
+                                }
+                                &.gplus {
+                                    & div {
+                                        margin-top: 8px !important;
+                                    }
+                                }
+
+                                &.print {
+                                    float: left;
+                                    text-align: left;
+
+                                    & > a {
+                                        font-weight: bold;
+                                        color: #339;
+                                        font-family: "Open Sans", sans-serif;
+                                        text-decoration: none;
+                                        font-weight: bold;
+                                        line-height: 38px;
+                                        font-size: 14px;
+                                        text-transform: uppercase;
+
+                                        &:before {
+                                            display: block;
+                                            float: left;
+                                            width: 25px;
+                                            height: 22px;
+                                            margin-top: 7px;
+                                            margin-right: 10px;
+                                            background-image: url(../_images/sprites.png);
+                                            background-repeat: no-repeat;
+                                            background-position: -214px -223px;
+                                            content: "";
+                                            @include no-text;
+                                        }
+                                    }
+                                }
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+    iframe[id^="oauth2relay"] {
+        top: 0px !important;
+        left: -9999px !important;
+    }
+}

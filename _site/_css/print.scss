@@ -1,0 +1,80 @@
+body {
+    #container {
+        a {
+            text-decoration: none !important;
+        }
+
+        & > header {
+            display: none;
+        }
+
+        & > article.call-to-action {
+            margin-bottom: 2em;
+            padding-bottom: 1em;
+            border-bottom: 1px #000 solid;
+
+            & > section {
+                & > .content {
+                    & > .hero {
+                        & > ul {
+                            margin-left: 0px;
+                            padding-left: 0px;
+                            list-style: none;
+
+                            & > li {
+                                margin-left: 0px;
+                                padding-left: 0px;
+                                list-style: none;
+                            }
+                        }
+                    }
+                    & > aside {
+                        display: none !important;
+                    }
+                }
+            }
+        }
+
+        & > article.has-sidebar {
+            a[href]:after {
+                content: " (URL: " attr(href) ")";
+            }
+            a[href = 'javascript:;'] {
+                /* display: none; */
+
+                &:after {
+                    content: "";
+                }
+            }
+
+            & > section {
+                & > .content {
+                    & ul.social {
+                        display: none !important;
+                    }
+                    & > aside {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        & > footer {
+            display: none;
+
+            /*
+            & > section {
+                & > .content {
+                    & > a.sitemap-trigger {
+                        display: none;
+                    }
+                }
+            }
+            */
+        }
+
+        & > menu.sitemap {
+            display: none;
+        }
+    }
+}

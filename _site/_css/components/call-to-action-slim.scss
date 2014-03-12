@@ -1,0 +1,65 @@
+body {
+	#container {
+		& > article {
+			& .slim-cta-banner {
+				margin-bottom: 20px;
+
+                &.slim-cta-banner-flush {
+                    margin-top: 27px !important;
+                    margin-bottom: 0px;
+                    margin-left: -35px;
+                    margin-right: -35px;
+                }
+
+				& > h2 {
+					margin-bottom: 0px !important;
+					height: 93px;
+					border: 7px #d9d9d9 solid;
+					background-color: #383732;
+					background-image: url(../_images/elements/cta-slim-banner-armed_forces.jpg);
+					background-repeat: no-repeat;
+					background-position: -50px top;
+					box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.88) inset;
+					-moz-box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.88) inset;
+					-webkit-box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.88) inset;
+					
+					& > strong {
+						display: block;
+						width: 48%;
+						position: relative;
+						left: 210px;
+						top: 29px;
+						font-size: 21px;
+						line-height: 21px;
+						font-weight: 300;
+						color: #fff;
+						text-shadow: none;
+					}
+					& .button {
+						position: relative;
+						float: right;
+						right: 25px;
+						top: -3px;
+					}
+				}
+				& > div {
+					display: none;
+					padding: 20px;
+					background-color: #787673;
+					border-left: 7px #d9d9d9 solid;
+					border-right: 7px #d9d9d9 solid;
+					border-bottom: 7px #d9d9d9 solid;
+					box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.88) inset;
+					-moz-box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.88) inset;
+					-webkit-box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.88) inset;
+					
+					& p {
+						color: #fff;
+						font-size: 16px;
+						line-height: 26px;
+					}
+				}
+			}
+		}
+	}
+}

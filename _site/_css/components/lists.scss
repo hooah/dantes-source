@@ -1,0 +1,40 @@
+ul.styled {
+	margin: 0px;
+	padding: 25px 0px 14px 0px;
+	list-style: none;
+	
+	& > li {
+		margin: 0px 0px 21px 0px;
+		padding: 0px 0px 0px 22px;
+		background-image: url(../_images/bg-list-item-purple.png);
+		background-repeat: no-repeat;
+		background-position: 0px 4px;
+		color: #333;
+		font-size: 16px;
+		line-height: 22px;
+		list-style: none;
+	}
+}
+
+ul.indented-inline {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+ul.indented {
+	margin-left: 35px;
+
+    &.indented-half {
+        margin-left: 17px;
+    }
+}
+
+ul.expanded {
+    & > li {
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+body {
+	#container {
+		& > article {
+			& > section {
+				& > .content {
+					& > div {
+						& h2.resources-icon-header {
+							&.resources-icon-header-preset {
+								&.videos {
+									background-position: 0px 0px;
+								}
+								&.powerpoint {
+									background-position: -174px 0px;
+								}
+								&.pdf {
+									background-position: -348px 0px;
+								}
+								&.wrench {
+									background-position: -522px 0px;
+								}
+								&.faq {
+									width: 164px;
+									height: 167px;
+									background-position: 0px -173px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

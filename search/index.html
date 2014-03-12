@@ -1,0 +1,52 @@
+---
+layout: default
+title: Search
+path: ..
+body_class:
+social: {
+    title: "Search",
+    description: "Search the DANTES Website"
+}
+footer_extra:
+header_extra:
+---
+            {% include cta.simple.html slide_name='dod_leadership.jpg' slide_title=page.title %}
+            <article class="has-sidebar">
+            	<section>
+                	<div class="content row">
+                    	<div class="nine">
+                            <ul class="breadcrumbs">
+                                <li><a href="{{ page.path }}/index.html">Home</a></li>
+                                <li><a href="{{ page.path }}/search/index.html">Search</a></li>
+                            </ul>
+                            {% include social.html %}
+
+                            <h1>Search the DANTES Website</h1>
+
+                            <form action="." method="post" class="lunr-search">
+                                <div id="search-controls">
+                                    <input type="text" id="searchbox" class="twelve" />
+                                </div>
+                            </form>
+                            <div id="search-results">
+                                <ul>
+
+                                </ul>
+                            </div>
+                        </div>
+                        {% include aside.quicklinks.generic.html %}
+                    </div>
+                </section>
+            </article>
+
+            {% raw %}
+            <script id="results-template" type="text/mustache">
+                {{#entries}}
+                    <li>
+                        <h2><a href="{{url}}">{{title}}</a></h2>
+                        <cite>{{url}}</cite>
+                        <p>{{desc}}</p>
+                    </li>
+                {{/entries}}
+            </script>
+            {% endraw %}
