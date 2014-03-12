@@ -1,0 +1,25 @@
+body {
+	#container {
+		& > article {
+			& > section {
+				& > .content {
+					& > div {
+						& h2.headline-with-big-icon {
+							display: block;
+							height: 115px;
+							margin: 0px;
+							padding: 0px;
+							font-size: 30px;
+							line-height: 115px;
+							color: #333399;
+							text-align: left;
+							font-weight: normal;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@import "headline-with-big-icon-presets";

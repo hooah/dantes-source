@@ -1,0 +1,52 @@
+.feature-box-nvp {
+	padding-top: 25px;
+	
+	& > div {
+		& > dl {
+			display: block;
+			margin: 0px;
+			padding: 0px;
+			list-style: none;
+			
+			& > dt, 
+			& > dd {
+				display: block;
+				float: left;
+				margin: 0px;
+				padding: 0px 0px 2px 0px;
+				list-style: none;
+				font-size: 11px;
+				line-height: 14px;
+				color: #333;
+			}
+			& > dt {
+				clear: both;
+				width: 30%;
+				padding-right: 10px;
+				font-weight: bold;
+			}
+			& > dd {
+				width: 70%;
+			}
+		}
+		
+		& .button {
+			float: right;
+
+			&.button-purple {
+				& > strong {
+					padding-left: 8px;
+					padding-right: 6px;
+					
+					&:after {
+						margin-left: 4px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.feature-box-button + .feature-box-nvp {
+    padding-top: 10px;
+}

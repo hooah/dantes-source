@@ -1,0 +1,667 @@
+body {
+	#container {
+		& > article {
+			&.call-to-action {
+				position: relative;
+				left: 0px;
+				width: 100%;
+				background-image: url(../_images/bg-purple-tile.jpg);
+				background-repeat: repeat;
+				background-position: 0px 0px;
+				
+				& > section {
+					position: relative;
+					right: 50%;
+					width: 100%;
+					background-image: url(../_images/bg-tile-light.jpg);
+					background-repeat: repeat;
+					background-position: 0px 0px;
+
+					&:after {
+						display: block;
+						position: absolute;
+						bottom: 0px;
+						left: 0%;
+						width: 100%;
+						height: 1px;
+						background-color: #cacaca;
+						content: "";
+						@include no-text;
+					}
+					
+					& > .content {
+						position: relative;
+						top: 0px;
+						left: 50%;
+						
+						& > .hero {
+							float: left;
+							height: 350px;
+							overflow: hidden;
+                            /*
+							margin-left: -8.33333%;
+							*/
+
+                            & > nav {
+                                display: block;
+                                position: relative;
+                                margin: 0px;
+                                padding: 0px;
+                                z-index: 100;
+
+                                & > a {
+                                    display: block;
+                                    position: absolute;
+                                    top: 205px;
+                                    width: 23px;
+                                    height: 26px;
+                                    background-image: url(../_images/sprites.png);
+                                    background-repeat: no-repeat;
+                                    @include no-text;
+                                    cursor: pointer;
+
+                                    &.next {
+                                        right: 25px;
+                                        background-position: -288px -56px;
+
+                                        &:hover {
+                                            background-position: -334px -56px;
+                                        }
+                                    }
+                                    &.prev {
+                                        left: 25px;
+                                        background-position: -265px -56px;
+
+                                        &:hover {
+                                            background-position: -311px -56px;
+                                        }
+                                    }
+                                }
+                            }
+
+							& > ul {
+								display: block;
+								position: relative;
+								margin: 0px;
+								padding: 0px;
+								list-style: none;
+
+								& > li {
+									display: block;
+									position: absolute;
+									width: 100%;
+									height: 100%;
+									margin: 0px;
+									padding: 0px;
+									list-style: none;
+									
+									& > figure {
+										display: block;
+										border: none;
+										position: relative;
+										width: 999px;
+										
+										& > img {
+											position: absolute;
+											width: 999px;
+											height: 438px;
+											@include border-top-left-radius(30px);
+										}
+									}
+									& > figcaption {
+										display: block;
+										position: relative;
+										width: 100%;
+										height: 350px;
+										border: 9px #d9d9d9 solid;
+										@include border-top-left-radius(25px);
+										box-shadow: 0px 0px 18px rgba(0, 0, 0, .88) inset;
+
+										& > a,
+										& > div {
+											display: block;
+											position: absolute;
+											width: 100%;
+											bottom: 31px;
+                                            /*
+											left: 76px;
+											*/
+                                            left: 35px;
+
+											&.hero-caption-icon-video {
+												&:before {
+													display: block;
+													float: left;
+													position: relative;
+													width: 79px;
+													height: 81px;
+													margin-right: 20px;
+													background-image: url(../_images/sprites.png);
+													background-repeat: no-repeat;
+													background-position: 0px -190px;
+													content: "";
+													@include no-text;
+												}
+												
+												&:hover {
+													&:before {
+														background-position: -80px -190px;
+													}
+												}
+											}
+											
+											& > h2 {
+												display: block;
+												position: relative;
+												margin: 9px 0px 3px 0px;
+												padding: 0px;
+												font-size: 36px;
+												line-height: 36px;
+												font-family: "Open Sans", sans-serif;
+												font-weight: normal;
+												text-transform: uppercase;
+												color: #ffe824;
+												text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.88);
+											}
+											&.text-normal-case {
+												& > h2 {
+													text-transform: none;
+												}
+											}
+											&.text-large {
+												bottom: 36px;
+												
+												& > h2 {
+													font-size: 48px;
+												}
+											}
+											& > p {
+												display: block;
+												position: relative;
+												margin: 0px;
+												padding: 0px;
+												font-size: 18px;
+												line-height: 18px;
+												font-family: "Open Sans", sans-serif;
+												font-weight: normal;
+												color: #fff;
+												text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.88);
+											}
+										}
+
+                                        &.complex {
+                                            & > p {
+                                                display: block;
+                                                position: absolute;
+                                                width: 42%;
+                                                top: 40px;
+                                                right: 20px;
+                                                text-align: center;
+                                                text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.42);
+
+                                                & > em {
+                                                    display: block;
+                                                    clear: both;
+                                                    padding-bottom: 6px;
+                                                    font-size: 23px;
+                                                    line-height: 27px;
+                                                    text-transform: uppercase;
+                                                    color: #fff;
+                                                    font-weight: normal;
+                                                    font-style: normal;
+                                                }
+                                                & > strong {
+                                                    display: block;
+                                                    clear: both;
+                                                    padding-bottom: 15px;
+                                                    font-size: 48px;
+                                                    line-height: 43px;
+                                                    font-style: normal;
+                                                    color: #fff;
+                                                    text-transform: uppercase;
+                                                }
+                                            }
+                                            & > span {
+                                                display: block;
+                                                position: absolute;
+                                                bottom: 0px;
+                                                width: 100%;
+                                                padding: 20px 0px;
+                                                background-image: url(../_images/bg-cta-complex-banner-green.png);
+                                                background-repeat: repeat;
+                                                background-position: 0px 0px;
+                                                -webkit-box-shadow: 0px -4px 25px rgba(0, 0, 0, 0.25) inset;
+                                                -moz-box-shadow: 0px -4px 25px rgba(0, 0, 0, 0.25) inset;
+                                                box-shadow: 0px -4px 25px rgba(0, 0, 0, 0.25) inset;
+
+                                                & > p {
+                                                    display: block;
+                                                    float: left;
+                                                    margin: 0px 0px 0px 20px;
+                                                    padding: 0px;
+                                                    width: 70%;
+                                                    color: #fff;
+                                                    font-size: 18px;
+                                                    line-height: 21px;
+                                                    text-shadow: -1px 1px 5px rgba(0, 0, 0, 0.3);
+                                                }
+                                                & .button {
+                                                    float: right;
+                                                    margin-top: 0px;
+                                                    margin-bottom: 0px;
+                                                    margin-right: 20px;
+                                                }
+                                            }
+
+                                            &.green {
+                                                & > span {
+                                                    background-image: url(../_images/bg-cta-complex-banner-green.png);
+                                                }
+                                            }
+                                            &.orange {
+                                                & > span {
+                                                    background-image: url(../_images/bg-cta-complex-banner-orange.png);
+                                                }
+                                            }
+                                            &.yellow {
+                                                & > span {
+                                                    background-image: url(../_images/bg-cta-complex-banner-yellow.png);
+                                                }
+                                            }
+                                            &.blue {
+                                                & > span {
+                                                    background-image: url(../_images/bg-cta-complex-banner-blue.png);
+                                                }
+                                            }
+
+                                            &.preset-troops-to-teachers {
+                                                & > p {
+                                                    width: 35%;
+                                                    top: 30px;
+                                                    right: 10px;
+                                                }
+                                            }
+                                        }
+									}
+								}
+
+
+                                &.carousel {
+                                    & > li {
+                                        display: none;
+                                    }
+                                }
+							}
+						}
+						& > aside {
+							float: right;
+							height: 350px;
+							text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.75);
+
+                            & a:link,
+                            & a:active,
+                            & a:visited {
+                                color: #fbea5c;
+                            }
+                            & a:hover {
+                                color: #fff;
+                            }
+
+                            & > figure {
+                                display: block;
+                                position: relative;
+                                height: 110px;
+                                overflow: hidden;
+                                margin-top: 12px;
+                                margin-bottom: 12px;
+
+                                &.compressed {
+                                    height: 70px;
+                                }
+
+                                & > img {
+                                    position: absolute;
+                                    width: 100%;
+                                }
+                            }
+                            & > h3 {
+                                display: block;
+                                margin: 0px;
+                                padding: 10px 20px 0px 20px;
+                                font-family: "Open Sans", sans-serif;
+                                color: #fbea5c;
+                                font-weight: normal;
+                                font-size: 18px;
+                                line-height: 24px;
+                            }
+                            & > p {
+                                display: block;
+                                margin: 0px;
+                                padding: 10px 60px 10px 20px;
+                                font-family: "Open Sans", sans-serif;
+                                font-weight: normal;
+                                font-style: normal;
+                                color: #d6d4d4;
+                                font-size: 14px;
+                                line-height: 20px;
+                            }
+                            & > .button {
+                                margin-top: 15px;
+                                margin-left: 20px;
+                            }
+
+							/* slider view */
+							&.hero-aside-news-view {
+								& > h3 {
+									display: block;
+									height: 43px;
+									margin: 0px;
+									padding: 0px;
+									background-color: #242473;
+									
+									& > a:link,
+                                    & > a:active,
+                                    & > a:visited,
+                                    & > a:hover {
+										display: block;
+										position: relative;
+										top: 10px;
+										left: 25px;
+										width: 248px;
+										height: 23px;
+										background-image: url(../_images/sprites.png);
+										background-repeat: no-repeat;
+										background-position: -159px -190px;
+										@include no-text;
+                                        cursor: pointer;
+									}
+								}
+								
+								& menu {
+									display: block;
+									position: relative;
+									margin: 10px 0px 0px 0px;
+									padding: 0px;
+                                    cursor: pointer;
+
+									& > ul {
+										display: block;
+										clear: both;
+										overflow: hidden;
+										padding: 5px 0px 0px 25px;
+										margin: 0px;
+										list-style: none;
+                                        cursor: pointer;
+										
+										& > li {
+											display: block;
+											float: left;
+											width: 24px;
+											height: 23px;
+											margin: 0px 10px 0px 0px;
+											padding: 0px;
+											
+											& > a:link, 
+											& > a:active, 
+											& > a:visited {
+												display: block;
+												width: 24px;
+												height: 23px;
+												background-image: url(../_images/sprites.png);
+												background-repeat: no-repeat;
+												@include no-text;
+												
+												&.facebook {
+													background-position: -135px -80px;
+
+                                                    /*
+													&:hover {
+														background-position: -135px -103px;
+													}
+													*/
+												}
+												&.twitter {
+													background-position: -159px -80px;
+
+                                                    /*
+													&:hover {
+														background-position: -159px -103px;
+													}
+													*/
+												}
+												&.gplus {
+													background-position: -207px -80px;
+
+                                                    /*
+													&:hover {
+														background-position: -207px -103px;
+													}
+													*/
+												}
+												&.pinterest {
+													background-position: -183px -80px;
+
+                                                    /*
+													&:hover {
+														background-position: -183px -103px;
+													}
+													*/
+												}
+												&.youtube {
+													background-position: -231px -80px;
+
+                                                    /*
+													&:hover {
+														background-position: -231px -103px;
+													}
+													*/
+												}
+											}
+										}
+									}
+								}
+								
+								& > nav {
+									display: block;
+									position: relative;
+									margin: 0px;
+									padding: 0px;
+									
+									& > ol {
+										display: block;
+                                        position: absolute;
+                                        bottom: 35px;
+                                        left: 0px;
+										clear: both;
+                                        width: 100%;
+										height: 10px;
+										margin: 0px;
+										padding: 4px 0px 0px 0px;
+										list-style: none;
+										text-align: center;
+										
+										& > li {
+											display: inline-block;
+											margin: 0px;
+											padding: 0px;
+											list-style: none;
+											font-size: 0;
+											line-height: 0;
+											
+											& > a:link, 
+											& > a:active, 
+											& > a:visited {
+												display: block;
+												width: 10px;
+												height: 10px;
+												margin-left: 5px;
+												margin-right: 5px;
+												background-image: url(../_images/sprites.png);
+												background-repeat: no-repeat;
+												background-position: -159px -223px;
+												@include no-text;
+												font-size: 0;
+												line-height: 0;
+											}
+											& > a:hover, 
+											& > a.current {
+												background-position: -169px -223px;
+											}
+										}
+									}
+								}
+								
+								& > ol {
+									display: block;
+									position: relative;
+                                    width: 100%;
+									height: 307px;
+									overflow: hidden;
+									margin: 0px;
+									padding: 0px;
+									list-style: none;
+									
+									& > li {
+										display: table;
+										position: absolute;
+										top: 0px;
+										left: 0px;
+										width: 100%;
+                                        height: 307px;
+										margin: 0px;
+										padding: 0px;
+                                        background-repeat: no-repeat;
+                                        background-position: center bottom;
+										list-style: none;
+
+                                        &.intro {
+                                            background-image: url(../_images/bg-cta-aside-purple.jpg);
+                                        }
+                                        &.videos {
+                                            background-image: url(../_images/bg-cta-aside-videos.jpg);
+                                        }
+                                        &.blog {
+                                            background-image: url(../_images/bg-cta-aside-blog.jpg);
+                                        }
+                                        &.pr {
+                                            background-image: url(../_images/bg-cta-aside-pr.jpg);
+                                        }
+                                        &.news {
+                                            background-image: url(../_images/bg-cta-aside-news.jpg);
+                                        }
+                                        &.dib {
+                                            background-image: url(../_images/bg-cta-aside-dib.jpg);
+                                        }
+
+                                        & h4 {
+                                            display: block;
+                                            padding: 19px 25px 0px 25px;
+                                            margin: 0px;
+                                            font-size: 20px;
+                                            line-height: 20px;
+                                            text-transform: uppercase;
+                                            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+                                            color: #fff;
+                                            font-family: "Open Sans", sans-serif;
+                                            font-weight: bold;
+                                        }
+
+                                        & p {
+                                            padding-top: 15px;
+                                            padding-left: 25px;
+                                            padding-right: 25px;
+                                            font-size: 15px;
+                                            line-height: 24px;
+                                            color: #fff;
+                                            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+                                            font-style: normal;
+                                            font-weight: bold;
+
+                                            & em {
+                                                color: #b4b4e6;
+                                                font-style: italic;
+                                            }
+                                        }
+
+                                        & .button {
+                                            margin-left: 25px;
+                                        }
+
+                                        & > div {
+                                            display: table-cell;
+                                            position: static;
+                                            width: 100%;
+                                            height: 100%;
+                                            padding-bottom: 44px;
+                                            vertical-align: bottom;
+
+                                            & > h4 + p {
+                                                padding-top: 2px;
+                                                font-size: 14px;
+                                                line-height: 19px;
+                                            }
+                                        }
+
+                                        &.videos,
+                                        &.news,
+                                        &.blog,
+                                        &.dib,
+                                        &.pr {
+                                            & > div {
+                                                & > h4 {
+                                                    color: #ffcc33;
+                                                }
+                                            }
+                                        }
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	/* overrides for homepage /big/ cta */
+	&.home {
+        & > #container {
+            & > article {
+                &.call-to-action {
+                    & > section {
+                        & > .content {
+                            & > .hero {
+                                height: 438px;
+
+                                & > ul {
+                                    & > li {
+                                        & > figcaption {
+                                            height: 438px;
+                                        }
+                                    }
+                                }
+                            }
+                            & > aside {
+                                height: 438px;
+
+                                & > figure {
+                                    height: 160px;
+                                }
+
+                                &.hero-aside-news-view {
+                                    & > ol {
+                                        height: 395px;
+
+                                        & > li {
+                                            height: 395px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+	}
+}

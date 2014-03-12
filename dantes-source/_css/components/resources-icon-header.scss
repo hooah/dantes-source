@@ -1,0 +1,22 @@
+body {
+	#container {
+		& > article {
+			& > section {
+				& > .content {
+					& > div {
+						& h2.resources-icon-header {
+							display: block;
+							margin: 0px;
+							padding: 0px;
+							width: 163px;
+							height: 164px;
+							background-image: url(../_images/sprites-resources-icons.png);
+							background-repeat: no-repeat;
+							@include no-text;
+						}
+					}
+				}
+			}
+		}
+	}
+}

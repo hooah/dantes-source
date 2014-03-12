@@ -1,0 +1,116 @@
+.reveal-modal {
+	width: 1000px;
+	margin-left: -500px;
+	padding: 0px !important;
+	@include border-top-left-radius(75px);
+	@include border-bottom-right-radius(75px);
+	box-shadow: 0px 0px 0px 10px rgba(0, 0, 0, 0.33) !important;
+	
+	& > article {
+		border: 8px #ebebeb solid;
+		@include border-top-left-radius(75px);
+		@include border-bottom-right-radius(75px);
+		box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5) inset;
+		
+		& > section {
+			padding: 50px;
+			background-image: url(../_images/bg-tile-light.jpg);
+			background-repeat: repeat;
+			background-position: 0px 0px;
+			border: 1px #c2c2c2 solid;
+			@include border-top-left-radius(67px);
+			@include border-bottom-right-radius(67px);
+			text-shadow: 1px 1px 0px #fff;
+			
+			& .close-reveal-modal {
+				display: block;
+				top: 28px !important;
+				right: 26px !important;
+				width: 44px;
+				height: 45px;
+				background-image: url(../_images/sprites.png);
+				background-repeat: no-repeat;
+				background-position: -188px -133px;
+				@include no-text;
+				
+				&:hover {
+					background-position: -242px -133px;
+				}
+			}
+			& .row {
+				width: auto;
+				max-width: none;
+				
+				&.flush {
+					margin-left: -50px;
+					margin-right: -50px;
+				}
+			}
+			& .one>*, 
+			& .two>*, 
+			& .three>*, 
+			& .four>*, 
+			& .five>*, 
+			& .six>*, 
+			& .seven>*, 
+			& .eight>*, 
+			& .nine>*, 
+			& .ten>*, 
+			& .eleven>*, 
+			& .twelve>* {
+				margin-right: 40px;
+			}
+			& .feature-box {
+				margin-right: 0px !important;
+			}
+			& h1, 
+			& h2, 
+			& h3, 
+			& h4, 
+			& h5, 
+			& h6 {
+				margin: 0px;
+				padding: 0px;
+				color: #333399;
+				font-family: "Open Sans", sans-serif;
+				text-shadow: 1px 1px 0px #fff;
+			}
+			& h1, 
+			& h2 {
+				margin: 0px 0px 10px 0px;
+				font-size: 30px;
+				line-height: 34px;
+				font-weight: normal;
+			}
+			& h2 {
+				font-size: 24px;
+				line-height: 30px;
+			}
+			& > p {
+				line-height: 24px;
+			}
+			& p {
+				&.larger {
+					font-size: 16px;
+				}
+			}
+			& ul, 
+			& ol {
+				margin-left: 20px;
+			}
+			& ul.styled {
+				margin-left: 0px;
+			}
+			& table {
+				background-color: transparent;
+				
+				& tr, 
+				& tr:nth-child(even), 
+				& tr:nth-child(odd), 
+				& td {
+					background-color: transparent !important;
+				}
+			}
+		}
+	}
+}

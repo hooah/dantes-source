@@ -1,0 +1,33 @@
+.color-grey {
+	color: #999 !important;
+}
+.color-darkgrey {
+	color: #333 !important;
+}
+.color-purple {
+	color: #339 !important;
+}
+
+a.color-link:link, 
+a.color-link:active, 
+a.color-link:visited, 
+a.color-link:hover {
+	.color-grey {
+		color: #999 !important;
+	}
+	.color-darkgrey {
+		color: #333 !important;
+	}
+	.color-purple {
+		color: #339 !important;
+	}
+}
+
+a.link-underlined:link, 
+a.link-underlined:active, 
+a.link-underlined:visited { 
+	text-decoration: underline;
+}
+a.link-underlined:hover { 
+	text-decoration: none;
+}
