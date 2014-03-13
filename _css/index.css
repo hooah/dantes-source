@@ -1660,16 +1660,18 @@ menu .feature-box > div {
     background-image: url(../_images/elements/feature-educational_institutions-dod_mou.jpg); }
   .feature-box.feature-box-preset.educational_institutions-3rd_party figure {
     background-image: url(../_images/elements/feature-service_members-transcripts.jpg); }
-  .feature-box.feature-box-preset.educational_counselors-education_counselors_toolbox figure, .feature-box.feature-box-preset.educational_counselors-counselor_support_program figure, .feature-box.feature-box-preset.educational_counselors-find_an_education_center figure, .feature-box.feature-box-preset.educational_counselors-dod_mou figure {
+  .feature-box.feature-box-preset.educational_counselors-education_counselors_toolbox figure, .feature-box.feature-box-preset.educational_counselors-testing_personnel figure, .feature-box.feature-box-preset.educational_counselors-counselor_support_program figure, .feature-box.feature-box-preset.educational_counselors-find_an_education_center figure, .feature-box.feature-box-preset.educational_counselors-dod_mou figure {
     background-position: center right; }
-  .feature-box.feature-box-preset.educational_counselors-education_counselors_toolbox figcaption > a > strong, .feature-box.feature-box-preset.educational_counselors-counselor_support_program figcaption > a > strong, .feature-box.feature-box-preset.educational_counselors-find_an_education_center figcaption > a > strong, .feature-box.feature-box-preset.educational_counselors-dod_mou figcaption > a > strong {
+  .feature-box.feature-box-preset.educational_counselors-education_counselors_toolbox figcaption > a > strong, .feature-box.feature-box-preset.educational_counselors-testing_personnel figcaption > a > strong, .feature-box.feature-box-preset.educational_counselors-counselor_support_program figcaption > a > strong, .feature-box.feature-box-preset.educational_counselors-find_an_education_center figcaption > a > strong, .feature-box.feature-box-preset.educational_counselors-dod_mou figcaption > a > strong {
     bottom: 18px;
     padding: 0px 10px;
     font-size: 22px; }
   .feature-box.feature-box-preset.educational_counselors-education_counselors_toolbox figure {
     background-image: url(../_images/elements/feature-educational_institutions-transferable_credits.jpg); }
+  .feature-box.feature-box-preset.educational_counselors-testing_personnel figure {
+    background-image: url(../_images/elements/feature-service_members-distance_learning-self_assessment.jpg); }
   .feature-box.feature-box-preset.educational_counselors-counselor_support_program figure {
-    background-image: url(../_images/elements/feature-educational_institutions-recommended_affiliations.jpg); }
+    background-image: url(../_images/elements/feature-service_members-distance_learning-self_assessment.jpg); }
   .feature-box.feature-box-preset.educational_counselors-find_an_education_center figure {
     background-image: url(../_images/elements/feature-educational_counselors-find_an_education_center.jpg); }
   .feature-box.feature-box-preset.educational_counselors-dod_mou figure {

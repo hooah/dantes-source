@@ -407,8 +407,9 @@
         }
 
 		/* educational counselors */
-		&.educational_counselors-education_counselors_toolbox, 
-		&.educational_counselors-counselor_support_program, 
+		&.educational_counselors-education_counselors_toolbox,
+        &.educational_counselors-testing_personnel,
+        &.educational_counselors-counselor_support_program,
 		&.educational_counselors-find_an_education_center, 
 		&.educational_counselors-dod_mou {
 			& figure {
@@ -429,9 +430,14 @@
 				background-image: url(../_images/elements/feature-educational_institutions-transferable_credits.jpg);
 			}
 		}
+		&.educational_counselors-testing_personnel {
+			& figure {
+				background-image: url(../_images/elements/feature-service_members-distance_learning-self_assessment.jpg);
+			}
+		}
 		&.educational_counselors-counselor_support_program {
 			& figure {
-				background-image: url(../_images/elements/feature-educational_institutions-recommended_affiliations.jpg);
+				background-image: url(../_images/elements/feature-service_members-distance_learning-self_assessment.jpg);
 			}
 		}
 		&.educational_counselors-find_an_education_center {
