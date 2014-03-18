@@ -297,6 +297,7 @@
                 background-image: url(../_images/bg-multimedia-dib-nav-divider.png);
                 background-repeat: no-repeat;
                 background-position: top right;
+                z-index: 100;
 
                 & > a {
                     display: block;
@@ -310,6 +311,7 @@
                     line-height: 34px;
                     font-weight: bold;
                     text-decoration: none !important;
+                    text-align: left;
 
                     &:after {
                         display: block;
@@ -385,6 +387,10 @@
                     background-repeat: no-repeat;
                     background-position: top right;
                     list-style: none;
+
+                    &.handle {
+                        display: none;
+                    }
 
                     &:last-child {
                         background-image: none;

@@ -40,6 +40,9 @@ var framework = {
                             'link', false, 'link',
                             'video', 'video', 'link'
                         ],
+            initial_maximums: [
+                {category: 'DANTES Information Bulletin', maximum: 1, current: 0}
+            ],
             max_items: 12
         },
         multimedia: {
@@ -317,7 +320,10 @@ var framework = {
                 for (intOuterCounter = 0; intOuterCounter < framework.data.newsGrid.data.length; intOuterCounter++) {
                     if (framework.data.newsGrid.data[intOuterCounter].categories.length) {
                         for (intInnerCounter = 0; intInnerCounter < framework.data.newsGrid.data[intOuterCounter].categories.length; intInnerCounter++) {
-                            if ((framework.data.newsGrid.data[intOuterCounter].categories[intInnerCounter].slug != 'uncategorized') && (arrCategories[framework.data.newsGrid.data[intOuterCounter].categories[intInnerCounter].slug] === undefined)) {
+                            if ((framework.data.newsGrid.data[intOuterCounter].categories[intInnerCounter].slug != 'uncategorized') &&
+                                (framework.data.newsGrid.data[intOuterCounter].categories[intInnerCounter].slug != 'hot-news') &&
+                                (framework.data.newsGrid.data[intOuterCounter].categories[intInnerCounter].slug != 'press-releases') &&
+                                (arrCategories[framework.data.newsGrid.data[intOuterCounter].categories[intInnerCounter].slug] === undefined)) {
                                 arrCategories[framework.data.newsGrid.data[intOuterCounter].categories[intInnerCounter].slug] = true;
 
                                 jQuery('.newsgrid>nav>ul').append('<li><a href="javascript:;" data-category="' + framework.data.newsGrid.data[intOuterCounter].categories[intInnerCounter].slug + '">' + framework.data.newsGrid.data[intOuterCounter].categories[intInnerCounter].title + '</a></li>');
@@ -356,6 +362,11 @@ var framework = {
 
                 switch (strReqCategory) {
                     case 'all' :
+                        // reset category maximums
+                        for (var intCounter = 0; intCounter < framework.data.newsGrid.initial_maximums.length; intCounter++) {
+                            framework.data.newsGrid.initial_maximums[intCounter].current    = 0;
+                        }
+
                         for (intOuterCount = 0; intOuterCount < framework.data.newsGrid.initial.length; intOuterCount++) {
                             intItemCursor                   = 0;
 
@@ -368,9 +379,11 @@ var framework = {
                                     if ((framework.data.newsGrid.data[intInnerCount].format !== 'link') ||
                                         ((framework.data.newsGrid.data[intInnerCount].format === 'link') && (framework.data.newsGrid.data[intInnerCount].permalink_external.length))) {
                                         if (intItemCursor === arrCursors[framework.data.newsGrid.data[intInnerCount].format]) {
-                                            arrCursors[framework.data.newsGrid.data[intInnerCount].format]++;
-                                            arrData.push(framework.data.newsGrid.data[intInnerCount]);
-                                            break;
+                                            if (framework.fn.newsGrid.is_under_category_maximum(framework.data.newsGrid.data[intInnerCount])) {
+                                                arrCursors[framework.data.newsGrid.data[intInnerCount].format]++;
+                                                arrData.push(framework.data.newsGrid.data[intInnerCount]);
+                                                break;
+                                            }
                                         } else {
                                             intItemCursor++;
                                         }
@@ -414,13 +427,13 @@ var framework = {
                             strImage            = 'http://www.dantespulse.com/' + arrData[intOuterCount].image;
                         } else {
                             switch (true) {
-                                case framework.fn.newsGrid.item_has_category(arrData[intOuterCount].categories, 'Hot News') :
-                                    strImage        = '_images/bg-newsgrid-item-hotnews.jpg';
-                                    break;
-
                                 case framework.fn.newsGrid.item_has_category(arrData[intOuterCount].categories, 'Videos') :
                                 case arrData[intOuterCount].format === 'video' :
                                     strImage        = '_images/bg-newsgrid-item-videos.jpg';
+                                    break;
+
+                                case framework.fn.newsGrid.item_has_category(arrData[intOuterCount].categories, 'Hot News') :
+                                    strImage        = '_images/bg-newsgrid-item-hotnews.jpg';
                                     break;
 
                                 case framework.fn.newsGrid.item_has_category(arrData[intOuterCount].categories, 'Press Releases') :
@@ -464,6 +477,23 @@ var framework = {
                 }
 
                 return boolResult;
+            },
+
+            is_under_category_maximum: function(objItem) {
+                for (var intCounter = 0; intCounter < objItem.categories.length; intCounter++) {
+                    for (var intCategoryCounter = 0; intCategoryCounter < framework.data.newsGrid.initial_maximums.length; intCategoryCounter++) {
+                        if (framework.data.newsGrid.initial_maximums[intCategoryCounter].category === objItem.categories[intCounter].title) {
+                            if (framework.data.newsGrid.initial_maximums[intCategoryCounter].current < framework.data.newsGrid.initial_maximums[intCategoryCounter].maximum) {
+                                framework.data.newsGrid.initial_maximums[intCategoryCounter].current++;
+                                return true;
+                            } else {
+                                return false;
+                            }
+                        }
+                    }
+                }
+
+                return true;
             }
         },
 
@@ -492,12 +522,22 @@ var framework = {
                 init: function() {
                     var objYearButton       = jQuery('.multimedia-dib-menu>header>section>nav>a');
                     var objYearItems        = jQuery('.multimedia-dib-menu>header>section>nav>ul>li');
-                    var objMonthButtons     = jQuery('.multimedia-dib-menu>header>section>ol>li');
+                    var objMonthButtons     = jQuery('.multimedia-dib-menu>header>section>ol>li[class != "handle"]');
 
                     if ((objYearButton) && (objYearItems) && (objMonthButtons)) {
                         objYearButton.bind('click', framework.fn.multimedia.dib.yearMenu);
                         objYearItems.bind('click', framework.fn.multimedia.dib.yearSelect);
                         objMonthButtons.bind('click', framework.fn.multimedia.dib.monthSelect);
+
+                        jQuery('.multimedia-dib-menu>header>section>ol>li.handle').bind('click', function() {
+                            var objParent           = jQuery(this).parent('ol');
+
+                            if (objParent.hasClass('open')) {
+                                objParent.removeClass('open');
+                            } else {
+                                objParent.addClass('open');
+                            }
+                        });
 
                         jQuery(objYearItems[0]).trigger('click');
                         jQuery(objMonthButtons[0]).trigger('click');
@@ -519,6 +559,9 @@ var framework = {
 
                     framework.data.multimedia.dib.year      = jQuery(this).attr('data-year');
 
+                    jQuery(this).siblings('li').removeClass('selected');
+                    jQuery(this).addClass('selected');
+
                     objParent.siblings('a').html(jQuery(this).attr('data-year'));
                     objParent.removeClass('open');
 
@@ -528,8 +571,11 @@ var framework = {
                 monthSelect: function() {
                     framework.data.multimedia.dib.month     = jQuery(this).attr('data-month');
 
+                    jQuery(this).siblings('li.handle').html(jQuery('>a', this).html());
                     jQuery(this).siblings('li').removeClass('selected');
                     jQuery(this).addClass('selected');
+
+                    jQuery(this).parent('ol').removeClass('open');
 
                     framework.fn.multimedia.dib.showContent();
                 },

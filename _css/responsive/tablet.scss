@@ -262,6 +262,136 @@
 			}
 		}
 	}
+
+    .multimedia-features {
+        & .multimedia-feature-box {
+            float: none;
+            max-width: 298px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    .multimedia-dib-menu {
+        & > header {
+            & > section {
+                & > nav {
+                    height: auto;
+
+                    & > ul {
+                        position: relative;
+                        -webkit-box-shadow: none;
+                        -moz-box-shadow: none;
+                        box-shadow: none;
+
+                        & > li {
+                            &.selected {
+                                & > a:link,
+                                & > a:active,
+                                & > a:visited {
+                                    color: #fff !important;
+                                    background-color: #272793 !important;
+                                }
+                            }
+                        }
+                    }
+                }
+                & > ol {
+                    display: block;
+                    width: 100%;
+                    position: relative;
+
+                    & > li {
+                        display: none;
+                        float: none;
+                        height: 30px;
+                        overflow: hidden;
+                        background-image: none;
+
+                        &.handle {
+                            display: block;
+                            height: 34px;
+                            padding-left: 15px;
+                            padding-right: 15px;
+                            font-size: 16px;
+                            line-height: 34px;
+                            font-weight: bold;
+                            text-align: left;
+                            cursor: pointer;
+
+                            &:after {
+                                display: block;
+                                position: absolute;
+                                right: 10px;
+                                top: 13px;
+                                width: 15px;
+                                height: 8px;
+                                background-image: url(../_images/sprites.png);
+                                background-repeat: no-repeat;
+                                background-position: -184px -56px;
+                                background-size: auto;
+                                content: "";
+                            }
+
+                            &:hover {
+                                background-color: inherit;
+
+                                &:after {
+                                    display: block;
+                                }
+                            }
+                        }
+
+                        & > a {
+                            padding: 0px;
+                            line-height: 30px;
+                            font-size: 14px;
+                            font-weight: normal;
+                            text-decoration: none;
+                        }
+
+                        &.selected,
+                        &:hover {
+                            background-image: none;
+                            background-color: #272793;
+
+                            & > a:link,
+                            & > a:active,
+                            & > a:visited,
+                            & > a:hover {
+                                text-decoration: none !important;
+                                color: #fff !important;
+                            }
+
+                            &:after {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    &.open {
+                        & > li {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+        & > section {
+            & > div {
+                & > aside {
+                    background-position: 0px 0px;
+                    background-size: 100% auto;
+
+                    & > h3 {
+                        padding-top: 130px !important;
+                    }
+                    & > a {
+                        float: none !important;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 867px) {
@@ -305,7 +435,7 @@
 		.one, 
 		.two, 
 		.three, 
-		.four, 
+		.four,
 		.five, 
 		.six, 
 		.seven, 
@@ -447,6 +577,14 @@
                     }
                 }
 			}
+
+            & > menu.sitemap {
+                & > section {
+                    padding-top: 25px;
+                    padding-left: 25px;
+                    padding-right: 25px;
+                }
+            }
 		}
 	}
 

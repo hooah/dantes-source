@@ -105,6 +105,25 @@
 			}
 		}
 	}
+
+    .multimedia-dib-menu {
+        & > header {
+            text-align: center;
+
+            & > section {
+                & > nav {
+                    width: auto;
+                    float: none;
+                    background-image: none;
+                    border-bottom: 1px #d3d3d3 solid;
+                }
+                & > ol {
+                    display: inline-block;
+                    float: none;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 1180px) {
@@ -199,4 +218,22 @@
 			}
 		}
 	}
+
+    .multimedia-features {
+        & .multimedia-feature-box {
+            & > a {
+                & > figure {
+                    & > figcaption {
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+
+                        & > p {
+                            font-size: 14px;
+                            line-height: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

@@ -773,7 +773,7 @@ body #container > article.has-sidebar > section > .content > aside {
           height: 80px;
           background-image: url(../_images/elements/sidebar-support.png); }
         body #container > article.has-sidebar > section > .content > aside > menu.quick-links > ul > li.resources > a:before {
-          height: 103px;
+          height: 123px;
           background-image: url(../_images/elements/sidebar-resources.png); }
         body #container > article.has-sidebar > section > .content > aside > menu.quick-links > ul > li.multimedia > a:before {
           height: 130px;
@@ -782,13 +782,13 @@ body #container > article.has-sidebar > section > .content > aside {
           height: 54px;
           background-image: url(../_images/elements/sidebar-dod_leadership.png); }
         body #container > article.has-sidebar > section > .content > aside > menu.quick-links > ul > li.examination-calendar > a:before {
-          height: 89px;
+          height: 109px;
           background-image: url(../_images/elements/sidebar-examination_calendar.png); }
         body #container > article.has-sidebar > section > .content > aside > menu.quick-links > ul > li.test-site-lookup > a:before {
           height: 90px;
           background-image: url(../_images/elements/sidebar-test_site_lookup.png); }
         body #container > article.has-sidebar > section > .content > aside > menu.quick-links > ul > li.faq > a:before {
-          height: 90px;
+          height: 110px;
           background-image: url(../_images/elements/sidebar-faqs.png); }
   body #container > article.has-sidebar > section > .content > aside > address {
     display: block;
@@ -1667,7 +1667,7 @@ menu .feature-box > div {
     padding: 0px 10px;
     font-size: 22px; }
   .feature-box.feature-box-preset.educational_counselors-education_counselors_toolbox figure {
-    background-image: url(../_images/elements/feature-educational_institutions-transferable_credits.jpg); }
+    background-image: url(../_images/elements/feature-educational_institutions-resources.jpg); }
   .feature-box.feature-box-preset.educational_counselors-testing_personnel figure {
     background-image: url(../_images/elements/feature-service_members-distance_learning-self_assessment.jpg); }
   .feature-box.feature-box-preset.educational_counselors-counselor_support_program figure {
@@ -1985,7 +1985,8 @@ dl.feature-box-jump-button {
         height: 34px;
         background-image: url(../_images/bg-multimedia-dib-nav-divider.png);
         background-repeat: no-repeat;
-        background-position: top right; }
+        background-position: top right;
+        z-index: 100; }
         .multimedia-dib-menu > header > section > nav > a {
           display: block;
           position: relative;
@@ -1997,7 +1998,8 @@ dl.feature-box-jump-button {
           font-size: 16px;
           line-height: 34px;
           font-weight: bold;
-          text-decoration: none !important; }
+          text-decoration: none !important;
+          text-align: left; }
           .multimedia-dib-menu > header > section > nav > a:after {
             display: block;
             position: absolute;
@@ -2056,6 +2058,8 @@ dl.feature-box-jump-button {
           background-repeat: no-repeat;
           background-position: top right;
           list-style: none; }
+          .multimedia-dib-menu > header > section > ol > li.handle {
+            display: none; }
           .multimedia-dib-menu > header > section > ol > li:last-child {
             background-image: none; }
           .multimedia-dib-menu > header > section > ol > li:after {
@@ -4806,7 +4810,18 @@ form li.complex p.error {
     line-height: 20px; }
   body #container > article.call-to-action > section > .content > aside > p {
     font-size: 14px;
-    line-height: 18px; } }
+    line-height: 18px; }
+
+  .multimedia-dib-menu > header {
+    text-align: center; }
+    .multimedia-dib-menu > header > section > nav {
+      width: auto;
+      float: none;
+      background-image: none;
+      border-bottom: 1px #d3d3d3 solid; }
+    .multimedia-dib-menu > header > section > ol {
+      display: inline-block;
+      float: none; } }
 @media (max-width: 1180px) {
   dl.feature-box-jump-button > dt {
     float: none;
@@ -4833,7 +4848,14 @@ form li.complex p.error {
     width: 50%;
     background-size: 100% 100%; }
     body #container > article .newsgrid > ul > li.clear {
-      clear: none !important; } }
+      clear: none !important; }
+
+  .multimedia-features .multimedia-feature-box > a > figure > figcaption {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+    .multimedia-features .multimedia-feature-box > a > figure > figcaption > p {
+      font-size: 14px;
+      line-height: 14px; } }
 @media (max-width: 1024px) {
   body #container > header > section > nav {
     cursor: pointer; }
@@ -4964,7 +4986,83 @@ form li.complex p.error {
   .feature-box.feature-box-preset.home-service_members figcaption > a > strong, .feature-box.feature-box-preset.home-educational_institutions figcaption > a > strong, .feature-box.feature-box-preset.home-dantes_counselors figcaption > a > strong, .feature-box.feature-box-preset.home-dod_leadership figcaption > a > strong {
     padding: 0px;
     width: 180px;
-    text-indent: 10px; } }
+    text-indent: 10px; }
+
+  .multimedia-features .multimedia-feature-box {
+    float: none;
+    max-width: 298px;
+    margin-left: auto;
+    margin-right: auto; }
+
+  .multimedia-dib-menu > header > section > nav {
+    height: auto; }
+    .multimedia-dib-menu > header > section > nav > ul {
+      position: relative;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none; }
+      .multimedia-dib-menu > header > section > nav > ul > li.selected > a:link, .multimedia-dib-menu > header > section > nav > ul > li.selected > a:active, .multimedia-dib-menu > header > section > nav > ul > li.selected > a:visited {
+        color: #fff !important;
+        background-color: #272793 !important; }
+  .multimedia-dib-menu > header > section > ol {
+    display: block;
+    width: 100%;
+    position: relative; }
+    .multimedia-dib-menu > header > section > ol > li {
+      display: none;
+      float: none;
+      height: 30px;
+      overflow: hidden;
+      background-image: none; }
+      .multimedia-dib-menu > header > section > ol > li.handle {
+        display: block;
+        height: 34px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 16px;
+        line-height: 34px;
+        font-weight: bold;
+        text-align: left;
+        cursor: pointer; }
+        .multimedia-dib-menu > header > section > ol > li.handle:after {
+          display: block;
+          position: absolute;
+          right: 10px;
+          top: 13px;
+          width: 15px;
+          height: 8px;
+          background-image: url(../_images/sprites.png);
+          background-repeat: no-repeat;
+          background-position: -184px -56px;
+          background-size: auto;
+          content: ""; }
+        .multimedia-dib-menu > header > section > ol > li.handle:hover {
+          background-color: inherit; }
+          .multimedia-dib-menu > header > section > ol > li.handle:hover:after {
+            display: block; }
+      .multimedia-dib-menu > header > section > ol > li > a {
+        padding: 0px;
+        line-height: 30px;
+        font-size: 14px;
+        font-weight: normal;
+        text-decoration: none; }
+      .multimedia-dib-menu > header > section > ol > li.selected, .multimedia-dib-menu > header > section > ol > li:hover {
+        background-image: none;
+        background-color: #272793; }
+        .multimedia-dib-menu > header > section > ol > li.selected > a:link, .multimedia-dib-menu > header > section > ol > li.selected > a:active, .multimedia-dib-menu > header > section > ol > li.selected > a:visited, .multimedia-dib-menu > header > section > ol > li.selected > a:hover, .multimedia-dib-menu > header > section > ol > li:hover > a:link, .multimedia-dib-menu > header > section > ol > li:hover > a:active, .multimedia-dib-menu > header > section > ol > li:hover > a:visited, .multimedia-dib-menu > header > section > ol > li:hover > a:hover {
+          text-decoration: none !important;
+          color: #fff !important; }
+        .multimedia-dib-menu > header > section > ol > li.selected:after, .multimedia-dib-menu > header > section > ol > li:hover:after {
+          display: none; }
+    .multimedia-dib-menu > header > section > ol.open > li {
+      display: block; }
+  .multimedia-dib-menu > section > div > aside {
+    background-position: 0px 0px;
+    background-size: 100% auto; }
+    .multimedia-dib-menu > section > div > aside > h3 {
+      padding-top: 130px !important; }
+    .multimedia-dib-menu > section > div > aside > a {
+      float: none !important; } }
 @media (max-width: 867px) {
   body #container > article .slim-cta-banner > h2 {
     background-position: -100px top; }
@@ -5059,6 +5157,10 @@ form li.complex p.error {
     width: 290px;
     margin-left: auto;
     margin-right: auto; }
+  body #container > menu.sitemap > section {
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px; }
 
   .feature-box {
     clear: both; }
@@ -5090,7 +5192,12 @@ form li.complex p.error {
     background-image: none; }
     body #container > article .slim-cta-banner > h2 > strong {
       width: 60%;
-      left: 20px; } }
+      left: 20px; }
+
+  .multimedia-dib-menu > section > div > figure {
+    display: none; }
+  .multimedia-dib-menu > section > div > aside {
+    width: auto; } }
 @media (max-width: 480px) {
   body img.left.inline, body img.right.inline {
     float: none !important;
@@ -5121,6 +5228,15 @@ form li.complex p.error {
   body #container > article > section > .content div.spotlight > div > figcaption > section > h3 {
     font-size: 24px;
     line-height: 24px; }
+  body #container > article.has-sidebar > section > .content ul.breadcrumbs {
+    margin-bottom: 0px; }
+  body #container > article.has-sidebar > section > .content ul.social {
+    height: auto; }
+    body #container > article.has-sidebar > section > .content ul.social > li.facebook, body #container > article.has-sidebar > section > .content ul.social > li.twitter, body #container > article.has-sidebar > section > .content ul.social > li.gplus {
+      float: left; }
+    body #container > article.has-sidebar > section > .content ul.social > li.print {
+      clear: both;
+      float: none; }
 
   .feature-box {
     clear: both; }

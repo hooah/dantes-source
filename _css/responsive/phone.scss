@@ -52,6 +52,19 @@
 			}
 		}
 	}
+
+    .multimedia-dib-menu {
+        & > section {
+            & > div {
+                & > figure {
+                    display: none;
+                }
+                & > aside {
+                    width: auto;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 480px) {
@@ -139,6 +152,29 @@
 					}
 				}
 			}
+
+            & > article.has-sidebar {
+                & > section {
+                    & > .content {
+                        & ul.breadcrumbs {
+                            margin-bottom: 0px;
+                        }
+                        & ul.social {
+                            height: auto;
+
+                            & > li.facebook,
+                            & > li.twitter,
+                            & > li.gplus {
+                                float: left;
+                            }
+                            & > li.print {
+                                clear: both;
+                                float: none;
+                            }
+                        }
+                    }
+                }
+            }
 		}
 	}
 
