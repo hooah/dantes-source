@@ -3530,6 +3530,125 @@ body #container > article.has-sidebar > section > .content #search-results {
           margin-bottom: 10px;
           font-weight: bold; }
 
+body #container {
+  padding-top: 150px;
+  padding-bottom: 150px; }
+  body #container > article.examination-wizard {
+    width: 847px;
+    margin: 0px auto;
+    -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.37);
+    -moz-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.37);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.37);
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    border-radius: 7px; }
+    body #container > article.examination-wizard > header {
+      position: relative;
+      height: 133px;
+      background-color: #de8721;
+      border-top: 1px #e5a254 solid;
+      border-left: 1px #e19236 solid;
+      border-right: 1px #e19236 solid;
+      -moz-border-radius-topleft: 7px;
+      -webkit-border-top-left-radius: 7px;
+      border-top-left-radius: 7px;
+      -moz-border-radius-topright: 7px;
+      -webkit-border-top-right-radius: 7px;
+      border-top-right-radius: 7px; }
+      body #container > article.examination-wizard > header > h1 {
+        display: block;
+        float: right;
+        width: 45%;
+        margin: 32px 35px 0px 0px;
+        padding: 0px;
+        font-family: 'Open Sans', sans-serif;
+        color: #fff;
+        text-shadow: 1px 1px 0px #aa6310;
+        font-weight: normal;
+        text-align: right;
+        font-size: 23px;
+        line-height: 23px; }
+      body #container > article.examination-wizard > header > h2 {
+        display: block;
+        float: right;
+        clear: both;
+        width: 45%;
+        margin: 15px 35px 0px 0px;
+        padding: 0px;
+        font-family: 'Open Sans', sans-serif;
+        color: #fff;
+        text-shadow: 1px 1px 0px #aa6310;
+        text-align: right;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px; }
+      body #container > article.examination-wizard > header:after {
+        display: block;
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        width: 428px;
+        height: 268px;
+        background-image: url(../_images/wizard/header-dantes-rep.png);
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+        content: ""; }
+
+/*
+                <header>
+                    <h1>DANTES Examination Wizard</h1>
+                    <h2>In order to determine the next steps in your professional advancement, choose the desired goal below that best fits you.</h2>
+
+                    <nav>
+                        <ul>
+                            <li class="home"><a href="#">Return Home</a></li>
+                            <li class="act-sat">
+                                <a href="#"></a>
+                                <ol>
+                                    <li><a href="#">ACT</a></li>
+                                    <li><a href="#">SAT</a></li>
+                                </ol>
+                            </li>
+                            <li class="gre-gmat">
+                                <a href="#"></a>
+                                <ol>
+                                    <li><a href="#">GRE</a></li>
+                                    <li><a href="#">GMAT</a></li>
+                                </ol>
+                            </li>
+                            <li class="lsat">
+                                <a href="#"></a>
+                                <ol>
+                                    <li><a href="#">LSAT</a></li>
+                                </ol>
+                            </li>
+                            <li class="praxis">
+                                <a href="#"></a>
+                                <ol>
+                                    <li><a href="#">PRAXIS</a></li>
+                                </ol>
+                            </li>
+                            <li class="ged">
+                                <a href="#"></a>
+                                <ol>
+                                    <li><a href="#">GED</a></li>
+                                </ol>
+                            </li>
+                            <li class="testing">
+                                <a href="#"></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
+                <section>
+                    <p>test</p>
+                </section>
+                <footer>
+                    <p>&copy; DANTES 2014. All Rights Reserved.</p>
+                </footer>
+*/
 /* Vendor imports */
 .wufoo {
   font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;

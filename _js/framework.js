@@ -37,8 +37,8 @@ var framework = {
             data: [],
             initial:    [
                             'video', false, false,
-                            'link', false, 'link',
-                            'video', 'video', 'link'
+                            false, false, false,
+                            'video', 'video', false
                         ],
             initial_maximums: [
                 {category: 'DANTES Information Bulletin', maximum: 1, current: 0}
@@ -367,7 +367,7 @@ var framework = {
                             framework.data.newsGrid.initial_maximums[intCounter].current    = 0;
                         }
 
-                        for (intOuterCount = 0; intOuterCount < framework.data.newsGrid.initial.length; intOuterCount++) {
+                        for (var intOuterCount = 0; intOuterCount < framework.data.newsGrid.initial.length; intOuterCount++) {
                             intItemCursor                   = 0;
 
                             for (intInnerCount = 0; intInnerCount < framework.data.newsGrid.data.length; intInnerCount++) {
@@ -375,17 +375,20 @@ var framework = {
                                     arrCursors[framework.data.newsGrid.data[intInnerCount].format]     = 0;
                                 }
 
-                                if (framework.data.newsGrid.data[intInnerCount].format === framework.data.newsGrid.initial[intOuterCount]) {
-                                    if ((framework.data.newsGrid.data[intInnerCount].format !== 'link') ||
-                                        ((framework.data.newsGrid.data[intInnerCount].format === 'link') && (framework.data.newsGrid.data[intInnerCount].permalink_external.length))) {
-                                        if (intItemCursor === arrCursors[framework.data.newsGrid.data[intInnerCount].format]) {
+                                if ((!framework.fn.newsGrid.item_has_category(framework.data.newsGrid.data[intInnerCount].categories, 'Press Releases')) &&
+                                    (!framework.fn.newsGrid.item_has_category(framework.data.newsGrid.data[intInnerCount].categories, 'Hot News'))) {
+                                    if (framework.data.newsGrid.data[intInnerCount].format === framework.data.newsGrid.initial[intOuterCount]) {
+                                        if ((framework.data.newsGrid.data[intInnerCount].format !== 'link') ||
+                                            ((framework.data.newsGrid.data[intInnerCount].format === 'link') && (framework.data.newsGrid.data[intInnerCount].permalink_external.length))) {
                                             if (framework.fn.newsGrid.is_under_category_maximum(framework.data.newsGrid.data[intInnerCount])) {
-                                                arrCursors[framework.data.newsGrid.data[intInnerCount].format]++;
-                                                arrData.push(framework.data.newsGrid.data[intInnerCount]);
-                                                break;
+                                                if (intItemCursor === arrCursors[framework.data.newsGrid.data[intInnerCount].format]) {
+                                                    arrCursors[framework.data.newsGrid.data[intInnerCount].format]++;
+                                                    arrData.push(framework.data.newsGrid.data[intInnerCount]);
+                                                    break;
+                                                } else {
+                                                    intItemCursor++;
+                                                }
                                             }
-                                        } else {
-                                            intItemCursor++;
                                         }
                                     }
                                 }
