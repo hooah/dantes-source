@@ -3138,6 +3138,35 @@ body #container > article .newsgrid > ul {
       -ms-border-radius: 4px;
       -o-border-radius: 4px;
       border-radius: 4px; }
+  .button.button-blue.button-pointed {
+    height: 32px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: transparent;
+    background-image: url(../_images/btn-pointed-blue.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none; }
+    .button.button-blue.button-pointed > strong {
+      display: block;
+      padding: 0px;
+      font-size: 12px;
+      line-height: 30px;
+      text-transform: uppercase;
+      color: #ddd;
+      font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida", sans-serif;
+      font-weight: normal; }
+    .button.button-blue.button-pointed:active, .button.button-blue.button-pointed:focus, .button.button-blue.button-pointed:hover {
+      background-color: transparent;
+      border: none;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none; }
+      .button.button-blue.button-pointed:active > strong, .button.button-blue.button-pointed:focus > strong, .button.button-blue.button-pointed:hover > strong {
+        color: #fff; }
 
 .content ul.accordion {
   position: relative;
@@ -3530,12 +3559,33 @@ body #container > article.has-sidebar > section > .content #search-results {
           margin-bottom: 10px;
           font-weight: bold; }
 
+<<<<<<< HEAD
+=======
+body.wizard {
+  background-image: url(../_images/wizard/bg-body.jpg);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-size: 100% 100%; }
+
+>>>>>>> FETCH_HEAD
 body #container {
   padding-top: 150px;
   padding-bottom: 150px; }
   body #container > article.examination-wizard {
     width: 847px;
     margin: 0px auto;
+<<<<<<< HEAD
+=======
+    opacity: 0;
+    -webkit-transition: all 0.65s ease-out;
+    -moz-transition: all 0.65s ease-out;
+    -ms-transition: all 0.65s ease-out;
+    transition: all 0.65s ease-out;
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    transform: scale(1.25);
+>>>>>>> FETCH_HEAD
     -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.37);
     -moz-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.37);
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.37);
@@ -3544,8 +3594,17 @@ body #container {
     -ms-border-radius: 7px;
     -o-border-radius: 7px;
     border-radius: 7px; }
+<<<<<<< HEAD
     body #container > article.examination-wizard > header {
       position: relative;
+=======
+    body #container > article.examination-wizard.enabled {
+      opacity: 1;
+      -webkit-transform: scale(1); }
+    body #container > article.examination-wizard > header > section {
+      position: relative;
+      z-index: 100;
+>>>>>>> FETCH_HEAD
       height: 133px;
       background-color: #de8721;
       border-top: 1px #e5a254 solid;
@@ -3557,20 +3616,36 @@ body #container {
       -moz-border-radius-topright: 7px;
       -webkit-border-top-right-radius: 7px;
       border-top-right-radius: 7px; }
+<<<<<<< HEAD
       body #container > article.examination-wizard > header > h1 {
         display: block;
         float: right;
         width: 45%;
         margin: 32px 35px 0px 0px;
+=======
+      body #container > article.examination-wizard > header > section > h1 {
+        display: block;
+        float: right;
+        width: 55%;
+        margin: 30px 35px 0px 0px;
+>>>>>>> FETCH_HEAD
         padding: 0px;
         font-family: 'Open Sans', sans-serif;
         color: #fff;
         text-shadow: 1px 1px 0px #aa6310;
+<<<<<<< HEAD
         font-weight: normal;
         text-align: right;
         font-size: 23px;
         line-height: 23px; }
       body #container > article.examination-wizard > header > h2 {
+=======
+        font-weight: 600;
+        text-align: right;
+        font-size: 30px;
+        line-height: 30px; }
+      body #container > article.examination-wizard > header > section > h2 {
+>>>>>>> FETCH_HEAD
         display: block;
         float: right;
         clear: both;
@@ -3582,6 +3657,7 @@ body #container {
         text-shadow: 1px 1px 0px #aa6310;
         text-align: right;
         font-weight: normal;
+<<<<<<< HEAD
         font-size: 12px;
         line-height: 15px; }
       body #container > article.examination-wizard > header:after {
@@ -3589,12 +3665,22 @@ body #container {
         position: absolute;
         left: 0px;
         bottom: 0px;
+=======
+        font-size: 13px;
+        line-height: 15px; }
+      body #container > article.examination-wizard > header > section:after {
+        display: block;
+        position: absolute;
+        left: 6px;
+        bottom: -54px;
+>>>>>>> FETCH_HEAD
         width: 428px;
         height: 268px;
         background-image: url(../_images/wizard/header-dantes-rep.png);
         background-repeat: no-repeat;
         background-position: 0px 0px;
         content: ""; }
+<<<<<<< HEAD
 
 /*
                 <header>
@@ -3649,6 +3735,539 @@ body #container {
                     <p>&copy; DANTES 2014. All Rights Reserved.</p>
                 </footer>
 */
+=======
+    body #container > article.examination-wizard > header > nav {
+      display: block;
+      position: relative;
+      height: 41px;
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+      background-image: url(../_images/wizard/bg-nav-primary.png);
+      background-repeat: repeat-x;
+      background-position: 0px 0px; }
+      body #container > article.examination-wizard > header > nav > ul {
+        display: block;
+        margin: 0px;
+        padding: 0px;
+        list-style: none; }
+        body #container > article.examination-wizard > header > nav > ul > li {
+          display: block;
+          position: relative;
+          z-index: 1000;
+          float: right;
+          margin: 0px;
+          padding: 0px;
+          border-left: 1px #b7b7b7 solid;
+          border-right: 1px #818181 solid;
+          list-style: none; }
+          body #container > article.examination-wizard > header > nav > ul > li > a {
+            display: block;
+            width: 46px;
+            height: 40px;
+            background-image: url(../_images/sprites-wizard.png);
+            background-repeat: no-repeat;
+            text-indent: -9999px;
+            text-align: left;
+            cursor: pointer; }
+          body #container > article.examination-wizard > header > nav > ul > li:hover > a, body #container > article.examination-wizard > header > nav > ul > li.selected > a {
+            background-color: #f9f9f9; }
+          body #container > article.examination-wizard > header > nav > ul > li.selected > ol {
+            display: block; }
+          body #container > article.examination-wizard > header > nav > ul > li.degree-fouryear:before {
+            display: block;
+            position: absolute;
+            left: -2px;
+            top: 0px;
+            width: 1px;
+            height: 40px;
+            background-color: #818181;
+            content: ""; }
+          body #container > article.examination-wizard > header > nav > ul > li.degree-fouryear > a {
+            background-position: 0px -29px; }
+          body #container > article.examination-wizard > header > nav > ul > li.degree-fouryear.selected > a, body #container > article.examination-wizard > header > nav > ul > li.degree-fouryear:hover > a {
+            background-position: -56px -29px; }
+          body #container > article.examination-wizard > header > nav > ul > li.degree-fouryear > ol {
+            width: 287px; }
+          body #container > article.examination-wizard > header > nav > ul > li.degree-graduate > a {
+            background-position: 0px -79px; }
+          body #container > article.examination-wizard > header > nav > ul > li.degree-graduate.selected > a, body #container > article.examination-wizard > header > nav > ul > li.degree-graduate:hover > a {
+            background-position: -56px -79px; }
+          body #container > article.examination-wizard > header > nav > ul > li.degree-graduate > ol {
+            width: 238px; }
+          body #container > article.examination-wizard > header > nav > ul > li.degree-law > a {
+            background-position: 0px -129px; }
+          body #container > article.examination-wizard > header > nav > ul > li.degree-law.selected > a, body #container > article.examination-wizard > header > nav > ul > li.degree-law:hover > a {
+            background-position: -56px -129px; }
+          body #container > article.examination-wizard > header > nav > ul > li.degree-teaching > a {
+            background-position: 0px -179px; }
+          body #container > article.examination-wizard > header > nav > ul > li.degree-teaching.selected > a, body #container > article.examination-wizard > header > nav > ul > li.degree-teaching:hover > a {
+            background-position: -56px -179px; }
+          body #container > article.examination-wizard > header > nav > ul > li.degree-fouryear-nodiploma > a {
+            background-position: 0px -229px; }
+          body #container > article.examination-wizard > header > nav > ul > li.degree-fouryear-nodiploma.selected > a, body #container > article.examination-wizard > header > nav > ul > li.degree-fouryear-nodiploma:hover > a {
+            background-position: -56px -229px; }
+          body #container > article.examination-wizard > header > nav > ul > li.testing > a {
+            background-position: 0px -279px; }
+          body #container > article.examination-wizard > header > nav > ul > li.testing.selected > a, body #container > article.examination-wizard > header > nav > ul > li.testing:hover > a {
+            background-position: -56px -279px; }
+          body #container > article.examination-wizard > header > nav > ul > li.home {
+            float: left;
+            position: relative;
+            margin-left: 22px;
+            z-index: 100;
+            border: none; }
+            body #container > article.examination-wizard > header > nav > ul > li.home > a {
+              width: auto;
+              height: auto;
+              padding-left: 29px;
+              background-image: none;
+              font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida", sans-serif;
+              font-size: 11px;
+              line-height: 11px;
+              color: #fff;
+              text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
+              text-decoration: none;
+              text-transform: lowercase;
+              text-indent: 0px; }
+              body #container > article.examination-wizard > header > nav > ul > li.home > a:before {
+                display: block;
+                position: relative;
+                left: -29px;
+                top: 12px;
+                width: 19px;
+                height: 19px;
+                background-image: url(../_images/sprites-wizard.png);
+                background-repeat: no-repeat;
+                background-position: 0px 0px;
+                content: ""; }
+              body #container > article.examination-wizard > header > nav > ul > li.home > a:hover {
+                background-color: transparent;
+                text-decoration: underline; }
+          body #container > article.examination-wizard > header > nav > ul > li > ol {
+            display: none;
+            position: absolute;
+            top: 40px;
+            left: -1px;
+            margin: 0px;
+            padding: 0px;
+            white-space: nowrap; }
+            body #container > article.examination-wizard > header > nav > ul > li > ol:before {
+              display: block;
+              position: absolute;
+              left: -180px;
+              height: 35px;
+              color: #727272;
+              font-size: 10px;
+              line-height: 35px;
+              content: "choose from the following options:";
+              white-space: nowrap; }
+            body #container > article.examination-wizard > header > nav > ul > li > ol > li {
+              display: block;
+              float: left;
+              height: 35px;
+              margin: 0px;
+              padding: 0px;
+              border-right: 1px #bbbbbb solid;
+              list-style: none; }
+              body #container > article.examination-wizard > header > nav > ul > li > ol > li:first-child {
+                border-left: 1px #bbbbbb solid; }
+              body #container > article.examination-wizard > header > nav > ul > li > ol > li > a {
+                display: block;
+                position: relative;
+                height: 35px;
+                padding: 0px 11px;
+                color: #3a3d9d;
+                text-decoration: none;
+                font-size: 12px;
+                line-height: 35px;
+                text-transform: uppercase;
+                font-weight: 600; }
+                body #container > article.examination-wizard > header > nav > ul > li > ol > li > a:hover {
+                  text-decoration: underline; }
+              body #container > article.examination-wizard > header > nav > ul > li > ol > li.selected > a {
+                background-image: url(../_images/wizard/bg-nav-secondary-selected.png);
+                background-repeat: no-repeat;
+                background-position: 0px 0px;
+                background-size: 100%;
+                color: #fff;
+                text-decoration: none !important; }
+                body #container > article.examination-wizard > header > nav > ul > li > ol > li.selected > a:after {
+                  display: block;
+                  position: absolute;
+                  bottom: -8px;
+                  left: 0px;
+                  width: 100%;
+                  height: 8px;
+                  background-image: url(../_images/wizard/bg-nav-secondary-selected.png);
+                  background-repeat: no-repeat;
+                  background-position: bottom center;
+                  background-size: 100% 43px;
+                  content: ""; }
+      body #container > article.examination-wizard > header > nav:before {
+        display: block;
+        clear: both;
+        position: absolute;
+        top: 41px;
+        width: 100%;
+        height: 35px;
+        background-image: url(../_images/wizard/bg-nav-secondary.png);
+        background-repeat: repeat-x;
+        background-position: 0px 0px;
+        content: ""; }
+    body #container > article.examination-wizard > section {
+      clear: both;
+      overflow: hidden;
+      padding-top: 35px;
+      background-color: #efeeee;
+      background-image: url(../_images/wizard/bg-content.jpg);
+      background-repeat: no-repeat;
+      background-position: bottom left; }
+      body #container > article.examination-wizard > section .grid {
+        overflow: hidden; }
+        body #container > article.examination-wizard > section .grid > ol {
+          display: block;
+          margin: 0px;
+          padding: 0px;
+          list-style: none; }
+          body #container > article.examination-wizard > section .grid > ol > li {
+            display: block;
+            float: left;
+            width: 33.33333%;
+            height: 185px;
+            margin: 0px;
+            padding: 0px;
+            background-color: #fff;
+            list-style: none; }
+            body #container > article.examination-wizard > section .grid > ol > li > a {
+              display: block;
+              height: 100%;
+              border-right: 1px #c7c7c7 solid;
+              border-bottom: 1px #c7c7c7 solid; }
+              body #container > article.examination-wizard > section .grid > ol > li > a:hover {
+                background-repeat: no-repeat;
+                background-size: 100% 100%; }
+              body #container > article.examination-wizard > section .grid > ol > li > a > strong {
+                display: block;
+                position: relative;
+                padding-left: 115px;
+                padding-top: 65px;
+                padding-right: 25px;
+                font-size: 14px;
+                line-height: 19px;
+                font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida", sans-serif;
+                color: #727272;
+                font-weight: normal; }
+                body #container > article.examination-wizard > section .grid > ol > li > a > strong:before {
+                  display: block;
+                  position: absolute;
+                  top: 57px;
+                  left: 38px;
+                  width: 58px;
+                  height: 53px;
+                  background-image: url(../_images/sprites-wizard.png);
+                  background-repeat: no-repeat;
+                  content: ""; }
+            body #container > article.examination-wizard > section .grid > ol > li.degree-graduate > a, body #container > article.examination-wizard > section .grid > ol > li.testing > a {
+              border-right: none; }
+            body #container > article.examination-wizard > section .grid > ol > li.degree-fouryear-nodegree > a, body #container > article.examination-wizard > section .grid > ol > li.degree-law > a, body #container > article.examination-wizard > section .grid > ol > li.testing > a {
+              border-bottom: none; }
+            body #container > article.examination-wizard > section .grid > ol > li.degree-fouryear > a > strong:before {
+              background-position: -122px 0px; }
+            body #container > article.examination-wizard > section .grid > ol > li.degree-fouryear > a:hover {
+              background-image: url(../_images/wizard/bg-grid-fouryear.jpg); }
+              body #container > article.examination-wizard > section .grid > ol > li.degree-fouryear > a:hover > strong:before {
+                background-position: -190px 0px; }
+            body #container > article.examination-wizard > section .grid > ol > li.degree-teaching > a > strong:before {
+              background-position: -122px -189px; }
+            body #container > article.examination-wizard > section .grid > ol > li.degree-teaching > a:hover {
+              background-image: url(../_images/wizard/bg-grid-teaching.jpg); }
+              body #container > article.examination-wizard > section .grid > ol > li.degree-teaching > a:hover > strong:before {
+                background-position: -190px -189px; }
+            body #container > article.examination-wizard > section .grid > ol > li.degree-graduate > a > strong:before {
+              background-position: -122px -63px; }
+            body #container > article.examination-wizard > section .grid > ol > li.degree-graduate > a:hover {
+              background-image: url(../_images/wizard/bg-grid-graduate.jpg); }
+              body #container > article.examination-wizard > section .grid > ol > li.degree-graduate > a:hover > strong:before {
+                background-position: -190px -63px; }
+            body #container > article.examination-wizard > section .grid > ol > li.degree-fouryear-nodegree > a > strong:before {
+              background-position: -122px -252px; }
+            body #container > article.examination-wizard > section .grid > ol > li.degree-fouryear-nodegree > a:hover {
+              background-image: url(../_images/wizard/bg-grid-ged.jpg); }
+              body #container > article.examination-wizard > section .grid > ol > li.degree-fouryear-nodegree > a:hover > strong:before {
+                background-position: -190px -252px; }
+            body #container > article.examination-wizard > section .grid > ol > li.degree-law > a > strong:before {
+              background-position: -122px -126px; }
+            body #container > article.examination-wizard > section .grid > ol > li.degree-law > a:hover {
+              background-image: url(../_images/wizard/bg-grid-law.jpg); }
+              body #container > article.examination-wizard > section .grid > ol > li.degree-law > a:hover > strong:before {
+                background-position: -190px -126px; }
+            body #container > article.examination-wizard > section .grid > ol > li.testing > a > strong:before {
+              background-position: -122px -325px; }
+            body #container > article.examination-wizard > section .grid > ol > li.testing > a:hover {
+              background-image: url(../_images/wizard/bg-grid-testing.jpg); }
+              body #container > article.examination-wizard > section .grid > ol > li.testing > a:hover > strong:before {
+                background-position: -190px -325px; }
+      body #container > article.examination-wizard > section .subject {
+        display: none;
+        padding: 0px;
+        position: relative;
+        height: 370px; }
+        body #container > article.examination-wizard > section .subject .intro, body #container > article.examination-wizard > section .subject .section {
+          display: block;
+          position: absolute;
+          visibility: hidden;
+          opacity: 0;
+          -webkit-transition: all 0.65s ease-out;
+          -moz-transition: all 0.65s ease-out;
+          -ms-transition: all 0.65s ease-out;
+          transition: all 0.65s ease-out;
+          -webkit-transform: scale(1.25);
+          -moz-transform: scale(1.25);
+          -ms-transform: scale(1.25);
+          transform: scale(1.25); }
+          body #container > article.examination-wizard > section .subject .intro.enabled, body #container > article.examination-wizard > section .subject .section.enabled {
+            visibility: visible;
+            opacity: 1;
+            -webkit-transform: scale(1);
+            -moz-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1); }
+        body #container > article.examination-wizard > section .subject .intro, body #container > article.examination-wizard > section .subject .section {
+          height: 100%; }
+          body #container > article.examination-wizard > section .subject .intro .wrapper, body #container > article.examination-wizard > section .subject .section .wrapper {
+            display: table;
+            height: 300px; }
+            body #container > article.examination-wizard > section .subject .intro .wrapper > figure, body #container > article.examination-wizard > section .subject .section .wrapper > figure {
+              display: table-cell;
+              width: 300px;
+              height: 100%;
+              margin: 0px;
+              padding: 0px;
+              vertical-align: middle;
+              text-align: center; }
+            body #container > article.examination-wizard > section .subject .intro .wrapper > .content, body #container > article.examination-wizard > section .subject .section .wrapper > .content {
+              display: table-cell;
+              width: 547px; }
+              body #container > article.examination-wizard > section .subject .intro .wrapper > .content.full, body #container > article.examination-wizard > section .subject .section .wrapper > .content.full {
+                width: 100%;
+                vertical-align: middle;
+                text-align: center; }
+                body #container > article.examination-wizard > section .subject .intro .wrapper > .content.full > *, body #container > article.examination-wizard > section .subject .section .wrapper > .content.full > * {
+                  margin-left: 40px; }
+              body #container > article.examination-wizard > section .subject .intro .wrapper > .content > *, body #container > article.examination-wizard > section .subject .section .wrapper > .content > * {
+                margin-right: 40px; }
+              body #container > article.examination-wizard > section .subject .intro .wrapper > .content h2, body #container > article.examination-wizard > section .subject .section .wrapper > .content h2 {
+                display: block;
+                margin: 0px;
+                padding: 0px 0px 17px 0px;
+                font-family: "Open Sans", sans-serif;
+                color: #727272;
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 20px; }
+              body #container > article.examination-wizard > section .subject .intro .wrapper > .content p, body #container > article.examination-wizard > section .subject .section .wrapper > .content p {
+                font-size: 14px;
+                line-height: 22px;
+                font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida", sans-serif;
+                color: #727272; }
+        body #container > article.examination-wizard > section .subject .intro {
+          height: 100%; }
+          body #container > article.examination-wizard > section .subject .intro .wrapper {
+            height: 370px; }
+            body #container > article.examination-wizard > section .subject .intro .wrapper > figure > img {
+              width: 50%;
+              max-width: none; }
+            body #container > article.examination-wizard > section .subject .intro .wrapper > .content {
+              vertical-align: middle; }
+        body #container > article.examination-wizard > section .subject .section {
+          width: 100%; }
+          body #container > article.examination-wizard > section .subject .section > ol {
+            display: block;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+            list-style: none; }
+            body #container > article.examination-wizard > section .subject .section > ol > li {
+              display: block;
+              visibility: hidden;
+              opacity: 0;
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              margin: 0px;
+              padding: 0px;
+              list-style: none;
+              -webkit-transition: all 0.65s ease-out;
+              -moz-transition: all 0.65s ease-out;
+              -ms-transition: all 0.65s ease-out;
+              transition: all 0.65s ease-out; }
+              body #container > article.examination-wizard > section .subject .section > ol > li.enabled {
+                visibility: visible;
+                opacity: 1; }
+              body #container > article.examination-wizard > section .subject .section > ol > li .wrapper {
+                display: table;
+                width: 100%; }
+                body #container > article.examination-wizard > section .subject .section > ol > li .wrapper .content {
+                  padding-top: 40px; }
+          body #container > article.examination-wizard > section .subject .section > footer {
+            display: block;
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            height: 70px;
+            clear: both; }
+            body #container > article.examination-wizard > section .subject .section > footer > nav {
+              display: block;
+              float: left;
+              width: 300px;
+              margin: 0px;
+              padding: 0px;
+              text-align: center; }
+              body #container > article.examination-wizard > section .subject .section > footer > nav > a {
+                display: inline-block;
+                position: relative;
+                width: 78px;
+                height: 32px;
+                background-image: url(../_images/sprites-wizard.png);
+                background-repeat: no-repeat;
+                text-decoration: none;
+                cursor: pointer;
+                font-size: 12px;
+                line-height: 30px;
+                color: #ddd;
+                font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida", sans-serif;
+                text-transform: uppercase;
+                font-weight: normal; }
+                body #container > article.examination-wizard > section .subject .section > footer > nav > a.back {
+                  margin-right: -10px;
+                  background-position: 0px -415px;
+                  text-align: left;
+                  text-indent: 11px; }
+                body #container > article.examination-wizard > section .subject .section > footer > nav > a.next {
+                  margin-left: -10px;
+                  background-position: 0px -373px;
+                  text-align: left;
+                  text-indent: 21px; }
+                body #container > article.examination-wizard > section .subject .section > footer > nav > a:hover {
+                  color: #fff; }
+                body #container > article.examination-wizard > section .subject .section > footer > nav > a.disabled {
+                  opacity: 0.7;
+                  color: #62668a;
+                  cursor: default; }
+            body #container > article.examination-wizard > section .subject .section > footer > menu {
+              display: block;
+              float: left;
+              width: 547px;
+              margin: 0px;
+              padding: 0px; }
+              body #container > article.examination-wizard > section .subject .section > footer > menu > ol {
+                display: block;
+                position: relative;
+                left: -7px;
+                width: 440px;
+                margin: 0px;
+                padding: 0px;
+                list-style: none; }
+                body #container > article.examination-wizard > section .subject .section > footer > menu > ol.step-1:after {
+                  width: 1px; }
+                body #container > article.examination-wizard > section .subject .section > footer > menu > ol.step-2:after {
+                  width: 101px; }
+                body #container > article.examination-wizard > section .subject .section > footer > menu > ol.step-3:after {
+                  width: 202px; }
+                body #container > article.examination-wizard > section .subject .section > footer > menu > ol.step-4:after {
+                  width: 303px; }
+                body #container > article.examination-wizard > section .subject .section > footer > menu > ol.step-5:after {
+                  width: 404px; }
+                body #container > article.examination-wizard > section .subject .section > footer > menu > ol:before, body #container > article.examination-wizard > section .subject .section > footer > menu > ol:after {
+                  display: block;
+                  position: absolute;
+                  height: 10px;
+                  left: 15px;
+                  content: ""; }
+                body #container > article.examination-wizard > section .subject .section > footer > menu > ol:before {
+                  top: 12px;
+                  width: 404px;
+                  background-image: url(../_images/wizard/bg-progress-unfilled.png);
+                  background-repeat: repeat-x;
+                  background-position: 0px 0px; }
+                body #container > article.examination-wizard > section .subject .section > footer > menu > ol:after {
+                  top: 12px;
+                  width: 1px;
+                  background-image: url(../_images/wizard/bg-progress-filled.png);
+                  -webkit-transition: width 0.65s ease-out;
+                  -moz-transition: width 0.65s ease-out;
+                  -ms-transition: width 0.65s ease-out;
+                  transition: width 0.65s ease-out; }
+                body #container > article.examination-wizard > section .subject .section > footer > menu > ol > li {
+                  display: block;
+                  float: left;
+                  position: relative;
+                  z-index: 200;
+                  width: 34px;
+                  height: 34px;
+                  padding: 0px;
+                  margin: 0px 33px;
+                  list-style: none; }
+                  body #container > article.examination-wizard > section .subject .section > footer > menu > ol > li:first-child {
+                    margin-left: 0px; }
+                  body #container > article.examination-wizard > section .subject .section > footer > menu > ol > li:last-child {
+                    margin-right: 0px; }
+                  body #container > article.examination-wizard > section .subject .section > footer > menu > ol > li > a {
+                    display: block;
+                    position: relative;
+                    width: 34px;
+                    height: 34px;
+                    background-image: url(../_images/sprites-wizard.png);
+                    background-repeat: no-repeat;
+                    background-position: -88px -329px;
+                    cursor: pointer; }
+                    body #container > article.examination-wizard > section .subject .section > footer > menu > ol > li > a:hover {
+                      background-position: -44px -329px; }
+                    body #container > article.examination-wizard > section .subject .section > footer > menu > ol > li > a > strong {
+                      display: block;
+                      position: absolute;
+                      width: 100px;
+                      left: -33px;
+                      top: 37px;
+                      font-size: 10px;
+                      line-height: 10px;
+                      text-transform: uppercase;
+                      font-family: sans-serif;
+                      color: #5c5c5c;
+                      text-align: center;
+                      text-shadow: 0px 1px 0px #fff;
+                      font-weight: bold; }
+                  body #container > article.examination-wizard > section .subject .section > footer > menu > ol > li.selected > a {
+                    background-position: 0px -329px; }
+    body #container > article.examination-wizard > footer {
+      clear: both;
+      height: 46px;
+      background-color: #272793;
+      border-top: 1px #5659a7 solid;
+      border-bottom: 1px #8b8b8b solid;
+      border-left: 1px #3b3b9d solid;
+      border-right: 1px #3b3b9d solid;
+      -moz-border-radius-bottomleft: 7px;
+      -webkit-border-bottom-left-radius: 7px;
+      border-bottom-left-radius: 7px;
+      -moz-border-radius-bottomright: 7px;
+      -webkit-border-bottom-right-radius: 7px;
+      border-bottom-right-radius: 7px; }
+      body #container > article.examination-wizard > footer > p {
+        display: block;
+        margin: 0px;
+        padding: 0px 32px;
+        font-size: 12px;
+        line-height: 46px;
+        color: #fff;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: normal;
+        font-style: normal; }
+
+>>>>>>> FETCH_HEAD
 /* Vendor imports */
 .wufoo {
   font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;

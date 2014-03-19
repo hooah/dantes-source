@@ -51,6 +51,12 @@ var framework = {
                 month: 0
             }
         },
+        examwizard: {
+            container: null,
+            animation: {
+                speed: 500
+            }
+        },
         search: {
             indexden: {
                 public_url: 'http://teqaze.api.indexden.com/v1/indexes/DANTES'
@@ -367,7 +373,11 @@ var framework = {
                             framework.data.newsGrid.initial_maximums[intCounter].current    = 0;
                         }
 
+<<<<<<< HEAD
                         for (var intOuterCount = 0; intOuterCount < framework.data.newsGrid.initial.length; intOuterCount++) {
+=======
+                        for (intOuterCount = 0; intOuterCount < framework.data.newsGrid.initial.length; intOuterCount++) {
+>>>>>>> FETCH_HEAD
                             intItemCursor                   = 0;
 
                             for (intInnerCount = 0; intInnerCount < framework.data.newsGrid.data.length; intInnerCount++) {
@@ -600,6 +610,126 @@ var framework = {
                             objHeader.html('');
 
                             jQuery('>div.no-content', objContent).show();
+                        }
+                    }
+                }
+            }
+        },
+
+        examwizard: {
+            init: function() {
+                framework.data.examwizard.container     = jQuery('.examination-wizard');
+
+                setTimeout(function() {
+                    framework.data.examwizard.container.addClass('enabled');
+                }, 1000);
+
+                jQuery('>header>nav>ul>li[class != "home"]>a, >section>.grid>ol>li>a', framework.data.examwizard.container).bind('click', framework.fn.examwizard.show_toplevel_section);
+                jQuery('>header>nav>ul>li[class != "home"]>ol>li>a', framework.data.examwizard.container).bind('click', framework.fn.examwizard.show_sub_section);
+                jQuery('>section .subject .section>footer>menu>ol>li>a', framework.data.examwizard.container).bind('click', framework.fn.examwizard.control_subject_page);
+                jQuery('>section .subject .section>footer>nav>a', framework.data.examwizard.container).bind('click', framework.fn.examwizard.navigate_subject_page);
+            },
+
+            show_toplevel_section: function(objEvent) {
+                objEvent.preventDefault();
+
+                var strSection          = jQuery(this).attr('href').replace('#', '');
+
+                if (strSection.length) {
+                    jQuery('>header>nav>ul>li', framework.data.examwizard.container).removeClass('selected');
+                    jQuery('>header>nav>ul>li.' + strSection, framework.data.examwizard.container).addClass('selected');
+
+                    jQuery('>section>div:visible', framework.data.examwizard.container)
+                        .animate({opacity: 0}, framework.data.examwizard.animation.speed, function() {
+                            jQuery(this).css('display', 'none');
+                            jQuery('>section>div.' + strSection, framework.data.examwizard.container)
+                                .css({display: 'block', opacity: 0})
+                                .animate({opacity: 1}, framework.data.examwizard.animation.speed, function() {
+                                    jQuery('>div[class != "intro"]', this).removeClass('enabled');
+                                    jQuery('>div.intro', this).addClass('enabled');
+                                });
+                        });
+                }
+            },
+
+            show_sub_section: function(objEvent) {
+                objEvent.preventDefault();
+
+                var strSection          = jQuery(this).attr('href').replace('#', '');
+                var strParentSection    = jQuery(this).parent('li').parent('ol').siblings('a').attr('href').replace('#', '');
+
+                if ((strSection.length) && (strParentSection.length)) {
+                    jQuery('>header>nav>ul>li[class != "home"]>ol>li', framework.data.examwizard.container).removeClass('selected');
+                    jQuery(this).parent('li').addClass('selected');
+
+                    var objSection          = jQuery('>section>div.' + strParentSection, framework.data.examwizard.container);
+
+                    if (objSection) {
+                        jQuery('>div', objSection).removeClass('enabled');
+
+                        jQuery('>div.' + strSection + '>ol>li', objSection).removeClass('enabled');
+                        jQuery('>div.' + strSection + '>ol>li[data-step="1"]', objSection).addClass('enabled');
+                        jQuery('>div.' + strSection + '>footer>menu>ol', objSection).attr('class', 'step-1');
+                        jQuery('>div.' + strSection + '>footer>menu>ol>li', objSection).removeClass('selected');
+                        jQuery('>div.' + strSection + '>footer>menu>ol>li:eq(0)', objSection).addClass('selected');
+
+                        jQuery('>div.intro', objSection).removeClass('enabled');
+                        jQuery('>div.' + strSection, objSection).addClass('enabled');
+                    }
+                }
+            },
+
+            control_subject_page: function(objEvent) {
+                objEvent.preventDefault();
+
+                var intPageNum          = parseInt(jQuery(this).attr('data-step'));
+                var objController       = jQuery(this).parent('li').parent('ol');
+                var objPages            = jQuery(this).parents('.section').find('>ol');
+
+                if ((!jQuery(this).parent('li').hasClass('selected')) && (objController) && (objPages) && (!isNaN(intPageNum)) && (intPageNum > 0)) {
+                    jQuery('>li', objController).removeClass('selected');
+                    jQuery(this).parent('li').addClass('selected');
+
+                    jQuery('>li', objPages).removeClass('enabled');
+                    jQuery('>li:eq(' + (intPageNum - 1) + ')', objPages).addClass('enabled');
+                    jQuery(objController).attr('class', 'step-' + intPageNum);
+                }
+            },
+
+            navigate_subject_page: function(objEvent) {
+                var strDirection        = jQuery(this).attr('class');
+
+                if (strDirection) {
+                    var objTotalPages       = jQuery(this).parent('nav').parent('footer').siblings('ol').find('>li');
+                    var objCurPage          = jQuery(this).parent('nav').siblings('menu').find('>ol>li.selected>a');
+                    var intTotalPages       = 0;
+                    var intCurPage          = 0;
+                    var intTargetPage       = 0;
+
+                    if ((objTotalPages) && (objCurPage)) {
+                        intTotalPages           = objTotalPages.length;
+                        intCurPage              = parseInt(objCurPage.attr('data-step'));
+                        intTargetPage           = intCurPage;
+                    }
+
+                    if ((!isNaN(intCurPage)) && (intCurPage > 0) && (intTotalPages > 0)) {
+                        switch (strDirection.toLowerCase()) {
+                            case 'back' :
+                                if (intCurPage > 1) {
+                                    intTargetPage   = intCurPage - 1;
+                                }
+                                break;
+
+                            case 'next' :
+                                if (intCurPage < intTotalPages) {
+                                    intTargetPage   = intCurPage + 1;
+                                }
+                                break;
+                        }
+
+                        if (intTargetPage != intCurPage) {
+                            framework.fn.examwizard.control_subject_page.call(jQuery(this).parent('nav').siblings('menu').find('>ol>li:eq(' + (intTargetPage - 1) + ')>a')[0], objEvent);
+                            //console.log(jQuery(this).parent('nav').siblings('menu').find('>ol>li:eq(' + (intTargetPage - 1) + ')>a')); //.trigger('click');
                         }
                     }
                 }
