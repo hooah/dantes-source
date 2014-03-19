@@ -3560,13 +3560,19 @@ body #container > article.has-sidebar > section > .content #search-results {
           font-weight: bold; }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> FETCH_HEAD
 body.wizard {
   background-image: url(../_images/wizard/bg-body.jpg);
   background-repeat: no-repeat;
   background-position: 0px 0px;
   background-size: 100% 100%; }
 
+<<<<<<< HEAD
+>>>>>>> FETCH_HEAD
+=======
 >>>>>>> FETCH_HEAD
 body #container {
   padding-top: 150px;
@@ -3575,7 +3581,10 @@ body #container {
     width: 847px;
     margin: 0px auto;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> FETCH_HEAD
     opacity: 0;
     -webkit-transition: all 0.65s ease-out;
     -moz-transition: all 0.65s ease-out;
@@ -3585,6 +3594,9 @@ body #container {
     -moz-transform: scale(1.25);
     -ms-transform: scale(1.25);
     transform: scale(1.25);
+<<<<<<< HEAD
+>>>>>>> FETCH_HEAD
+=======
 >>>>>>> FETCH_HEAD
     -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.37);
     -moz-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.37);
@@ -3595,15 +3607,21 @@ body #container {
     -o-border-radius: 7px;
     border-radius: 7px; }
 <<<<<<< HEAD
+<<<<<<< HEAD
     body #container > article.examination-wizard > header {
       position: relative;
 =======
+=======
+>>>>>>> FETCH_HEAD
     body #container > article.examination-wizard.enabled {
       opacity: 1;
       -webkit-transform: scale(1); }
     body #container > article.examination-wizard > header > section {
       position: relative;
       z-index: 100;
+<<<<<<< HEAD
+>>>>>>> FETCH_HEAD
+=======
 >>>>>>> FETCH_HEAD
       height: 133px;
       background-color: #de8721;
@@ -3617,22 +3635,29 @@ body #container {
       -webkit-border-top-right-radius: 7px;
       border-top-right-radius: 7px; }
 <<<<<<< HEAD
+<<<<<<< HEAD
       body #container > article.examination-wizard > header > h1 {
         display: block;
         float: right;
         width: 45%;
         margin: 32px 35px 0px 0px;
 =======
+=======
+>>>>>>> FETCH_HEAD
       body #container > article.examination-wizard > header > section > h1 {
         display: block;
         float: right;
         width: 55%;
         margin: 30px 35px 0px 0px;
+<<<<<<< HEAD
+>>>>>>> FETCH_HEAD
+=======
 >>>>>>> FETCH_HEAD
         padding: 0px;
         font-family: 'Open Sans', sans-serif;
         color: #fff;
         text-shadow: 1px 1px 0px #aa6310;
+<<<<<<< HEAD
 <<<<<<< HEAD
         font-weight: normal;
         text-align: right;
@@ -3640,11 +3665,16 @@ body #container {
         line-height: 23px; }
       body #container > article.examination-wizard > header > h2 {
 =======
+=======
+>>>>>>> FETCH_HEAD
         font-weight: 600;
         text-align: right;
         font-size: 30px;
         line-height: 30px; }
       body #container > article.examination-wizard > header > section > h2 {
+<<<<<<< HEAD
+>>>>>>> FETCH_HEAD
+=======
 >>>>>>> FETCH_HEAD
         display: block;
         float: right;
@@ -3658,6 +3688,7 @@ body #container {
         text-align: right;
         font-weight: normal;
 <<<<<<< HEAD
+<<<<<<< HEAD
         font-size: 12px;
         line-height: 15px; }
       body #container > article.examination-wizard > header:after {
@@ -3666,6 +3697,8 @@ body #container {
         left: 0px;
         bottom: 0px;
 =======
+=======
+>>>>>>> FETCH_HEAD
         font-size: 13px;
         line-height: 15px; }
       body #container > article.examination-wizard > header > section:after {
@@ -3673,6 +3706,9 @@ body #container {
         position: absolute;
         left: 6px;
         bottom: -54px;
+<<<<<<< HEAD
+>>>>>>> FETCH_HEAD
+=======
 >>>>>>> FETCH_HEAD
         width: 428px;
         height: 268px;
@@ -3680,6 +3716,7 @@ body #container {
         background-repeat: no-repeat;
         background-position: 0px 0px;
         content: ""; }
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 /*
@@ -3736,6 +3773,8 @@ body #container {
                 </footer>
 */
 =======
+=======
+>>>>>>> FETCH_HEAD
     body #container > article.examination-wizard > header > nav {
       display: block;
       position: relative;
@@ -4267,6 +4306,9 @@ body #container {
         font-weight: normal;
         font-style: normal; }
 
+<<<<<<< HEAD
+>>>>>>> FETCH_HEAD
+=======
 >>>>>>> FETCH_HEAD
 /* Vendor imports */
 .wufoo {

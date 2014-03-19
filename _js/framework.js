@@ -374,8 +374,11 @@ var framework = {
                         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
                         for (var intOuterCount = 0; intOuterCount < framework.data.newsGrid.initial.length; intOuterCount++) {
 =======
+=======
+>>>>>>> FETCH_HEAD
                         for (intOuterCount = 0; intOuterCount < framework.data.newsGrid.initial.length; intOuterCount++) {
 >>>>>>> FETCH_HEAD
                             intItemCursor                   = 0;
