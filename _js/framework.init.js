@@ -46,6 +46,9 @@ jQuery(document).ready(function() {
     if (jQuery('.multimedia-dib-menu').length) {
         framework.fn.multimedia.dib.init();
     }
+    if (jQuery('.examination-wizard').length) {
+        framework.fn.examwizard.init();
+    }
     if ((jQuery('#strEdLevel').length) || (jQuery('#strFactSheet').length)) {
         jQuery('#strEdLevel, #strFactSheet').bind('change', function() {
             var strPDFURL           = jQuery(this).val();
