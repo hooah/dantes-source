@@ -1,0 +1,26 @@
+body {
+	#container {
+		& > article {
+			& > section {
+				& > .content {
+					& > div {
+						& h2.headline-flush-block-bar {
+							display: block;
+							margin: 0px -35px;
+							padding: 27px 35px 28px 35px;
+							color: #fff;
+							background-color: #2e2e97;
+							font-size: 18px;
+							line-height: 18px;
+							font-weight: bold;
+							text-shadow: none;
+						}
+						& hr + h2.headline-flush-block-bar {
+							margin-top: 44px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,292 @@
+.feature-box {
+	& > div {
+		position: relative;
+		height: 190px;
+		margin-top: 6px;
+		
+		& > figure {
+			position: absolute;
+			overflow: hidden;
+			top: 1px;
+			left: 1px;
+			width: 99%;
+			max-width: 376px;
+			min-width: 236px;
+			height: 188px;
+			margin: 0px;
+			padding: 0px;
+			background-repeat: no-repeat;
+			background-position: center center;
+			@include border-top-left-radius(22px);
+			@include border-bottom-right-radius(22px);
+			
+			&:hover {
+				overflow: hidden;
+			}
+		}
+		& > figcaption {
+			display: block;
+			width: 100%;
+			max-width: 380px;
+			min-width: 240px;
+			height: 100%;
+			margin: 0px;
+			padding: 0px;
+			position: relative;
+			border: 1px #ccc solid;
+			@include border-top-left-radius(20px);
+			@include border-bottom-right-radius(20px);
+			box-shadow: 2px 2px 0px #fff;
+			
+			& > a:link, 
+			& > a:active, 
+			& > a:visited, 
+			& > a:hover {
+				display: block;
+				height: 188px;
+				position: relative;
+				border: 8px #ebebeb solid;
+				@include border-top-left-radius(18px);
+				@include border-bottom-right-radius(18px);
+				box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5) inset;
+				text-decoration: none !important;
+				cursor: pointer;
+
+				&:hover {
+					border: 8px #ccc solid;
+				}
+				
+				& > strong {
+					display: block;
+					position: absolute;
+					padding: 0px 20px;
+					bottom: 20px;
+					font-size: 24px;
+					line-height: 22px;
+					color: #ededee;
+					font-weight: normal;
+					text-shadow: 1px 1px 1px #000;
+				}
+				
+				&:hover {
+					& > strong {
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+	
+	&.feature-box-ribbon-caption {
+		& > div {
+			& > figcaption {
+				& > a {
+					& > strong {
+						display: block;
+						position: absolute;
+						padding: 0px 18px;
+						top: 116px;
+						bottom: auto;
+						left: -13px;
+						max-width: 250px;
+						height: 56px;
+						background-image: url(../_images/btn-ribbon-purple.png);
+						background-repeat: no-repeat;
+						background-position: 0px 0px;
+						font-size: 18px;
+						line-height: 47px;
+						color: #fff;
+						font-weight: normal;
+						text-shadow: 1px 1px 2px #000;
+					}
+					
+					&.feature-box-link-cap-yellow {
+						& > strong {
+							&:before {
+								display: block;
+								position: absolute;
+								top: 0px;
+								right: -45px;
+								content: "";
+								width: 45px;
+								height: 53px;
+								background-image: url(../_images/sprites.png);
+								background-repeat: no-repeat;
+								background-position: 0px -133px;
+								@include no-text;
+							}
+						}
+					}
+					&.feature-box-link-cap-purple {
+						& > strong {
+							&:before {
+								display: block;
+								position: absolute;
+								top: 0px;
+								right: -45px;
+								content: "";
+								width: 45px;
+								height: 53px;
+								background-image: url(../_images/sprites.png);
+								background-repeat: no-repeat;
+								background-position: -46px -133px;
+								@include no-text;
+							}
+						}
+					}
+					&.feature-box-link-icon-arrow-right {
+						& > strong {
+							&:after {
+								display: block;
+								position: absolute;
+								top: 0px;
+								right: 8px;
+								background-image: url(../_images/sprites.png);
+								background-repeat: no-repeat;
+								content: "";
+								@include no-text;
+							}
+						}
+						&.feature-box-link-cap-yellow {
+							& > strong {
+								&:after {
+									top: 17px;
+									right: -24px;
+									width: 11px;
+									height: 13px;
+									background-position: -42px -56px;
+								}
+							}
+						}
+						&.feature-box-link-cap-purple {
+							& > strong {
+								&:after {
+									top: 17px;
+									right: -24px;
+									width: 11px;
+									height: 13px;
+									background-position: -21px -56px;
+								}
+							}
+						}
+					}
+					&.feature-box-link-icon-video {
+						& > strong {
+							padding-right: 22px;
+							
+							&:after {
+								display: block;
+								position: absolute;
+								top: 4px;
+								right: -34px;
+								width: 41px;
+								height: 42px;
+								background-image: url(../_images/sprites.png);
+								background-repeat: no-repeat;
+								background-position: -143px -133px;
+								content: "";
+								@include no-text;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	&.feature-box-short {
+		& > div {
+			height: 160px;
+			
+			& > figure {
+				height: 158px;
+				
+				&:hover {
+					overflow: hidden;
+				}
+			}
+			& > figcaption {
+				& > a:link, 
+				& > a:active, 
+				& > a:visited, 
+				& > a:hover {
+					height: 158px;
+				}
+			}
+		}
+
+		&.feature-box-ribbon-caption {
+			& > div {
+				& > figcaption {
+					& > a {
+						& > strong {
+							top: 86px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.feature-box-tall {
+		& > div {
+			height: 230px;
+			
+			& > figure {
+				height: 228px;
+				
+				&:hover {
+					overflow: hidden;
+				}
+			}
+			& > figcaption {
+				& > a:link, 
+				& > a:active, 
+				& > a:visited, 
+				& > a:hover {
+					height: 228px;
+				}
+			}
+		}
+
+		&.feature-box-ribbon-caption {
+			& > div {
+				& > figcaption {
+					& > a {
+						& > strong {
+							top: 156px;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	&.feature-box-logo {
+		& > div {
+			& > figure {
+				background-color: #f6f5f5;
+			}
+		}
+	}
+	
+	&.feature-box-no-margin {
+		& > div {
+			margin-top: 0px;
+		}
+	}
+}
+
+/* tweak for when the feature box is used in menu grid */
+menu {
+	& [class*="column"] + [class*="column"]:last-child {
+		float: left;
+	}
+	& .feature-box {
+		& > div {
+			margin: 16px 0px;
+		}
+	}
+}
+
+@import "feature-box-presets";

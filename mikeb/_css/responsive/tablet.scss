@@ -1,0 +1,605 @@
+@media (max-width: 1024px) {
+	body {
+		& #container {
+			& > header {
+				& > section {
+					& > nav {
+						cursor: pointer;
+
+						&:before {
+							display: block;
+							position: absolute;
+							right: 18px;
+							top: 18px;
+							width: 48px;
+							height: 39px;
+							background-image: url(../_images/bg-tile-light.jpg);
+							background-repeat: repeat;
+							background-position: 0px 0px;
+							border: 1px #cacaca solid;
+							@include border-radius(4px);
+							box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25) inset;
+						}
+						&:after {
+							display: block;
+							position: absolute;
+							right: 28px;
+							top: 29px;
+							width: 27px;
+							height: 18px;
+							background-image: url(../_images/sprites.png);
+							background-repeat: no-repeat;
+							background-position: -183px -223px;
+							content: "";
+							@include no-text;
+						}
+
+						& > ul {
+							& > li {
+								display: none;
+								
+								&.home {
+									display: block;
+									height: 75px;
+								}
+							}
+						}
+						
+						&.open {
+							& > ul {
+								z-index: 100;
+								width: 100%;
+								overflow: hidden;
+								background-color: #fff;
+								box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+								
+								& > li.home {
+									display: block;
+									float: left;
+									clear: both;
+									margin-left: 10px;
+									border: none;
+									
+									& > a:link, 
+									& > a:active, 
+									& > a:visited {
+									}
+								}
+								& > li {
+									display: block;
+									float: none;
+									clear: both;
+									margin: 0px;
+									padding: 0px;
+									text-align: center;
+									border-top: 1px #cacaca solid;
+
+									&:last-child {
+										margin: 0px;
+									}
+
+                                    &.search {
+                                        & > a {
+                                            & > strong {
+                                                top: 0px;
+                                                position: static;
+                                                width: auto;
+                                                height: auto;
+                                                background-image: none;
+                                                text-align: center;
+                                                text-indent: 0px;
+                                            }
+                                        }
+                                    }
+									& > a:link, 
+									& > a:active, 
+									& > a:visited {
+										font-size: 15px;
+										line-height: 43px;
+									}
+
+                                    & .subnav {
+                                        display: none !important;
+                                        padding-bottom: 11px;
+
+                                        & > ul {
+                                            margin: 0px;
+                                            padding: 0px;
+                                            list-style: none;
+
+                                            & > li {
+                                                display: block;
+                                                margin: 0px;
+                                                padding: 0px;
+                                                list-style: none;
+                                                width: auto !important;
+                                                float: none !important;
+
+                                                & > a {
+                                                    color: #272793;
+                                                    text-transform: uppercase;
+                                                    font-size: 14px;
+                                                }
+                                            }
+                                        }
+                                    }
+								}
+							}
+						}
+					}
+				}
+                & > aside {
+                    display: none !important;
+                }
+			}
+			& > article.call-to-action {
+				& > section {
+					& > .content {
+						& > aside {
+							& > figure {
+								height: 90px;
+							}
+							& > h3 {
+								font-size: 17px;
+								line-height: 19px;
+							}
+							& > p {
+								font-size: 13px;
+								line-height: 16px;
+							}
+
+                            &.hero-aside-news-view {
+                                & > h3 {
+                                    & > a:link,
+                                    & > a:active,
+                                    & > a:visited,
+                                    & > a:hover {
+                                        width: 165px;
+                                    }
+                                }
+                            }
+						}
+					}
+				}
+			}
+			& > article.has-sidebar {
+				& > section {
+					& > .content {
+						& ul.breadcrumbs {
+							margin-bottom: 37px;
+							height: auto;
+							overflow: hidden;
+							
+							&:after {
+								display: none;
+							}
+						}
+						
+						& > aside {
+							& > menu.quick-links {
+								& > ul {
+									& > li {
+										& > a:link, 
+										& > a:active, 
+										& > a:visited {
+											&:before {
+												display: none;
+											}
+										}
+									}
+								}
+							}
+							& > menu.social-links {
+								padding-right: 0px;
+								
+								& > a:link, 
+								& > a:active, 
+								& > a:visited {
+									margin-right: 5px;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			& > footer {
+				& > section {
+					& > .content {
+						& > div {
+							& > nav {
+								padding-bottom: 19px;
+								
+								& > a:link, 
+								& > a:active, 
+								& > a:visited {
+									display: block;
+									clear: both;
+									padding-bottom: 5px;
+
+                                    &:before {
+                                        display: none;
+                                    }
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.feature-box {
+		&.feature-box-ribbon-caption {
+			& > div {
+				& > figcaption {
+					& > a {
+						& > strong {
+							padding-left: 10px;
+							padding-right: 10px;
+							font-size: 14px;
+							line-height: 47px;
+						}
+					}
+				}
+			}
+		}
+		
+		&.feature-box-preset {
+			&.home-service_members, 
+			&.home-educational_institutions, 
+			&.home-dantes_counselors, 
+			&.home-dod_leadership {
+				& figcaption {
+					& > a {
+						& > strong {
+							padding: 0px;
+							width: 180px;
+							text-indent: 10px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+    .multimedia-features {
+        & .multimedia-feature-box {
+            float: none;
+            max-width: 298px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    .multimedia-dib-menu {
+        & > header {
+            & > section {
+                & > nav {
+                    height: auto;
+
+                    & > ul {
+                        position: relative;
+                        -webkit-box-shadow: none;
+                        -moz-box-shadow: none;
+                        box-shadow: none;
+
+                        & > li {
+                            &.selected {
+                                & > a:link,
+                                & > a:active,
+                                & > a:visited {
+                                    color: #fff !important;
+                                    background-color: #272793 !important;
+                                }
+                            }
+                        }
+                    }
+                }
+                & > ol {
+                    display: block;
+                    width: 100%;
+                    position: relative;
+
+                    & > li {
+                        display: none;
+                        float: none;
+                        height: 30px;
+                        overflow: hidden;
+                        background-image: none;
+
+                        &.handle {
+                            display: block;
+                            height: 34px;
+                            padding-left: 15px;
+                            padding-right: 15px;
+                            font-size: 16px;
+                            line-height: 34px;
+                            font-weight: bold;
+                            text-align: left;
+                            cursor: pointer;
+
+                            &:after {
+                                display: block;
+                                position: absolute;
+                                right: 10px;
+                                top: 13px;
+                                width: 15px;
+                                height: 8px;
+                                background-image: url(../_images/sprites.png);
+                                background-repeat: no-repeat;
+                                background-position: -184px -56px;
+                                background-size: auto;
+                                content: "";
+                            }
+
+                            &:hover {
+                                background-color: inherit;
+
+                                &:after {
+                                    display: block;
+                                }
+                            }
+                        }
+
+                        & > a {
+                            padding: 0px;
+                            line-height: 30px;
+                            font-size: 14px;
+                            font-weight: normal;
+                            text-decoration: none;
+                        }
+
+                        &.selected,
+                        &:hover {
+                            background-image: none;
+                            background-color: #272793;
+
+                            & > a:link,
+                            & > a:active,
+                            & > a:visited,
+                            & > a:hover {
+                                text-decoration: none !important;
+                                color: #fff !important;
+                            }
+
+                            &:after {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    &.open {
+                        & > li {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+        & > section {
+            & > div {
+                & > aside {
+                    background-position: 0px 0px;
+                    background-size: 100% auto;
+
+                    & > h3 {
+                        padding-top: 130px !important;
+                    }
+                    & > a {
+                        float: none !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 867px) {
+	body {
+		#container {
+			& > article {
+				& .slim-cta-banner {
+					& > h2 {
+						background-position: -100px top;
+						
+						& > strong {
+							width: 40%;
+							left: 160px;
+						}
+					}
+				}
+
+                &.call-to-action {
+                    & > section {
+                        & > .content {
+                            & > aside.hero-aside-news-view {
+                                & > ol {
+                                    & > li {
+                                        background-size: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+			}
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	menu [class*="column"] + [class*="column"]:last-child {
+		float: none !important;
+	}
+	.row {
+		.one, 
+		.two, 
+		.three, 
+		.four,
+		.five, 
+		.six, 
+		.seven, 
+		.eight, 
+		.nine, 
+		.ten, 
+		.eleven, 
+		.twelve {
+			width: 100%;
+			clear: both !important;
+		}
+	}
+	body {
+		& #container {
+			& > article.call-to-action {
+				background-image: none;
+				
+				& > section {
+					right: auto;
+					
+					& > .content {
+						left: auto;
+						
+						& > .hero {
+							width: 100%;
+							float: none;
+						}
+						& > aside {
+							clear: both;
+							width: 100%;
+							height: auto;
+							float: none;
+							padding-top: 10px;
+							padding-bottom: 30px;
+							background-image: url(../_images/bg-purple-tile.jpg);
+							background-repeat: repeat;
+							background-position: 0px 0px;
+							
+							& > figure {
+								display: none;
+							}
+							& > h3 {
+								font-size: 18px;
+								line-height: 24px;
+							}
+							& > p {
+								font-size: 14px;
+								line-height: 20px;
+							}
+
+                            &.hero-aside-news-view {
+                                & > nav {
+                                    & > ol {
+                                        bottom: 44px;
+                                    }
+                                }
+                            }
+						}
+					}
+				}
+			}
+			& > article.has-sidebar {
+				background-image: none;
+				
+				& > section {
+					right: auto;
+					
+					&:after {
+						display: none;
+					}
+					
+					& > .content {
+						left: auto;
+						border: none;
+						
+						& > div {
+							padding-bottom: 0px;
+							
+							& .inline {
+								margin-left: 0px !important;
+								margin-right: 0px !important;
+							}
+							
+							& > hr {
+								position: relative;
+								width: auto;
+								margin: 0px 0px 25px 0px;
+							}
+							& > hr + * {
+								margin-top: inherit !important;
+							}
+						}
+						& > aside {
+							width: 100%;
+							float: left;
+							clear: both;
+						}
+					}
+				}
+			}
+		}
+		
+		& #container {
+			& > article {
+				& > section {
+					& > .content {
+						& div.spotlight {
+							& > div {
+								& > figcaption {
+									& > section {
+										padding: 20px 0px;
+										
+										& > h3 {
+											padding: 0px 20px 10px 20px;
+											text-align: left;
+										}
+										& > p {
+											padding: 0px 20px 10px 20px;
+											border: none;
+											
+											&:before {
+												display: none;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+
+                & .newsgrid {
+                    & > ul {
+                        & > li {
+                            width: 290px;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+                    }
+                }
+			}
+
+            & > menu.sitemap {
+                & > section {
+                    padding-top: 25px;
+                    padding-left: 25px;
+                    padding-right: 25px;
+                }
+            }
+		}
+	}
+
+	.feature-box {
+		clear: both;
+		
+		& > div {
+            float: none !important;
+			width: 376px !important;
+			margin-left: auto !important;
+			margin-right: auto !important;
+		}
+	}
+
+    dl.feature-box-jump-button {
+        text-align: center;
+    }
+}

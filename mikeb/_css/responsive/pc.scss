@@ -1,0 +1,239 @@
+@media (max-width: 1424px) {
+	body {
+        /*
+		& #container {
+			& > article.call-to-action {
+				& > section {
+					& > .content {
+						& > .hero {
+							width: 75%;
+							margin-left: 0px;
+
+							& > ul {
+								& > li {
+									& > figcaption {
+										& > div, 
+										& > a {
+											left: 35px;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		*/
+		
+		& #container {
+			& > article {
+				& > section {
+					& > .content {
+						& div.spotlight {
+							width: auto;
+							margin-left: -35px;
+							
+							& > div {
+								margin-left: 0px;
+								
+								& > figure {
+									width: 100%;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1220px) {
+	body {
+		& #container {
+			& > header {
+				& > section {
+					& > nav {
+						& > ul {
+							& > li {
+								& > a:link, 
+								& > a:active, 
+								& > a:visited {
+									padding-left: 20px;
+								}
+
+								&.home {
+									margin-left: 10px;
+
+									& > a:link, 
+									& > a:active, 
+									& > a:visited {
+										padding-left: 0px;
+									}
+								}
+								&:last-child {
+									margin-right: 20px;
+								}
+							}
+						}
+					}
+				}
+			}
+			& > article.call-to-action {
+				& > section {
+					& > .content {
+						& > .hero {
+							width: 75%;
+							margin-left: 0px;
+						}
+						& > aside {
+							& > figure {
+								height: 100px;
+							}
+							& > h3 {
+								font-size: 18px;
+								line-height: 20px;
+							}
+							& > p {
+								font-size: 14px;
+								line-height: 18px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+    .multimedia-dib-menu {
+        & > header {
+            text-align: center;
+
+            & > section {
+                & > nav {
+                    width: auto;
+                    float: none;
+                    background-image: none;
+                    border-bottom: 1px #d3d3d3 solid;
+                }
+                & > ol {
+                    display: inline-block;
+                    float: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1180px) {
+    dl.feature-box-jump-button {
+        & > dt {
+            float: none;
+            width: auto;
+        }
+        & > dd {
+            position: static;
+            width: auto;
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+	body {
+		& #container {
+			& > header {
+				& > section {
+					& > nav {
+						& > ul {
+							& > li {
+								& > a:link, 
+								& > a:active, 
+								& > a:visited {
+									padding-left: 10px;
+								}
+
+								&.home {
+									& > a:link, 
+									& > a:active, 
+									& > a:visited {
+										padding-left: 0px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			& > article.has-sidebar {
+				& > section {
+					& > .content {
+						& > aside {
+							& > menu.quick-links {
+								& > ul {
+									& > li {
+										& > a:link, 
+										& > a:active, 
+										& > a:visited {
+											& > h3 {
+												padding-right: 0px;
+											}
+											& > p {
+												padding-right: 0px;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			& > article {
+				& .slim-cta-banner {
+					& > h2 {
+						& > strong {
+							width: 35%;
+							top: 20px;
+						}
+						& .button {
+							right: 20px;
+							top: -23px;
+						}
+					}
+				}
+
+                & .newsgrid {
+                    & > ul {
+                        & > li {
+                            width: 50%;
+                            background-size: 100% 100%;
+
+                            &.clear {
+                                clear: none !important;
+                            }
+                        }
+                    }
+                }
+			}
+		}
+	}
+
+    .multimedia-features {
+        & .multimedia-feature-box {
+            & > a {
+                & > figure {
+                    & > figcaption {
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+
+                        & > p {
+                            font-size: 14px;
+                            line-height: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
