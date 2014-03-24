@@ -1,899 +1,913 @@
-body.wizard {
+/*
+ body.wizard {
     background-image: url(../_images/wizard/bg-body.jpg);
     background-repeat: no-repeat;
     background-position: 0px 0px;
     background-size: 100% 100%;
-}
-body.wizard {
-    #container {
-        padding-top: 150px;
+
+    & #container {
         padding-bottom: 150px;
-
-        & > article.examination-wizard {
-            width: 847px;
-            margin: 0px auto;
-            opacity: 0;
-            -webkit-transition: all 0.65s ease-out;
-            -moz-transition: all 0.65s ease-out;
-            -ms-transition: all 0.65s ease-out;
-            transition: all 0.65s ease-out;
-            -webkit-transform: scale(1.25);
-            -moz-transform: scale(1.25);
-            -ms-transform: scale(1.25);
-            transform: scale(1.25);
-            -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.37);
-            -moz-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.37);
-            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.37);
-            @include border-radius(7px);
-
-            &.enabled {
-                opacity: 1;
-                -webkit-transform: scale(1.0);
-            }
-
-            & > header {
+    }
+}
+*/
+body {
+    #container {
+        & > article {
+            &.has-sidebar {
                 & > section {
-                    position: relative;
-                    z-index: 100;
-                    height: 133px;
-                    background-color: #de8721;
-                    border-top: 1px #e5a254 solid;
-                    border-left: 1px #e19236 solid;
-                    border-right: 1px #e19236 solid;
-                    @include border-top-radius(7px);
-
-                    & > h1 {
-                        display: block;
-                        float: right;
-                        width: 55%;
-                        margin: 30px 35px 0px 0px;
-                        padding: 0px;
-                        font-family: 'Open Sans', sans-serif;
-                        color: #fff;
-                        text-shadow: 1px 1px 0px #aa6310;
-                        font-weight: 600;
-                        text-align: right;
-                        font-size: 30px;
-                        line-height: 30px;
-                    }
-                    & > h2 {
-                        display: block;
-                        float: right;
-                        clear: both;
-                        width: 45%;
-                        margin: 15px 35px 0px 0px;
-                        padding: 0px;
-                        font-family: 'Open Sans', sans-serif;
-                        color: #fff;
-                        text-shadow: 1px 1px 0px #aa6310;
-                        text-align: right;
-                        font-weight: normal;
-                        font-size: 13px;
-                        line-height: 15px;
-                    }
-
-                    &:after {
-                        display: block;
-                        position: absolute;
-                        left: 6px;
-                        bottom: -54px;
-                        width: 428px;
-                        height: 268px;
-                        background-image: url(../_images/wizard/header-dantes-rep.png);
-                        background-repeat: no-repeat;
-                        background-position: 0px 0px;
-                        content: "";
-                    }
-                }
-
-                & > nav {
-                    display: block;
-                    position: relative;
-                    height: 41px;
-                    margin: 0px;
-                    padding: 0px;
-                    list-style: none;
-                    background-image: url(../_images/wizard/bg-nav-primary.png);
-                    background-repeat: repeat-x;
-                    background-position: 0px 0px;
-
-                    & > ul {
-                        display: block;
-                        margin: 0px;
-                        padding: 0px;
-                        list-style: none;
-
-                        & > li {
-                            display: block;
-                            position: relative;
-                            z-index: 1000;
-                            float: right;
-                            margin: 0px;
-                            padding: 0px;
-                            border-left: 1px #b7b7b7 solid;
-                            border-right: 1px #818181 solid;
-                            list-style: none;
-
-                            & > a {
-                                display: block;
-                                width: 46px;
-                                height: 40px;
-                                background-image: url(../_images/sprites-wizard.png);
-                                background-repeat: no-repeat;
-                                @include no-text;
-                                cursor: pointer;
-                            }
-
-                            &:hover,
-                            &.selected {
-                                & > a {
-                                    background-color: #f9f9f9;
-                                }
-                            }
-                            &.selected {
-                                & > ol {
-                                    display: block;
-                                }
-                            }
-
-                            &.degree-fouryear {
-                                &:before {
-                                    display: block;
-                                    position: absolute;
-                                    left: -2px;
-                                    top: 0px;
-                                    width: 1px;
-                                    height: 40px;
-                                    background-color: #818181;
-                                    content: "";
-                                }
-
-                                & > a {
-                                    background-position: 0px -29px;
-                                }
-
-                                &.selected > a,
-                                &:hover > a {
-                                    background-position: -56px -29px;
-                                }
-
-                                & > ol {
-                                    width: 287px;
-                                }
-                            }
-                            &.degree-graduate {
-                                & > a {
-                                    background-position: 0px -79px;
-                                }
-
-                                &.selected > a,
-                                &:hover > a {
-                                    background-position: -56px -79px;
-                                }
-
-                                & > ol {
-                                    width: 238px;
-                                }
-                            }
-                            &.degree-law {
-                                & > a {
-                                    background-position: 0px -129px;
-                                }
-
-                                &.selected > a,
-                                &:hover > a {
-                                    background-position: -56px -129px;
-                                }
-                            }
-                            &.degree-teaching {
-                                & > a {
-                                    background-position: 0px -179px;
-                                }
-
-                                &.selected > a,
-                                &:hover > a {
-                                    background-position: -56px -179px;
-                                }
-                            }
-                            &.degree-fouryear-nodiploma {
-                                & > a {
-                                    background-position: 0px -229px;
-                                }
-
-                                &.selected > a,
-                                &:hover > a {
-                                    background-position: -56px -229px;
-                                }
-                            }
-                            &.testing {
-                                & > a {
-                                    background-position: 0px -279px;
-                                }
-
-                                &.selected > a,
-                                &:hover > a {
-                                    background-position: -56px -279px;
-                                }
-                            }
-
-                            &.home {
-                                float: left;
-                                position: relative;
-                                margin-left: 22px;
-                                z-index: 100;
-                                border: none;
-
-                                & > a {
-                                    width: auto;
-                                    height: auto;
-
-                                    &:before {
-                                        display: block;
-                                        position: relative;
-                                        left: -29px;
-                                        top: 12px;
-                                        width: 19px;
-                                        height: 19px;
-                                        background-image: url(../_images/sprites-wizard.png);
-                                        background-repeat: no-repeat;
-                                        background-position: 0px 0px;
-                                        content: "";
-                                    }
-
-                                    padding-left: 29px;
-                                    background-image: none;
-                                    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida", sans-serif;
-                                    font-size: 11px;
-                                    line-height: 11px;
-                                    color: #fff;
-                                    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
-                                    text-decoration: none;
-                                    text-transform: lowercase;
-                                    text-indent: 0px;
-
-                                    &:hover {
-                                        background-color: transparent;
-                                        text-decoration: underline;
-                                    }
-                                }
-                            }
-
-                            & > ol {
-                                display: none;
-                                position: absolute;
-                                top: 40px;
-                                left: -1px;
-                                margin: 0px;
-                                padding: 0px;
-                                white-space: nowrap;
-
-                                &:before {
-                                    display: block;
-                                    position: absolute;
-                                    left: -180px;
-                                    height: 35px;
-                                    color: #727272;
-                                    font-size: 10px;
-                                    line-height: 35px;
-                                    content: "choose from the following options:";
-                                    white-space: nowrap;
-                                }
-                                & > li {
-                                    display: block;
-                                    float: left;
-                                    height: 35px;
-                                    margin: 0px;
-                                    padding: 0px;
-                                    border-right: 1px #bbbbbb solid;
-                                    list-style: none;
-
-                                    &:first-child {
-                                        border-left: 1px #bbbbbb solid;
-                                    }
-
-                                    & > a {
-                                        display: block;
-                                        position: relative;
-                                        height: 35px;
-                                        padding: 0px 11px;
-                                        color: #3a3d9d;
-                                        text-decoration: none;
-                                        font-size: 12px;
-                                        line-height: 35px;
-                                        text-transform: uppercase;
-                                        font-weight: 600;
-
-                                        &:hover {
-                                            text-decoration: underline;
-                                        }
-                                    }
-
-                                    &.selected {
-                                        & > a {
-                                            background-image: url(../_images/wizard/bg-nav-secondary-selected.png);
-                                            background-repeat: no-repeat;
-                                            background-position: 0px 0px;
-                                            background-size: 100%;
-                                            color: #fff;
-                                            text-decoration: none !important;
-
-                                            &:after {
-                                                display: block;
-                                                position: absolute;
-                                                bottom: -8px;
-                                                left: 0px;
-                                                width: 100%;
-                                                height: 8px;
-                                                background-image: url(../_images/wizard/bg-nav-secondary-selected.png);
-                                                background-repeat: no-repeat;
-                                                background-position: bottom center;
-                                                background-size: 100% 43px;
-                                                content: "";
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                    &:before {
-                        display: block;
-                        clear: both;
-                        position: absolute;
-                        top: 41px;
-                        width: 100%;
-                        height: 35px;
-                        background-image: url(../_images/wizard/bg-nav-secondary.png);
-                        background-repeat: repeat-x;
-                        background-position: 0px 0px;
-                        content: "";
-                    }
-                }
-            }
-
-            & > section {
-                clear: both;
-                overflow: hidden;
-                padding-top: 35px;
-                background-color: #efeeee;
-                background-image: url(../_images/wizard/bg-content.jpg);
-                background-repeat: no-repeat;
-                background-position: bottom left;
-
-                & .grid {
-                    overflow: hidden;
-
-                    & > ol {
-                        display: block;
-                        margin: 0px;
-                        padding: 0px;
-                        list-style: none;
-
-                        & > li {
-                            display: block;
-                            float: left;
-                            width: 33.33333%;
-                            height: 185px;
-                            margin: 0px;
-                            padding: 0px;
-                            background-color: #fff;
-                            list-style: none;
-
-                            & > a {
-                                display: block;
-                                height: 100%;
-                                border-right: 1px #c7c7c7 solid;
-                                border-bottom: 1px #c7c7c7 solid;
-
-                                &:hover {
-                                    background-repeat: no-repeat;
-                                    background-size: 100% 100%;
-                                }
-
-                                & > strong {
-                                    display: block;
-                                    position: relative;
-                                    padding-left: 115px;
-                                    padding-top: 65px;
-                                    padding-right: 25px;
-                                    font-size: 14px;
-                                    line-height: 19px;
-                                    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida", sans-serif;
-                                    color: #727272;
-                                    font-weight: normal;
-
-                                    &:before {
-                                        display: block;
-                                        position: absolute;
-                                        top: 57px;
-                                        left: 38px;
-                                        width: 58px;
-                                        height: 53px;
-                                        background-image: url(../_images/sprites-wizard.png);
-                                        background-repeat: no-repeat;
-                                        content: "";
-                                    }
-                                }
-                            }
-
-                            &.degree-graduate,
-                            &.testing {
-                                & > a {
-                                    border-right: none;
-                                }
-                            }
-                            &.degree-fouryear-nodegree,
-                            &.degree-law,
-                            &.testing {
-                                & > a {
-                                    border-bottom: none;
-                                }
-                            }
-
-                            &.degree-fouryear {
-                                & > a {
-                                    & > strong {
-                                        &:before {
-                                            background-position: -122px 0px;
-                                        }
-                                    }
-                                }
-                                & > a:hover {
-                                    background-image: url(../_images/wizard/bg-grid-fouryear.jpg);
-
-                                    & > strong {
-                                        &:before {
-                                            background-position: -190px 0px;
-                                        }
-                                    }
-                                }
-                            }
-                            &.degree-teaching {
-                                & > a {
-                                    & > strong {
-                                        &:before {
-                                            background-position: -122px -189px;
-                                        }
-                                    }
-                                }
-                                & > a:hover {
-                                    background-image: url(../_images/wizard/bg-grid-teaching.jpg);
-
-                                    & > strong {
-                                        &:before {
-                                            background-position: -190px -189px;
-                                        }
-                                    }
-                                }
-                            }
-                            &.degree-graduate {
-                                & > a {
-                                    & > strong {
-                                        &:before {
-                                            background-position: -122px -63px;
-                                        }
-                                    }
-                                }
-                                & > a:hover {
-                                    background-image: url(../_images/wizard/bg-grid-graduate.jpg);
-
-                                    & > strong {
-                                        &:before {
-                                            background-position: -190px -63px;
-                                        }
-                                    }
-                                }
-                            }
-                            &.degree-fouryear-nodegree {
-                                & > a {
-                                    & > strong {
-                                        &:before {
-                                            background-position: -122px -252px;
-                                        }
-                                    }
-                                }
-                                & > a:hover {
-                                    background-image: url(../_images/wizard/bg-grid-ged.jpg);
-
-                                    & > strong {
-                                        &:before {
-                                            background-position: -190px -252px;
-                                        }
-                                    }
-                                }
-                            }
-                            &.degree-law {
-                                & > a {
-                                    & > strong {
-                                        &:before {
-                                            background-position: -122px -126px;
-                                        }
-                                    }
-                                }
-                                & > a:hover {
-                                    background-image: url(../_images/wizard/bg-grid-law.jpg);
-
-                                    & > strong {
-                                        &:before {
-                                            background-position: -190px -126px;
-                                        }
-                                    }
-                                }
-                            }
-                            &.testing {
-                                & > a {
-                                    & > strong {
-                                        &:before {
-                                            background-position: -122px -325px;
-                                        }
-                                    }
-                                }
-                                & > a:hover {
-                                    background-image: url(../_images/wizard/bg-grid-testing.jpg);
-
-                                    & > strong {
-                                        &:before {
-                                            background-position: -190px -325px;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-
-                & .subject {
-                    display: none;
-                    padding: 0px;
-                    position: relative;
-                    height: 370px;
-
-                    & .intro,
-                    & .section {
-                        display: block;
-                        position: absolute;
-                        visibility: hidden;
-                        opacity: 0;
-                        -webkit-transition: all 0.65s ease-out;
-                        -moz-transition: all 0.65s ease-out;
-                        -ms-transition: all 0.65s ease-out;
-                        transition: all 0.65s ease-out;
-                        -webkit-transform: scale(1.25);
-                        -moz-transform: scale(1.25);
-                        -ms-transform: scale(1.25);
-                        transform: scale(1.25);
-
-                        &.enabled {
-                            visibility: visible;
-                            opacity: 1;
-                            -webkit-transform: scale(1);
-                            -moz-transform: scale(1);
-                            -ms-transform: scale(1);
-                            transform: scale(1);
-                        }
-                    }
-
-                    & .intro,
-                    & .section {
-                        height: 100%;
-
-                        & .wrapper {
-                            display: table;
-                            height: 300px;
-
-                            & > figure {
-                                display: table-cell;
-                                width: 300px;
-                                height: 100%;
-                                margin: 0px;
-                                padding: 0px;
-                                vertical-align: middle;
-                                text-align: center;
-                            }
-                            & > .content {
-                                display: table-cell;
-                                width: 547px;
-
-                                &.full {
-                                    width: 100%;
-                                    vertical-align: middle;
-                                    text-align: center;
-
-                                    & > * {
-                                        margin-left: 40px;
-                                    }
-                                }
-
-                                & > * {
-                                    margin-right: 40px;
-                                }
-
-                                & h2 {
-                                    display: block;
-                                    margin: 0px;
-                                    padding: 0px 0px 17px 0px;
-                                    font-family: "Open Sans", sans-serif;
-                                    color: #727272;
-                                    font-weight: bold;
-                                    font-size: 20px;
-                                    line-height: 20px;
-                                }
-                                & p {
-                                    font-size: 14px;
-                                    line-height: 22px;
-                                    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida", sans-serif;
-                                    color: #727272;
-                                }
-                            }
-                        }
-                    }
-
-                    & .intro {
-                        height: 100%;
-
-                        & .wrapper {
-                            height: 370px;
-
-                            & > figure {
-                                & > img {
-                                    width: 50%;
-                                    max-width: none;
-                                }
-                            }
-                            & > .content {
-                                vertical-align: middle;
-                            }
-                        }
-                    }
-
-                    & .section {
-                        width: 100%;
-
-                        & > ol {
-                            display: block;
-                            position: relative;
+                    & > .content {
+                        & .examination-wizard {
                             width: 100%;
-                            height: 100%;
-                            margin: 0px;
-                            padding: 0px;
-                            list-style: none;
+                            margin: 0px auto;
+                            opacity: 0;
+                            -webkit-transition: all 0.65s ease-out;
+                            -moz-transition: all 0.65s ease-out;
+                            -ms-transition: all 0.65s ease-out;
+                            transition: all 0.65s ease-out;
+                            -webkit-transform: scale(1.25);
+                            -moz-transform: scale(1.25);
+                            -ms-transform: scale(1.25);
+                            transform: scale(1.25);
+                            -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.37);
+                            -moz-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.37);
+                            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.37);
+                            @include border-radius(7px);
 
-                            & > li {
-                                display: block;
-                                visibility: hidden;
-                                opacity: 0;
-                                position: absolute;
-                                width: 100%;
-                                height: 100%;
-                                margin: 0px;
-                                padding: 0px;
-                                list-style: none;
-                                -webkit-transition: all 0.65s ease-out;
-                                -moz-transition: all 0.65s ease-out;
-                                -ms-transition: all 0.65s ease-out;
-                                transition: all 0.65s ease-out;
-
-                                &.enabled {
-                                    visibility: visible;
-                                    opacity: 1;
-                                }
-                                & .wrapper {
-                                    display: table;
-                                    width: 100%;
-
-                                    & .content {
-                                        padding-top: 40px;
-
-
-                                    }
-                                }
+                            &.enabled {
+                                opacity: 1;
+                                -webkit-transform: scale(1.0);
                             }
-                        }
 
-                        & > footer {
-                            display: block;
-                            position: absolute;
-                            bottom: 0px;
-                            width: 100%;
-                            height: 70px;
-                            clear: both;
-
-                            & > nav {
-                                display: block;
-                                float: left;
-                                width: 300px;
-                                margin: 0px;
-                                padding: 0px;
-                                text-align: center;
-
-                                & > a {
-                                    display: inline-block;
+                            & > header {
+                                & > section {
                                     position: relative;
-                                    width: 78px;
-                                    height: 32px;
-                                    background-image: url(../_images/sprites-wizard.png);
-                                    background-repeat: no-repeat;
-                                    text-decoration: none;
-                                    cursor: pointer;
-                                    font-size: 12px;
-                                    line-height: 30px;
-                                    color: #ddd;
-                                    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida", sans-serif;
-                                    text-transform: uppercase;
-                                    font-weight: normal;
+                                    z-index: 100;
+                                    height: 133px;
+                                    background-color: #de8721;
+                                    border-top: 1px #e5a254 solid;
+                                    border-left: 1px #e19236 solid;
+                                    border-right: 1px #e19236 solid;
+                                    @include border-top-radius(7px);
 
-                                    &.back {
-                                        margin-right: -10px;
-                                        background-position: 0px -415px;
-                                        text-align: left;
-                                        text-indent: 11px;
-                                    }
-                                    &.next {
-                                        margin-left: -10px;
-                                        background-position: 0px -373px;
-                                        text-align: left;
-                                        text-indent: 21px;
-                                    }
-
-                                    &:hover {
-                                        color: #fff;
-                                    }
-                                    &.disabled {
-                                        opacity: 0.7;
-                                        color: #62668a;
-                                        cursor: default;
-                                    }
-                                }
-                            }
-                            & > menu {
-                                display: block;
-                                float: left;
-                                width: 547px;
-                                margin: 0px;
-                                padding: 0px;
-
-                                & > ol {
-                                    display: block;
-                                    position: relative;
-                                    left: -7px;
-                                    width: 440px;
-                                    margin: 0px;
-                                    padding: 0px;
-                                    list-style: none;
-
-                                    &.step-1 {
-                                        &:after {
-                                            width: 1px;
-                                        }
-                                    }
-                                    &.step-2 {
-                                        &:after {
-                                            width: 101px;
-                                        }
-                                    }
-                                    &.step-3 {
-                                        &:after {
-                                            width: 202px;
-                                        }
-                                    }
-                                    &.step-4 {
-                                        &:after {
-                                            width: 303px;
-                                        }
-                                    }
-                                    &.step-5 {
-                                        &:after {
-                                            width: 404px;
-                                        }
-                                    }
-
-                                    &:before,
-                                    &:after {
+                                    & > h1 {
                                         display: block;
-                                        position: absolute;
-                                        height: 10px;
-                                        left: 15px;
-                                        content: "";
-                                    }
-                                    &:before {
-                                        top: 12px;
-                                        width: 404px;
-                                        background-image: url(../_images/wizard/bg-progress-unfilled.png);
-                                        background-repeat: repeat-x;
-                                        background-position: 0px 0px;
-                                    }
-                                    &:after {
-                                        top: 12px;
-                                        width: 1px;
-                                        background-image: url(../_images/wizard/bg-progress-filled.png);
-                                        -webkit-transition: width 0.65s ease-out;
-                                        -moz-transition: width 0.65s ease-out;
-                                        -ms-transition: width 0.65s ease-out;
-                                        transition: width 0.65s ease-out;
-                                    }
-                                    & > li {
-                                        display: block;
-                                        float: left;
-                                        position: relative;
-                                        z-index: 200;
-                                        width: 34px;
-                                        height: 34px;
+                                        float: right;
+                                        width: 55%;
+                                        margin: 30px 35px 0px 0px;
                                         padding: 0px;
-                                        margin: 0px 33px;
+                                        font-family: 'Open Sans', sans-serif;
+                                        color: #fff;
+                                        text-shadow: 1px 1px 0px #aa6310;
+                                        font-weight: 600;
+                                        text-align: right;
+                                        font-size: 30px;
+                                        line-height: 30px;
+                                    }
+                                    & > h2 {
+                                        display: block;
+                                        float: right;
+                                        clear: both;
+                                        width: 50%;
+                                        margin: 15px 35px 0px 0px;
+                                        padding: 0px;
+                                        font-family: 'Open Sans', sans-serif;
+                                        color: #fff;
+                                        text-shadow: 1px 1px 0px #aa6310;
+                                        text-align: right;
+                                        font-weight: normal;
+                                        font-size: 13px;
+                                        line-height: 15px;
+                                    }
+
+                                    &:after {
+                                        display: block;
+                                        position: absolute;
+                                        left: 6px;
+                                        bottom: -54px;
+                                        width: 428px;
+                                        height: 268px;
+                                        background-image: url(../_images/wizard/header-dantes-rep.png);
+                                        background-repeat: no-repeat;
+                                        background-position: 0px 0px;
+                                        content: "";
+                                    }
+                                }
+
+                                & > nav {
+                                    display: block;
+                                    position: relative;
+                                    height: 41px;
+                                    margin: 0px;
+                                    padding: 0px;
+                                    list-style: none;
+                                    background-image: url(../_images/wizard/bg-nav-primary.png);
+                                    background-repeat: repeat-x;
+                                    background-position: 0px 0px;
+
+                                    & > ul {
+                                        display: block;
+                                        margin: 0px;
+                                        padding: 0px;
                                         list-style: none;
 
-                                        &:first-child {
-                                            margin-left: 0px;
-                                        }
-                                        &:last-child {
-                                            margin-right: 0px;
-                                        }
-
-                                        & > a {
+                                        & > li {
                                             display: block;
                                             position: relative;
-                                            width: 34px;
-                                            height: 34px;
-                                            background-image: url(../_images/sprites-wizard.png);
-                                            background-repeat: no-repeat;
-                                            background-position: -88px -329px;
-                                            cursor: pointer;
+                                            z-index: 1000;
+                                            float: right;
+                                            margin: 0px;
+                                            padding: 0px;
+                                            border-left: 1px #b7b7b7 solid;
+                                            border-right: 1px #818181 solid;
+                                            list-style: none;
 
-                                            &:hover {
-                                                background-position: -44px -329px;
+                                            & > a {
+                                                display: block;
+                                                width: 46px;
+                                                height: 40px;
+                                                background-image: url(../_images/sprites-wizard.png);
+                                                background-repeat: no-repeat;
+                                                @include no-text;
+                                                cursor: pointer;
                                             }
 
-                                            & > strong {
-                                                display: block;
+                                            &:hover,
+                                            &.selected {
+                                                & > a {
+                                                    background-color: #f9f9f9;
+                                                }
+                                            }
+                                            &.selected {
+                                                & > ol {
+                                                    display: block;
+                                                }
+                                            }
+
+                                            &.degree-fouryear {
+                                                &:before {
+                                                    display: block;
+                                                    position: absolute;
+                                                    left: -2px;
+                                                    top: 0px;
+                                                    width: 1px;
+                                                    height: 40px;
+                                                    background-color: #818181;
+                                                    content: "";
+                                                }
+
+                                                & > a {
+                                                    background-position: 0px -29px;
+                                                }
+
+                                                &.selected > a,
+                                                &:hover > a {
+                                                    background-position: -56px -29px;
+                                                }
+
+                                                & > ol {
+                                                    width: 287px;
+                                                }
+                                            }
+                                            &.degree-graduate {
+                                                & > a {
+                                                    background-position: 0px -79px;
+                                                }
+
+                                                &.selected > a,
+                                                &:hover > a {
+                                                    background-position: -56px -79px;
+                                                }
+
+                                                & > ol {
+                                                    width: 238px;
+                                                }
+                                            }
+                                            &.degree-law {
+                                                & > a {
+                                                    background-position: 0px -129px;
+                                                }
+
+                                                &.selected > a,
+                                                &:hover > a {
+                                                    background-position: -56px -129px;
+                                                }
+                                            }
+                                            &.degree-teaching {
+                                                & > a {
+                                                    background-position: 0px -179px;
+                                                }
+
+                                                &.selected > a,
+                                                &:hover > a {
+                                                    background-position: -56px -179px;
+                                                }
+                                            }
+                                            &.degree-fouryear-nodiploma {
+                                                & > a {
+                                                    background-position: 0px -229px;
+                                                }
+
+                                                &.selected > a,
+                                                &:hover > a {
+                                                    background-position: -56px -229px;
+                                                }
+                                            }
+                                            &.testing {
+                                                & > a {
+                                                    background-position: 0px -279px;
+                                                }
+
+                                                &.selected > a,
+                                                &:hover > a {
+                                                    background-position: -56px -279px;
+                                                }
+                                            }
+
+                                            &.home {
+                                                float: left;
+                                                position: relative;
+                                                margin-left: 22px;
+                                                z-index: 100;
+                                                border: none;
+
+                                                & > a {
+                                                    width: auto;
+                                                    height: auto;
+
+                                                    &:before {
+                                                        display: block;
+                                                        position: relative;
+                                                        left: -29px;
+                                                        top: 12px;
+                                                        width: 19px;
+                                                        height: 19px;
+                                                        background-image: url(../_images/sprites-wizard.png);
+                                                        background-repeat: no-repeat;
+                                                        background-position: 0px 0px;
+                                                        content: "";
+                                                    }
+
+                                                    padding-left: 29px;
+                                                    background-image: none;
+                                                    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida", sans-serif;
+                                                    font-size: 11px;
+                                                    line-height: 11px;
+                                                    color: #fff;
+                                                    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
+                                                    text-decoration: none;
+                                                    text-transform: lowercase;
+                                                    text-indent: 0px;
+
+                                                    &:hover {
+                                                        background-color: transparent;
+                                                        text-decoration: underline;
+                                                    }
+                                                }
+                                            }
+
+                                            & > ol {
+                                                display: none;
                                                 position: absolute;
-                                                width: 100px;
-                                                left: -33px;
-                                                top: 37px;
-                                                font-size: 10px;
-                                                line-height: 10px;
-                                                text-transform: uppercase;
-                                                font-family: sans-serif;
-                                                color: #5c5c5c;
+                                                top: 40px;
+                                                left: -1px;
+                                                margin: 0px;
+                                                padding: 0px;
+                                                white-space: nowrap;
+
+                                                &:before {
+                                                    display: block;
+                                                    position: absolute;
+                                                    left: -180px;
+                                                    height: 35px;
+                                                    color: #727272;
+                                                    font-size: 10px;
+                                                    line-height: 35px;
+                                                    content: "choose from the following options:";
+                                                    white-space: nowrap;
+                                                }
+                                                & > li {
+                                                    display: block;
+                                                    float: left;
+                                                    height: 35px;
+                                                    margin: 0px;
+                                                    padding: 0px;
+                                                    border-right: 1px #bbbbbb solid;
+                                                    list-style: none;
+
+                                                    &:first-child {
+                                                        border-left: 1px #bbbbbb solid;
+                                                    }
+
+                                                    & > a {
+                                                        display: block;
+                                                        position: relative;
+                                                        height: 35px;
+                                                        padding: 0px 11px;
+                                                        color: #3a3d9d;
+                                                        text-decoration: none;
+                                                        font-size: 12px;
+                                                        line-height: 35px;
+                                                        text-transform: uppercase;
+                                                        font-weight: 600;
+
+                                                        &:hover {
+                                                            text-decoration: underline;
+                                                        }
+                                                    }
+
+                                                    &.selected {
+                                                        & > a {
+                                                            background-image: url(../_images/wizard/bg-nav-secondary-selected.png);
+                                                            background-repeat: no-repeat;
+                                                            background-position: 0px 0px;
+                                                            background-size: 100%;
+                                                            color: #fff;
+                                                            text-decoration: none;
+
+                                                            &:after {
+                                                                display: block;
+                                                                position: absolute;
+                                                                bottom: -8px;
+                                                                left: 0px;
+                                                                width: 100%;
+                                                                height: 8px;
+                                                                background-image: url(../_images/wizard/bg-nav-secondary-selected.png);
+                                                                background-repeat: no-repeat;
+                                                                background-position: bottom center;
+                                                                background-size: 100% 43px;
+                                                                content: "";
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    &:before {
+                                        display: block;
+                                        clear: both;
+                                        position: absolute;
+                                        top: 41px;
+                                        width: 100%;
+                                        height: 35px;
+                                        background-image: url(../_images/wizard/bg-nav-secondary.png);
+                                        background-repeat: repeat-x;
+                                        background-position: 0px 0px;
+                                        content: "";
+                                    }
+                                }
+                            }
+
+                            & > section {
+                                clear: both;
+                                overflow: hidden;
+                                padding-top: 35px;
+                                background-color: #efeeee;
+                                background-image: url(../_images/wizard/bg-content.jpg);
+                                background-repeat: no-repeat;
+                                background-position: bottom left;
+
+                                & .grid {
+                                    overflow: hidden;
+
+                                    & > ol {
+                                        display: block;
+                                        margin: 0px;
+                                        padding: 0px;
+                                        list-style: none;
+
+                                        & > li {
+                                            display: block;
+                                            float: left;
+                                            width: 33.33333%;
+                                            height: 185px;
+                                            margin: 0px;
+                                            padding: 0px;
+                                            background-color: #fff;
+                                            list-style: none;
+
+                                            & > a {
+                                                display: block;
+                                                height: 100%;
+                                                border-right: 1px #c7c7c7 solid;
+                                                border-bottom: 1px #c7c7c7 solid;
+                                                text-decoration: none;
+
+                                                &:hover {
+                                                    background-repeat: no-repeat;
+                                                    background-size: 100% 100%;
+                                                }
+
+                                                & > strong {
+                                                    display: block;
+                                                    position: relative;
+                                                    padding-left: 115px;
+                                                    padding-top: 65px;
+                                                    padding-right: 25px;
+                                                    font-size: 14px;
+                                                    line-height: 19px;
+                                                    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida", sans-serif;
+                                                    color: #727272;
+                                                    font-weight: normal;
+
+                                                    &:before {
+                                                        display: block;
+                                                        position: absolute;
+                                                        top: 57px;
+                                                        left: 38px;
+                                                        width: 58px;
+                                                        height: 53px;
+                                                        background-image: url(../_images/sprites-wizard.png);
+                                                        background-repeat: no-repeat;
+                                                        content: "";
+                                                    }
+                                                }
+                                            }
+
+                                            &.degree-graduate,
+                                            &.testing {
+                                                & > a {
+                                                    border-right: none;
+                                                }
+                                            }
+                                            &.degree-fouryear-nodegree,
+                                            &.degree-law,
+                                            &.testing {
+                                                & > a {
+                                                    border-bottom: none;
+                                                }
+                                            }
+
+                                            &.degree-fouryear {
+                                                & > a {
+                                                    & > strong {
+                                                        &:before {
+                                                            background-position: -122px 0px;
+                                                        }
+                                                    }
+                                                }
+                                                & > a:hover {
+                                                    background-image: url(../_images/wizard/bg-grid-fouryear.jpg);
+
+                                                    & > strong {
+                                                        &:before {
+                                                            background-position: -190px 0px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            &.degree-teaching {
+                                                & > a {
+                                                    & > strong {
+                                                        &:before {
+                                                            background-position: -122px -189px;
+                                                        }
+                                                    }
+                                                }
+                                                & > a:hover {
+                                                    background-image: url(../_images/wizard/bg-grid-teaching.jpg);
+
+                                                    & > strong {
+                                                        &:before {
+                                                            background-position: -190px -189px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            &.degree-graduate {
+                                                & > a {
+                                                    & > strong {
+                                                        &:before {
+                                                            background-position: -122px -63px;
+                                                        }
+                                                    }
+                                                }
+                                                & > a:hover {
+                                                    background-image: url(../_images/wizard/bg-grid-graduate.jpg);
+
+                                                    & > strong {
+                                                        &:before {
+                                                            background-position: -190px -63px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            &.degree-fouryear-nodegree {
+                                                & > a {
+                                                    & > strong {
+                                                        &:before {
+                                                            background-position: -122px -252px;
+                                                        }
+                                                    }
+                                                }
+                                                & > a:hover {
+                                                    background-image: url(../_images/wizard/bg-grid-ged.jpg);
+
+                                                    & > strong {
+                                                        &:before {
+                                                            background-position: -190px -252px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            &.degree-law {
+                                                & > a {
+                                                    & > strong {
+                                                        &:before {
+                                                            background-position: -122px -126px;
+                                                        }
+                                                    }
+                                                }
+                                                & > a:hover {
+                                                    background-image: url(../_images/wizard/bg-grid-law.jpg);
+
+                                                    & > strong {
+                                                        &:before {
+                                                            background-position: -190px -126px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            &.testing {
+                                                & > a {
+                                                    & > strong {
+                                                        &:before {
+                                                            background-position: -122px -325px;
+                                                        }
+                                                    }
+                                                }
+                                                & > a:hover {
+                                                    background-image: url(../_images/wizard/bg-grid-testing.jpg);
+
+                                                    & > strong {
+                                                        &:before {
+                                                            background-position: -190px -325px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                & .subject {
+                                    display: none;
+                                    padding: 0px;
+                                    position: relative;
+                                    height: 370px;
+
+                                    & .intro,
+                                    & .section {
+                                        display: block;
+                                        position: absolute;
+                                        visibility: hidden;
+                                        opacity: 0;
+                                        -webkit-transition: all 0.65s ease-out;
+                                        -moz-transition: all 0.65s ease-out;
+                                        -ms-transition: all 0.65s ease-out;
+                                        transition: all 0.65s ease-out;
+                                        -webkit-transform: scale(1.25);
+                                        -moz-transform: scale(1.25);
+                                        -ms-transform: scale(1.25);
+                                        transform: scale(1.25);
+
+                                        &.enabled {
+                                            visibility: visible;
+                                            opacity: 1;
+                                            -webkit-transform: scale(1);
+                                            -moz-transform: scale(1);
+                                            -ms-transform: scale(1);
+                                            transform: scale(1);
+                                        }
+                                    }
+
+                                    & .intro,
+                                    & .section {
+                                        height: 100%;
+
+                                        & .wrapper {
+                                            display: table;
+                                            height: 300px;
+
+                                            & > figure {
+                                                display: table-cell;
+                                                width: 35%;
+                                                height: 100%;
+                                                margin: 0px;
+                                                padding: 0px;
+                                                vertical-align: middle;
                                                 text-align: center;
-                                                text-shadow: 0px 1px 0px #fff;
-                                                font-weight: bold;
+                                            }
+                                            & > .content {
+                                                display: table-cell;
+                                                width: 65%;
+
+                                                &.full {
+                                                    width: 100%;
+                                                    vertical-align: middle;
+                                                    text-align: center;
+
+                                                    & > * {
+                                                        margin-left: 40px;
+                                                    }
+                                                }
+
+                                                & > * {
+                                                    margin-right: 40px;
+                                                }
+
+                                                & h2 {
+                                                    display: block;
+                                                    margin: 0px;
+                                                    padding: 0px 0px 17px 0px;
+                                                    font-family: "Open Sans", sans-serif;
+                                                    color: #727272;
+                                                    font-weight: bold;
+                                                    font-size: 20px;
+                                                    line-height: 20px;
+                                                }
+                                                & p {
+                                                    font-size: 14px;
+                                                    line-height: 22px;
+                                                    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida", sans-serif;
+                                                    color: #727272;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    & .intro {
+                                        height: 100%;
+
+                                        & .wrapper {
+                                            height: 370px;
+
+                                            & > figure {
+                                                & > img {
+                                                    width: 50%;
+                                                    max-width: none;
+                                                }
+                                            }
+                                            & > .content {
+                                                vertical-align: middle;
+                                            }
+                                        }
+                                    }
+
+                                    & .section {
+                                        width: 100%;
+
+                                        & > ol {
+                                            display: block;
+                                            position: relative;
+                                            width: 100%;
+                                            height: 100%;
+                                            margin: 0px;
+                                            padding: 0px;
+                                            list-style: none;
+
+                                            & > li {
+                                                display: block;
+                                                visibility: hidden;
+                                                opacity: 0;
+                                                position: absolute;
+                                                width: 100%;
+                                                height: 100%;
+                                                margin: 0px;
+                                                padding: 0px;
+                                                list-style: none;
+                                                -webkit-transition: all 0.65s ease-out;
+                                                -moz-transition: all 0.65s ease-out;
+                                                -ms-transition: all 0.65s ease-out;
+                                                transition: all 0.65s ease-out;
+
+                                                &.enabled {
+                                                    visibility: visible;
+                                                    opacity: 1;
+                                                }
+                                                & .wrapper {
+                                                    display: table;
+                                                    width: 100%;
+
+                                                    & .content {
+                                                        padding-top: 40px;
+
+
+                                                    }
+                                                }
                                             }
                                         }
 
-                                        &.selected {
-                                            & > a {
-                                                background-position: 0px -329px;
+                                        & > footer {
+                                            display: block;
+                                            position: absolute;
+                                            bottom: 0px;
+                                            width: 100%;
+                                            height: 70px;
+                                            clear: both;
+
+                                            & > nav {
+                                                display: block;
+                                                float: left;
+                                                clear: none;
+                                                width: 35%;
+                                                margin: 0px;
+                                                padding: 0px;
+                                                text-align: center;
+
+                                                & > a {
+                                                    display: inline-block;
+                                                    position: relative;
+                                                    width: 78px;
+                                                    height: 32px;
+                                                    background-image: url(../_images/sprites-wizard.png);
+                                                    background-repeat: no-repeat;
+                                                    text-decoration: none;
+                                                    cursor: pointer;
+                                                    font-size: 12px;
+                                                    line-height: 30px;
+                                                    color: #ddd;
+                                                    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida", sans-serif;
+                                                    text-transform: uppercase;
+                                                    font-weight: normal;
+
+                                                    &.back {
+                                                        margin-right: -10px;
+                                                        background-position: 0px -415px;
+                                                        text-align: left;
+                                                        text-indent: 11px;
+                                                    }
+                                                    &.next {
+                                                        margin-left: -10px;
+                                                        background-position: 0px -373px;
+                                                        text-align: left;
+                                                        text-indent: 21px;
+                                                    }
+
+                                                    &:hover {
+                                                        color: #fff;
+                                                    }
+                                                    &.disabled {
+                                                        opacity: 0.7;
+                                                        color: #62668a;
+                                                        cursor: default;
+                                                    }
+                                                }
+                                            }
+                                            & > menu {
+                                                display: block;
+                                                float: left;
+                                                clear: none;
+                                                width: 65%;
+                                                margin: 0px;
+                                                padding: 0px;
+
+                                                & > ol {
+                                                    display: block;
+                                                    position: relative;
+                                                    left: -7px;
+                                                    width: 440px;
+                                                    margin: 0px;
+                                                    padding: 0px;
+                                                    list-style: none;
+
+                                                    &.step-1 {
+                                                        &:after {
+                                                            width: 1px;
+                                                        }
+                                                    }
+                                                    &.step-2 {
+                                                        &:after {
+                                                            width: 101px;
+                                                        }
+                                                    }
+                                                    &.step-3 {
+                                                        &:after {
+                                                            width: 202px;
+                                                        }
+                                                    }
+                                                    &.step-4 {
+                                                        &:after {
+                                                            width: 303px;
+                                                        }
+                                                    }
+                                                    &.step-5 {
+                                                        &:after {
+                                                            width: 404px;
+                                                        }
+                                                    }
+
+                                                    &:before,
+                                                    &:after {
+                                                        display: block;
+                                                        position: absolute;
+                                                        height: 10px;
+                                                        left: 15px;
+                                                        content: "";
+                                                    }
+                                                    &:before {
+                                                        top: 12px;
+                                                        width: 404px;
+                                                        background-image: url(../_images/wizard/bg-progress-unfilled.png);
+                                                        background-repeat: repeat-x;
+                                                        background-position: 0px 0px;
+                                                    }
+                                                    &:after {
+                                                        top: 12px;
+                                                        width: 1px;
+                                                        background-image: url(../_images/wizard/bg-progress-filled.png);
+                                                        -webkit-transition: width 0.65s ease-out;
+                                                        -moz-transition: width 0.65s ease-out;
+                                                        -ms-transition: width 0.65s ease-out;
+                                                        transition: width 0.65s ease-out;
+                                                    }
+                                                    & > li {
+                                                        display: block;
+                                                        float: left;
+                                                        position: relative;
+                                                        z-index: 200;
+                                                        width: 34px;
+                                                        height: 34px;
+                                                        padding: 0px;
+                                                        margin: 0px 33px;
+                                                        list-style: none;
+
+                                                        &:first-child {
+                                                            margin-left: 0px;
+                                                        }
+                                                        &:last-child {
+                                                            margin-right: 0px;
+                                                        }
+
+                                                        & > a {
+                                                            display: block;
+                                                            position: relative;
+                                                            width: 34px;
+                                                            height: 34px;
+                                                            background-image: url(../_images/sprites-wizard.png);
+                                                            background-repeat: no-repeat;
+                                                            background-position: -88px -329px;
+                                                            cursor: pointer;
+
+                                                            &:hover {
+                                                                background-position: -44px -329px;
+                                                            }
+
+                                                            & > strong {
+                                                                display: block;
+                                                                position: absolute;
+                                                                width: 100px;
+                                                                left: -33px;
+                                                                top: 37px;
+                                                                font-size: 10px;
+                                                                line-height: 10px;
+                                                                text-transform: uppercase;
+                                                                font-family: sans-serif;
+                                                                color: #5c5c5c;
+                                                                text-align: center;
+                                                                text-shadow: 0px 1px 0px #fff;
+                                                                font-weight: bold;
+                                                            }
+                                                        }
+
+                                                        &.selected {
+                                                            & > a {
+                                                                background-position: 0px -329px;
+                                                            }
+                                                        }
+                                                    }
+                                                }
                                             }
                                         }
                                     }
                                 }
                             }
+
+                            & > footer {
+                                clear: both;
+                                height: 46px;
+                                background-color: #272793;
+                                border-top: 1px #5659a7 solid;
+                                border-bottom: 1px #8b8b8b solid;
+                                border-left: 1px #3b3b9d solid;
+                                border-right: 1px #3b3b9d solid;
+                                @include border-bottom-radius(7px);
+
+                                & > p {
+                                    display: block;
+                                    margin: 0px;
+                                    padding: 0px 32px;
+                                    font-size: 12px;
+                                    line-height: 46px;
+                                    color: #fff;
+                                    font-family: 'Open Sans', sans-serif;
+                                    font-weight: normal;
+                                    font-style: normal;
+                                }
+                            }
                         }
                     }
-                }
-            }
-
-            & > footer {
-                clear: both;
-                height: 46px;
-                background-color: #272793;
-                border-top: 1px #5659a7 solid;
-                border-bottom: 1px #8b8b8b solid;
-                border-left: 1px #3b3b9d solid;
-                border-right: 1px #3b3b9d solid;
-                @include border-bottom-radius(7px);
-
-                & > p {
-                    display: block;
-                    margin: 0px;
-                    padding: 0px 32px;
-                    font-size: 12px;
-                    line-height: 46px;
-                    color: #fff;
-                    font-family: 'Open Sans', sans-serif;
-                    font-weight: normal;
-                    font-style: normal;
                 }
             }
         }
