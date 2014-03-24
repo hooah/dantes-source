@@ -373,17 +373,7 @@ var framework = {
                             framework.data.newsGrid.initial_maximums[intCounter].current    = 0;
                         }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                        for (var intOuterCount = 0; intOuterCount < framework.data.newsGrid.initial.length; intOuterCount++) {
-=======
-=======
->>>>>>> FETCH_HEAD
-=======
->>>>>>> FETCH_HEAD
                         for (intOuterCount = 0; intOuterCount < framework.data.newsGrid.initial.length; intOuterCount++) {
->>>>>>> FETCH_HEAD
                             intItemCursor                   = 0;
 
                             for (intInnerCount = 0; intInnerCount < framework.data.newsGrid.data.length; intInnerCount++) {
