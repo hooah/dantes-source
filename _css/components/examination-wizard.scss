@@ -1,15 +1,3 @@
-/*
- body.wizard {
-    background-image: url(../_images/wizard/bg-body.jpg);
-    background-repeat: no-repeat;
-    background-position: 0px 0px;
-    background-size: 100% 100%;
-
-    & #container {
-        padding-bottom: 150px;
-    }
-}
-*/
 body {
     #container {
         & > article {
@@ -18,25 +6,11 @@ body {
                     & > .content {
                         & .examination-wizard {
                             width: 100%;
-                            margin: 0px auto;
-                            opacity: 0;
-                            -webkit-transition: all 0.65s ease-out;
-                            -moz-transition: all 0.65s ease-out;
-                            -ms-transition: all 0.65s ease-out;
-                            transition: all 0.65s ease-out;
-                            -webkit-transform: scale(1.25);
-                            -moz-transform: scale(1.25);
-                            -ms-transform: scale(1.25);
-                            transform: scale(1.25);
+                            margin: 75px auto 0px auto;
                             -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.37);
                             -moz-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.37);
                             box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.37);
                             @include border-radius(7px);
-
-                            &.enabled {
-                                opacity: 1;
-                                -webkit-transform: scale(1.0);
-                            }
 
                             & > header {
                                 & > section {
@@ -123,6 +97,7 @@ body {
 
                                             & > a {
                                                 display: block;
+                                                position: relative;
                                                 width: 46px;
                                                 height: 40px;
                                                 background-image: url(../_images/sprites-wizard.png);
@@ -138,6 +113,8 @@ body {
                                                 }
                                             }
                                             &.selected {
+                                                height: 41px;
+
                                                 & > ol {
                                                     display: block;
                                                 }
@@ -269,7 +246,7 @@ body {
                                                 display: none;
                                                 position: absolute;
                                                 top: 40px;
-                                                left: -1px;
+                                                left: 46px;
                                                 margin: 0px;
                                                 padding: 0px;
                                                 white-space: nowrap;
@@ -282,7 +259,7 @@ body {
                                                     color: #727272;
                                                     font-size: 10px;
                                                     line-height: 35px;
-                                                    content: "choose from the following options:";
+                                                    content: "Choose from the following options:";
                                                     white-space: nowrap;
                                                 }
                                                 & > li {
@@ -302,13 +279,15 @@ body {
                                                         display: block;
                                                         position: relative;
                                                         height: 35px;
-                                                        padding: 0px 11px;
+                                                        width: 47px;
+                                                        padding: 0px;
                                                         color: #3a3d9d;
                                                         text-decoration: none;
                                                         font-size: 12px;
                                                         line-height: 35px;
                                                         text-transform: uppercase;
                                                         font-weight: 600;
+                                                        text-align: center;
 
                                                         &:hover {
                                                             text-decoration: underline;
@@ -367,6 +346,25 @@ body {
                                 background-image: url(../_images/wizard/bg-content.jpg);
                                 background-repeat: no-repeat;
                                 background-position: bottom left;
+
+                                &.testing {
+                                    background-image: url(../_images/wizard/bg-content-testing.jpg);
+                                }
+                                &.degree-fouryear-nodiploma {
+                                    background-image: url(../_images/wizard/bg-content-ged.jpg);
+                                }
+                                &.degree-teaching {
+                                    background-image: url(../_images/wizard/bg-content-praxis.jpg);
+                                }
+                                &.degree-law {
+                                    background-image: url(../_images/wizard/bg-content-law.jpg);
+                                }
+                                &.degree-graduate {
+                                    background-image: url(../_images/wizard/bg-content-graduate.jpg);
+                                }
+                                &.degree-fouryear {
+                                    background-image: url(../_images/wizard/bg-content-fouryear.jpg);
+                                }
 
                                 & .grid {
                                     overflow: hidden;

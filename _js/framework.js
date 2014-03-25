@@ -616,20 +616,34 @@ var framework = {
             init: function() {
                 framework.data.examwizard.container     = jQuery('.examination-wizard');
 
-                setTimeout(function() {
-                    framework.data.examwizard.container.addClass('enabled');
-                }, 1000);
-
                 jQuery('>header>nav>ul>li[class != "home"]>a, >section>.grid>ol>li>a', framework.data.examwizard.container).bind('click', framework.fn.examwizard.show_toplevel_section);
-                jQuery('>header>nav>ul>li[class != "home"]>ol>li>a', framework.data.examwizard.container).bind('click', framework.fn.examwizard.show_sub_section);
+                jQuery('>header>nav>ul>li[class != "home"]>ol>li>a, >section>.subject>.intro figure>a, >section>.subject>.intro .content>a.button', framework.data.examwizard.container).bind('click', framework.fn.examwizard.show_sub_section);
+                jQuery('>header>nav>ul>li.home>a', framework.data.examwizard.container).bind('click', framework.fn.examwizard.return_to_grid);
                 jQuery('>section .subject .section>footer>menu>ol>li>a', framework.data.examwizard.container).bind('click', framework.fn.examwizard.control_subject_page);
                 jQuery('>section .subject .section>footer>nav>a', framework.data.examwizard.container).bind('click', framework.fn.examwizard.navigate_subject_page);
+            },
+
+            return_to_grid: function(objEvent) {
+                objEvent.preventDefault();
+
+                if (jQuery('>section>div.grid:visible', framework.data.examwizard.container).length === 0) {
+                    jQuery('>section>div:visible', framework.data.examwizard.container)
+                        .css({display: 'block', opacity: 1})
+                        .animate({opacity: 0}, framework.data.examwizard.animation.speed, function() {
+                            jQuery(this).css({display: 'none', opacity: 0});
+
+                            jQuery('>header>nav>ul>li', framework.data.examwizard.container).removeClass('selected');
+                            jQuery('>section>div.grid', framework.data.examwizard.container)
+                                .css({display: 'block', opacity: 0})
+                                .animate({opacity: 1}, framework.data.examwizard.animation.speed);
+                        });
+                }
             },
 
             show_toplevel_section: function(objEvent) {
                 objEvent.preventDefault();
 
-                var strSection          = jQuery(this).attr('href').replace('#', '');
+                var strSection          = jQuery(this).attr('data-section');
 
                 if (strSection.length) {
                     jQuery('>header>nav>ul>li', framework.data.examwizard.container).removeClass('selected');
@@ -638,12 +652,16 @@ var framework = {
                     jQuery('>section>div:visible', framework.data.examwizard.container)
                         .animate({opacity: 0}, framework.data.examwizard.animation.speed, function() {
                             jQuery(this).css('display', 'none');
+
+                            jQuery('>section>.subject>.section, >section>.subject>.section>ol>li', framework.data.examwizard.container).removeClass('enabled');
+
                             jQuery('>section>div.' + strSection, framework.data.examwizard.container)
                                 .css({display: 'block', opacity: 0})
                                 .animate({opacity: 1}, framework.data.examwizard.animation.speed, function() {
                                     jQuery('>div[class != "intro"]', this).removeClass('enabled');
                                     jQuery('>div.intro', this).addClass('enabled');
-                                });
+                                })
+                                .parent('section').attr('class', strSection);
                         });
                 }
             },
@@ -651,12 +669,12 @@ var framework = {
             show_sub_section: function(objEvent) {
                 objEvent.preventDefault();
 
-                var strSection          = jQuery(this).attr('href').replace('#', '');
-                var strParentSection    = jQuery(this).parent('li').parent('ol').siblings('a').attr('href').replace('#', '');
+                var strSection          = jQuery(this).attr('data-section');
+                var strParentSection    = jQuery('>header>nav>ul>li.selected>a', framework.data.examwizard.container).attr('data-section');
 
                 if ((strSection.length) && (strParentSection.length)) {
                     jQuery('>header>nav>ul>li[class != "home"]>ol>li', framework.data.examwizard.container).removeClass('selected');
-                    jQuery(this).parent('li').addClass('selected');
+                    jQuery('>header>nav>ul>li>ol>li>a[data-section="' + strSection + '"]', framework.data.examwizard.container).parent('li').addClass('selected');
 
                     var objSection          = jQuery('>section>div.' + strParentSection, framework.data.examwizard.container);
 
@@ -668,6 +686,8 @@ var framework = {
                         jQuery('>div.' + strSection + '>footer>menu>ol', objSection).attr('class', 'step-1');
                         jQuery('>div.' + strSection + '>footer>menu>ol>li', objSection).removeClass('selected');
                         jQuery('>div.' + strSection + '>footer>menu>ol>li:eq(0)', objSection).addClass('selected');
+
+                        jQuery(objSection).parent('section').attr('class', strSection);
 
                         jQuery('>div.intro', objSection).removeClass('enabled');
                         jQuery('>div.' + strSection, objSection).addClass('enabled');
