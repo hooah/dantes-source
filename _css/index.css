@@ -3659,10 +3659,10 @@ body #container > article.has-sidebar > section > .content .examination-wizard {
           cursor: pointer; }
         body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li:hover > a, body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li.selected > a {
           background-color: #f9f9f9; }
-        body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li.selected {
+        body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li.selected > a {
           height: 41px; }
-          body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li.selected > ol {
-            display: block; }
+        body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li.selected > ol {
+          display: block; }
         body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li.degree-fouryear:before {
           display: block;
           position: absolute;

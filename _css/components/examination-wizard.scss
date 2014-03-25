@@ -113,7 +113,9 @@ body {
                                                 }
                                             }
                                             &.selected {
-                                                height: 41px;
+                                                & > a {
+                                                    height: 41px;
+                                                }
 
                                                 & > ol {
                                                     display: block;

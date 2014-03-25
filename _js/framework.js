@@ -619,21 +619,24 @@ var framework = {
                 jQuery('>header>nav>ul>li[class != "home"]>a, >section>.grid>ol>li>a', framework.data.examwizard.container).bind('click', framework.fn.examwizard.show_toplevel_section);
                 jQuery('>header>nav>ul>li[class != "home"]>ol>li>a, >section>.subject>.intro figure>a, >section>.subject>.intro .content>a.button', framework.data.examwizard.container).bind('click', framework.fn.examwizard.show_sub_section);
                 jQuery('>header>nav>ul>li.home>a', framework.data.examwizard.container).bind('click', framework.fn.examwizard.return_to_grid);
-                jQuery('>section .subject .section>footer>menu>ol>li>a', framework.data.examwizard.container).bind('click', framework.fn.examwizard.control_subject_page);
-                jQuery('>section .subject .section>footer>nav>a', framework.data.examwizard.container).bind('click', framework.fn.examwizard.navigate_subject_page);
+                jQuery('>section>.subject .section>footer>menu>ol>li>a', framework.data.examwizard.container).bind('click', framework.fn.examwizard.control_subject_page);
+                jQuery('>section>.subject .section>footer>nav>a', framework.data.examwizard.container).bind('click', framework.fn.examwizard.navigate_subject_page);
+                jQuery('>section>.grid', framework.data.examwizard.container).addClass('selected');
             },
 
             return_to_grid: function(objEvent) {
                 objEvent.preventDefault();
 
-                if (jQuery('>section>div.grid:visible', framework.data.examwizard.container).length === 0) {
-                    jQuery('>section>div:visible', framework.data.examwizard.container)
+                if (jQuery('>section>div.grid', framework.data.examwizard.container).length === 0) {
+                    jQuery('>section>div', framework.data.examwizard.container).stop();
+                    jQuery('>section>div.selected', framework.data.examwizard.container)
                         .css({display: 'block', opacity: 1})
                         .animate({opacity: 0}, framework.data.examwizard.animation.speed, function() {
-                            jQuery(this).css({display: 'none', opacity: 0});
+                            jQuery(this).css({display: 'none', opacity: 0}).removeClass('selected');
 
                             jQuery('>header>nav>ul>li', framework.data.examwizard.container).removeClass('selected');
                             jQuery('>section>div.grid', framework.data.examwizard.container)
+                                .addClass('selected')
                                 .css({display: 'block', opacity: 0})
                                 .animate({opacity: 1}, framework.data.examwizard.animation.speed);
                         });
@@ -649,13 +652,15 @@ var framework = {
                     jQuery('>header>nav>ul>li', framework.data.examwizard.container).removeClass('selected');
                     jQuery('>header>nav>ul>li.' + strSection, framework.data.examwizard.container).addClass('selected');
 
-                    jQuery('>section>div:visible', framework.data.examwizard.container)
+                    jQuery('>section>div', framework.data.examwizard.container).stop();
+                    jQuery('>section>div.selected', framework.data.examwizard.container)
                         .animate({opacity: 0}, framework.data.examwizard.animation.speed, function() {
-                            jQuery(this).css('display', 'none');
+                            jQuery(this).css('display', 'none').removeClass('selected');
 
                             jQuery('>section>.subject>.section, >section>.subject>.section>ol>li', framework.data.examwizard.container).removeClass('enabled');
 
                             jQuery('>section>div.' + strSection, framework.data.examwizard.container)
+                                .addClass('selected')
                                 .css({display: 'block', opacity: 0})
                                 .animate({opacity: 1}, framework.data.examwizard.animation.speed, function() {
                                     jQuery('>div[class != "intro"]', this).removeClass('enabled');
@@ -683,6 +688,8 @@ var framework = {
 
                         jQuery('>div.' + strSection + '>ol>li', objSection).removeClass('enabled');
                         jQuery('>div.' + strSection + '>ol>li[data-step="1"]', objSection).addClass('enabled');
+                        jQuery('>div.' + strSection + '>footer>nav>a.next', objSection).removeClass('disabled');
+                        jQuery('>div.' + strSection + '>footer>nav>a.back', objSection).addClass('disabled');
                         jQuery('>div.' + strSection + '>footer>menu>ol', objSection).attr('class', 'step-1');
                         jQuery('>div.' + strSection + '>footer>menu>ol>li', objSection).removeClass('selected');
                         jQuery('>div.' + strSection + '>footer>menu>ol>li:eq(0)', objSection).addClass('selected');
@@ -741,6 +748,14 @@ var framework = {
                                     intTargetPage   = intCurPage + 1;
                                 }
                                 break;
+                        }
+
+                        jQuery(this).parent('nav').find('a').removeClass('disabled');
+
+                        if (intTargetPage === intTotalPages) {
+                            jQuery(this).parent('nav').find('a.next').addClass('disabled');
+                        } else if (intTargetPage === 1) {
+                            jQuery(this).parent('nav').find('a.back').addClass('disabled');
                         }
 
                         if (intTargetPage != intCurPage) {
