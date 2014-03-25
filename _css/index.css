@@ -5472,6 +5472,35 @@ form li.complex p.error {
   dl.feature-box-jump-button > dd {
     position: static;
     width: auto; } }
+@media (max-width: 1120px) {
+  body #container > article.has-sidebar > section > .content .examination-wizard > header > section:after {
+    left: -7px;
+    bottom: -39px;
+    width: 300px;
+    height: 188px;
+    background-size: 100% 100%; }
+  body #container > article.has-sidebar > section > .content .examination-wizard > header > section > h1 {
+    width: 65%; }
+  body #container > article.has-sidebar > section > .content .examination-wizard > header > section > h2 {
+    width: 60%; }
+  body #container > article.has-sidebar > section > .content .examination-wizard > section .grid > ol > li > a > strong {
+    font-size: 13px; }
+  body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section .wrapper > figure {
+    padding: 0px 20px; }
+  body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section .wrapper .content {
+    padding-top: 20px; }
+    body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section .wrapper .content p {
+      font-size: 13px;
+      line-height: 18px; }
+  body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section > footer {
+    height: 65px; }
+    body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section > footer > menu > ol:before {
+      width: 397px; }
+    body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section > footer > menu > ol > li {
+      margin: 0px 32px; }
+      body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section > footer > menu > ol > li > a > strong {
+        width: 59px;
+        left: -13px; } }
 @media (max-width: 1100px) {
   body #container > header > section > nav > ul > li > a:link, body #container > header > section > nav > ul > li > a:active, body #container > header > section > nav > ul > li > a:visited {
     padding-left: 10px; }
@@ -5612,6 +5641,20 @@ form li.complex p.error {
     padding-right: 0px; }
     body #container > article.has-sidebar > section > .content > aside > menu.social-links > a:link, body #container > article.has-sidebar > section > .content > aside > menu.social-links > a:active, body #container > article.has-sidebar > section > .content > aside > menu.social-links > a:visited {
       margin-right: 5px; }
+  body #container > article.has-sidebar > section > .content .examination-wizard > header > section:after {
+    left: -4px;
+    bottom: -31px;
+    width: 240px;
+    height: 150px;
+    background-size: 100% 100%; }
+  body #container > article.has-sidebar > section > .content .examination-wizard > section .grid > ol > li > a > strong {
+    font-size: 13px; }
+  body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section > footer > menu > ol {
+    width: 350px; }
+    body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section > footer > menu > ol:before {
+      width: 293px; }
+    body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section > footer > menu > ol > li {
+      margin: 0px 19px; }
   body #container > footer > section > .content > div > nav {
     padding-bottom: 19px; }
     body #container > footer > section > .content > div > nav > a:link, body #container > footer > section > .content > div > nav > a:active, body #container > footer > section > .content > div > nav > a:visited {
@@ -5706,6 +5749,13 @@ form li.complex p.error {
       padding-top: 130px !important; }
     .multimedia-dib-menu > section > div > aside > a {
       float: none !important; } }
+@media (max-width: 976px) {
+  body #container > article.has-sidebar > section > .content .examination-wizard > header > section > h1 {
+    margin-top: 25px;
+    font-size: 24px; }
+  body #container > article.has-sidebar > section > .content .examination-wizard > header > section > h2 {
+    margin-top: 5px;
+    font-size: 13px; } }
 @media (max-width: 867px) {
   body #container > article .slim-cta-banner > h2 {
     background-position: -100px top; }
@@ -5786,6 +5836,20 @@ form li.complex p.error {
           width: 100%;
           float: left;
           clear: both; }
+      body #container > article.has-sidebar > section > .content .examination-wizard > section .grid > ol > li > a > strong {
+        padding-top: 45px;
+        padding-left: 82px;
+        font-size: 13px;
+        line-height: 17px; }
+        body #container > article.has-sidebar > section > .content .examination-wizard > section .grid > ol > li > a > strong:before {
+          top: 37px;
+          left: 10px; }
+      body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .intro .wrapper > figure {
+        padding-left: 20px;
+        padding-right: 20px; }
+      body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .intro .wrapper > .content p {
+        font-size: 13px;
+        line-height: 18px; }
   body #container > article > section > .content div.spotlight > div > figcaption > section {
     padding: 20px 0px; }
     body #container > article > section > .content div.spotlight > div > figcaption > section > h3 {
@@ -5820,6 +5884,19 @@ form li.complex p.error {
     background-position: -150px 0px; }
     body #container > article .slim-cta-banner > h2 > strong {
       left: 110px; }
+  body #container > article.has-sidebar > section > .content .examination-wizard > section .grid > ol > li > a {
+    display: table; }
+    body #container > article.has-sidebar > section > .content .examination-wizard > section .grid > ol > li > a:hover {
+      background-size: auto 100%; }
+    body #container > article.has-sidebar > section > .content .examination-wizard > section .grid > ol > li > a > strong {
+      display: table-cell;
+      padding: 0px 10px;
+      font-size: 12px;
+      line-height: 15px;
+      vertical-align: middle;
+      text-align: center; }
+      body #container > article.has-sidebar > section > .content .examination-wizard > section .grid > ol > li > a > strong:before {
+        display: none; }
 
   .feature-box {
     clear: both; }
@@ -5830,12 +5907,48 @@ form li.complex p.error {
       .feature-box > div > figcaption > a > strong {
         /*font-size: 22px !important;*/
         /*line-height: 22px !important;*/ } }
+@media (max-width: 600px) {
+  body #container > article.has-sidebar > section > .content .examination-wizard > header > section {
+    height: auto;
+    padding-bottom: 30px; }
+    body #container > article.has-sidebar > section > .content .examination-wizard > header > section:after {
+      display: none; }
+    body #container > article.has-sidebar > section > .content .examination-wizard > header > section > h1 {
+      width: auto;
+      float: none;
+      margin-left: 35px;
+      margin-right: 0px;
+      text-align: left; }
+    body #container > article.has-sidebar > section > .content .examination-wizard > header > section > h2 {
+      width: auto;
+      float: none;
+      margin-left: 35px;
+      margin-right: 0px;
+      text-align: left; }
+  body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section .wrapper > figure {
+    width: 20%;
+    padding-top: 40px;
+    vertical-align: top; }
+  body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section .wrapper > .content {
+    width: 80%; } }
 @media (max-width: 540px) {
   body #container > article .slim-cta-banner > h2 {
     background-image: none; }
     body #container > article .slim-cta-banner > h2 > strong {
       width: 60%;
       left: 20px; }
+  body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li.home > a {
+    font-size: 0;
+    line-height: 0; }
+  body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section .wrapper > figure {
+    display: none; }
+  body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section .wrapper > .content {
+    width: 100%;
+    padding: 20px 20px 0px 20px; }
+  body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section > footer > nav {
+    margin: 0px 0px 0px 20%; }
+  body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section > footer > menu {
+    display: none; }
 
   .multimedia-dib-menu > section > div > figure {
     display: none; }
@@ -5880,6 +5993,16 @@ form li.complex p.error {
     body #container > article.has-sidebar > section > .content ul.social > li.print {
       clear: both;
       float: none; }
+  body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li.home {
+    display: none; }
+  body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li > ol:before {
+    width: 120px;
+    top: 5px;
+    left: -131px;
+    text-align: right;
+    font-size: 10px;
+    line-height: 12px;
+    white-space: normal; }
 
   .feature-box {
     clear: both; }

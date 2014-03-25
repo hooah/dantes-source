@@ -199,6 +199,54 @@
 								}
 							}
 						}
+
+                        & .examination-wizard {
+                            & > header {
+                                & > section {
+                                    &:after {
+                                        left: -4px;
+                                        bottom: -31px;
+                                        width: 240px;
+                                        height: 150px;
+                                        background-size: 100% 100%;
+                                    }
+                                }
+                            }
+
+                            & > section {
+                                & .grid {
+                                    & > ol {
+                                        & > li {
+                                            & > a {
+                                                & > strong {
+                                                    font-size: 13px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                & .subject {
+                                    & .section {
+                                        & > footer {
+                                            & > menu {
+                                                & > ol {
+                                                    width: 350px;
+
+                                                    &:before {
+                                                        width: 293px;
+                                                    }
+
+                                                    & > li {
+                                                        margin: 0px 19px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
 					}
 				}
 			}
@@ -394,6 +442,33 @@
     }
 }
 
+@media (max-width: 976px) {
+    body {
+        #container {
+            & > article.has-sidebar {
+                & > section {
+                    & > .content {
+                        & .examination-wizard {
+                            & > header {
+                                & > section {
+                                    & > h1 {
+                                        margin-top: 25px;
+                                        font-size: 24px;
+                                    }
+                                    & > h2 {
+                                        margin-top: 5px;
+                                        font-size: 13px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 867px) {
 	body {
 		#container {
@@ -534,6 +609,48 @@
 							clear: both;
 						}
 					}
+
+                    & > .content {
+                        & .examination-wizard {
+                            & > section {
+                                & .grid {
+                                    & > ol {
+                                        & > li {
+                                            & > a {
+                                                & > strong {
+                                                    padding-top: 45px;
+                                                    padding-left: 82px;
+                                                    font-size: 13px;
+                                                    line-height: 17px;
+
+                                                    &:before {
+                                                        top: 37px;
+                                                        left: 10px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                & .subject {
+                                    & .intro {
+                                        & .wrapper {
+                                            & > figure {
+                                                padding-left: 20px;
+                                                padding-right: 20px;
+                                            }
+                                            & > .content {
+                                                & p {
+                                                    font-size: 13px;
+                                                    line-height: 18px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
 				}
 			}
 		}

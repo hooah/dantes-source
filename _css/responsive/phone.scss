@@ -11,10 +11,47 @@
 						}
 					}
 				}
+
+                &.has-sidebar {
+                    & > section {
+                        & > .content {
+                            & .examination-wizard {
+                                & > section {
+                                    & .grid {
+                                        & > ol {
+                                            & > li {
+                                                & > a {
+                                                    display: table;
+
+                                                    &:hover {
+                                                        background-size: auto 100%;
+                                                    }
+
+                                                    & > strong {
+                                                        display: table-cell;
+                                                        padding: 0px 10px;
+                                                        font-size: 12px;
+                                                        line-height: 15px;
+                                                        vertical-align: middle;
+                                                        text-align: center;
+
+                                                        &:before {
+                                                            display: none;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
 			}
 		}
 	}
-	
+
 	.feature-box {
 		clear: both;
 		
@@ -35,6 +72,63 @@
 	}
 }
 
+@media (max-width: 600px) {
+    body {
+        #container {
+            & > article.has-sidebar {
+                & > section {
+                    & > .content {
+                        & .examination-wizard {
+                            & > header {
+                                & > section {
+                                    height: auto;
+                                    padding-bottom: 30px;
+
+                                    &:after {
+                                        display: none;
+                                    }
+
+                                    & > h1 {
+                                        width: auto;
+                                        float: none;
+                                        margin-left: 35px;
+                                        margin-right: 0px;
+                                        text-align: left;
+                                    }
+                                    & > h2 {
+                                        width: auto;
+                                        float: none;
+                                        margin-left: 35px;
+                                        margin-right: 0px;
+                                        text-align: left;
+                                    }
+                                }
+                            }
+
+                            & > section {
+                                & .subject {
+                                    & .section {
+                                        & .wrapper {
+                                            & > figure {
+                                                width: 20%;
+                                                padding-top: 40px;
+                                                vertical-align: top;
+                                            }
+                                            & > .content {
+                                                width: 80%;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 540px) {
 	body {
 		& #container {
@@ -49,6 +143,52 @@
 						}
 					}
 				}
+
+                &.has-sidebar {
+                    & > section {
+                        & > .content {
+                            & .examination-wizard {
+                                & > header {
+                                    & > nav {
+                                        & > ul {
+                                            & > li {
+                                                &.home {
+                                                    & > a {
+                                                        font-size: 0;
+                                                        line-height: 0;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                & > section {
+                                    & .subject {
+                                        & .section {
+                                            & .wrapper {
+                                                & > figure {
+                                                    display: none;
+                                                }
+                                                & > .content {
+                                                    width: 100%;
+                                                    padding: 20px 20px 0px 20px;
+                                                }
+                                            }
+                                            & > footer {
+                                                & > nav {
+                                                    margin: 0px 0px 0px 20%;
+                                                }
+                                                & > menu {
+                                                    display: none;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
 			}
 		}
 	}
@@ -170,6 +310,31 @@
                             & > li.print {
                                 clear: both;
                                 float: none;
+                            }
+                        }
+                        & .examination-wizard {
+                            & > header {
+                                & > nav {
+                                    & > ul {
+                                        & > li {
+                                            &.home {
+                                                display: none;
+                                            }
+
+                                            & > ol {
+                                                &:before {
+                                                    width: 120px;
+                                                    top: 5px;
+                                                    left: -131px;
+                                                    text-align: right;
+                                                    font-size: 10px;
+                                                    line-height: 12px;
+                                                    white-space: normal;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
