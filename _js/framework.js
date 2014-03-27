@@ -627,7 +627,7 @@ var framework = {
             return_to_grid: function(objEvent) {
                 objEvent.preventDefault();
 
-                if (jQuery('>section>div.grid', framework.data.examwizard.container).length === 0) {
+                if (!jQuery('>section>div.grid', framework.data.examwizard.container).hasClass('selected')) {
                     jQuery('>section>div', framework.data.examwizard.container).stop();
                     jQuery('>section>div.selected', framework.data.examwizard.container)
                         .css({display: 'block', opacity: 1})
@@ -650,6 +650,7 @@ var framework = {
 
                 if (strSection.length) {
                     jQuery('>header>nav>ul>li', framework.data.examwizard.container).removeClass('selected');
+                    jQuery('>header>nav>ul>li>ol>li', framework.data.examwizard.container).removeClass('selected');
                     jQuery('>header>nav>ul>li.' + strSection, framework.data.examwizard.container).addClass('selected');
 
                     jQuery('>section>div', framework.data.examwizard.container).stop();
