@@ -656,7 +656,7 @@ var framework = {
                     jQuery('>section>div', framework.data.examwizard.container).stop();
                     jQuery('>section>div.selected', framework.data.examwizard.container)
                         .animate({opacity: 0}, framework.data.examwizard.animation.speed, function() {
-                            jQuery(this).css('display', 'none').removeClass('selected');
+                            jQuery(this).css({display: 'none'}).removeClass('selected');
 
                             jQuery('>section>.subject>.section, >section>.subject>.section>ol>li', framework.data.examwizard.container).removeClass('enabled');
 
@@ -717,6 +717,15 @@ var framework = {
                     jQuery('>li', objPages).removeClass('enabled');
                     jQuery('>li:eq(' + (intPageNum - 1) + ')', objPages).addClass('enabled');
                     jQuery(objController).attr('class', 'step-' + intPageNum);
+
+                    // control status of next/back buttons
+                    jQuery(this).parents('menu').siblings('nav').find('a').removeClass('disabled');
+
+                    if (intPageNum === jQuery('>li', objPages).length) {
+                        jQuery(this).parents('menu').siblings('nav').find('a.next').addClass('disabled');
+                    } else if (intPageNum === 1) {
+                        jQuery(this).parents('menu').siblings('nav').find('a.back').addClass('disabled');
+                    }
                 }
             },
 
@@ -749,14 +758,6 @@ var framework = {
                                     intTargetPage   = intCurPage + 1;
                                 }
                                 break;
-                        }
-
-                        jQuery(this).parent('nav').find('a').removeClass('disabled');
-
-                        if (intTargetPage === intTotalPages) {
-                            jQuery(this).parent('nav').find('a.next').addClass('disabled');
-                        } else if (intTargetPage === 1) {
-                            jQuery(this).parent('nav').find('a.back').addClass('disabled');
                         }
 
                         if (intTargetPage != intCurPage) {

@@ -57,6 +57,9 @@ jQuery(document).ready(function() {
                 jQuery(this).siblings('a.button').attr('href', strPDFURL);
             }
         });
+
+        jQuery('#strEdLevel').siblings('a.button').attr('href', jQuery('#strEdLevel option:first').attr('value'));
+        jQuery('#strFactSheet').siblings('a.button').attr('href', jQuery('#strFactSheet option:first').attr('value'));
     }
 
     // lunr.js search
