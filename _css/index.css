@@ -848,7 +848,7 @@ body {
             body #container > article.call-to-action > section > .content > .hero > nav > a {
               display: block;
               position: absolute;
-              top: 205px;
+              top: 290px;
               width: 23px;
               height: 26px;
               background-image: url(../_images/sprites.png);
@@ -987,7 +987,7 @@ body {
                   position: absolute;
                   bottom: 0px;
                   width: 100%;
-                  padding: 20px 0px;
+                  padding: 10px 0px 15px 0px;
                   background-image: url(../_images/bg-cta-complex-banner-green.png);
                   background-repeat: repeat;
                   background-position: 0px 0px;
@@ -997,18 +997,41 @@ body {
                   body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption.complex > span > p {
                     display: block;
                     float: left;
-                    margin: 0px 0px 0px 20px;
+                    margin: 0px 0px 0px 15px;
                     padding: 0px;
-                    width: 70%;
-                    color: #fff;
-                    font-size: 18px;
-                    line-height: 21px;
-                    text-shadow: -1px 1px 5px rgba(0, 0, 0, 0.3); }
+                    width: 75%;
+                    color: #fff; }
+                    body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption.complex > span > p > strong {
+                      display: block;
+                      clear: both;
+                      font-size: 48px;
+                      line-height: 48px;
+                      text-transform: uppercase;
+                      font-weight: 600;
+                      text-shadow: 1px 1px 0px #000;
+                      letter-spacing: -2px; }
+                    body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption.complex > span > p > em {
+                      display: block;
+                      clear: both;
+                      font-size: 20px;
+                      line-height: 20px;
+                      text-shadow: 1px 1px 0px #000;
+                      font-style: normal;
+                      font-weight: 600;
+                      text-transform: uppercase; }
                   body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption.complex > span .button {
                     float: right;
-                    margin-top: 0px;
+                    height: 48px;
+                    margin-top: 12px;
                     margin-bottom: 0px;
                     margin-right: 20px; }
+                    body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption.complex > span .button > strong {
+                      padding-left: 15px;
+                      padding-right: 15px;
+                      height: 44px;
+                      line-height: 42px; }
+                      body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption.complex > span .button > strong:after {
+                        margin-top: 15px; }
                 body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption.complex.green > span {
                   background-image: url(../_images/bg-cta-complex-banner-green.png); }
                 body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption.complex.orange > span {
@@ -3397,6 +3420,16 @@ ul.styled {
     line-height: 22px;
     list-style: none; }
 
+ol > li {
+  list-style-image: none !important; }
+
+ul > li, ol > li {
+  font-size: 16px;
+  line-height: 22px; }
+  ul > li p, ol > li p {
+    font-size: 16px;
+    line-height: 22px; }
+
 ul.indented-inline {
   margin-top: 15px;
   margin-left: 15px; }
@@ -5511,6 +5544,16 @@ form li.complex p.error {
     padding-right: 0px; }
   body #container > article.has-sidebar > section > .content > aside > menu.quick-links > ul > li > a:link > p, body #container > article.has-sidebar > section > .content > aside > menu.quick-links > ul > li > a:active > p, body #container > article.has-sidebar > section > .content > aside > menu.quick-links > ul > li > a:visited > p {
     padding-right: 0px; }
+  body #container > article.call-to-action > section > .content > .hero > nav > a {
+    top: 290px; }
+  body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption.complex > span > p > strong {
+    font-size: 36px;
+    line-height: 36px; }
+  body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption.complex > span > p > em {
+    font-size: 18px;
+    line-height: 18px; }
+  body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption.complex > span .button {
+    margin-top: 4px; }
   body #container > article .slim-cta-banner > h2 > strong {
     width: 35%;
     top: 20px; }
@@ -5630,6 +5673,16 @@ form li.complex p.error {
     line-height: 16px; }
   body #container > article.call-to-action > section > .content > aside.hero-aside-news-view > h3 > a:link, body #container > article.call-to-action > section > .content > aside.hero-aside-news-view > h3 > a:active, body #container > article.call-to-action > section > .content > aside.hero-aside-news-view > h3 > a:visited, body #container > article.call-to-action > section > .content > aside.hero-aside-news-view > h3 > a:hover {
     width: 165px; }
+  body #container > article.call-to-action > section > .content > .hero > nav > a {
+    top: 209px; }
+  body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption.complex > span > p {
+    width: auto; }
+  body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption.complex > span .button {
+    float: left;
+    clear: both;
+    display: block;
+    margin-top: 15px;
+    margin-left: 15px; }
   body #container > article.has-sidebar > section > .content ul.breadcrumbs {
     margin-bottom: 37px;
     height: auto;

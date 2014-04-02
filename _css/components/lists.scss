@@ -16,6 +16,24 @@ ul.styled {
 	}
 }
 
+ol {
+    & > li {
+        list-style-image: none !important;
+    }
+}
+
+ul, ol {
+    & > li {
+        font-size: 16px;
+        line-height: 22px;
+
+        & p {
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+}
+
 ul.indented-inline {
     margin-top: 15px;
     margin-left: 15px;

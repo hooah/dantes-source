@@ -548,8 +548,8 @@ var framework = {
                             }
                         });
 
-                        jQuery(objYearItems[0]).trigger('click');
-                        jQuery(objMonthButtons[0]).trigger('click');
+                        framework.fn.multimedia.dib.yearSelect.call(objYearItems[0]);
+                        framework.fn.multimedia.dib.monthSelect.call(objMonthButtons[0]);
                     }
                 },
 

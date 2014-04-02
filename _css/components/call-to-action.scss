@@ -52,7 +52,7 @@ body {
                                 & > a {
                                     display: block;
                                     position: absolute;
-                                    top: 205px;
+                                    top: 290px;
                                     width: 23px;
                                     height: 26px;
                                     background-image: url(../_images/sprites.png);
@@ -226,7 +226,7 @@ body {
                                                 position: absolute;
                                                 bottom: 0px;
                                                 width: 100%;
-                                                padding: 20px 0px;
+                                                padding: 10px 0px 15px 0px;
                                                 background-image: url(../_images/bg-cta-complex-banner-green.png);
                                                 background-repeat: repeat;
                                                 background-position: 0px 0px;
@@ -237,19 +237,49 @@ body {
                                                 & > p {
                                                     display: block;
                                                     float: left;
-                                                    margin: 0px 0px 0px 20px;
+                                                    margin: 0px 0px 0px 15px;
                                                     padding: 0px;
-                                                    width: 70%;
+                                                    width: 75%;
                                                     color: #fff;
-                                                    font-size: 18px;
-                                                    line-height: 21px;
-                                                    text-shadow: -1px 1px 5px rgba(0, 0, 0, 0.3);
+
+                                                    & > strong {
+                                                        display: block;
+                                                        clear: both;
+                                                        font-size: 48px;
+                                                        line-height: 48px;
+                                                        text-transform: uppercase;
+                                                        font-weight: 600;
+                                                        text-shadow: 1px 1px 0px #000;
+                                                        letter-spacing: -2px;
+                                                    }
+                                                    & > em {
+                                                        display: block;
+                                                        clear: both;
+                                                        font-size: 20px;
+                                                        line-height: 20px;
+                                                        text-shadow: 1px 1px 0px #000;
+                                                        font-style: normal;
+                                                        font-weight: 600;
+                                                        text-transform: uppercase;
+                                                    }
                                                 }
                                                 & .button {
                                                     float: right;
-                                                    margin-top: 0px;
+                                                    height: 48px;
+                                                    margin-top: 12px;
                                                     margin-bottom: 0px;
                                                     margin-right: 20px;
+
+                                                    & > strong {
+                                                        padding-left: 15px;
+                                                        padding-right: 15px;
+                                                        height: 44px;
+                                                        line-height: 42px;
+
+                                                        &:after {
+                                                            margin-top: 15px;
+                                                        }
+                                                    }
                                                 }
                                             }
 

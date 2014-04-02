@@ -277,6 +277,44 @@
 				}
 			}
 			& > article {
+                &.call-to-action {
+                    & > section {
+                        & > .content {
+                            & > .hero {
+                                & > nav {
+                                    & > a {
+                                        top: 290px;
+                                    }
+                                }
+
+                                & > ul {
+                                    & > li {
+                                        & > figcaption {
+                                            &.complex {
+                                                & > span {
+                                                    & > p {
+                                                        & > strong {
+                                                            font-size: 36px;
+                                                            line-height: 36px;
+                                                        }
+                                                        & > em {
+                                                            font-size: 18px;
+                                                            line-height: 18px;
+                                                        }
+                                                    }
+                                                    & .button {
+                                                        margin-top: 4px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
 				& .slim-cta-banner {
 					& > h2 {
 						& > strong {

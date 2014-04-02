@@ -132,6 +132,7 @@
                     display: none !important;
                 }
 			}
+
 			& > article.call-to-action {
 				& > section {
 					& > .content {
@@ -159,9 +160,39 @@
                                 }
                             }
 						}
+
+                        & > .hero {
+                            & > nav {
+                                & > a {
+                                    top: 209px;
+                                }
+                            }
+
+                            & > ul {
+                                & > li {
+                                    & > figcaption {
+                                        &.complex {
+                                            & > span {
+                                                & > p {
+                                                    width: auto;
+                                                }
+                                                & .button {
+                                                    float: left;
+                                                    clear: both;
+                                                    display: block;
+                                                    margin-top: 15px;
+                                                    margin-left: 15px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
 					}
 				}
 			}
+
 			& > article.has-sidebar {
 				& > section {
 					& > .content {
