@@ -22,7 +22,8 @@ jQuery(document).ready(function() {
         jQuery('.accordion').foundationAccordion();
     }
     if (typeof jQuery.fn.chosen === 'function') {
-        jQuery('select').chosen();
+        jQuery('select:visible').chosen();
+        jQuery('select:hidden').chosen({width: '100%'});
 
         jQuery('button[type="reset"], input[type="reset"]').bind('click', function() {
             jQuery('select').val('').trigger('chosen:updated');
@@ -60,6 +61,17 @@ jQuery(document).ready(function() {
 
         jQuery('#strEdLevel').siblings('a.button').attr('href', jQuery('#strEdLevel option:first').attr('value'));
         jQuery('#strFactSheet').siblings('a.button').attr('href', jQuery('#strFactSheet option:first').attr('value'));
+    }
+    if (jQuery('#strAddlInfo').length) {
+        jQuery('#strAddlInfo').bind('change', function() {
+            var strPDFURL           = jQuery(this).val();
+
+            if (strPDFURL) {
+                jQuery('#btnAddlInfo').attr('href', strPDFURL);
+            }
+        });
+
+        jQuery('#btnAddlInfo').attr('href', jQuery('#strAddlInfo option:first').attr('value'));
     }
 
     // lunr.js search

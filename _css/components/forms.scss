@@ -20,6 +20,32 @@ body {
                         box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
                     }
 
+                    .chosen-large {
+                        & .chosen-container-single .chosen-single {
+                            height: 43px;
+                            line-height: 39px;
+
+                            & > span {
+                                font-size: 15px;
+                            }
+                            & > div {
+                                & > b {
+                                    background-position: 0px 11px;
+                                }
+                            }
+
+                            &.chosen-with-drop {
+                                & .chosen-single {
+                                    & > div {
+                                        & > b {
+                                            background-position: -16px 11px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
                     fieldset {
                         padding: 15px 0px 20px 0px;
                         margin-top: 30px;

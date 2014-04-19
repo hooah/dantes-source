@@ -1575,6 +1575,8 @@ menu .feature-box > div {
     /*background-image: url(../_images/elements/feature-service_members-distance_learning-student_enrollment_procedures-inline.jpg);*/ }
   .feature-box.feature-box-preset.service_members-training figure {
     background-image: url(../_images/elements/feature-service_members-training.jpg); }
+  .feature-box.feature-box-preset.service_members-troops_to_teachers figure {
+    background-image: url(../_images/elements/feature-service_members-troops_to_teachers.jpg); }
   .feature-box.feature-box-preset.service_members-prep_for_college-earn_college_credit figure, .feature-box.feature-box-preset.service_members-prep_for_college-examinations figure, .feature-box.feature-box-preset.service_members-prep_for_college-self_assessment figure, .feature-box.feature-box-preset.service_members-prep_for_college-student_enrollment figure, .feature-box.feature-box-preset.service_members-prep_for_college-high_school_diploma figure, .feature-box.feature-box-preset.service_members-prep_for_college-tips figure {
     background-position: center right; }
   .feature-box.feature-box-preset.service_members-prep_for_college-earn_college_credit figcaption > a > strong, .feature-box.feature-box-preset.service_members-prep_for_college-examinations figcaption > a > strong, .feature-box.feature-box-preset.service_members-prep_for_college-self_assessment figcaption > a > strong, .feature-box.feature-box-preset.service_members-prep_for_college-student_enrollment figcaption > a > strong, .feature-box.feature-box-preset.service_members-prep_for_college-high_school_diploma figcaption > a > strong, .feature-box.feature-box-preset.service_members-prep_for_college-tips figcaption > a > strong {
@@ -3506,6 +3508,15 @@ body #container > article > section > .content .chosen-container-active .chosen-
 body #container > article > section > .content .chosen-container-active .chosen-single {
   border: 1px solid #aaa;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); }
+body #container > article > section > .content .chosen-large .chosen-container-single .chosen-single {
+  height: 43px;
+  line-height: 39px; }
+  body #container > article > section > .content .chosen-large .chosen-container-single .chosen-single > span {
+    font-size: 15px; }
+  body #container > article > section > .content .chosen-large .chosen-container-single .chosen-single > div > b {
+    background-position: 0px 11px; }
+  body #container > article > section > .content .chosen-large .chosen-container-single .chosen-single.chosen-with-drop .chosen-single > div > b {
+    background-position: -16px 11px; }
 body #container > article > section > .content fieldset {
   padding: 15px 0px 20px 0px;
   margin-top: 30px;
