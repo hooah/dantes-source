@@ -135,12 +135,12 @@ body {
                                                 }
 
                                                 & > a {
-                                                    background-position: 0px -29px;
+                                                    background-position: 0px -229px;
                                                 }
 
                                                 &.selected > a,
                                                 &:hover > a {
-                                                    background-position: -56px -29px;
+                                                    background-position: -56px -229px;
                                                 }
 
                                                 & > ol {
@@ -183,12 +183,12 @@ body {
                                             }
                                             &.degree-fouryear-nodiploma {
                                                 & > a {
-                                                    background-position: 0px -229px;
+                                                    background-position: 0px -29px;
                                                 }
 
                                                 &.selected > a,
                                                 &:hover > a {
-                                                    background-position: -56px -229px;
+                                                    background-position: -56px -29px;
                                                 }
                                             }
                                             &.testing {
@@ -234,7 +234,6 @@ body {
                                                     color: #fff;
                                                     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
                                                     text-decoration: none;
-                                                    text-transform: lowercase;
                                                     text-indent: 0px;
 
                                                     &:hover {
@@ -381,30 +380,41 @@ body {
                                             display: block;
                                             float: left;
                                             width: 33.33333%;
-                                            height: 185px;
+                                            height: 229px;
                                             margin: 0px;
                                             padding: 0px;
                                             background-color: #fff;
                                             list-style: none;
 
                                             & > a {
-                                                display: block;
+                                                display: table;
                                                 height: 100%;
+                                                width: 100%;
+                                                background: #e7e6e6;
+                                                background: -moz-linear-gradient(top,  #e7e6e6 0%, #ffffff 100%);
+                                                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e7e6e6), color-stop(100%,#ffffff));
+                                                background: -webkit-linear-gradient(top,  #e7e6e6 0%,#ffffff 100%);
+                                                background: -o-linear-gradient(top,  #e7e6e6 0%,#ffffff 100%);
+                                                background: -ms-linear-gradient(top,  #e7e6e6 0%,#ffffff 100%);
+                                                background: linear-gradient(to bottom,  #e7e6e6 0%,#ffffff 100%);
+                                                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7e6e6', endColorstr='#ffffff',GradientType=0 );
                                                 border-right: 1px #c7c7c7 solid;
                                                 border-bottom: 1px #c7c7c7 solid;
+                                                -webkit-box-shadow: -2px -2px 2px rgba(0, 0, 0, 0.05) inset;
+                                                -moz-box-shadow: -2px -2px 2px rgba(0, 0, 0, 0.05) inset;
+                                                box-shadow: -2px -2px 2px rgba(0, 0, 0, 0.05) inset;
                                                 text-decoration: none;
 
                                                 &:hover {
                                                     background-repeat: no-repeat;
-                                                    background-size: 100% 100%;
                                                 }
 
                                                 & > strong {
-                                                    display: block;
-                                                    position: relative;
-                                                    padding-left: 115px;
-                                                    padding-top: 65px;
-                                                    padding-right: 25px;
+                                                    display: table-cell;
+                                                    padding-left: 100px;
+                                                    padding-right: 30px;
+                                                    vertical-align: middle;
+                                                    text-align: left;
                                                     font-size: 14px;
                                                     line-height: 19px;
                                                     font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida", sans-serif;
@@ -413,11 +423,13 @@ body {
 
                                                     &:before {
                                                         display: block;
-                                                        position: absolute;
-                                                        top: 57px;
-                                                        left: 38px;
+                                                        float: left;
+                                                        position: relative;
+                                                        top: -5px;
+                                                        left: -80px;
                                                         width: 58px;
                                                         height: 53px;
+                                                        margin-right: -80px;
                                                         background-image: url(../_images/sprites-wizard.png);
                                                         background-repeat: no-repeat;
                                                         content: "";
@@ -443,7 +455,7 @@ body {
                                                 & > a {
                                                     & > strong {
                                                         &:before {
-                                                            background-position: -122px 0px;
+                                                            background-position: -122px -252px;
                                                         }
                                                     }
                                                 }
@@ -452,7 +464,7 @@ body {
 
                                                     & > strong {
                                                         &:before {
-                                                            background-position: -190px 0px;
+                                                            background-position: -190px -252px;
                                                         }
                                                     }
                                                 }
@@ -497,7 +509,7 @@ body {
                                                 & > a {
                                                     & > strong {
                                                         &:before {
-                                                            background-position: -122px -252px;
+                                                            background-position: -122px 0px;
                                                         }
                                                     }
                                                 }
@@ -506,7 +518,7 @@ body {
 
                                                     & > strong {
                                                         &:before {
-                                                            background-position: -190px -252px;
+                                                            background-position: -190px 0px;
                                                         }
                                                     }
                                                 }
@@ -555,7 +567,7 @@ body {
                                     display: none;
                                     padding: 0px;
                                     position: relative;
-                                    height: 370px;
+                                    height: 500px;
 
                                     & .intro,
                                     & .section {
@@ -595,33 +607,25 @@ body {
                                     & .section {
                                         & .wrapper {
                                             display: table;
-                                            height: 300px;
+                                            height: auto;
+                                            margin: 0px 100px;
 
                                             & > figure {
                                                 display: table-cell;
-                                                width: 35%;
+                                                width: 20%;
                                                 height: 100%;
-                                                margin: 0px;
-                                                padding: 0px;
-                                                vertical-align: middle;
-                                                text-align: center;
+                                                padding: 35px 0px 0px 0px;
+                                                vertical-align: top;
+                                                text-align: left;
                                             }
                                             & > .content {
                                                 display: table-cell;
-                                                width: 65%;
+                                                width: 80%;
 
                                                 &.full {
                                                     width: 100%;
                                                     vertical-align: middle;
                                                     text-align: center;
-
-                                                    & > * {
-                                                        margin-left: 40px;
-                                                    }
-                                                }
-
-                                                & > * {
-                                                    margin-right: 40px;
                                                 }
 
                                                 & h2 {
@@ -633,12 +637,74 @@ body {
                                                     font-weight: bold;
                                                     font-size: 20px;
                                                     line-height: 20px;
+                                                    text-shadow: none;
+                                                }
+                                                & h3 {
+                                                    display: block;
+                                                    margin: 0px;
+                                                    padding: 35px 0px 28px 0px;
+                                                    font-family: "Open Sans", sans-serif;
+                                                    color: #272793;
+                                                    font-weight: bold;
+                                                    font-size: 16px;
+                                                    line-height: 16px;
+                                                    text-shadow: none;
+                                                }
+                                                & h6 {
+                                                    display: block;
+                                                    margin: 0px;
+                                                    padding: 33px 0px 0px 0px;
+                                                    text-align: center;
+                                                    font-family: "Open Sans", sans-serif;
+                                                    color: #727272;
+                                                    font-weight: bold;
+                                                    font-size: 14px;
+                                                    line-height: 14px;
+                                                    text-shadow: none;
                                                 }
                                                 & p {
                                                     font-size: 14px;
                                                     line-height: 22px;
                                                     font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida", sans-serif;
                                                     color: #727272;
+                                                    text-align: justify;
+                                                }
+                                                & ul.programs {
+                                                    display: block;
+                                                    margin: 20px 0px 0px 0px;
+                                                    padding: 0px 0px 35px 0px;
+                                                    list-style: none;
+                                                    text-align: center;
+
+                                                    & > li {
+                                                        display: inline-block;
+                                                        margin: 0px 25px;
+                                                        padding: 0px;
+                                                        width: 147px;
+                                                        height: 87px;
+                                                        border: 1px #a7a7a7 solid;
+                                                        background-color: #f9f9f9;
+                                                        @include border-radius(10px);
+                                                        -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.10) inset;
+                                                        -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.10) inset;
+                                                        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.10) inset;
+
+                                                        & > div {
+                                                            display: table;
+                                                            width: 100%;
+                                                            height: 100%;
+
+                                                            & > a {
+                                                                display: table-cell;
+                                                                width: 100%;
+                                                                height: 100%;
+                                                                padding: 0px 10px;
+                                                                text-align: center;
+                                                                vertical-align: middle;
+                                                                text-decoration: none;
+                                                            }
+                                                        }
+                                                    }
                                                 }
                                             }
                                         }
@@ -648,16 +714,16 @@ body {
                                         height: 100%;
 
                                         & .wrapper {
-                                            height: 370px;
+                                            height: 100%;
 
                                             & > figure {
                                                 & > img {
-                                                    width: 50%;
+                                                    width: auto;
                                                     max-width: none;
                                                 }
                                             }
                                             & > .content {
-                                                vertical-align: middle;
+                                                vertical-align: top;
                                             }
                                         }
                                     }
@@ -695,12 +761,16 @@ body {
                                                 }
                                                 & .wrapper {
                                                     display: table;
-                                                    width: 100%;
+                                                    width: auto;
+                                                    margin: 0px 100px 0px 28px;
 
+                                                    & > figure {
+                                                        width: 35%;
+                                                        text-align: center;
+                                                    }
                                                     & .content {
-                                                        padding-top: 40px;
-
-
+                                                        width: 65%;
+                                                        padding-top: 35px;
                                                     }
                                                 }
                                             }
@@ -873,7 +943,7 @@ body {
                                                                 font-family: sans-serif;
                                                                 color: #5c5c5c;
                                                                 text-align: center;
-                                                                text-shadow: 0px 1px 0px #fff;
+                                                                text-shadow: none;
                                                                 font-weight: bold;
                                                             }
                                                         }
@@ -903,14 +973,110 @@ body {
 
                                 & > p {
                                     display: block;
+                                    float: left;
                                     margin: 0px;
-                                    padding: 0px 32px;
-                                    font-size: 12px;
-                                    line-height: 46px;
+                                    padding: 0px 16px;
+                                    font-size: 14px;
+                                    line-height: 43px;
                                     color: #fff;
                                     font-family: 'Open Sans', sans-serif;
-                                    font-weight: normal;
+                                    font-weight: bold;
                                     font-style: normal;
+                                }
+                                & > menu {
+                                    display: block;
+                                    float: right;
+                                    clear: none;
+                                    margin: 0px;
+                                    padding: 0px;
+
+                                    & > ul {
+                                        display: block;
+                                        float: right;
+                                        margin: 0px;
+                                        padding: 0px;
+                                        list-style: none;
+
+                                        &:before {
+                                            display: block;
+                                            float: left;
+                                            padding: 0px 12px 0px 0px;
+                                            content: "SHARE:";
+                                            text-transform: uppercase;
+                                            font-size: 14px;
+                                            line-height: 43px;
+                                            color: #fff;
+                                            font-family: 'Open Sans', sans-serif;
+                                            font-weight: bold;
+                                            font-style: normal;
+                                        }
+
+                                        & > li {
+                                            display: block;
+                                            float: left;
+                                            margin: 2px 0px;
+                                            padding: 0px;
+                                            border-left: 2px #5d5dae solid;
+                                            list-style: none;
+
+                                            & > a {
+                                                display: block;
+                                                width: 45px;
+                                                height: auto;
+                                                text-decoration: none;
+
+                                                & > strong {
+                                                    display: block;
+                                                    margin-top: 5px;
+                                                    margin-left: 9px;
+                                                    width: 27px;
+                                                    height: 32px;
+                                                    background-image: url(../_images/sprites-wizard.png);
+                                                    background-repeat: no-repeat;
+                                                    @include no-text;
+                                                    cursor: pointer;
+                                                }
+                                            }
+
+                                            &.print {
+                                                display: none;
+
+                                                & > a {
+                                                    & > strong {
+                                                        background-position: -258px 0px;
+
+                                                        &:hover {
+                                                            background-position: -258px -42px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            &.email {
+                                                display: none;
+                                                
+                                                & > a {
+                                                    & > strong {
+                                                        background-position: -295px 0px;
+
+                                                        &:hover {
+                                                            background-position: -295px -42px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            &.share {
+                                                & > a {
+                                                    & > strong {
+                                                        background-position: -332px 0px;
+
+                                                        &:hover {
+                                                            background-position: -332px -42px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -919,4 +1085,8 @@ body {
             }
         }
     }
+}
+
+div#at15s {
+    display: none !important;
 }

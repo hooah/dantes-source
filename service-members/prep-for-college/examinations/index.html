@@ -39,12 +39,6 @@ header_extra:
                                             <li class="testing">
                                                 <a href="javascript:;" data-section="testing">Testing</a>
                                             </li>
-                                            <li class="degree-fouryear-nodiploma">
-                                                <a href="javascript:;" data-section="degree-fouryear-nodiploma">GED</a>
-                                                <ol>
-                                                    <li><a href="javascript:;" data-section="ged">GED</a></li>
-                                                </ol>
-                                            </li>
                                             <li class="degree-teaching">
                                                 <a href="javascript:;" data-section="degree-teaching">PRAXIS</a>
                                                 <ol>
@@ -64,6 +58,12 @@ header_extra:
                                                     <li><a href="javascript:;" data-section="gmat">GMAT</a></li>
                                                 </ol>
                                             </li>
+                                            <li class="degree-fouryear-nodiploma">
+                                                <a href="javascript:;" data-section="degree-fouryear-nodiploma">GED</a>
+                                                <ol>
+                                                    <li><a href="javascript:;" data-section="ged">GED</a></li>
+                                                </ol>
+                                            </li>
                                             <li class="degree-fouryear">
                                                 <a href="javascript:;" data-section="degree-fouryear">ACT/SAT</a>
                                                 <ol>
@@ -78,20 +78,20 @@ header_extra:
                                     <!-- intro grid -->
                                     <div class="grid">
                                         <ol>
+                                            <li class="degree-fouryear-nodegree">
+                                                <a href="javascript:;" data-section="degree-fouryear-nodiploma"><strong>I would like to get a 4-year degree but do not have a high school diploma</strong></a>
+                                            </li>
+                                            <li class="degree-graduate">
+                                                <a href="javascript:;" data-section="degree-graduate"><strong>I would like to get a graduate degree</strong></a>
+                                            </li>
+                                            <li class="degree-law">
+                                                <a href="javascript:;" data-section="degree-law"><strong>I would like to get a law degree</strong></a>
+                                            </li>
                                             <li class="degree-fouryear">
                                                 <a href="javascript:;" data-section="degree-fouryear"><strong>I would like to get a 4-year degree and I have my high school diploma</strong></a>
                                             </li>
                                             <li class="degree-teaching">
                                                 <a href="javascript:;" data-section="degree-teaching"><strong>I would like to get a teaching degree</strong></a>
-                                            </li>
-                                            <li class="degree-graduate">
-                                                <a href="javascript:;" data-section="degree-graduate"><strong>I would like to get a graduate degree</strong></a>
-                                            </li>
-                                            <li class="degree-fouryear-nodegree">
-                                                <a href="javascript:;" data-section="degree-fouryear-nodiploma"><strong>I would like to get a 4-year degree but do not have a high school diploma</strong></a>
-                                            </li>
-                                            <li class="degree-law">
-                                                <a href="javascript:;" data-section="degree-law"><strong>I would like to get a law degree</strong></a>
                                             </li>
                                             <li class="testing">
                                                 <a href="javascript:;" data-section="testing"><strong>I would like to find a local testing center</strong></a>
@@ -104,24 +104,35 @@ header_extra:
                                         <div class="intro">
                                             <div class="wrapper">
                                                 <figure>
-                                                    <a href="javascript:;" data-section="act"><img src="{{ page.path }}/_images/wizard/logos-large-act.png" alt="ACT"></a>
-                                                    <br /><br />
-                                                    <a href="javascript:;" data-section="sat"><img src="{{ page.path }}/_images/wizard/logos-large-sat.png" alt="SAT"></a>
+                                                    <img src="{{ page.path }}/_images/wizard/icons-degree-fouryear.png">
                                                 </figure>
                                                 <div class="content">
-                                                    <p>Both the ACT and the SAT are nationally administered standardized tests that help colleges evaluate candidates. All schools accept either test interchangably. So as you begin to think about college and creating the best application package possible, your admissions plan should begin with the question, "Which test should I take?"</p>
-                                                    <a href="javascript:;" data-section="act" class="button button-blue button-pointed right"><strong>Next &gt;</strong></a>
+                                                    <h3>I'd like to get a 4-year degree and I have my high school diploma</h3>
+                                                    <p>Many colleges require that students submit test results as part of the admission application process. Both the ACT and the SAT are nationally administered standardized tests that help colleges evaluate candidates. All schools accept either test interchangeably. As you begin to think about college and creating the best application package possible, your admissions plan should begin with the question, "Which test should I take?"</p>
+                                                    <h6>Select one of the programs below to find out more:</h6>
+                                                    <ul class="programs">
+                                                        <li>
+                                                            <div>
+                                                                <a href="javascript:;" data-section="act"><img src="{{ path.path }}/_images/wizard/logos-small-act-color.png" alt="ACT"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a href="javascript:;" data-section="sat"><img src="{{ path.path }}/_images/wizard/logos-small-sat-color.png" alt="SAT"></a>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
                                                 </div>
                                             </div>
                                         </div>
 
                                         <!-- act -->
-                                        <div class="section act">
+                                        <div class="section act" data-pdf="{{ page.path }}/_content/examinations/DANTES_examwizard_ACT.pdf">
                                             <ol>
                                                 <li data-step="1">
                                                     <div class="wrapper">
                                                         <figure>
-                                                            <img src="{{ page.path }}/_images/wizard/logos-large-act.png">
+                                                            <img src="{{ page.path }}/_images/wizard/logos-large-act-color.png">
                                                         </figure>
 
                                                         <div class="content">
@@ -133,7 +144,7 @@ header_extra:
                                                 <li data-step="2">
                                                     <div class="wrapper">
                                                         <figure>
-                                                            <img src="{{ page.path }}/_images/wizard/logos-large-act.png">
+                                                            <img src="{{ page.path }}/_images/wizard/logos-large-act-color.png">
                                                         </figure>
 
                                                         <div class="content">
@@ -145,7 +156,7 @@ header_extra:
                                                 <li data-step="3">
                                                     <div class="wrapper">
                                                         <figure>
-                                                            <img src="{{ page.path }}/_images/wizard/logos-large-act.png">
+                                                            <img src="{{ page.path }}/_images/wizard/logos-large-act-color.png">
                                                         </figure>
 
                                                         <div class="content">
@@ -158,7 +169,7 @@ header_extra:
                                                 <li data-step="4">
                                                     <div class="wrapper">
                                                         <figure>
-                                                            <img src="{{ page.path }}/_images/wizard/logos-large-act.png">
+                                                            <img src="{{ page.path }}/_images/wizard/logos-large-act-color.png">
                                                         </figure>
 
                                                         <div class="content">
@@ -171,7 +182,7 @@ header_extra:
                                                 <li data-step="5">
                                                     <div class="wrapper">
                                                         <figure>
-                                                            <img src="{{ page.path }}/_images/wizard/logos-large-act.png">
+                                                            <img src="{{ page.path }}/_images/wizard/logos-large-act-color.png">
                                                         </figure>
 
                                                         <div class="content">
@@ -211,12 +222,12 @@ header_extra:
                                         </div>
 
                                         <!-- sat -->
-                                        <div class="section sat">
+                                        <div class="section sat" data-pdf="{{ page.path }}/_content/examinations/DANTES_examwizard_SAT.pdf">
                                             <ol>
                                                 <li data-step="1">
                                                     <div class="wrapper">
                                                         <figure>
-                                                            <img src="{{ page.path }}/_images/wizard/logos-large-sat.png">
+                                                            <img src="{{ page.path }}/_images/wizard/logos-large-sat-color.png">
                                                         </figure>
 
                                                         <div class="content">
@@ -228,7 +239,7 @@ header_extra:
                                                 <li data-step="2">
                                                     <div class="wrapper">
                                                         <figure>
-                                                            <img src="{{ page.path }}/_images/wizard/logos-large-sat.png">
+                                                            <img src="{{ page.path }}/_images/wizard/logos-large-sat-color.png">
                                                         </figure>
 
                                                         <div class="content">
@@ -240,7 +251,7 @@ header_extra:
                                                 <li data-step="3">
                                                     <div class="wrapper">
                                                         <figure>
-                                                            <img src="{{ page.path }}/_images/wizard/logos-large-sat.png">
+                                                            <img src="{{ page.path }}/_images/wizard/logos-large-sat-color.png">
                                                         </figure>
 
                                                         <div class="content">
@@ -253,7 +264,7 @@ header_extra:
                                                 <li data-step="4">
                                                     <div class="wrapper">
                                                         <figure>
-                                                            <img src="{{ page.path }}/_images/wizard/logos-large-sat.png">
+                                                            <img src="{{ page.path }}/_images/wizard/logos-large-sat-color.png">
                                                         </figure>
 
                                                         <div class="content">
@@ -266,7 +277,7 @@ header_extra:
                                                 <li data-step="5">
                                                     <div class="wrapper">
                                                         <figure>
-                                                            <img src="{{ page.path }}/_images/wizard/logos-large-sat.png">
+                                                            <img src="{{ page.path }}/_images/wizard/logos-large-sat-color.png">
                                                         </figure>
 
                                                         <div class="content">
@@ -311,24 +322,35 @@ header_extra:
                                         <div class="intro">
                                             <div class="wrapper">
                                                 <figure>
-                                                    <a href="javascript:;" data-section="gre"><img width="40%" src="{{ page.path }}/_images/wizard/logos-large-gre.png" alt="GRE"></a>
-                                                    <br /><br /><br />
-                                                    <a href="javascript:;" data-section="gmat"><img src="{{ page.path }}/_images/wizard/logos-large-gmat.png" alt="GMAT"></a>
+                                                    <img src="{{ page.path }}/_images/wizard/icons-degree-graduate.png">
                                                 </figure>
                                                 <div class="content">
-                                                    <p>If you're applying to graduate or business school,  you'll be required to take a standard examination. Few students relish the idea of standardized tests, but they help admissions officials determine who is capable of withstanding the rigors of graduate school. Different schools have different admission requirements, so you’ll need to see which test is right for you.</p>
-                                                    <a href="javascript:;" data-section="gre" class="button button-blue button-pointed right"><strong>Next &gt;</strong></a>
+                                                    <h3>I would like to get a graduate degree</h3>
+                                                    <p>If you are applying to graduate or business school, you will be required to take a standard examination. Few students understand the benefits of standardized testing, but they help admissions officials determine who is capable of withstanding the rigors of graduate school. Different schools have different admission requirements, so you’ll need to see which test is right for you.</p>
+                                                    <h6>Select one of the programs below to find out more:</h6>
+                                                    <ul class="programs">
+                                                        <li>
+                                                            <div>
+                                                                <a href="javascript:;" data-section="gre"><img src="{{ path.path }}/_images/wizard/logos-small-gre-color.png" alt="GRE"></a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <a href="javascript:;" data-section="gmat"><img src="{{ path.path }}/_images/wizard/logos-small-gmat-color.png" alt="GMAT"></a>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
                                                 </div>
                                             </div>
                                         </div>
 
                                         <!-- gre -->
-                                        <div class="section gre">
+                                        <div class="section gre" data-pdf="{{ page.path }}/_content/examinations/DANTES_examwizard_GRE.pdf">
                                             <ol>
                                                 <li data-step="1">
                                                     <div class="wrapper">
                                                         <figure>
-                                                            <img src="{{ page.path }}/_images/wizard/logos-large-gre.png">
+                                                            <img src="{{ page.path }}/_images/wizard/logos-large-gre-color.png">
                                                         </figure>
 
                                                         <div class="content">
@@ -340,7 +362,7 @@ header_extra:
                                                 <li data-step="2">
                                                     <div class="wrapper">
                                                         <figure>
-                                                            <img src="{{ page.path }}/_images/wizard/logos-large-gre.png">
+                                                            <img src="{{ page.path }}/_images/wizard/logos-large-gre-color.png">
                                                         </figure>
 
                                                         <div class="content">
@@ -352,7 +374,7 @@ header_extra:
                                                 <li data-step="3">
                                                     <div class="wrapper">
                                                         <figure>
-                                                            <img src="{{ page.path }}/_images/wizard/logos-large-gre.png">
+                                                            <img src="{{ page.path }}/_images/wizard/logos-large-gre-color.png">
                                                         </figure>
 
                                                         <div class="content">
@@ -366,7 +388,7 @@ header_extra:
                                                 <li data-step="4">
                                                     <div class="wrapper">
                                                         <figure>
-                                                            <img src="{{ page.path }}/_images/wizard/logos-large-gre.png">
+                                                            <img src="{{ page.path }}/_images/wizard/logos-large-gre-color.png">
                                                         </figure>
 
                                                         <div class="content">
@@ -379,7 +401,7 @@ header_extra:
                                                 <li data-step="5">
                                                     <div class="wrapper">
                                                         <figure>
-                                                            <img src="{{ page.path }}/_images/wizard/logos-large-gre.png">
+                                                            <img src="{{ page.path }}/_images/wizard/logos-large-gre-color.png">
                                                         </figure>
 
                                                         <div class="content">
@@ -419,12 +441,12 @@ header_extra:
                                         </div>
 
                                         <!-- gmat -->
-                                        <div class="section gmat">
+                                        <div class="section gmat" data-pdf="{{ page.path }}/_content/examinations/DANTES_examwizard_GMAT.pdf">
                                             <ol>
                                                 <li data-step="1">
                                                     <div class="wrapper">
                                                         <figure>
-                                                            <img src="{{ page.path }}/_images/wizard/logos-large-gmat.png">
+                                                            <img src="{{ page.path }}/_images/wizard/logos-large-gmat-color.png">
                                                         </figure>
 
                                                         <div class="content">
@@ -436,7 +458,7 @@ header_extra:
                                                 <li data-step="2">
                                                     <div class="wrapper">
                                                         <figure>
-                                                            <img src="{{ page.path }}/_images/wizard/logos-large-gmat.png">
+                                                            <img src="{{ page.path }}/_images/wizard/logos-large-gmat-color.png">
                                                         </figure>
 
                                                         <div class="content">
@@ -448,7 +470,7 @@ header_extra:
                                                 <li data-step="3">
                                                     <div class="wrapper">
                                                         <figure>
-                                                            <img src="{{ page.path }}/_images/wizard/logos-large-gmat.png">
+                                                            <img src="{{ page.path }}/_images/wizard/logos-large-gmat-color.png">
                                                         </figure>
 
                                                         <div class="content">
@@ -462,7 +484,7 @@ header_extra:
                                                 <li data-step="4">
                                                     <div class="wrapper">
                                                         <figure>
-                                                            <img src="{{ page.path }}/_images/wizard/logos-large-gmat.png">
+                                                            <img src="{{ page.path }}/_images/wizard/logos-large-gmat-color.png">
                                                         </figure>
 
                                                         <div class="content">
@@ -475,7 +497,7 @@ header_extra:
                                                 <li data-step="5">
                                                     <div class="wrapper">
                                                         <figure>
-                                                            <img src="{{ page.path }}/_images/wizard/logos-large-gmat.png">
+                                                            <img src="{{ page.path }}/_images/wizard/logos-large-gmat-color.png">
                                                         </figure>
 
                                                         <div class="content">
@@ -520,22 +542,30 @@ header_extra:
                                         <div class="intro">
                                             <div class="wrapper">
                                                 <figure>
-                                                    <a href="javascript:;" data-section="lsat"><img src="{{ page.path }}/_images/wizard/logos-large-lsat.png" alt="LSAT"></a>
+                                                    <img src="{{ page.path }}/_images/wizard/icons-degree-law.png">
                                                 </figure>
                                                 <div class="content">
-                                                    <p>There is no single path that will prepare you for a legal education. However, there are core skills and values that will provide you with a solid foundation. No particular undergraduate education is recommended; students are admitted to law school from almost every academic discipline. The LSAT is an integral part of the law school admission process. It provides a standard measure of acquired reading and verbal reasoning skills that law schools can use as one of several factors in assessing applicants.</p>
-                                                    <a href="javascript:;" data-section="lsat" class="button button-blue button-pointed right"><strong>Next &gt;</strong></a>
+                                                    <h3>I'd like to get a law degree</h3>
+                                                    <p>There is no single path that will prepare you for a legal education. However, there are core skills and values that will provide you with a solid foundation. The LSAT is an integral part of the law school admission process. It provides a standard measure of acquired reading and verbal reasoning skills that law schools can use as one of several factors in assessing applicants.</p>
+                                                    <h6>Select the program below to find out more:</h6>
+                                                    <ul class="programs">
+                                                        <li>
+                                                            <div>
+                                                                <a href="javascript:;" data-section="lsat"><img src="{{ path.path }}/_images/wizard/logos-small-lsat-color.png" alt="LSAT"></a>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
                                                 </div>
                                             </div>
                                         </div>
 
                                         <!-- lsat -->
-                                        <div class="section lsat">
+                                        <div class="section lsat" data-pdf="{{ page.path }}/_content/examinations/DANTES_examwizard_LSAT.pdf">
                                             <ol>
                                                 <li data-step="1">
                                                     <div class="wrapper">
                                                         <figure>
-                                                            <img src="{{ page.path }}/_images/wizard/logos-large-lsat.png">
+                                                            <img src="{{ page.path }}/_images/wizard/logos-large-lsat-color.png">
                                                         </figure>
 
                                                         <div class="content">
@@ -547,7 +577,7 @@ header_extra:
                                                 <li data-step="2">
                                                     <div class="wrapper">
                                                         <figure>
-                                                            <img src="{{ page.path }}/_images/wizard/logos-large-lsat.png">
+                                                            <img src="{{ page.path }}/_images/wizard/logos-large-lsat-color.png">
                                                         </figure>
 
                                                         <div class="content">
@@ -559,7 +589,7 @@ header_extra:
                                                 <li data-step="3">
                                                     <div class="wrapper">
                                                         <figure>
-                                                            <img src="{{ page.path }}/_images/wizard/logos-large-lsat.png">
+                                                            <img src="{{ page.path }}/_images/wizard/logos-large-lsat-color.png">
                                                         </figure>
 
                                                         <div class="content">
@@ -572,7 +602,7 @@ header_extra:
                                                 <li data-step="4">
                                                     <div class="wrapper">
                                                         <figure>
-                                                            <img src="{{ page.path }}/_images/wizard/logos-large-lsat.png">
+                                                            <img src="{{ page.path }}/_images/wizard/logos-large-lsat-color.png">
                                                         </figure>
 
                                                         <div class="content">
@@ -585,7 +615,7 @@ header_extra:
                                                 <li data-step="5">
                                                     <div class="wrapper">
                                                         <figure>
-                                                            <img src="{{ page.path }}/_images/wizard/logos-large-lsat.png">
+                                                            <img src="{{ page.path }}/_images/wizard/logos-large-lsat-color.png">
                                                         </figure>
 
                                                         <div class="content">
@@ -630,22 +660,30 @@ header_extra:
                                         <div class="intro">
                                             <div class="wrapper">
                                                 <figure>
-                                                    <a href="javascript:;" data-section="praxis"><img src="{{ page.path }}/_images/wizard/logos-large-praxis.png" alt="The PRAXIS Series"></a>
+                                                    <img src="{{ page.path }}/_images/wizard/icons-degree-teaching.png">
                                                 </figure>
                                                 <div class="content">
-                                                    <p>Perhaps you're wondering what type of career you can pursue that will be both meaningful and progressive. Or maybe you are already working, but have been yearning for a change to a more inspiring and satisfying line of work. Teaching offers an opportunity for you to affect the world by informing, enlightening and guiding young minds. Teaching is also a career filled with growth potential. If you enjoy helping students grow in knowledge and understanding, then teaching may be right for you.</p>
-                                                    <a href="javascript:;" data-section="praxis" class="button button-blue button-pointed right"><strong>Next &gt;</strong></a>
+                                                    <h3>I'd like to get a teaching degree</h3>
+                                                    <p>Perhaps you're wondering what type of career you can pursue that will be both meaningful and progressive. Teaching offers an opportunity for you to affect the world by informing, enlightening and guiding young minds. Teaching is also a career filled with growth potential. If you enjoy helping students grow in knowledge and understanding, then teaching may be right for you.</p>
+                                                    <h6>Select the program below to find out more:</h6>
+                                                    <ul class="programs">
+                                                        <li>
+                                                            <div>
+                                                                <a href="javascript:;" data-section="praxis"><img src="{{ path.path }}/_images/wizard/logos-small-praxis-color.png" alt="PRAXIS"></a>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
                                                 </div>
                                             </div>
                                         </div>
 
                                         <!-- praxis -->
-                                        <div class="section praxis">
+                                        <div class="section praxis" data-pdf="{{ page.path }}/_content/examinations/DANTES_examwizard_PRAXIS.pdf">
                                             <ol>
                                                 <li data-step="1">
                                                     <div class="wrapper">
                                                         <figure>
-                                                            <img src="{{ page.path }}/_images/wizard/logos-large-praxis.png">
+                                                            <img src="{{ page.path }}/_images/wizard/logos-large-praxis-color.png">
                                                         </figure>
 
                                                         <div class="content">
@@ -657,7 +695,7 @@ header_extra:
                                                 <li data-step="2">
                                                     <div class="wrapper">
                                                         <figure>
-                                                            <img src="{{ page.path }}/_images/wizard/logos-large-praxis.png">
+                                                            <img src="{{ page.path }}/_images/wizard/logos-large-praxis-color.png">
                                                         </figure>
 
                                                         <div class="content">
@@ -669,7 +707,7 @@ header_extra:
                                                 <li data-step="3">
                                                     <div class="wrapper">
                                                         <figure>
-                                                            <img src="{{ page.path }}/_images/wizard/logos-large-praxis.png">
+                                                            <img src="{{ page.path }}/_images/wizard/logos-large-praxis-color.png">
                                                         </figure>
 
                                                         <div class="content">
@@ -682,7 +720,7 @@ header_extra:
                                                 <li data-step="4">
                                                     <div class="wrapper">
                                                         <figure>
-                                                            <img src="{{ page.path }}/_images/wizard/logos-large-praxis.png">
+                                                            <img src="{{ page.path }}/_images/wizard/logos-large-praxis-color.png">
                                                         </figure>
 
                                                         <div class="content">
@@ -695,7 +733,7 @@ header_extra:
                                                 <li data-step="5">
                                                     <div class="wrapper">
                                                         <figure>
-                                                            <img src="{{ page.path }}/_images/wizard/logos-large-praxis.png">
+                                                            <img src="{{ page.path }}/_images/wizard/logos-large-praxis-color.png">
                                                         </figure>
 
                                                         <div class="content">
@@ -740,22 +778,30 @@ header_extra:
                                         <div class="intro">
                                             <div class="wrapper">
                                                 <figure>
-                                                    <a href="javascript:;" data-section="ged"><img src="{{ page.path }}/_images/wizard/logos-large-ged.png" alt="GED"></a>
+                                                    <img src="{{ page.path }}/_images/wizard/icons-degree-fouryear-nodiploma.png">
                                                 </figure>
                                                 <div class="content">
-                                                    <p>Right now in the US, not enough people have the required skills or knowledge to fill available jobs. 4 million available jobs, in fact. The GED® test can help solve this economic need by opening the doors for millions of adult learners to college courses, apprenticeships and job training—the pathway adults need to gain skills and knowledge, fill these jobs, and care for their families.</p>
-                                                    <a href="javascript:;" data-section="ged" class="button button-blue button-pointed right"><strong>Next &gt;</strong></a>
+                                                    <h3>I'd like to get a 4-year degree but do not have a high school diploma</h3>
+                                                    <p>Right now in the US, not enough people have the required skills or knowledge to fill available jobs. 4 million available jobs, in fact. The GED&reg; test can help solve this economic need by opening the doors for millions of adult learners to college courses, apprenticeships and job training—the pathway adults need to gain skills and knowledge, fill these jobs, and care for their families.</p>
+                                                    <h6>Select the program below to find out more:</h6>
+                                                    <ul class="programs">
+                                                        <li>
+                                                            <div>
+                                                                <a href="javascript:;" data-section="ged"><img src="{{ path.path }}/_images/wizard/logos-small-ged-color.png" alt="GED"></a>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
                                                 </div>
                                             </div>
                                         </div>
 
                                         <!-- ged -->
-                                        <div class="section ged">
+                                        <div class="section ged" data-pdf="{{ page.path }}/_content/examinations/DANTES_examwizard_GED.pdf">
                                             <ol>
                                                 <li data-step="1">
                                                     <div class="wrapper">
                                                         <figure>
-                                                            <img src="{{ page.path }}/_images/wizard/logos-large-ged.png">
+                                                            <img src="{{ page.path }}/_images/wizard/logos-large-ged-color.png">
                                                         </figure>
 
                                                         <div class="content">
@@ -767,7 +813,7 @@ header_extra:
                                                 <li data-step="2">
                                                     <div class="wrapper">
                                                         <figure>
-                                                            <img src="{{ page.path }}/_images/wizard/logos-large-ged.png">
+                                                            <img src="{{ page.path }}/_images/wizard/logos-large-ged-color.png">
                                                         </figure>
 
                                                         <div class="content">
@@ -779,7 +825,7 @@ header_extra:
                                                 <li data-step="3">
                                                     <div class="wrapper">
                                                         <figure>
-                                                            <img src="{{ page.path }}/_images/wizard/logos-large-ged.png">
+                                                            <img src="{{ page.path }}/_images/wizard/logos-large-ged-color.png">
                                                         </figure>
 
                                                         <div class="content">
@@ -792,7 +838,7 @@ header_extra:
                                                 <li data-step="4">
                                                     <div class="wrapper">
                                                         <figure>
-                                                            <img src="{{ page.path }}/_images/wizard/logos-large-ged.png">
+                                                            <img src="{{ page.path }}/_images/wizard/logos-large-ged-color.png">
                                                         </figure>
 
                                                         <div class="content">
@@ -805,7 +851,7 @@ header_extra:
                                                 <li data-step="5">
                                                     <div class="wrapper">
                                                         <figure>
-                                                            <img src="{{ page.path }}/_images/wizard/logos-large-ged.png">
+                                                            <img src="{{ page.path }}/_images/wizard/logos-large-ged-color.png">
                                                         </figure>
 
                                                         <div class="content">
@@ -858,6 +904,19 @@ header_extra:
                                 </section>
                                 <footer>
                                     <p>&copy; DANTES 2014. All Rights Reserved.</p>
+                                    <menu>
+                                        <ul>
+                                            <li class="print"><a href="javascript:;" target="_blank"><strong>Print</strong></a></li>
+                                            <li class="email" data-email-template="act"><a href="javascript:;" class="addthis_button_email" addthis:url="http://www.dantes.doded.mil/_content/examinations/DANTES_examwizard_ACT.pdf" addthis:var_examname="ACT" addthis:title="More information about the ACT examination from the DANTES website."><strong>E-mail</strong></a></li>
+                                            <li class="email" data-email-template="sat"><a href="javascript:;" class="addthis_button_email" addthis:url="http://www.dantes.doded.mil/_content/examinations/DANTES_examwizard_SAT.pdf" addthis:var_examname="SAT" addthis:title="More information about the SAT examination from the DANTES website."><strong>E-mail</strong></a></li>
+                                            <li class="email" data-email-template="gre"><a href="javascript:;" class="addthis_button_email" addthis:url="http://www.dantes.doded.mil/_content/examinations/DANTES_examwizard_GRE.pdf" addthis:var_examname="GRE" addthis:title="More information about the GRE examination from the DANTES website."><strong>E-mail</strong></a></li>
+                                            <li class="email" data-email-template="gmat"><a href="javascript:;" class="addthis_button_email" addthis:url="http://www.dantes.doded.mil/_content/examinations/DANTES_examwizard_GMAT.pdf" addthis:var_examname="GMAT" addthis:title="More information about the GMAT examination from the DANTES website."><strong>E-mail</strong></a></li>
+                                            <li class="email" data-email-template="lsat"><a href="javascript:;" class="addthis_button_email" addthis:url="http://www.dantes.doded.mil/_content/examinations/DANTES_examwizard_LSAT.pdf" addthis:var_examname="LSAT" addthis:title="More information about the LSAT examination from the DANTES website."><strong>E-mail</strong></a></li>
+                                            <li class="email" data-email-template="praxis"><a href="javascript:;" class="addthis_button_email" addthis:url="http://www.dantes.doded.mil/_content/examinations/DANTES_examwizard_PRAXIS.pdf" addthis:var_examname="PRAXIS" addthis:title="More information about the PRAXIS examination from the DANTES website."><strong>E-mail</strong></a></li>
+                                            <li class="email" data-email-template="ged"><a href="javascript:;" class="addthis_button_email" addthis:url="http://www.dantes.doded.mil/_content/examinations/DANTES_examwizard_GED.pdf" addthis:var_examname="GED" addthis:title="More information about the GED examination from the DANTES website."><strong>E-mail</strong></a></li>
+                                            <li class="share"><a href="javascript:;" class="addthis_button_compact"><strong>Share</strong></a></li>
+                                        </ul>
+                                    </menu>
                                 </footer>
                             </div>
 

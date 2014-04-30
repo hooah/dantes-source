@@ -617,7 +617,7 @@ var framework = {
                 framework.data.examwizard.container     = jQuery('.examination-wizard');
 
                 jQuery('>header>nav>ul>li[class != "home"]>a, >section>.grid>ol>li>a', framework.data.examwizard.container).bind('click', framework.fn.examwizard.show_toplevel_section);
-                jQuery('>header>nav>ul>li[class != "home"]>ol>li>a, >section>.subject>.intro figure>a, >section>.subject>.intro .content>a.button', framework.data.examwizard.container).bind('click', framework.fn.examwizard.show_sub_section);
+                jQuery('>header>nav>ul>li[class != "home"]>ol>li>a, >section>.subject>.intro figure>a, >section>.subject>.intro .content>ul.programs>li>div>a', framework.data.examwizard.container).bind('click', framework.fn.examwizard.show_sub_section);
                 jQuery('>header>nav>ul>li.home>a', framework.data.examwizard.container).bind('click', framework.fn.examwizard.return_to_grid);
                 jQuery('>section>.subject .section>footer>menu>ol>li>a', framework.data.examwizard.container).bind('click', framework.fn.examwizard.control_subject_page);
                 jQuery('>section>.subject .section>footer>nav>a', framework.data.examwizard.container).bind('click', framework.fn.examwizard.navigate_subject_page);
@@ -634,6 +634,7 @@ var framework = {
                         .animate({opacity: 0}, framework.data.examwizard.animation.speed, function() {
                             jQuery(this).css({display: 'none', opacity: 0}).removeClass('selected');
 
+                            jQuery('>footer>menu>ul>li.print', framework.data.examwizard.container).hide();
                             jQuery('>header>nav>ul>li', framework.data.examwizard.container).removeClass('selected');
                             jQuery('>section>div.grid', framework.data.examwizard.container)
                                 .addClass('selected')
@@ -652,6 +653,7 @@ var framework = {
                     jQuery('>header>nav>ul>li', framework.data.examwizard.container).removeClass('selected');
                     jQuery('>header>nav>ul>li>ol>li', framework.data.examwizard.container).removeClass('selected');
                     jQuery('>header>nav>ul>li.' + strSection, framework.data.examwizard.container).addClass('selected');
+                    jQuery('>footer>menu>ul>li.print', framework.data.examwizard.container).hide();
 
                     jQuery('>section>div', framework.data.examwizard.container).stop();
                     jQuery('>section>div.selected', framework.data.examwizard.container)
@@ -685,6 +687,18 @@ var framework = {
                     var objSection          = jQuery('>section>div.' + strParentSection, framework.data.examwizard.container);
 
                     if (objSection) {
+                        var strPDFURL           = jQuery('>div.' + strSection, objSection).attr('data-pdf');
+
+                        jQuery('>footer>menu>ul>li.print, >footer>menu>ul>li.email', framework.data.examwizard.container).hide();
+
+                        if ((strPDFURL) && (strPDFURL.length)) {
+                            jQuery('>footer>menu>ul>li.print', framework.data.examwizard.container).show();
+                            jQuery('>footer>menu>ul>li.print>a', framework.data.examwizard.container).attr('href', strPDFURL);
+                            jQuery('>footer>menu>ul>li.email[data-email-template="' + strSection + '"]', framework.data.examwizard.container).show();
+
+                            addthis_share.email_vars.examname = strSection.toUpperCase();
+                        }
+
                         jQuery('>div', objSection).removeClass('enabled');
 
                         jQuery('>div.' + strSection + '>ol>li', objSection).removeClass('enabled');
