@@ -192,6 +192,8 @@ body {
                                                 }
                                             }
                                             &.testing {
+                                                border-right: none;
+
                                                 & > a {
                                                     background-position: 0px -279px;
                                                 }
@@ -567,8 +569,21 @@ body {
                                     display: none;
                                     padding: 0px;
                                     position: relative;
-                                    height: 500px;
+                                    height: 440px;
+                                    min-height: 440px;
+                                }
 
+                                & .subject.degree-fouryear {
+                                    height: 464px;
+                                }
+                                &.act,
+                                &.sat {
+                                    & .subject.degree-fouryear {
+                                        height: 440px;
+                                    }
+                                }
+
+                                & .subject {
                                     & .intro,
                                     & .section {
                                         display: block;
@@ -761,8 +776,8 @@ body {
                                                 }
                                                 & .wrapper {
                                                     display: table;
-                                                    width: auto;
-                                                    margin: 0px 100px 0px 28px;
+                                                    width: 84%;
+                                                    margin: 0px 12% 0px 4%;
 
                                                     & > figure {
                                                         width: 35%;

@@ -548,8 +548,8 @@ var framework = {
                             }
                         });
 
-                        framework.fn.multimedia.dib.yearSelect.call(objYearItems[0]);
-                        framework.fn.multimedia.dib.monthSelect.call(objMonthButtons[0]);
+                        setTimeout(function() { framework.fn.multimedia.dib.yearSelect.call(objYearItems[0]); }, 250);
+                        setTimeout(function() { framework.fn.multimedia.dib.monthSelect.call(objMonthButtons[0]); }, 500);
                     }
                 },
 
@@ -709,7 +709,7 @@ var framework = {
                         jQuery('>div.' + strSection + '>footer>menu>ol>li', objSection).removeClass('selected');
                         jQuery('>div.' + strSection + '>footer>menu>ol>li:eq(0)', objSection).addClass('selected');
 
-                        jQuery(objSection).parent('section').attr('class', strSection);
+                        jQuery(objSection).parent('section').attr('class', strParentSection + ' ' + strSection);
 
                         jQuery('>div.intro', objSection).removeClass('enabled');
                         jQuery('>div.' + strSection, objSection).addClass('enabled');

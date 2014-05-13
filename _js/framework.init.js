@@ -62,17 +62,6 @@ jQuery(document).ready(function() {
         jQuery('#strEdLevel').siblings('a.button').attr('href', jQuery('#strEdLevel option:first').attr('value'));
         jQuery('#strFactSheet').siblings('a.button').attr('href', jQuery('#strFactSheet option:first').attr('value'));
     }
-    if (jQuery('#strAddlInfo').length) {
-        jQuery('#strAddlInfo').bind('change', function() {
-            var strPDFURL           = jQuery(this).val();
-
-            if (strPDFURL) {
-                jQuery('#btnAddlInfo').attr('href', strPDFURL);
-            }
-        });
-
-        jQuery('#btnAddlInfo').attr('href', jQuery('#strAddlInfo option:first').attr('value'));
-    }
 
     // lunr.js search
     framework.fn.search.lunr_search.init();
