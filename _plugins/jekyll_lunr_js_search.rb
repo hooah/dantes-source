@@ -59,10 +59,10 @@ module Jekyll
       Dir::mkdir(site.dest) unless File.directory?(site.dest)
       
       # File I/O: create search.json file and write out pretty-printed JSON
-      filename = 'search-lunr.json'
+      filename = 'search-lunr.js'
       
       File.open(File.join(site.dest, filename), "w") do |file|
-        file.write(json)
+        file.write("var lunr_index = " + json + ";")
       end
 
       # Keep the search.json file from being cleaned by Jekyll

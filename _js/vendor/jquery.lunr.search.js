@@ -36,12 +36,18 @@
         
     LunrSearch.prototype.initialize = function() {
       var self = this;
-      
-      this.loadIndexData(function(data) {
-        self.populateIndex(data);
-        self.populateSearchFromQuery();
-        self.bindKeypress();
-      });
+
+      if (lunr_index) {
+          self.populateIndex(lunr_index);
+          self.populateSearchFromQuery();
+          self.bindKeypress();
+      } else {
+          this.loadIndexData(function(data) {
+            self.populateIndex(data);
+            self.populateSearchFromQuery();
+            self.bindKeypress();
+          });
+      }
     };
     
     // create lunr.js search index specifying that we want to index the title and body fields of documents.

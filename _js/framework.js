@@ -58,6 +58,7 @@ var framework = {
             }
         },
         search: {
+            index: null,
             indexden: {
                 public_url: 'http://teqaze.api.indexden.com/v1/indexes/DANTES'
             }
@@ -826,7 +827,7 @@ var framework = {
 
                     if (jQuery('form.lunr-search').length) {
                         jQuery('#searchbox').lunrSearch({
-                            indexUrl: '../search-lunr.json',
+                            indexUrl: false,
                             results:  '#search-results',
                             entries:  'ul',
                             template: '#results-template'
