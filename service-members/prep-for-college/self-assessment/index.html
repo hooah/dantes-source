@@ -23,9 +23,114 @@ header_extra:
                             </ul>
                             {% include social.html %}
 
-                            <h1>Self Assessment</h1>
-                            <p>The DANTES Self Assessment was developed to give you the opportunity to assess your skills and identify possible weaknesses that may affect your success when taking distance learning classes.</p>
-                            <a href="http://www.dantescatalogs.com/DlDemo/dlDemoIntro.aspx" target="_blank" class="button button-grey button-icon-arrow-right"><strong>Take Self Assessment</strong></a>
+                            <div class="wizard wizard-distance-learning">
+                                <header>
+                                    <section>
+                                        <h1>DANTES Distance Learning Readiness Self-Assessment Wizard</h1>
+                                    </section>
+
+                                    <nav>
+                                        <ul>
+                                            <li class="home"><a href="javascript:;" data-section="home">Return Home</a></li>
+                                            <li class="counselor"><a href="{{ page.path }}/service-members/contact-a-counselor/index.html" data-section="counselor">Contact a Counselor</a></li>
+                                        </ul>
+                                    </nav>
+                                </header>
+                                <section>
+                                    <div class="intro">
+                                        <section>
+                                            <h1>DANTES Distance Learning Readiness Self-Assessment Test</h1>
+                                            <p>Taking a distance learning course is another way to achieve your goals. While DL offers a lot of flexibility, there are other considerations for students to think about when making choices regarding their educational program. The following self-assessment was developed to give you the opportunity to assess your skills and identify possible weaknesses that may affect your success when taking distance learning classes. This instrument is not meant to substitute for educational counseling or to deny you the opportunity to pursue a distance learning class. Your honest assessment of your skills and behaviors is in your best interest. We hope this assessment will help you to have a successful educational experience, whether you choose distance learning or face-to-face classes.</p>
+                                            <a href="javascript:;" data-section="questions" class="button button-blue button-pointed right"><strong>Start the Test &gt;</strong></a>
+                                        </section>
+                                    </div>
+                                    <div class="questions">
+                                        <header>
+                                            <h6>Assessment Questions</h6>
+                                            <h5>Question <span class="current">1</span> of <span class="total">17</span></h5>
+                                        </header>
+                                        <section>
+                                            <ul>
+                                                <li>
+                                                    <h1>Please select the statement that best describes your current academic planning.</h1>
+
+                                                    <ol>
+                                                        <li>
+                                                            <a href="javascript:;">
+                                                                <input type="hidden">
+                                                            </a>
+                                                            <p>This distance learning course will apply to a specific educational goal I have set for myself.</p>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:;">
+                                                                <input type="hidden">
+                                                            </a>
+                                                            <p>I have discussed my educational goals with a counselor but have not made a specific committment or selected a special goal.</p>
+                                                        </li>
+                                                        <li>
+                                                            <a href="javascript:;">
+                                                                <input type="hidden">
+                                                            </a>
+                                                            <p>I have not discussed my educational goals with anyone.</p>
+                                                        </li>
+                                                    </ol>
+                                                </li>
+                                            </ul>
+                                        </section>
+                                        <footer>
+                                            <nav>
+                                                <a href="javascript:;" class="back">&lt; Back</a>
+                                                <a href="javascript:;" class="next">Next &gt;</a>
+                                            </nav>
+                                        </footer>
+                                    </div>
+                                </section>
+                                <footer>
+                                    <p>&copy; DANTES 2014. All Rights Reserved.</p>
+                                    <menu>
+                                        <ul>
+                                            <li class="print"><a href="javascript:;" target="_blank"><strong>Print</strong></a></li>
+                                            <li class="email"><a href="javascript:;" class="addthis_button_email" addthis:url="http://www.dantes.doded.mil/_content/examinations/DANTES_examwizard_ACT.pdf" addthis:var_examname="ACT" addthis:title="More information about the ACT examination from the DANTES website."><strong>E-mail</strong></a></li>
+                                            <li class="share"><a href="javascript:;" class="addthis_button_compact"><strong>Share</strong></a></li>
+                                        </ul>
+                                    </menu>
+                                </footer>
+                            </div>
+
+                            <hr />
+
+                            <h2>Resources</h2>
+
+                            <div class="row">
+                                <br>
+
+                                <div class="four columns">
+                                    <div class="feature-box feature-box-short feature-box-logo">
+                                        <div>
+                                            <figure style="background-image: url({{ page.path }}/_images/elements/feature-service_members-college_credit-logo-cbe.png);"></figure>
+                                            <figcaption>
+                                                <a href="#" data-link-type="local">
+                                                    &nbsp;
+                                                </a>
+                                            </figcaption>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="eight columns">
+                                    <p>
+                                        <strong>Credit-by-Exam</strong><br>
+                                        Credit by examination opportunities available: College-Level Examination Program (CLEP®) and DSST®.
+                                    </p>
+
+                                    <a class="button button-grey button-icon-arrow-right" href="{{ page.path }}/_content/FY13_DSST_Pass_Rates.pdf#zoom=100" data-document-warning="true" target="_blank" data-link-type="local"><strong>Download PDF FY13 Military DSST Pass Rates</strong></a>
+                                    <br />
+                                    <a class="button button-grey button-icon-arrow-right" href="{{ page.path }}/_content/FY13_CLEP_Pass_Rates.pdf#zoom=100" data-document-warning="true" target="_blank" data-link-type="local"><strong>Download PDF FY13 Military CLEP Pass Rates</strong></a>
+                                    <br />
+                                    <a class="button button-grey button-icon-arrow-right" href="{{ page.path }}/_content/FY13_DSST_Civilian_Pass_Rates.pdf#zoom=100" data-document-warning="true" target="_blank" data-link-type="local"><strong>Download PDF FY13 Civilian DSST Pass Rates</strong></a>
+                                    <br />
+                                    <a class="button button-grey button-icon-arrow-right" href="{{ page.path }}/_content/FY13_CLEP_Civilian_Pass_Rates.pdf#zoom=100" data-document-warning="true" target="_blank" data-link-type="local"><strong>Download PDF FY13 Civilian CLEP Pass Rates</strong></a>
+                                </div>
+                            </div>
                         </div>
                         {% include aside.quicklinks.generic.html %}
                     </div>

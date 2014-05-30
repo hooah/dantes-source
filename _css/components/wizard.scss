@@ -1,0 +1,293 @@
+body {
+    #container {
+        & > article {
+            &.has-sidebar {
+                & > section {
+                    & > .content {
+                        & .wizard {
+                            width: 100%;
+                            margin: 0px auto 0px auto;
+                            -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.37);
+                            -moz-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.37);
+                            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.37);
+                            @include border-radius(7px);
+
+                            & > header {
+                                & > section {
+                                    position: relative;
+                                    z-index: 100;
+                                    height: 133px;
+                                    background-color: #de8721;
+                                    border-top: 1px #e5a254 solid;
+                                    border-left: 1px #e19236 solid;
+                                    border-right: 1px #e19236 solid;
+                                    @include border-top-radius(7px);
+
+                                    & > h1 {
+                                        display: block;
+                                        float: right;
+                                        width: 55%;
+                                        margin: 30px 35px 0px 0px;
+                                        padding: 0px;
+                                        font-family: 'Open Sans', sans-serif;
+                                        color: #fff;
+                                        text-shadow: 1px 1px 0px #aa6310;
+                                        font-weight: 600;
+                                        text-align: right;
+                                        font-size: 30px;
+                                        line-height: 30px;
+                                    }
+                                    & > h2 {
+                                        display: block;
+                                        float: right;
+                                        clear: both;
+                                        width: 50%;
+                                        margin: 15px 35px 0px 0px;
+                                        padding: 0px;
+                                        font-family: 'Open Sans', sans-serif;
+                                        color: #fff;
+                                        text-shadow: 1px 1px 0px #aa6310;
+                                        text-align: right;
+                                        font-weight: normal;
+                                        font-size: 13px;
+                                        line-height: 15px;
+                                    }
+                                }
+
+                                & > nav {
+                                    display: block;
+                                    position: relative;
+                                    height: 41px;
+                                    margin: 0px;
+                                    padding: 0px;
+                                    list-style: none;
+                                    background-image: url(../_images/wizard/bg-nav-primary.png);
+                                    background-repeat: repeat-x;
+                                    background-position: 0px 0px;
+
+                                    & > ul {
+                                        display: block;
+                                        margin: 0px;
+                                        padding: 0px;
+                                        list-style: none;
+
+                                        & > li {
+                                            display: block;
+                                            position: relative;
+                                            z-index: 1000;
+                                            float: right;
+                                            margin: 0px;
+                                            padding: 0px;
+                                            border-left: 1px #b7b7b7 solid;
+                                            border-right: 1px #818181 solid;
+                                            list-style: none;
+
+                                            & > a {
+                                                display: block;
+                                                position: relative;
+                                                width: 46px;
+                                                height: 40px;
+                                                background-image: url(../_images/sprites-wizard.png);
+                                                background-repeat: no-repeat;
+                                                @include no-text;
+                                                cursor: pointer;
+                                            }
+
+                                            &:hover,
+                                            &.selected {
+                                                & > a {
+                                                    background-color: #f9f9f9;
+                                                }
+                                            }
+                                            &.selected {
+                                                & > a {
+                                                    height: 41px;
+                                                }
+
+                                                & > ol {
+                                                    display: block;
+                                                }
+                                            }
+
+                                            &.home {
+                                                float: left;
+                                                position: relative;
+                                                margin-left: 22px;
+                                                z-index: 100;
+                                                border: none;
+
+                                                & > a {
+                                                    width: auto;
+                                                    height: auto;
+
+                                                    &:before {
+                                                        display: block;
+                                                        position: relative;
+                                                        left: -29px;
+                                                        top: 12px;
+                                                        width: 19px;
+                                                        height: 19px;
+                                                        background-image: url(../_images/sprites-wizard.png);
+                                                        background-repeat: no-repeat;
+                                                        background-position: 0px 0px;
+                                                        content: "";
+                                                    }
+
+                                                    padding-left: 29px;
+                                                    background-image: none;
+                                                    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida", sans-serif;
+                                                    font-size: 11px;
+                                                    line-height: 11px;
+                                                    color: #fff;
+                                                    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
+                                                    text-decoration: none;
+                                                    text-indent: 0px;
+
+                                                    &:hover {
+                                                        background-color: transparent;
+                                                        text-decoration: underline;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            & > section {
+                                clear: both;
+                                overflow: hidden;
+                            }
+
+                            & > footer {
+                                clear: both;
+                                height: 46px;
+                                background-color: #272793;
+                                border-top: 1px #5659a7 solid;
+                                border-bottom: 1px #8b8b8b solid;
+                                border-left: 1px #3b3b9d solid;
+                                border-right: 1px #3b3b9d solid;
+                                @include border-bottom-radius(7px);
+
+                                & > p {
+                                    display: block;
+                                    float: left;
+                                    margin: 0px;
+                                    padding: 0px 16px;
+                                    font-size: 14px;
+                                    line-height: 43px;
+                                    color: #fff;
+                                    font-family: 'Open Sans', sans-serif;
+                                    font-weight: bold;
+                                    font-style: normal;
+                                }
+                                & > menu {
+                                    display: block;
+                                    float: right;
+                                    clear: none;
+                                    margin: 0px;
+                                    padding: 0px;
+
+                                    & > ul {
+                                        display: block;
+                                        float: right;
+                                        margin: 0px;
+                                        padding: 0px;
+                                        list-style: none;
+
+                                        &:before {
+                                            display: block;
+                                            float: left;
+                                            padding: 0px 12px 0px 0px;
+                                            content: "SHARE:";
+                                            text-transform: uppercase;
+                                            font-size: 14px;
+                                            line-height: 43px;
+                                            color: #fff;
+                                            font-family: 'Open Sans', sans-serif;
+                                            font-weight: bold;
+                                            font-style: normal;
+                                        }
+
+                                        & > li {
+                                            display: block;
+                                            float: left;
+                                            margin: 2px 0px;
+                                            padding: 0px;
+                                            border-left: 2px #5d5dae solid;
+                                            list-style: none;
+
+                                            & > a {
+                                                display: block;
+                                                width: 45px;
+                                                height: auto;
+                                                text-decoration: none;
+
+                                                & > strong {
+                                                    display: block;
+                                                    margin-top: 5px;
+                                                    margin-left: 9px;
+                                                    width: 27px;
+                                                    height: 32px;
+                                                    background-image: url(../_images/sprites-wizard.png);
+                                                    background-repeat: no-repeat;
+                                                    @include no-text;
+                                                    cursor: pointer;
+                                                }
+                                            }
+
+                                            &.print {
+                                                display: none;
+
+                                                & > a {
+                                                    & > strong {
+                                                        background-position: -258px 0px;
+
+                                                        &:hover {
+                                                            background-position: -258px -42px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            &.email {
+                                                display: none;
+
+                                                & > a {
+                                                    & > strong {
+                                                        background-position: -295px 0px;
+
+                                                        &:hover {
+                                                            background-position: -295px -42px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            &.share {
+                                                & > a {
+                                                    & > strong {
+                                                        background-position: -332px 0px;
+
+                                                        &:hover {
+                                                            background-position: -332px -42px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+div#at15s {
+    display: none !important;
+}
+
+@import "wizard-examinations";
+@import "wizard-distance-learning";

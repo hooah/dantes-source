@@ -3603,9 +3603,9 @@ body #container > article.has-sidebar > section > .content #search-results {
           margin-bottom: 10px;
           font-weight: bold; }
 
-body #container > article.has-sidebar > section > .content .examination-wizard {
+body #container > article.has-sidebar > section > .content .wizard {
   width: 100%;
-  margin: 75px auto 0px auto;
+  margin: 0px auto 0px auto;
   -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.37);
   -moz-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.37);
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.37);
@@ -3614,7 +3614,7 @@ body #container > article.has-sidebar > section > .content .examination-wizard {
   -ms-border-radius: 7px;
   -o-border-radius: 7px;
   border-radius: 7px; }
-  body #container > article.has-sidebar > section > .content .examination-wizard > header > section {
+  body #container > article.has-sidebar > section > .content .wizard > header > section {
     position: relative;
     z-index: 100;
     height: 133px;
@@ -3628,7 +3628,7 @@ body #container > article.has-sidebar > section > .content .examination-wizard {
     -moz-border-radius-topright: 7px;
     -webkit-border-top-right-radius: 7px;
     border-top-right-radius: 7px; }
-    body #container > article.has-sidebar > section > .content .examination-wizard > header > section > h1 {
+    body #container > article.has-sidebar > section > .content .wizard > header > section > h1 {
       display: block;
       float: right;
       width: 55%;
@@ -3641,7 +3641,7 @@ body #container > article.has-sidebar > section > .content .examination-wizard {
       text-align: right;
       font-size: 30px;
       line-height: 30px; }
-    body #container > article.has-sidebar > section > .content .examination-wizard > header > section > h2 {
+    body #container > article.has-sidebar > section > .content .wizard > header > section > h2 {
       display: block;
       float: right;
       clear: both;
@@ -3655,18 +3655,7 @@ body #container > article.has-sidebar > section > .content .examination-wizard {
       font-weight: normal;
       font-size: 13px;
       line-height: 15px; }
-    body #container > article.has-sidebar > section > .content .examination-wizard > header > section:after {
-      display: block;
-      position: absolute;
-      left: 6px;
-      bottom: -54px;
-      width: 428px;
-      height: 268px;
-      background-image: url(../_images/wizard/header-dantes-rep.png);
-      background-repeat: no-repeat;
-      background-position: 0px 0px;
-      content: ""; }
-  body #container > article.has-sidebar > section > .content .examination-wizard > header > nav {
+  body #container > article.has-sidebar > section > .content .wizard > header > nav {
     display: block;
     position: relative;
     height: 41px;
@@ -3676,12 +3665,12 @@ body #container > article.has-sidebar > section > .content .examination-wizard {
     background-image: url(../_images/wizard/bg-nav-primary.png);
     background-repeat: repeat-x;
     background-position: 0px 0px; }
-    body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul {
+    body #container > article.has-sidebar > section > .content .wizard > header > nav > ul {
       display: block;
       margin: 0px;
       padding: 0px;
       list-style: none; }
-      body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li {
+      body #container > article.has-sidebar > section > .content .wizard > header > nav > ul > li {
         display: block;
         position: relative;
         z-index: 1000;
@@ -3691,7 +3680,7 @@ body #container > article.has-sidebar > section > .content .examination-wizard {
         border-left: 1px #b7b7b7 solid;
         border-right: 1px #818181 solid;
         list-style: none; }
-        body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li > a {
+        body #container > article.has-sidebar > section > .content .wizard > header > nav > ul > li > a {
           display: block;
           position: relative;
           width: 46px;
@@ -3701,58 +3690,19 @@ body #container > article.has-sidebar > section > .content .examination-wizard {
           text-indent: -9999px;
           text-align: left;
           cursor: pointer; }
-        body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li:hover > a, body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li.selected > a {
+        body #container > article.has-sidebar > section > .content .wizard > header > nav > ul > li:hover > a, body #container > article.has-sidebar > section > .content .wizard > header > nav > ul > li.selected > a {
           background-color: #f9f9f9; }
-        body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li.selected > a {
+        body #container > article.has-sidebar > section > .content .wizard > header > nav > ul > li.selected > a {
           height: 41px; }
-        body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li.selected > ol {
+        body #container > article.has-sidebar > section > .content .wizard > header > nav > ul > li.selected > ol {
           display: block; }
-        body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li.degree-fouryear:before {
-          display: block;
-          position: absolute;
-          left: -2px;
-          top: 0px;
-          width: 1px;
-          height: 40px;
-          background-color: #818181;
-          content: ""; }
-        body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li.degree-fouryear > a {
-          background-position: 0px -229px; }
-        body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li.degree-fouryear.selected > a, body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li.degree-fouryear:hover > a {
-          background-position: -56px -229px; }
-        body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li.degree-fouryear > ol {
-          width: 287px; }
-        body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li.degree-graduate > a {
-          background-position: 0px -79px; }
-        body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li.degree-graduate.selected > a, body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li.degree-graduate:hover > a {
-          background-position: -56px -79px; }
-        body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li.degree-graduate > ol {
-          width: 238px; }
-        body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li.degree-law > a {
-          background-position: 0px -129px; }
-        body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li.degree-law.selected > a, body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li.degree-law:hover > a {
-          background-position: -56px -129px; }
-        body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li.degree-teaching > a {
-          background-position: 0px -179px; }
-        body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li.degree-teaching.selected > a, body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li.degree-teaching:hover > a {
-          background-position: -56px -179px; }
-        body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li.degree-fouryear-nodiploma > a {
-          background-position: 0px -29px; }
-        body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li.degree-fouryear-nodiploma.selected > a, body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li.degree-fouryear-nodiploma:hover > a {
-          background-position: -56px -29px; }
-        body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li.testing {
-          border-right: none; }
-          body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li.testing > a {
-            background-position: 0px -279px; }
-          body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li.testing.selected > a, body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li.testing:hover > a {
-            background-position: -56px -279px; }
-        body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li.home {
+        body #container > article.has-sidebar > section > .content .wizard > header > nav > ul > li.home {
           float: left;
           position: relative;
           margin-left: 22px;
           z-index: 100;
           border: none; }
-          body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li.home > a {
+          body #container > article.has-sidebar > section > .content .wizard > header > nav > ul > li.home > a {
             width: auto;
             height: auto;
             padding-left: 29px;
@@ -3764,7 +3714,7 @@ body #container > article.has-sidebar > section > .content .examination-wizard {
             text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
             text-decoration: none;
             text-indent: 0px; }
-            body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li.home > a:before {
+            body #container > article.has-sidebar > section > .content .wizard > header > nav > ul > li.home > a:before {
               display: block;
               position: relative;
               left: -29px;
@@ -3775,110 +3725,255 @@ body #container > article.has-sidebar > section > .content .examination-wizard {
               background-repeat: no-repeat;
               background-position: 0px 0px;
               content: ""; }
-            body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li.home > a:hover {
+            body #container > article.has-sidebar > section > .content .wizard > header > nav > ul > li.home > a:hover {
               background-color: transparent;
               text-decoration: underline; }
-        body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li > ol {
-          display: none;
-          position: absolute;
-          top: 40px;
-          left: 46px;
-          margin: 0px;
-          padding: 0px;
-          white-space: nowrap; }
-          body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li > ol:before {
-            display: block;
-            position: absolute;
-            left: -180px;
-            height: 35px;
-            color: #727272;
-            font-size: 10px;
-            line-height: 35px;
-            content: "Choose from the following options:";
-            white-space: nowrap; }
-          body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li > ol > li {
-            display: block;
-            float: left;
-            height: 35px;
-            margin: 0px;
-            padding: 0px;
-            border-right: 1px #bbbbbb solid;
-            list-style: none; }
-            body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li > ol > li:first-child {
-              border-left: 1px #bbbbbb solid; }
-            body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li > ol > li > a {
-              display: block;
-              position: relative;
-              height: 35px;
-              width: 47px;
-              padding: 0px;
-              color: #3a3d9d;
-              text-decoration: none;
-              font-size: 12px;
-              line-height: 35px;
-              text-transform: uppercase;
-              font-weight: 600;
-              text-align: center; }
-              body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li > ol > li > a:hover {
-                text-decoration: underline; }
-            body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li > ol > li.selected > a {
-              background-image: url(../_images/wizard/bg-nav-secondary-selected.png);
-              background-repeat: no-repeat;
-              background-position: 0px 0px;
-              background-size: 100%;
-              color: #fff;
-              text-decoration: none; }
-              body #container > article.has-sidebar > section > .content .examination-wizard > header > nav > ul > li > ol > li.selected > a:after {
-                display: block;
-                position: absolute;
-                bottom: -8px;
-                left: 0px;
-                width: 100%;
-                height: 8px;
-                background-image: url(../_images/wizard/bg-nav-secondary-selected.png);
-                background-repeat: no-repeat;
-                background-position: bottom center;
-                background-size: 100% 43px;
-                content: ""; }
-    body #container > article.has-sidebar > section > .content .examination-wizard > header > nav:before {
-      display: block;
-      clear: both;
-      position: absolute;
-      top: 41px;
-      width: 100%;
-      height: 35px;
-      background-image: url(../_images/wizard/bg-nav-secondary.png);
-      background-repeat: repeat-x;
-      background-position: 0px 0px;
-      content: ""; }
-  body #container > article.has-sidebar > section > .content .examination-wizard > section {
+  body #container > article.has-sidebar > section > .content .wizard > section {
     clear: both;
-    overflow: hidden;
+    overflow: hidden; }
+  body #container > article.has-sidebar > section > .content .wizard > footer {
+    clear: both;
+    height: 46px;
+    background-color: #272793;
+    border-top: 1px #5659a7 solid;
+    border-bottom: 1px #8b8b8b solid;
+    border-left: 1px #3b3b9d solid;
+    border-right: 1px #3b3b9d solid;
+    -moz-border-radius-bottomleft: 7px;
+    -webkit-border-bottom-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    -moz-border-radius-bottomright: 7px;
+    -webkit-border-bottom-right-radius: 7px;
+    border-bottom-right-radius: 7px; }
+    body #container > article.has-sidebar > section > .content .wizard > footer > p {
+      display: block;
+      float: left;
+      margin: 0px;
+      padding: 0px 16px;
+      font-size: 14px;
+      line-height: 43px;
+      color: #fff;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: bold;
+      font-style: normal; }
+    body #container > article.has-sidebar > section > .content .wizard > footer > menu {
+      display: block;
+      float: right;
+      clear: none;
+      margin: 0px;
+      padding: 0px; }
+      body #container > article.has-sidebar > section > .content .wizard > footer > menu > ul {
+        display: block;
+        float: right;
+        margin: 0px;
+        padding: 0px;
+        list-style: none; }
+        body #container > article.has-sidebar > section > .content .wizard > footer > menu > ul:before {
+          display: block;
+          float: left;
+          padding: 0px 12px 0px 0px;
+          content: "SHARE:";
+          text-transform: uppercase;
+          font-size: 14px;
+          line-height: 43px;
+          color: #fff;
+          font-family: 'Open Sans', sans-serif;
+          font-weight: bold;
+          font-style: normal; }
+        body #container > article.has-sidebar > section > .content .wizard > footer > menu > ul > li {
+          display: block;
+          float: left;
+          margin: 2px 0px;
+          padding: 0px;
+          border-left: 2px #5d5dae solid;
+          list-style: none; }
+          body #container > article.has-sidebar > section > .content .wizard > footer > menu > ul > li > a {
+            display: block;
+            width: 45px;
+            height: auto;
+            text-decoration: none; }
+            body #container > article.has-sidebar > section > .content .wizard > footer > menu > ul > li > a > strong {
+              display: block;
+              margin-top: 5px;
+              margin-left: 9px;
+              width: 27px;
+              height: 32px;
+              background-image: url(../_images/sprites-wizard.png);
+              background-repeat: no-repeat;
+              text-indent: -9999px;
+              text-align: left;
+              cursor: pointer; }
+          body #container > article.has-sidebar > section > .content .wizard > footer > menu > ul > li.print {
+            display: none; }
+            body #container > article.has-sidebar > section > .content .wizard > footer > menu > ul > li.print > a > strong {
+              background-position: -258px 0px; }
+              body #container > article.has-sidebar > section > .content .wizard > footer > menu > ul > li.print > a > strong:hover {
+                background-position: -258px -42px; }
+          body #container > article.has-sidebar > section > .content .wizard > footer > menu > ul > li.email {
+            display: none; }
+            body #container > article.has-sidebar > section > .content .wizard > footer > menu > ul > li.email > a > strong {
+              background-position: -295px 0px; }
+              body #container > article.has-sidebar > section > .content .wizard > footer > menu > ul > li.email > a > strong:hover {
+                background-position: -295px -42px; }
+          body #container > article.has-sidebar > section > .content .wizard > footer > menu > ul > li.share > a > strong {
+            background-position: -332px 0px; }
+            body #container > article.has-sidebar > section > .content .wizard > footer > menu > ul > li.share > a > strong:hover {
+              background-position: -332px -42px; }
+
+div#at15s {
+  display: none !important; }
+
+body #container > article.has-sidebar > section > .content .wizard.wizard-examination {
+  margin-top: 75px; }
+  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > section:after {
+    display: block;
+    position: absolute;
+    left: 6px;
+    bottom: -54px;
+    width: 428px;
+    height: 268px;
+    background-image: url(../_images/wizard/examinations/header-dantes-rep.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    content: ""; }
+  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > nav > ul > li.degree-fouryear:before {
+    display: block;
+    position: absolute;
+    left: -2px;
+    top: 0px;
+    width: 1px;
+    height: 40px;
+    background-color: #818181;
+    content: ""; }
+  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > nav > ul > li.degree-fouryear > a {
+    background-position: 0px -229px; }
+  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > nav > ul > li.degree-fouryear.selected > a, body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > nav > ul > li.degree-fouryear:hover > a {
+    background-position: -56px -229px; }
+  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > nav > ul > li.degree-fouryear > ol {
+    width: 287px; }
+  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > nav > ul > li.degree-graduate > a {
+    background-position: 0px -79px; }
+  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > nav > ul > li.degree-graduate.selected > a, body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > nav > ul > li.degree-graduate:hover > a {
+    background-position: -56px -79px; }
+  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > nav > ul > li.degree-graduate > ol {
+    width: 238px; }
+  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > nav > ul > li.degree-law > a {
+    background-position: 0px -129px; }
+  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > nav > ul > li.degree-law.selected > a, body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > nav > ul > li.degree-law:hover > a {
+    background-position: -56px -129px; }
+  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > nav > ul > li.degree-teaching > a {
+    background-position: 0px -179px; }
+  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > nav > ul > li.degree-teaching.selected > a, body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > nav > ul > li.degree-teaching:hover > a {
+    background-position: -56px -179px; }
+  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > nav > ul > li.degree-fouryear-nodiploma > a {
+    background-position: 0px -29px; }
+  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > nav > ul > li.degree-fouryear-nodiploma.selected > a, body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > nav > ul > li.degree-fouryear-nodiploma:hover > a {
+    background-position: -56px -29px; }
+  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > nav > ul > li.testing {
+    border-right: none; }
+    body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > nav > ul > li.testing > a {
+      background-position: 0px -279px; }
+    body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > nav > ul > li.testing.selected > a, body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > nav > ul > li.testing:hover > a {
+      background-position: -56px -279px; }
+  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > nav > ul > li > ol {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 46px;
+    margin: 0px;
+    padding: 0px;
+    white-space: nowrap; }
+    body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > nav > ul > li > ol:before {
+      display: block;
+      position: absolute;
+      left: -180px;
+      height: 35px;
+      color: #727272;
+      font-size: 10px;
+      line-height: 35px;
+      content: "Choose from the following options:";
+      white-space: nowrap; }
+    body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > nav > ul > li > ol > li {
+      display: block;
+      float: left;
+      height: 35px;
+      margin: 0px;
+      padding: 0px;
+      border-right: 1px #bbbbbb solid;
+      list-style: none; }
+      body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > nav > ul > li > ol > li:first-child {
+        border-left: 1px #bbbbbb solid; }
+      body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > nav > ul > li > ol > li > a {
+        display: block;
+        position: relative;
+        height: 35px;
+        width: 47px;
+        padding: 0px;
+        color: #3a3d9d;
+        text-decoration: none;
+        font-size: 12px;
+        line-height: 35px;
+        text-transform: uppercase;
+        font-weight: 600;
+        text-align: center; }
+        body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > nav > ul > li > ol > li > a:hover {
+          text-decoration: underline; }
+      body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > nav > ul > li > ol > li.selected > a {
+        background-image: url(../_images/wizard/examinations/bg-nav-secondary-selected.png);
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+        background-size: 100%;
+        color: #fff;
+        text-decoration: none; }
+        body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > nav > ul > li > ol > li.selected > a:after {
+          display: block;
+          position: absolute;
+          bottom: -8px;
+          left: 0px;
+          width: 100%;
+          height: 8px;
+          background-image: url(../_images/wizard/examinations/bg-nav-secondary-selected.png);
+          background-repeat: no-repeat;
+          background-position: bottom center;
+          background-size: 100% 43px;
+          content: ""; }
+  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > nav:before {
+    display: block;
+    clear: both;
+    position: absolute;
+    top: 41px;
+    width: 100%;
+    height: 35px;
+    background-image: url(../_images/wizard/bg-nav-secondary.png);
+    background-repeat: repeat-x;
+    background-position: 0px 0px;
+    content: ""; }
+  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section {
     padding-top: 35px;
     background-color: #efeeee;
-    background-image: url(../_images/wizard/bg-content.jpg);
+    background-image: url(../_images/wizard/examinations/bg-content.jpg);
     background-repeat: no-repeat;
     background-position: bottom left; }
-    body #container > article.has-sidebar > section > .content .examination-wizard > section.testing {
-      background-image: url(../_images/wizard/bg-content-testing.jpg); }
-    body #container > article.has-sidebar > section > .content .examination-wizard > section.degree-fouryear-nodiploma {
-      background-image: url(../_images/wizard/bg-content-ged.jpg); }
-    body #container > article.has-sidebar > section > .content .examination-wizard > section.degree-teaching {
-      background-image: url(../_images/wizard/bg-content-praxis.jpg); }
-    body #container > article.has-sidebar > section > .content .examination-wizard > section.degree-law {
-      background-image: url(../_images/wizard/bg-content-law.jpg); }
-    body #container > article.has-sidebar > section > .content .examination-wizard > section.degree-graduate {
-      background-image: url(../_images/wizard/bg-content-graduate.jpg); }
-    body #container > article.has-sidebar > section > .content .examination-wizard > section.degree-fouryear {
-      background-image: url(../_images/wizard/bg-content-fouryear.jpg); }
-    body #container > article.has-sidebar > section > .content .examination-wizard > section .grid {
+    body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section.testing {
+      background-image: url(../_images/wizard/examinations/bg-content-testing.jpg); }
+    body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section.degree-fouryear-nodiploma {
+      background-image: url(../_images/wizard/examinations/bg-content-ged.jpg); }
+    body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section.degree-teaching {
+      background-image: url(../_images/wizard/examinations/bg-content-praxis.jpg); }
+    body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section.degree-law {
+      background-image: url(../_images/wizard/examinations/bg-content-law.jpg); }
+    body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section.degree-graduate {
+      background-image: url(../_images/wizard/examinations/bg-content-graduate.jpg); }
+    body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section.degree-fouryear {
+      background-image: url(../_images/wizard/examinations/bg-content-fouryear.jpg); }
+    body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid {
       overflow: hidden; }
-      body #container > article.has-sidebar > section > .content .examination-wizard > section .grid > ol {
+      body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol {
         display: block;
         margin: 0px;
         padding: 0px;
         list-style: none; }
-        body #container > article.has-sidebar > section > .content .examination-wizard > section .grid > ol > li {
+        body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li {
           display: block;
           float: left;
           width: 33.33333%;
@@ -3887,7 +3982,7 @@ body #container > article.has-sidebar > section > .content .examination-wizard {
           padding: 0px;
           background-color: #fff;
           list-style: none; }
-          body #container > article.has-sidebar > section > .content .examination-wizard > section .grid > ol > li > a {
+          body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li > a {
             display: table;
             height: 100%;
             width: 100%;
@@ -3905,9 +4000,9 @@ body #container > article.has-sidebar > section > .content .examination-wizard {
             -moz-box-shadow: -2px -2px 2px rgba(0, 0, 0, 0.05) inset;
             box-shadow: -2px -2px 2px rgba(0, 0, 0, 0.05) inset;
             text-decoration: none; }
-            body #container > article.has-sidebar > section > .content .examination-wizard > section .grid > ol > li > a:hover {
+            body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li > a:hover {
               background-repeat: no-repeat; }
-            body #container > article.has-sidebar > section > .content .examination-wizard > section .grid > ol > li > a > strong {
+            body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li > a > strong {
               display: table-cell;
               padding-left: 100px;
               padding-right: 30px;
@@ -3918,7 +4013,7 @@ body #container > article.has-sidebar > section > .content .examination-wizard {
               font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida", sans-serif;
               color: #727272;
               font-weight: normal; }
-              body #container > article.has-sidebar > section > .content .examination-wizard > section .grid > ol > li > a > strong:before {
+              body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li > a > strong:before {
                 display: block;
                 float: left;
                 position: relative;
@@ -3930,57 +4025,57 @@ body #container > article.has-sidebar > section > .content .examination-wizard {
                 background-image: url(../_images/sprites-wizard.png);
                 background-repeat: no-repeat;
                 content: ""; }
-          body #container > article.has-sidebar > section > .content .examination-wizard > section .grid > ol > li.degree-graduate > a, body #container > article.has-sidebar > section > .content .examination-wizard > section .grid > ol > li.testing > a {
+          body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li.degree-graduate > a, body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li.testing > a {
             border-right: none; }
-          body #container > article.has-sidebar > section > .content .examination-wizard > section .grid > ol > li.degree-fouryear-nodegree > a, body #container > article.has-sidebar > section > .content .examination-wizard > section .grid > ol > li.degree-law > a, body #container > article.has-sidebar > section > .content .examination-wizard > section .grid > ol > li.testing > a {
+          body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li.degree-fouryear-nodegree > a, body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li.degree-law > a, body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li.testing > a {
             border-bottom: none; }
-          body #container > article.has-sidebar > section > .content .examination-wizard > section .grid > ol > li.degree-fouryear > a > strong:before {
+          body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li.degree-fouryear > a > strong:before {
             background-position: -122px -252px; }
-          body #container > article.has-sidebar > section > .content .examination-wizard > section .grid > ol > li.degree-fouryear > a:hover {
-            background-image: url(../_images/wizard/bg-grid-fouryear.jpg); }
-            body #container > article.has-sidebar > section > .content .examination-wizard > section .grid > ol > li.degree-fouryear > a:hover > strong:before {
+          body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li.degree-fouryear > a:hover {
+            background-image: url(../_images/wizard/examinations/bg-grid-fouryear.jpg); }
+            body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li.degree-fouryear > a:hover > strong:before {
               background-position: -190px -252px; }
-          body #container > article.has-sidebar > section > .content .examination-wizard > section .grid > ol > li.degree-teaching > a > strong:before {
+          body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li.degree-teaching > a > strong:before {
             background-position: -122px -189px; }
-          body #container > article.has-sidebar > section > .content .examination-wizard > section .grid > ol > li.degree-teaching > a:hover {
-            background-image: url(../_images/wizard/bg-grid-teaching.jpg); }
-            body #container > article.has-sidebar > section > .content .examination-wizard > section .grid > ol > li.degree-teaching > a:hover > strong:before {
+          body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li.degree-teaching > a:hover {
+            background-image: url(../_images/wizard/examinations/bg-grid-teaching.jpg); }
+            body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li.degree-teaching > a:hover > strong:before {
               background-position: -190px -189px; }
-          body #container > article.has-sidebar > section > .content .examination-wizard > section .grid > ol > li.degree-graduate > a > strong:before {
+          body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li.degree-graduate > a > strong:before {
             background-position: -122px -63px; }
-          body #container > article.has-sidebar > section > .content .examination-wizard > section .grid > ol > li.degree-graduate > a:hover {
-            background-image: url(../_images/wizard/bg-grid-graduate.jpg); }
-            body #container > article.has-sidebar > section > .content .examination-wizard > section .grid > ol > li.degree-graduate > a:hover > strong:before {
+          body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li.degree-graduate > a:hover {
+            background-image: url(../_images/wizard/examinations/bg-grid-graduate.jpg); }
+            body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li.degree-graduate > a:hover > strong:before {
               background-position: -190px -63px; }
-          body #container > article.has-sidebar > section > .content .examination-wizard > section .grid > ol > li.degree-fouryear-nodegree > a > strong:before {
+          body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li.degree-fouryear-nodegree > a > strong:before {
             background-position: -122px 0px; }
-          body #container > article.has-sidebar > section > .content .examination-wizard > section .grid > ol > li.degree-fouryear-nodegree > a:hover {
-            background-image: url(../_images/wizard/bg-grid-ged.jpg); }
-            body #container > article.has-sidebar > section > .content .examination-wizard > section .grid > ol > li.degree-fouryear-nodegree > a:hover > strong:before {
+          body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li.degree-fouryear-nodegree > a:hover {
+            background-image: url(../_images/wizard/examinations/bg-grid-ged.jpg); }
+            body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li.degree-fouryear-nodegree > a:hover > strong:before {
               background-position: -190px 0px; }
-          body #container > article.has-sidebar > section > .content .examination-wizard > section .grid > ol > li.degree-law > a > strong:before {
+          body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li.degree-law > a > strong:before {
             background-position: -122px -126px; }
-          body #container > article.has-sidebar > section > .content .examination-wizard > section .grid > ol > li.degree-law > a:hover {
-            background-image: url(../_images/wizard/bg-grid-law.jpg); }
-            body #container > article.has-sidebar > section > .content .examination-wizard > section .grid > ol > li.degree-law > a:hover > strong:before {
+          body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li.degree-law > a:hover {
+            background-image: url(../_images/wizard/examinations/bg-grid-law.jpg); }
+            body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li.degree-law > a:hover > strong:before {
               background-position: -190px -126px; }
-          body #container > article.has-sidebar > section > .content .examination-wizard > section .grid > ol > li.testing > a > strong:before {
+          body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li.testing > a > strong:before {
             background-position: -122px -325px; }
-          body #container > article.has-sidebar > section > .content .examination-wizard > section .grid > ol > li.testing > a:hover {
-            background-image: url(../_images/wizard/bg-grid-testing.jpg); }
-            body #container > article.has-sidebar > section > .content .examination-wizard > section .grid > ol > li.testing > a:hover > strong:before {
+          body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li.testing > a:hover {
+            background-image: url(../_images/wizard/examinations/bg-grid-testing.jpg); }
+            body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li.testing > a:hover > strong:before {
               background-position: -190px -325px; }
-    body #container > article.has-sidebar > section > .content .examination-wizard > section .subject {
+    body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject {
       display: none;
       padding: 0px;
       position: relative;
       height: 440px;
       min-height: 440px; }
-    body #container > article.has-sidebar > section > .content .examination-wizard > section .subject.degree-fouryear {
+    body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject.degree-fouryear {
       height: 464px; }
-    body #container > article.has-sidebar > section > .content .examination-wizard > section.act .subject.degree-fouryear, body #container > article.has-sidebar > section > .content .examination-wizard > section.sat .subject.degree-fouryear {
+    body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section.act .subject.degree-fouryear, body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section.sat .subject.degree-fouryear {
       height: 440px; }
-    body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .intro, body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section {
+    body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .intro, body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section {
       display: block;
       position: absolute;
       overflow: hidden;
@@ -3995,7 +4090,7 @@ body #container > article.has-sidebar > section > .content .examination-wizard {
       -moz-transform: scale(1.25);
       -ms-transform: scale(1.25);
       transform: scale(1.25); }
-      body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .intro.enabled, body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section.enabled {
+      body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .intro.enabled, body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section.enabled {
         visibility: visible;
         height: 100%;
         opacity: 1;
@@ -4003,25 +4098,25 @@ body #container > article.has-sidebar > section > .content .examination-wizard {
         -moz-transform: scale(1);
         -ms-transform: scale(1);
         transform: scale(1); }
-    body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .intro .wrapper, body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section .wrapper {
+    body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .intro .wrapper, body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section .wrapper {
       display: table;
       height: auto;
       margin: 0px 100px; }
-      body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .intro .wrapper > figure, body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section .wrapper > figure {
+      body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .intro .wrapper > figure, body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section .wrapper > figure {
         display: table-cell;
         width: 20%;
         height: 100%;
         padding: 35px 0px 0px 0px;
         vertical-align: top;
         text-align: left; }
-      body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .intro .wrapper > .content, body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section .wrapper > .content {
+      body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .intro .wrapper > .content, body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section .wrapper > .content {
         display: table-cell;
         width: 80%; }
-        body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .intro .wrapper > .content.full, body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section .wrapper > .content.full {
+        body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .intro .wrapper > .content.full, body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section .wrapper > .content.full {
           width: 100%;
           vertical-align: middle;
           text-align: center; }
-        body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .intro .wrapper > .content h2, body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section .wrapper > .content h2 {
+        body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .intro .wrapper > .content h2, body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section .wrapper > .content h2 {
           display: block;
           margin: 0px;
           padding: 0px 0px 17px 0px;
@@ -4031,7 +4126,7 @@ body #container > article.has-sidebar > section > .content .examination-wizard {
           font-size: 20px;
           line-height: 20px;
           text-shadow: none; }
-        body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .intro .wrapper > .content h3, body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section .wrapper > .content h3 {
+        body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .intro .wrapper > .content h3, body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section .wrapper > .content h3 {
           display: block;
           margin: 0px;
           padding: 35px 0px 28px 0px;
@@ -4041,7 +4136,7 @@ body #container > article.has-sidebar > section > .content .examination-wizard {
           font-size: 16px;
           line-height: 16px;
           text-shadow: none; }
-        body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .intro .wrapper > .content h6, body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section .wrapper > .content h6 {
+        body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .intro .wrapper > .content h6, body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section .wrapper > .content h6 {
           display: block;
           margin: 0px;
           padding: 33px 0px 0px 0px;
@@ -4052,19 +4147,19 @@ body #container > article.has-sidebar > section > .content .examination-wizard {
           font-size: 14px;
           line-height: 14px;
           text-shadow: none; }
-        body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .intro .wrapper > .content p, body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section .wrapper > .content p {
+        body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .intro .wrapper > .content p, body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section .wrapper > .content p {
           font-size: 14px;
           line-height: 22px;
           font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida", sans-serif;
           color: #727272;
           text-align: justify; }
-        body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .intro .wrapper > .content ul.programs, body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section .wrapper > .content ul.programs {
+        body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .intro .wrapper > .content ul.programs, body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section .wrapper > .content ul.programs {
           display: block;
           margin: 20px 0px 0px 0px;
           padding: 0px 0px 35px 0px;
           list-style: none;
           text-align: center; }
-          body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .intro .wrapper > .content ul.programs > li, body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section .wrapper > .content ul.programs > li {
+          body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .intro .wrapper > .content ul.programs > li, body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section .wrapper > .content ul.programs > li {
             display: inline-block;
             margin: 0px 25px;
             padding: 0px;
@@ -4080,11 +4175,11 @@ body #container > article.has-sidebar > section > .content .examination-wizard {
             -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1) inset;
             -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1) inset;
             box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1) inset; }
-            body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .intro .wrapper > .content ul.programs > li > div, body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section .wrapper > .content ul.programs > li > div {
+            body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .intro .wrapper > .content ul.programs > li > div, body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section .wrapper > .content ul.programs > li > div {
               display: table;
               width: 100%;
               height: 100%; }
-              body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .intro .wrapper > .content ul.programs > li > div > a, body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section .wrapper > .content ul.programs > li > div > a {
+              body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .intro .wrapper > .content ul.programs > li > div > a, body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section .wrapper > .content ul.programs > li > div > a {
                 display: table-cell;
                 width: 100%;
                 height: 100%;
@@ -4092,18 +4187,18 @@ body #container > article.has-sidebar > section > .content .examination-wizard {
                 text-align: center;
                 vertical-align: middle;
                 text-decoration: none; }
-    body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .intro {
+    body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .intro {
       height: 100%; }
-      body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .intro .wrapper {
+      body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .intro .wrapper {
         height: 100%; }
-        body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .intro .wrapper > figure > img {
+        body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .intro .wrapper > figure > img {
           width: auto;
           max-width: none; }
-        body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .intro .wrapper > .content {
+        body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .intro .wrapper > .content {
           vertical-align: top; }
-    body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section {
+    body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section {
       width: 100%; }
-      body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section > ol {
+      body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > ol {
         display: block;
         position: relative;
         width: 100%;
@@ -4111,7 +4206,7 @@ body #container > article.has-sidebar > section > .content .examination-wizard {
         margin: 0px;
         padding: 0px;
         list-style: none; }
-        body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section > ol > li {
+        body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > ol > li {
           visibility: hidden;
           opacity: 0;
           position: absolute;
@@ -4124,28 +4219,28 @@ body #container > article.has-sidebar > section > .content .examination-wizard {
           -moz-transition: opacity 0.65s ease-out, visibility 0.65s ease-out;
           -ms-transition: opacity 0.65s ease-out, visibility 0.65s ease-out;
           transition: opacity 0.65s ease-out, visibility 0.65s ease-out; }
-          body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section > ol > li.enabled {
+          body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > ol > li.enabled {
             visibility: visible;
             opacity: 1;
             height: 100%; }
-          body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section > ol > li .wrapper {
+          body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > ol > li .wrapper {
             display: table;
             width: 84%;
             margin: 0px 12% 0px 4%; }
-            body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section > ol > li .wrapper > figure {
+            body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > ol > li .wrapper > figure {
               width: 35%;
               text-align: center; }
-            body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section > ol > li .wrapper .content {
+            body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > ol > li .wrapper .content {
               width: 65%;
               padding-top: 35px; }
-      body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section > footer {
+      body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer {
         display: block;
         position: absolute;
         bottom: 0px;
         width: 100%;
         height: 70px;
         clear: both; }
-        body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section > footer > nav {
+        body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > nav {
           display: block;
           float: left;
           clear: none;
@@ -4153,7 +4248,7 @@ body #container > article.has-sidebar > section > .content .examination-wizard {
           margin: 0px;
           padding: 0px;
           text-align: center; }
-          body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section > footer > nav > a {
+          body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > nav > a {
             display: inline-block;
             position: relative;
             width: 78px;
@@ -4168,30 +4263,30 @@ body #container > article.has-sidebar > section > .content .examination-wizard {
             font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida", sans-serif;
             text-transform: uppercase;
             font-weight: normal; }
-            body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section > footer > nav > a.back {
+            body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > nav > a.back {
               margin-right: -10px;
               background-position: 0px -415px;
               text-align: left;
               text-indent: 11px; }
-            body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section > footer > nav > a.next {
+            body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > nav > a.next {
               margin-left: -10px;
               background-position: 0px -373px;
               text-align: left;
               text-indent: 21px; }
-            body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section > footer > nav > a:hover {
+            body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > nav > a:hover {
               color: #fff; }
-            body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section > footer > nav > a.disabled {
+            body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > nav > a.disabled {
               opacity: 0.7;
               color: #62668a;
               cursor: default; }
-        body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section > footer > menu {
+        body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu {
           display: block;
           float: left;
           clear: none;
           width: 65%;
           margin: 0px;
           padding: 0px; }
-          body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section > footer > menu > ol {
+          body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol {
             display: block;
             position: relative;
             left: -7px;
@@ -4199,37 +4294,37 @@ body #container > article.has-sidebar > section > .content .examination-wizard {
             margin: 0px;
             padding: 0px;
             list-style: none; }
-            body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section > footer > menu > ol.step-1:after {
+            body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol.step-1:after {
               width: 1px; }
-            body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section > footer > menu > ol.step-2:after {
+            body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol.step-2:after {
               width: 101px; }
-            body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section > footer > menu > ol.step-3:after {
+            body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol.step-3:after {
               width: 202px; }
-            body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section > footer > menu > ol.step-4:after {
+            body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol.step-4:after {
               width: 303px; }
-            body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section > footer > menu > ol.step-5:after {
+            body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol.step-5:after {
               width: 404px; }
-            body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section > footer > menu > ol:before, body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section > footer > menu > ol:after {
+            body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol:before, body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol:after {
               display: block;
               position: absolute;
               height: 10px;
               left: 15px;
               content: ""; }
-            body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section > footer > menu > ol:before {
+            body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol:before {
               top: 12px;
               width: 404px;
-              background-image: url(../_images/wizard/bg-progress-unfilled.png);
+              background-image: url(../_images/wizard/examinations/bg-progress-unfilled.png);
               background-repeat: repeat-x;
               background-position: 0px 0px; }
-            body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section > footer > menu > ol:after {
+            body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol:after {
               top: 12px;
               width: 1px;
-              background-image: url(../_images/wizard/bg-progress-filled.png);
+              background-image: url(../_images/wizard/examinations/bg-progress-filled.png);
               -webkit-transition: width 0.65s ease-out;
               -moz-transition: width 0.65s ease-out;
               -ms-transition: width 0.65s ease-out;
               transition: width 0.65s ease-out; }
-            body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section > footer > menu > ol > li {
+            body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol > li {
               display: block;
               float: left;
               position: relative;
@@ -4239,11 +4334,11 @@ body #container > article.has-sidebar > section > .content .examination-wizard {
               padding: 0px;
               margin: 0px 33px;
               list-style: none; }
-              body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section > footer > menu > ol > li:first-child {
+              body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol > li:first-child {
                 margin-left: 0px; }
-              body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section > footer > menu > ol > li:last-child {
+              body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol > li:last-child {
                 margin-right: 0px; }
-              body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section > footer > menu > ol > li > a {
+              body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol > li > a {
                 display: block;
                 position: relative;
                 width: 34px;
@@ -4252,9 +4347,9 @@ body #container > article.has-sidebar > section > .content .examination-wizard {
                 background-repeat: no-repeat;
                 background-position: -88px -329px;
                 cursor: pointer; }
-                body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section > footer > menu > ol > li > a:hover {
+                body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol > li > a:hover {
                   background-position: -44px -329px; }
-                body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section > footer > menu > ol > li > a > strong {
+                body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol > li > a > strong {
                   display: block;
                   position: absolute;
                   width: 100px;
@@ -4268,99 +4363,173 @@ body #container > article.has-sidebar > section > .content .examination-wizard {
                   text-align: center;
                   text-shadow: none;
                   font-weight: bold; }
-              body #container > article.has-sidebar > section > .content .examination-wizard > section .subject .section > footer > menu > ol > li.selected > a {
+              body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol > li.selected > a {
                 background-position: 0px -329px; }
-  body #container > article.has-sidebar > section > .content .examination-wizard > footer {
-    clear: both;
-    height: 46px;
-    background-color: #272793;
-    border-top: 1px #5659a7 solid;
-    border-bottom: 1px #8b8b8b solid;
-    border-left: 1px #3b3b9d solid;
-    border-right: 1px #3b3b9d solid;
-    -moz-border-radius-bottomleft: 7px;
-    -webkit-border-bottom-left-radius: 7px;
-    border-bottom-left-radius: 7px;
-    -moz-border-radius-bottomright: 7px;
-    -webkit-border-bottom-right-radius: 7px;
-    border-bottom-right-radius: 7px; }
-    body #container > article.has-sidebar > section > .content .examination-wizard > footer > p {
+
+body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning {
+  margin-top: 130px; }
+  body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > header > section:after {
+    display: block;
+    position: absolute;
+    left: 39px;
+    bottom: -74px;
+    width: 317px;
+    height: 322px;
+    background-image: url(../_images/wizard/distance-learning/header-dantes-rep.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    content: ""; }
+  body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > header > section > h1 {
+    width: 51%;
+    font-size: 30px;
+    text-align: left; }
+  body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > header > nav > ul > li > a {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.56); }
+  body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > header > nav > ul > li.home > a {
+    line-height: 4px; }
+  body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > header > nav > ul > li.counselor {
+    border-left: 1px #7f7f7f solid;
+    border-right: none; }
+    body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > header > nav > ul > li.counselor:before {
       display: block;
-      float: left;
-      margin: 0px;
-      padding: 0px 16px;
-      font-size: 14px;
-      line-height: 43px;
-      color: #fff;
-      font-family: 'Open Sans', sans-serif;
-      font-weight: bold;
-      font-style: normal; }
-    body #container > article.has-sidebar > section > .content .examination-wizard > footer > menu {
-      display: block;
-      float: right;
-      clear: none;
-      margin: 0px;
-      padding: 0px; }
-      body #container > article.has-sidebar > section > .content .examination-wizard > footer > menu > ul {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 1px;
+      height: 100%;
+      background-color: #b7b7b7;
+      content: ""; }
+    body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > header > nav > ul > li.counselor > a {
+      width: auto;
+      padding-right: 15px;
+      background-image: none;
+      font-size: 13px;
+      line-height: 38px;
+      color: #f4f4f4;
+      text-decoration: none;
+      text-indent: 0px; }
+      body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > header > nav > ul > li.counselor > a:before {
         display: block;
-        float: right;
-        margin: 0px;
-        padding: 0px;
-        list-style: none; }
-        body #container > article.has-sidebar > section > .content .examination-wizard > footer > menu > ul:before {
+        float: left;
+        width: 42px;
+        height: 40px;
+        background-image: url(../_images/sprites-wizard.png);
+        background-repeat: no-repeat;
+        background-position: -258px -84px;
+        content: ""; }
+      body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > header > nav > ul > li.counselor > a:hover:before {
+        background-position: -314px -84px; }
+  body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section {
+    background-image: url(../_images/wizard/distance-learning/bg-content-tile.png);
+    background-repeat: repeat-x;
+    background-position: 0px 0px;
+    background-color: #fff; }
+    body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div {
+      display: none;
+      height: 590px; }
+      body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.intro > section {
+        padding: 88px 90px 0px 90px; }
+        body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.intro > section h1 {
           display: block;
-          float: left;
-          padding: 0px 12px 0px 0px;
-          content: "SHARE:";
-          text-transform: uppercase;
-          font-size: 14px;
-          line-height: 43px;
-          color: #fff;
-          font-family: 'Open Sans', sans-serif;
-          font-weight: bold;
-          font-style: normal; }
-        body #container > article.has-sidebar > section > .content .examination-wizard > footer > menu > ul > li {
+          margin-bottom: 32px;
+          color: #272793;
+          font-weight: 800;
+          font-size: 18px;
+          text-shadow: none; }
+        body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.intro > section .button {
+          margin-top: 70px; }
+      body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.questions {
+        display: block; }
+        body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.questions > header {
           display: block;
-          float: left;
-          margin: 2px 0px;
-          padding: 0px;
-          border-left: 2px #5d5dae solid;
-          list-style: none; }
-          body #container > article.has-sidebar > section > .content .examination-wizard > footer > menu > ul > li > a {
+          clear: both;
+          width: 100%;
+          height: 35px;
+          background-image: url(../_images/wizard/bg-nav-secondary.png);
+          background-repeat: repeat-x;
+          background-position: 0px 0px;
+          border-bottom: 1px #c7c7c7 solid; }
+          body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.questions > header h6 {
             display: block;
-            width: 45px;
-            height: auto;
-            text-decoration: none; }
-            body #container > article.has-sidebar > section > .content .examination-wizard > footer > menu > ul > li > a > strong {
+            float: left;
+            margin: 0px;
+            padding: 0px 0px 0px 23px;
+            font-size: 13px;
+            line-height: 35px;
+            color: #272793;
+            font-weight: 800; }
+          body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.questions > header h5 {
+            display: block;
+            float: right;
+            text-align: right;
+            margin: 0px;
+            padding: 0px 15px 0px 0px;
+            font-size: 13px;
+            line-height: 35px;
+            color: #727272;
+            font-weight: normal; }
+        body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.questions > section {
+          padding: 88px 90px 0px 90px; }
+          body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.questions > section > ul {
+            display: block;
+            margin: 0px;
+            padding: 0px;
+            list-style: none; }
+            body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.questions > section > ul > li {
               display: block;
-              margin-top: 5px;
-              margin-left: 9px;
-              width: 27px;
+              margin: 0px;
+              padding: 0px;
+              list-style: none; }
+              body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.questions > section > ul > li > h1 {
+                display: block;
+                margin-bottom: 32px;
+                color: #727272;
+                font-weight: 800;
+                font-size: 18px;
+                line-height: 22px;
+                text-shadow: none; }
+        body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.questions > footer {
+          clear: both;
+          margin-top: 70px; }
+          body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.questions > footer > nav {
+            display: block;
+            float: right;
+            clear: none;
+            width: 35%;
+            margin: 0px;
+            padding: 0px;
+            text-align: center; }
+            body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.questions > footer > nav > a {
+              display: inline-block;
+              position: relative;
+              width: 78px;
               height: 32px;
               background-image: url(../_images/sprites-wizard.png);
               background-repeat: no-repeat;
-              text-indent: -9999px;
-              text-align: left;
-              cursor: pointer; }
-          body #container > article.has-sidebar > section > .content .examination-wizard > footer > menu > ul > li.print {
-            display: none; }
-            body #container > article.has-sidebar > section > .content .examination-wizard > footer > menu > ul > li.print > a > strong {
-              background-position: -258px 0px; }
-              body #container > article.has-sidebar > section > .content .examination-wizard > footer > menu > ul > li.print > a > strong:hover {
-                background-position: -258px -42px; }
-          body #container > article.has-sidebar > section > .content .examination-wizard > footer > menu > ul > li.email {
-            display: none; }
-            body #container > article.has-sidebar > section > .content .examination-wizard > footer > menu > ul > li.email > a > strong {
-              background-position: -295px 0px; }
-              body #container > article.has-sidebar > section > .content .examination-wizard > footer > menu > ul > li.email > a > strong:hover {
-                background-position: -295px -42px; }
-          body #container > article.has-sidebar > section > .content .examination-wizard > footer > menu > ul > li.share > a > strong {
-            background-position: -332px 0px; }
-            body #container > article.has-sidebar > section > .content .examination-wizard > footer > menu > ul > li.share > a > strong:hover {
-              background-position: -332px -42px; }
-
-div#at15s {
-  display: none !important; }
+              text-decoration: none;
+              cursor: pointer;
+              font-size: 12px;
+              line-height: 30px;
+              color: #ddd;
+              font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida", sans-serif;
+              text-transform: uppercase;
+              font-weight: normal; }
+              body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.questions > footer > nav > a.back {
+                margin-right: -10px;
+                background-position: 0px -415px;
+                text-align: left;
+                text-indent: 11px; }
+              body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.questions > footer > nav > a.next {
+                margin-left: -10px;
+                background-position: 0px -373px;
+                text-align: left;
+                text-indent: 21px; }
+              body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.questions > footer > nav > a:hover {
+                color: #fff; }
+              body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.questions > footer > nav > a.disabled {
+                opacity: 0.7;
+                color: #62668a;
+                cursor: default; }
 
 /* Vendor imports */
 .wufoo {

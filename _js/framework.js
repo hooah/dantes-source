@@ -615,7 +615,7 @@ var framework = {
 
         examwizard: {
             init: function() {
-                framework.data.examwizard.container     = jQuery('.examination-wizard');
+                framework.data.examwizard.container     = jQuery('.wizard-examination');
 
                 jQuery('>header>nav>ul>li[class != "home"]>a, >section>.grid>ol>li>a', framework.data.examwizard.container).bind('click', framework.fn.examwizard.show_toplevel_section);
                 jQuery('>header>nav>ul>li[class != "home"]>ol>li>a, >section>.subject>.intro figure>a, >section>.subject>.intro .content>ul.programs>li>div>a', framework.data.examwizard.container).bind('click', framework.fn.examwizard.show_sub_section);
