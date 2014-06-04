@@ -157,6 +157,76 @@ body {
                             & > section {
                                 clear: both;
                                 overflow: hidden;
+
+                                & ol.selection-list {
+                                    display: block;
+                                    position: relative;
+                                    left: -6px;
+                                    margin: 0px;
+                                    padding: 0px;
+                                    list-style: none;
+
+                                    & > li {
+                                        display: block;
+                                        margin: 0px 0px 0px 45px;
+                                        padding: 0px;
+                                        list-style: none;
+
+                                        & label {
+                                            display: block;
+                                            position: relative;
+                                            margin: 4px 0px;
+                                            padding: 9px 0px 7px 0px;
+                                            font-size: 14px;
+                                            line-height: 18px;
+                                            color: #727272;
+                                            font-weight: normal;
+                                            font-style: normal;
+                                            cursor: pointer;
+
+                                            &:before {
+                                                display: block;
+                                                position: absolute;
+                                                top: 0px;
+                                                left: -45px;
+                                                width: 34px;
+                                                height: 34px;
+                                                background-image: url(../_images/sprites-wizard.png);
+                                                background-repeat: no-repeat;
+                                                background-position: -88px -329px;
+                                                content: "";
+                                            }
+
+                                            & input {
+                                                display: none;
+                                            }
+
+                                            &:hover {
+                                                color: #333;
+
+                                                &:before {
+                                                    background-position: -44px -329px;
+                                                }
+                                            }
+
+                                            &.selected {
+                                                color: #000;
+
+                                                &:before {
+                                                    background-position: 0px -329px;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    &.selection-list-compressed {
+                                        & > li {
+                                            & > label {
+                                                margin: 0px;
+                                            }
+                                        }
+                                    }
+                                }
                             }
 
                             & > footer {

@@ -23,9 +23,23 @@
         <script src="{{ page.path }}/_js/vendor/jquery.lunr.search.js"></script>
         {% endif %}
         {% if page.social.title == 'Examinations' %}
+        <script src="{{ page.path }}/_js/framework.wizard.js"></script>
+        <script src="{{ page.path }}/_js/framework.wizard.exam.js"></script>
+
         <!-- addthis -->
         <script>var addthis_config = {"data_track_addressbar": false, "services_compact": "facebook,twitter,googleplus,pinterest,tumblr", "services_exclude": "email,print"};</script>
         <script>var addthis_share = {"email_template": "dantes_examwizard", "email_vars": {"examname": ""}};</script>
+        <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51393b9372b05326"></script>
+        {% endif %}
+        {% if page.social.title == 'DANTES Self Assessment' %}
+        <script src="{{ page.path }}/_js/vendor/mustache.js"></script>
+        <script src="{{ page.path }}/_js/framework.wizard.js"></script>
+        <script src="{{ page.path }}/_js/framework.wizard.dlrsa.js"></script>
+        <script src="{{ page.path }}/_js/datasets/wizard.dlrsa.js"></script>
+
+        <!-- addthis -->
+        <script>var addthis_config = {"data_track_addressbar": false, "services_compact": "facebook,twitter,googleplus,pinterest,tumblr", "services_exclude": "email,print"};</script>
+        <script>var addthis_share = {"email_template": "dantes_dlrsawizard", "email_vars": {"results": ""}};</script>
         <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51393b9372b05326"></script>
         {% endif %}
 

@@ -3731,6 +3731,52 @@ body #container > article.has-sidebar > section > .content .wizard {
   body #container > article.has-sidebar > section > .content .wizard > section {
     clear: both;
     overflow: hidden; }
+    body #container > article.has-sidebar > section > .content .wizard > section ol.selection-list {
+      display: block;
+      position: relative;
+      left: -6px;
+      margin: 0px;
+      padding: 0px;
+      list-style: none; }
+      body #container > article.has-sidebar > section > .content .wizard > section ol.selection-list > li {
+        display: block;
+        margin: 0px 0px 0px 45px;
+        padding: 0px;
+        list-style: none; }
+        body #container > article.has-sidebar > section > .content .wizard > section ol.selection-list > li label {
+          display: block;
+          position: relative;
+          margin: 4px 0px;
+          padding: 9px 0px 7px 0px;
+          font-size: 14px;
+          line-height: 18px;
+          color: #727272;
+          font-weight: normal;
+          font-style: normal;
+          cursor: pointer; }
+          body #container > article.has-sidebar > section > .content .wizard > section ol.selection-list > li label:before {
+            display: block;
+            position: absolute;
+            top: 0px;
+            left: -45px;
+            width: 34px;
+            height: 34px;
+            background-image: url(../_images/sprites-wizard.png);
+            background-repeat: no-repeat;
+            background-position: -88px -329px;
+            content: ""; }
+          body #container > article.has-sidebar > section > .content .wizard > section ol.selection-list > li label input {
+            display: none; }
+          body #container > article.has-sidebar > section > .content .wizard > section ol.selection-list > li label:hover {
+            color: #333; }
+            body #container > article.has-sidebar > section > .content .wizard > section ol.selection-list > li label:hover:before {
+              background-position: -44px -329px; }
+          body #container > article.has-sidebar > section > .content .wizard > section ol.selection-list > li label.selected {
+            color: #000; }
+            body #container > article.has-sidebar > section > .content .wizard > section ol.selection-list > li label.selected:before {
+              background-position: 0px -329px; }
+      body #container > article.has-sidebar > section > .content .wizard > section ol.selection-list.selection-list-compressed > li > label {
+        margin: 0px; }
   body #container > article.has-sidebar > section > .content .wizard > footer {
     clear: both;
     height: 46px;
@@ -4420,116 +4466,239 @@ body #container > article.has-sidebar > section > .content .wizard.wizard-distan
       body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > header > nav > ul > li.counselor > a:hover:before {
         background-position: -314px -84px; }
   body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section {
+    position: relative;
+    height: 590px;
     background-image: url(../_images/wizard/distance-learning/bg-content-tile.png);
     background-repeat: repeat-x;
     background-position: 0px 0px;
     background-color: #fff; }
     body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div {
       display: none;
-      height: 590px; }
-      body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.intro > section {
-        padding: 88px 90px 0px 90px; }
-        body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.intro > section h1 {
+      position: absolute;
+      width: 100%;
+      height: 100%; }
+      body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div > header.statusbar {
+        display: block;
+        clear: both;
+        width: 100%;
+        height: 35px;
+        background-image: url(../_images/wizard/bg-nav-secondary.png);
+        background-repeat: repeat-x;
+        background-position: 0px 0px;
+        border-bottom: 1px #c7c7c7 solid; }
+        body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div > header.statusbar h6 {
           display: block;
-          margin-bottom: 32px;
+          float: left;
+          margin: 0px;
+          padding: 0px 0px 0px 23px;
+          font-size: 13px;
+          line-height: 35px;
           color: #272793;
-          font-weight: 800;
-          font-size: 18px;
-          text-shadow: none; }
-        body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.intro > section .button {
-          margin-top: 70px; }
-      body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.questions {
-        display: block; }
-        body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.questions > header {
+          font-weight: 800; }
+        body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div > header.statusbar h5 {
           display: block;
-          clear: both;
-          width: 100%;
-          height: 35px;
-          background-image: url(../_images/wizard/bg-nav-secondary.png);
-          background-repeat: repeat-x;
-          background-position: 0px 0px;
-          border-bottom: 1px #c7c7c7 solid; }
-          body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.questions > header h6 {
-            display: block;
-            float: left;
-            margin: 0px;
-            padding: 0px 0px 0px 23px;
-            font-size: 13px;
-            line-height: 35px;
-            color: #272793;
-            font-weight: 800; }
-          body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.questions > header h5 {
-            display: block;
-            float: right;
-            text-align: right;
-            margin: 0px;
-            padding: 0px 15px 0px 0px;
-            font-size: 13px;
-            line-height: 35px;
-            color: #727272;
+          float: right;
+          text-align: right;
+          margin: 0px;
+          padding: 0px 15px 0px 0px;
+          font-size: 13px;
+          line-height: 35px;
+          color: #727272;
+          font-weight: normal; }
+      body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div > section {
+        padding: 88px 90px 0px 90px; }
+      body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div > footer {
+        margin: 0px;
+        padding: 30px 90px 0px 90px; }
+        body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div > footer .button.right {
+          margin-right: 30px; }
+          body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div > footer .button.right:first-child {
+            margin-right: 0px; }
+        body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div > footer nav.pagination {
+          display: block;
+          float: right;
+          clear: none;
+          width: auto;
+          margin: 0px 0px 0px 30px;
+          padding: 0px;
+          text-align: center; }
+          body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div > footer nav.pagination > a {
+            display: inline-block;
+            position: relative;
+            width: 78px;
+            height: 32px;
+            background-image: url(../_images/sprites-wizard.png);
+            background-repeat: no-repeat;
+            text-decoration: none;
+            cursor: pointer;
+            font-size: 12px;
+            line-height: 30px;
+            color: #ddd;
+            font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida", sans-serif;
+            text-transform: uppercase;
             font-weight: normal; }
-        body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.questions > section {
-          padding: 88px 90px 0px 90px; }
-          body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.questions > section > ul {
+            body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div > footer nav.pagination > a.back {
+              margin-right: -10px;
+              background-position: 0px -415px;
+              text-align: left;
+              text-indent: 11px; }
+            body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div > footer nav.pagination > a.next {
+              margin-left: -10px;
+              background-position: 0px -373px;
+              text-align: left;
+              text-indent: 21px; }
+            body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div > footer nav.pagination > a:hover {
+              color: #fff; }
+            body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div > footer nav.pagination > a.disabled {
+              opacity: 0.7;
+              color: #62668a;
+              cursor: default; }
+      body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.intro > section h3, body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.demographics > section h3, body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.thanks > section h3, body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.finale > section h3, body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.results-detail > section h3 {
+        display: block;
+        margin-bottom: 32px;
+        color: #272793;
+        font-weight: 800;
+        font-size: 18px;
+        text-shadow: none; }
+      body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.intro > section h5, body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.demographics > section h5, body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.thanks > section h5, body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.finale > section h5, body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.results-detail > section h5 {
+        display: block;
+        margin-bottom: 39px;
+        font-size: 16px;
+        line-height: 17px;
+        font-weight: 600;
+        font-style: italic;
+        color: #727272;
+        text-shadow: none; }
+      body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.intro > section .button, body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.demographics > section .button, body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.thanks > section .button, body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.finale > section .button, body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.results-detail > section .button {
+        margin-top: 70px; }
+      body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.intro {
+        display: block; }
+      body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.results > section {
+        padding-top: 60px; }
+        body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.results > section > ol {
+          display: block;
+          margin: 0px;
+          padding: 0px;
+          list-style: none; }
+          body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.results > section > ol > li {
             display: block;
             margin: 0px;
             padding: 0px;
             list-style: none; }
-            body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.questions > section > ul > li {
+            body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.results > section > ol > li > ol {
               display: block;
               margin: 0px;
               padding: 0px;
               list-style: none; }
-              body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.questions > section > ul > li > h1 {
+              body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.results > section > ol > li > ol > li {
                 display: block;
-                margin-bottom: 32px;
+                position: relative;
+                margin: 0px -90px;
+                padding: 25px 90px 25px 90px;
+                background-image: url(../_images/wizard/distance-learning/results-divider.png);
+                background-repeat: repeat-x;
+                background-position: center bottom;
+                list-style: none;
                 color: #727272;
-                font-weight: 800;
-                font-size: 18px;
-                line-height: 22px;
-                text-shadow: none; }
-        body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.questions > footer {
-          clear: both;
-          margin-top: 70px; }
-          body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.questions > footer > nav {
+                font-size: 14px;
+                line-height: 17px; }
+                body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.results > section > ol > li > ol > li:last-child {
+                  background-image: none; }
+                body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.results > section > ol > li > ol > li .content p {
+                  margin: 0px;
+                  padding: 0px 0px; }
+                body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.results > section > ol > li > ol > li .content ul {
+                  margin-top: 6px;
+                  margin-left: 17px;
+                  padding-right: 25px;
+                  list-style-image: none;
+                  list-style-type: disc; }
+                  body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.results > section > ol > li > ol > li .content ul > li {
+                    font-style: italic;
+                    font-size: 13px;
+                    line-height: 16px; }
+                body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.results > section > ol > li > ol > li .controls .illustration {
+                  width: 100%;
+                  margin-bottom: 10px;
+                  font-size: 15px;
+                  line-height: 30px;
+                  font-weight: bold;
+                  text-transform: uppercase; }
+                  body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.results > section > ol > li > ol > li .controls .illustration:before {
+                    display: block;
+                    float: left;
+                    margin-right: 10px;
+                    width: 30px;
+                    height: 30px;
+                    background-image: url(../_images/sprites-wizard.png);
+                    background-repeat: no-repeat;
+                    text-indent: -9999px;
+                    text-align: left;
+                    content: ""; }
+                body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.results > section > ol > li > ol > li .controls .button {
+                  display: block;
+                  float: none;
+                  width: auto; }
+                body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.results > section > ol > li > ol > li .ready .controls .illustration {
+                  color: #25c34e; }
+                  body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.results > section > ol > li > ol > li .ready .controls .illustration:before {
+                    background-position: -258px -134px; }
+                body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.results > section > ol > li > ol > li .almost-ready .controls .illustration {
+                  color: #e9a624;
+                  line-height: 15px; }
+                  body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.results > section > ol > li > ol > li .almost-ready .controls .illustration:before {
+                    background-position: -258px -174px; }
+                body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.results > section > ol > li > ol > li .not-ready .controls .illustration {
+                  color: #c73e1e; }
+                  body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.results > section > ol > li > ol > li .not-ready .controls .illustration:before {
+                    background-position: -258px -214px; }
+      body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.results-detail > section h3 {
+        margin-bottom: 25px; }
+      body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.results-detail > section .ready h5 span {
+        color: #25c34e; }
+      body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.results-detail > section .almost-ready h5 span {
+        color: #e9a624; }
+      body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.results-detail > section .not-ready h5 span {
+        color: #c73e1e; }
+      body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.questions > section, body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.questions-demographics > section {
+        padding: 88px 90px 0px 90px; }
+        body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.questions > section > ol, body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.questions-demographics > section > ol {
+          display: block;
+          margin: 0px;
+          padding: 0px;
+          list-style: none; }
+          body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.questions > section > ol > li, body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.questions-demographics > section > ol > li {
             display: block;
-            float: right;
-            clear: none;
-            width: 35%;
             margin: 0px;
             padding: 0px;
-            text-align: center; }
-            body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.questions > footer > nav > a {
-              display: inline-block;
-              position: relative;
-              width: 78px;
-              height: 32px;
-              background-image: url(../_images/sprites-wizard.png);
-              background-repeat: no-repeat;
-              text-decoration: none;
-              cursor: pointer;
-              font-size: 12px;
-              line-height: 30px;
-              color: #ddd;
-              font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida", sans-serif;
-              text-transform: uppercase;
-              font-weight: normal; }
-              body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.questions > footer > nav > a.back {
-                margin-right: -10px;
-                background-position: 0px -415px;
-                text-align: left;
-                text-indent: 11px; }
-              body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.questions > footer > nav > a.next {
-                margin-left: -10px;
-                background-position: 0px -373px;
-                text-align: left;
-                text-indent: 21px; }
-              body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.questions > footer > nav > a:hover {
-                color: #fff; }
-              body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.questions > footer > nav > a.disabled {
-                opacity: 0.7;
-                color: #62668a;
-                cursor: default; }
+            list-style: none; }
+            body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.questions > section > ol > li h3, body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.questions-demographics > section > ol > li h3 {
+              display: block;
+              margin-bottom: 32px;
+              color: #727272;
+              font-weight: 800;
+              font-size: 18px;
+              line-height: 22px;
+              text-shadow: none; }
+              body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.questions > section > ol > li h3.fixed-height, body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.questions-demographics > section > ol > li h3.fixed-height {
+                height: 54px; }
+      body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.questions > footer, body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.questions-demographics > footer {
+        clear: both;
+        padding-top: 70px; }
+      body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.finale > section .feature-box > div {
+        height: 150px; }
+        body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.finale > section .feature-box > div > figure {
+          min-width: 0px;
+          height: 148px; }
+        body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.finale > section .feature-box > div > figcaption {
+          min-width: 0px; }
+          body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.finale > section .feature-box > div > figcaption > a {
+            height: 148px; }
+            body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.finale > section .feature-box > div > figcaption > a > strong {
+              bottom: 20px;
+              font-size: 15px; }
+      body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.finale > section .feature-box.feature-box-preset.service_members-prep_for_college figure {
+        background-position: right -36px; }
 
 /* Vendor imports */
 .wufoo {

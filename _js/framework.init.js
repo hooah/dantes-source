@@ -47,9 +47,6 @@ jQuery(document).ready(function() {
     if (jQuery('.multimedia-dib-menu').length) {
         framework.fn.multimedia.dib.init();
     }
-    if (jQuery('.examination-wizard').length) {
-        framework.fn.examwizard.init();
-    }
     if ((jQuery('#strEdLevel').length) || (jQuery('#strFactSheet').length)) {
         jQuery('#strEdLevel, #strFactSheet').bind('change', function() {
             var strPDFURL           = jQuery(this).val();
@@ -61,6 +58,11 @@ jQuery(document).ready(function() {
 
         jQuery('#strEdLevel').siblings('a.button').attr('href', jQuery('#strEdLevel option:first').attr('value'));
         jQuery('#strFactSheet').siblings('a.button').attr('href', jQuery('#strFactSheet option:first').attr('value'));
+    }
+
+    // initialize wizards, if any
+    if (framework.wizard) {
+        framework.wizard.fn.init();
     }
 
     // lunr.js search
