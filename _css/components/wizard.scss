@@ -168,7 +168,7 @@ body {
 
                                     & > li {
                                         display: block;
-                                        margin: 0px 0px 0px 45px;
+                                        margin: 0px;
                                         padding: 0px;
                                         list-style: none;
 
@@ -176,7 +176,7 @@ body {
                                             display: block;
                                             position: relative;
                                             margin: 4px 0px;
-                                            padding: 9px 0px 7px 0px;
+                                            padding: 9px 0px 7px 45px;
                                             font-size: 14px;
                                             line-height: 18px;
                                             color: #727272;
@@ -188,7 +188,7 @@ body {
                                                 display: block;
                                                 position: absolute;
                                                 top: 0px;
-                                                left: -45px;
+                                                left: 0px;
                                                 width: 34px;
                                                 height: 34px;
                                                 background-image: url(../_images/sprites-wizard.png);

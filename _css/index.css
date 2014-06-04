@@ -3740,14 +3740,14 @@ body #container > article.has-sidebar > section > .content .wizard {
       list-style: none; }
       body #container > article.has-sidebar > section > .content .wizard > section ol.selection-list > li {
         display: block;
-        margin: 0px 0px 0px 45px;
+        margin: 0px;
         padding: 0px;
         list-style: none; }
         body #container > article.has-sidebar > section > .content .wizard > section ol.selection-list > li label {
           display: block;
           position: relative;
           margin: 4px 0px;
-          padding: 9px 0px 7px 0px;
+          padding: 9px 0px 7px 45px;
           font-size: 14px;
           line-height: 18px;
           color: #727272;
@@ -3758,7 +3758,7 @@ body #container > article.has-sidebar > section > .content .wizard {
             display: block;
             position: absolute;
             top: 0px;
-            left: -45px;
+            left: 0px;
             width: 34px;
             height: 34px;
             background-image: url(../_images/sprites-wizard.png);
@@ -4574,7 +4574,7 @@ body #container > article.has-sidebar > section > .content .wizard.wizard-distan
       body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.intro {
         display: block; }
       body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.results > section {
-        padding-top: 60px; }
+        padding-top: 40px; }
         body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.results > section > ol {
           display: block;
           margin: 0px;
@@ -4606,7 +4606,10 @@ body #container > article.has-sidebar > section > .content .wizard.wizard-distan
                   background-image: none; }
                 body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.results > section > ol > li > ol > li .content p {
                   margin: 0px;
-                  padding: 0px 0px; }
+                  padding: 0px 0px;
+                  font-size: 14px;
+                  line-height: 17px;
+                  font-weight: 600; }
                 body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.results > section > ol > li > ol > li .content ul {
                   margin-top: 6px;
                   margin-left: 17px;
@@ -4652,14 +4655,23 @@ body #container > article.has-sidebar > section > .content .wizard.wizard-distan
                   color: #c73e1e; }
                   body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.results > section > ol > li > ol > li .not-ready .controls .illustration:before {
                     background-position: -258px -214px; }
-      body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.results-detail > section h3 {
-        margin-bottom: 25px; }
-      body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.results-detail > section .ready h5 span {
-        color: #25c34e; }
-      body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.results-detail > section .almost-ready h5 span {
-        color: #e9a624; }
-      body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.results-detail > section .not-ready h5 span {
-        color: #c73e1e; }
+      body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.results-detail > section {
+        padding-top: 40px; }
+        body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.results-detail > section h3 {
+          margin-bottom: 25px; }
+        body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.results-detail > section .ready h5 span {
+          text-transform: uppercase;
+          color: #25c34e; }
+        body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.results-detail > section .almost-ready h5 span {
+          text-transform: uppercase;
+          color: #e9a624; }
+        body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.results-detail > section .not-ready h5 span {
+          text-transform: uppercase;
+          color: #c73e1e; }
+        body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.results-detail > section .details {
+          max-height: 444px;
+          overflow-x: hidden;
+          overflow-y: auto; }
       body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.questions > section, body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.questions-demographics > section {
         padding: 88px 90px 0px 90px; }
         body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.questions > section > ol, body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.questions-demographics > section > ol {
