@@ -31,7 +31,7 @@
         <script>var addthis_share = {"email_template": "dantes_examwizard", "email_vars": {"examname": ""}};</script>
         <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51393b9372b05326"></script>
         {% endif %}
-        {% if page.social.title == 'DANTES Self Assessment' %}
+        {% if page.social.title == 'DANTES Distance Learning Readiness Self-Assessment (DLRSA)' %}
         <script src="{{ page.path }}/_js/vendor/mustache.js"></script>
         <script src="{{ page.path }}/_js/framework.wizard.js"></script>
         <script src="{{ page.path }}/_js/framework.wizard.dlrsa.js"></script>
@@ -69,4 +69,15 @@
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-39129738-1');ga('send','pageview');
+        </script>
+        <!-- Qualaroo for dantespulse.com -->
+        <!-- Paste this code right after the <body> tag on every page of your site. -->
+        <script type="text/javascript">
+            var _kiq = _kiq || [];
+            (function(){
+                setTimeout(function(){
+                    var d = document, f = d.getElementsByTagName('script')[0], s = d.createElement('script'); s.type = 'text/javascript';
+                    s.async = true; s.src = '//s3.amazonaws.com/ki.js/53515/bEd.js'; f.parentNode.insertBefore(s, f);
+                }, 1);
+            })();
         </script>

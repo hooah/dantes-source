@@ -90,6 +90,7 @@ framework.wizard.dlrsa = {
             // bind generic events
             jQuery(framework.wizard.dlrsa.data.containers.main).on('click', 'a[data-section][class != "next"][class != "back"]', framework.wizard.dlrsa.fn.navigate_to_main_section);
             jQuery(framework.wizard.dlrsa.data.containers.details.meta.footer).on('click', 'a[data-section]', framework.wizard.dlrsa.fn.navigate_to_main_section);
+            jQuery(framework.wizard.dlrsa.data.containers.main).on('click', '>footer li.print', framework.wizard.dlrsa.fn.print);
         },
 
         init_required_questions: function() {
@@ -117,7 +118,7 @@ framework.wizard.dlrsa = {
 
                 txtQuestionHTML                             = Mustache.render(  txtTemplateQuestion,
                                                                                 {
-                                                                                    question_title: framework.wizard.dlrsa.data.dataset.questions[intCounter].text,
+                                                                                    question_title: framework.wizard.dlrsa.data.dataset.questions[intCounter].text + ((framework.wizard.dlrsa.data.dataset.questions[intCounter].subtext) ? (' <small>' + framework.wizard.dlrsa.data.dataset.questions[intCounter].subtext + '</small>') : ''),
                                                                                     question_choices: txtQuestionChoiceHTML
                                                                                 });
 
@@ -214,21 +215,15 @@ framework.wizard.dlrsa = {
             objEvent.preventDefault();
 
             if (!framework.wizard.dlrsa.data.animation.animating) {
-                console.log('animating');
-
                 var strSection          = jQuery(this).attr('data-section');
 
-                if (strSection.length) {
+                if ((strSection.length) && (!jQuery('>section>div.' + strSection, framework.wizard.dlrsa.data.containers.main).is(':visible'))) {
                     jQuery('>section>div:visible', framework.wizard.dlrsa.data.containers.main).each(function() {
-                        console.log(this);
-
                         jQuery(this)
                             .css({display: 'block', 'opacity': 1})
                             .stop()
                             .animate({opacity: 0}, framework.wizard.dlrsa.data.animation.speed, function() { jQuery(this).css({display: 'none'}); });
                     });
-
-                    console.log(strSection);
 
                     jQuery('>section>div.' + strSection, framework.wizard.dlrsa.data.containers.main)
                         .css({display: 'block', 'opacity': 0})
@@ -236,10 +231,16 @@ framework.wizard.dlrsa = {
                         .stop()
                         .animate({opacity: 1}, framework.wizard.dlrsa.data.animation.speed, function() { framework.wizard.dlrsa.data.animation.animating = false; });
 
-                    jQuery('>footer li.print, >footer li.email', framework.wizard.dlrsa.data.containers.main).hide();
+                    jQuery('>footer li.print, >footer li.email', framework.wizard.dlrsa.data.containers.main).show();
 
                     switch (strSection.toLowerCase()) {
+                        case 'intro' :
+                            jQuery('>footer li.print, >footer li.email', framework.wizard.dlrsa.data.containers.main).hide();
+                            break;
+
                         case 'questions' :
+                            jQuery('>footer li.print, >footer li.email', framework.wizard.dlrsa.data.containers.main).hide();
+
                             framework.wizard.dlrsa.fn.questions.show(framework.wizard.dlrsa.data.questions.current);
                             break;
 
@@ -248,8 +249,6 @@ framework.wizard.dlrsa = {
                             break;
 
                         case 'results' :
-                            jQuery('>footer li.print, >footer li.email', framework.wizard.dlrsa.data.containers.main).show();
-
                             if (!framework.wizard.dlrsa.data.results.viewing_detail) {
                                 framework.wizard.dlrsa.fn.results.compile();
                             } else {
@@ -265,6 +264,17 @@ framework.wizard.dlrsa = {
                     }
                 }
             }
+        },
+
+        print: function(objEvent) {
+            var results         = [];
+
+            for (var counter = 0; counter < framework.wizard.dlrsa.data.questions.total; counter++) {
+                results.push(jQuery('input[name="question_choice_' + counter + '"]:checked', framework.wizard.dlrsa.data.containers.questions.list).val());
+            }
+
+            jQuery('#frmPrint input[name="responses"]').val(results.join(''));
+            jQuery('#frmPrint').submit();
         },
 
         radio: {
@@ -299,7 +309,7 @@ framework.wizard.dlrsa = {
                             // advance to next section
                             framework.wizard.dlrsa.fn.navigate_to_main_section.call(jQuery(this)[0], objEvent);
                         } else {
-                            if ((true) || (jQuery('>li:visible>ol>li input[type="radio"]:checked', framework.wizard.dlrsa.data.containers.questions.list).length)) {
+                            if (jQuery('>li:visible>ol>li input[type="radio"]:checked', framework.wizard.dlrsa.data.containers.questions.list).length) {
                                 framework.wizard.dlrsa.data.questions.current++;
 
                                 framework.wizard.dlrsa.fn.questions.show(framework.wizard.dlrsa.data.questions.current);
@@ -310,10 +320,7 @@ framework.wizard.dlrsa = {
                         break;
 
                     case jQuery(this).hasClass('back') :
-                        if (framework.wizard.dlrsa.data.questions.current === 1) {
-                            // go to previous section
-                            framework.wizard.dlrsa.fn.navigate_to_main_section.call(jQuery(this)[0], objEvent);
-                        } else {
+                        if (framework.wizard.dlrsa.data.questions.current > 1) {
                             framework.wizard.dlrsa.data.questions.current--;
                         }
 
@@ -334,9 +341,9 @@ framework.wizard.dlrsa = {
             set_metadata: function(boolSetTotal) {
                 // header metadata
                 if (boolSetTotal) {
-                    jQuery('>h5 span.total', framework.wizard.dlrsa.data.containers.demographics.meta.header).html(framework.wizard.dlrsa.data.questions.total);
+                    jQuery('>h5 span.total', framework.wizard.dlrsa.data.containers.demographics.meta.header).html(framework.wizard.dlrsa.data.demographics.total);
                 }
-                jQuery('>h5 span.current', framework.wizard.dlrsa.data.containers.demographics.meta.header).html(framework.wizard.dlrsa.data.questions.current);
+                jQuery('>h5 span.current', framework.wizard.dlrsa.data.containers.demographics.meta.header).html(framework.wizard.dlrsa.data.demographics.current);
 
                 // footer metadata
                 jQuery('>nav.pagination>a', framework.wizard.dlrsa.data.containers.demographics.meta.footer).removeClass('disabled');
@@ -362,10 +369,7 @@ framework.wizard.dlrsa = {
                         break;
 
                     case jQuery(this).hasClass('back') :
-                        if (framework.wizard.dlrsa.data.demographics.current === 1) {
-                            // go to previous section
-                            framework.wizard.dlrsa.fn.navigate_to_main_section.call(jQuery(this)[0], objEvent);
-                        } else {
+                        if (framework.wizard.dlrsa.data.demographics.current > 1) {
                             framework.wizard.dlrsa.data.demographics.current--;
                         }
 
@@ -529,10 +533,7 @@ framework.wizard.dlrsa = {
                         break;
 
                     case jQuery(this).hasClass('back') :
-                        if (framework.wizard.dlrsa.data.results.current === 1) {
-                            // go to previous section
-                            framework.wizard.dlrsa.fn.navigate_to_main_section.call(jQuery(this)[0], objEvent);
-                        } else {
+                        if (framework.wizard.dlrsa.data.results.current > 1) {
                             framework.wizard.dlrsa.data.results.current--;
                         }
 

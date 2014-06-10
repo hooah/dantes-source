@@ -78,6 +78,9 @@ body {
                                                     }
 
                                                     &:hover {
+                                                        color: #929292;
+                                                        text-shadow: none;
+
                                                         &:before {
                                                             background-position: -314px -84px;
                                                         }
@@ -93,8 +96,16 @@ body {
                                 height: 590px;
                                 background-image: url(../_images/wizard/distance-learning/bg-content-tile.png);
                                 background-repeat: repeat-x;
-                                background-position: 0px 0px;
+                                background-position: center top;
                                 background-color: #fff;
+                                font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida", sans-serif;
+                                font-size: 14px;
+                                line-height: 24px;
+
+                                & p {
+                                    font-size: 14px;
+                                    line-height: 24px;
+                                }
 
                                 & > div {
                                     display: none;
@@ -128,8 +139,9 @@ body {
                                             text-align: right;
                                             margin: 0px;
                                             padding: 0px 15px 0px 0px;
-                                            font-size: 13px;
+                                            font-size: 10px;
                                             line-height: 35px;
+                                            font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida", sans-serif;
                                             color: #727272;
                                             font-weight: normal;
                                         }
@@ -214,6 +226,7 @@ body {
                                                 font-weight: 800;
                                                 font-size: 18px;
                                                 text-shadow: none;
+                                                font-family: "Open Sans", sans-serif;
                                             }
                                             & h5 {
                                                 display: block;
@@ -224,6 +237,7 @@ body {
                                                 font-style: italic;
                                                 color: #727272;
                                                 text-shadow: none;
+                                                font-family: "Open Sans", sans-serif;
                                             }
                                             & .button {
                                                 margin-top: 70px;
@@ -377,6 +391,8 @@ body {
 
                                             & .ready {
                                                 & h5 {
+                                                    font-family: "Open Sans", sans-serif;
+
                                                     & span {
                                                         text-transform: uppercase;
                                                         color: #25c34e;
@@ -385,6 +401,8 @@ body {
                                             }
                                             & .almost-ready {
                                                 & h5 {
+                                                    font-family: "Open Sans", sans-serif;
+
                                                     & span {
                                                         text-transform: uppercase;
                                                         color: #e9a624;
@@ -393,6 +411,8 @@ body {
                                             }
                                             & .not-ready {
                                                 & h5 {
+                                                    font-family: "Open Sans", sans-serif;
+
                                                     & span {
                                                         text-transform: uppercase;
                                                         color: #c73e1e;
@@ -404,6 +424,11 @@ body {
                                                 max-height: 444px;
                                                 overflow-x: hidden;
                                                 overflow-y: auto;
+
+                                                & p {
+                                                    font-size: 13px;
+                                                    line-height: 18px;
+                                                }
                                             }
                                         }
                                     }
@@ -429,6 +454,7 @@ body {
                                                         display: block;
                                                         margin-bottom: 32px;
                                                         color: #727272;
+                                                        font-family: "Open Sans", sans-serif;
                                                         font-weight: 800;
                                                         font-size: 18px;
                                                         line-height: 22px;
@@ -437,13 +463,29 @@ body {
                                                         &.fixed-height {
                                                             height: 54px;
                                                         }
+
+                                                        & > small {
+                                                            font-size: 14px;
+                                                            line-height: 14px;
+                                                            color: #727272;
+                                                            font-weight: normal;
+                                                            font-style: italic;
+                                                        }
                                                     }
                                                 }
                                             }
                                         }
+                                    }
+
+                                    &.results,
+                                    &.results-detail,
+                                    &.questions,
+                                    &.questions-demographics {
                                         & > footer {
+                                            position: absolute;
                                             clear: both;
-                                            padding-top: 70px;
+                                            bottom: 45px;
+                                            right: 0px;
                                         }
                                     }
 

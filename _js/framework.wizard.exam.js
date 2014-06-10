@@ -9,11 +9,11 @@ framework.wizard.exam = {
         init: function() {
             framework.wizard.exam.data.container    = jQuery('.wizard-examination');
 
-            jQuery('>header>nav>ul>li[class != "home"]>a, >section>.grid>ol>li>a', framework.wizard.exam.data.container).bind('click', framework.wizard.exam.fn..show_toplevel_section);
-            jQuery('>header>nav>ul>li[class != "home"]>ol>li>a, >section>.subject>.intro figure>a, >section>.subject>.intro .content>ul.programs>li>div>a', framework.wizard.exam.data.container).bind('click', framework.wizard.exam.fn..show_sub_section);
-            jQuery('>header>nav>ul>li.home>a', framework.wizard.exam.data.container).bind('click', framework.wizard.exam.fn..return_to_grid);
-            jQuery('>section>.subject .section>footer>menu>ol>li>a', framework.wizard.exam.data.container).bind('click', framework.wizard.exam.fn..control_subject_page);
-            jQuery('>section>.subject .section>footer>nav>a', framework.wizard.exam.data.container).bind('click', framework.wizard.exam.fn..navigate_subject_page);
+            jQuery('>header>nav>ul>li[class != "home"]>a, >section>.grid>ol>li>a', framework.wizard.exam.data.container).bind('click', framework.wizard.exam.fn.show_toplevel_section);
+            jQuery('>header>nav>ul>li[class != "home"]>ol>li>a, >section>.subject>.intro figure>a, >section>.subject>.intro .content>ul.programs>li>div>a', framework.wizard.exam.data.container).bind('click', framework.wizard.exam.fn.show_sub_section);
+            jQuery('>header>nav>ul>li.home>a', framework.wizard.exam.data.container).bind('click', framework.wizard.exam.fn.return_to_grid);
+            jQuery('>section>.subject .section>footer>menu>ol>li>a', framework.wizard.exam.data.container).bind('click', framework.wizard.exam.fn.control_subject_page);
+            jQuery('>section>.subject .section>footer>nav>a', framework.wizard.exam.data.container).bind('click', framework.wizard.exam.fn.navigate_subject_page);
             jQuery('>section>.grid', framework.wizard.exam.data.container).addClass('selected');
         },
 
@@ -168,7 +168,7 @@ framework.wizard.exam = {
                     }
 
                     if (intTargetPage != intCurPage) {
-                        framework.wizard.exam.fn..control_subject_page.call(jQuery(this).parent('nav').siblings('menu').find('>ol>li:eq(' + (intTargetPage - 1) + ')>a')[0], objEvent);
+                        framework.wizard.exam.fn.control_subject_page.call(jQuery(this).parent('nav').siblings('menu').find('>ol>li:eq(' + (intTargetPage - 1) + ')>a')[0], objEvent);
                         //console.log(jQuery(this).parent('nav').siblings('menu').find('>ol>li:eq(' + (intTargetPage - 1) + ')>a')); //.trigger('click');
                     }
                 }

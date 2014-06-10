@@ -58,7 +58,7 @@ var framework = {
             }
         },
 		containers: {
-			ctaAsideNewsView: null
+            cta_news_view: null
 		}
 	},
 
