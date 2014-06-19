@@ -293,6 +293,11 @@ body {
                                                     background-image: url(../_images/bg-cta-complex-banner-orange.png);
                                                 }
                                             }
+                                            &.orange-dark {
+                                                & > span {
+                                                    background-image: url(../_images/bg-cta-complex-banner-orange-dark.png);
+                                                }
+                                            }
                                             &.yellow {
                                                 & > span {
                                                     background-image: url(../_images/bg-cta-complex-banner-yellow.png);

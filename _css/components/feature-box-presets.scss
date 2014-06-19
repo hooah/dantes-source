@@ -16,21 +16,22 @@
 				background-image: url(../_images/elements/feature-dantes_counselors.jpg);
 			}
 		}
-		&.home-dod_leadership {
+		&.home-military_education_leadership {
 			& figure {
-				background-image: url(../_images/elements/feature-dod_leadership.jpg);
+				background-image: url(../_images/elements/feature-military_education_leadership.jpg);
 			}
 		}
 		&.home-service_members, 
 		&.home-educational_institutions, 
 		&.home-dantes_counselors, 
-		&.home-dod_leadership {
+		&.home-military_education_leadership {
 			& figcaption {
 				& > a {
 					& > strong {
 						padding: 0px;
 						width: 250px;
 						text-indent: 18px;
+                        font-size: 15px;
 					}
 				}
 			}
@@ -119,6 +120,7 @@
         &.service_members-prep_for_college-self_assessment,
         &.service_members-prep_for_college-student_enrollment,
         &.service_members-prep_for_college-high_school_diploma,
+        &.service_members-prep_for_college-education_resources,
         &.service_members-prep_for_college-tips {
             & figure {
                 background-position: center right;
@@ -161,6 +163,11 @@
         &.service_members-prep_for_college-high_school_diploma {
             & figure {
                 background-image: url(../_images/elements/feature-service_members-distance_learning-hs_diploma.jpg);
+            }
+        }
+        &.service_members-prep_for_college-education_resources {
+            & figure {
+                background-image: url(../_images/elements/feature-service_members-prep_for_college-education_resources.jpg);
             }
         }
         &.service_members-prep_for_college-tips {

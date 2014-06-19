@@ -72,6 +72,19 @@ header_extra:
                                             </span>
                                         </figcaption>
                                     </li>
+                                    <li>
+                                        <figure><img src="{{ page.path }}/_images/slides/homepage-5.jpg" alt="" width="948" height="420"></figure>
+                                        <figcaption class="complex orange">
+                                            <span>
+                                                <p>
+                                                    <em>Looking for a published DANTES resource?</em>
+                                                    <strong>Publications</strong>
+                                                </p>
+
+                                                <a href="http://dantespulse.com/publications/" target="_blank" class="button button-grey button-text-uppercase button-condensed button-icon-arrow-right"><strong>Learn More</strong></a>
+                                            </span>
+                                        </figcaption>
+                                    </li>
             {% endcapture %}
             {% include cta.multi.html slide=slide_html %}
             <article class="has-sidebar">
@@ -126,12 +139,12 @@ header_extra:
                                     </div>
                                 </div>
                                 <div class="six columns">
-                                    <div class="row feature-box feature-box-ribbon-caption feature-box-preset home-dod_leadership">
+                                    <div class="row feature-box feature-box-ribbon-caption feature-box-preset home-military_education_leadership">
                                         <div class="eleven right">
                                             <figure></figure>
                                             <figcaption>
-                                                <a href="{{ page.path }}/dod-leadership/index.html" class="feature-box-link-cap-yellow feature-box-link-icon-arrow-right" data-scout-event="mid_page_visual_nav, select_nav_area, visual-nav-DoDleadership">
-                                                    <strong>DoD Leadership</strong>
+                                                <a href="{{ page.path }}/military-education-leadership/index.html" class="feature-box-link-cap-yellow feature-box-link-icon-arrow-right" data-scout-event="mid_page_visual_nav, select_nav_area, visual-nav-DoDleadership">
+                                                    <strong>Military Education Leadership</strong>
                                                 </a>
                                             </figcaption>
                                         </div>
@@ -139,6 +152,16 @@ header_extra:
                                 </div>
                             </menu>
 
+                            <hr />
+
+                            <div class="slim-cta-banner slim-cta-banner-flush slim-cta-banner-preset-tco">
+                                <h2>
+                                    <strong><img src="{{ page.path }}/_images/elements/logo-small.png" alt="DANTES Logo"> Online Test Control Officer (TCO) Academic Testing Course</strong>
+                                    <a href="{{ page.path }}/education-counselors/training/testing-personnel/" class="trigger right button button-purple button-icon-arrow-right" data-scout-event="mid_page_visual_nav, learn_more_banner, visual-nav-OnlineTCOTestingCourse"><strong>Learn More</strong></a>
+                                </h2>
+                            </div>
+
+                            <br />
                             <hr />
 
                             <menu class="row newsgrid">
@@ -178,25 +201,7 @@ header_extra:
                                 </div>
                             </div>
 
-                            <div class="spotlight twelve">
-                                <div>
-                                    <figure><img src="{{ page.path }}/_images/elements/spotlight-troops_to_teachers.jpg" width="988" height="337"></figure>
-                                    <figcaption>
-                                        <header>
-                                            <span class="title"><strong>Former Army:</strong> Hummer Mechanic</span>
-                                            <span class="position">Computer Science Teacher</span>
-                                        </header>
-
-                                        <section class="row">
-                                            <h3 class="four columns">Troops to Teachers</h3>
-                                            <p class="six columns">Troops to Teachers is a DANTES-managed program that helps eligible military personnel continue to serve through public school teaching.</p>
-                                            <span class="two columns">
-                                                <a href="{{ page.path }}/service-members/troops-to-teachers/index.html" class="button button-purple button-icon-arrow-right" data-scout-event="Banner_ad, visit_TTT, TTT-banner-ad"><strong>Go</strong></a>
-                                            </span>
-                                        </section>
-                                    </figcaption>
-                                </div>
-                            </div>
+                            {% include shared-content/fragments/spotlight-ttt.html %}
                         </div>
                         {% include aside.quicklinks.generic.html %}
                     </div>

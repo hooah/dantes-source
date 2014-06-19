@@ -171,7 +171,7 @@ framework.wizard.dlrsa = {
                         txtQuestionChoiceHTML                   += Mustache.render( txtTemplateQuestionChoice,
                                                                                     {
                                                                                         choice_class: strChoiceClass + (((intListRows > 1) && ((intCounterInner % intListRows) === 0)) ? ' clear' : ''),
-                                                                                        choice_name: 'demo_choice_' + intCounter,
+                                                                                        choice_name: 'demo_choice_' + intCounterOuter + '_' + intCounter,
                                                                                         choice_value: intCounterInner,
                                                                                         choice_text: framework.wizard.dlrsa.data.dataset.demographics[intCounter][intCounterOuter].choices[intCounterInner].title
                                                                                     });
@@ -266,14 +266,36 @@ framework.wizard.dlrsa = {
             }
         },
 
-        print: function(objEvent) {
+        compile_answers: function() {
+            var counter, counter_outer, counter_inner;
             var results         = [];
+            var demographics    = [];
 
-            for (var counter = 0; counter < framework.wizard.dlrsa.data.questions.total; counter++) {
+            for (counter = 0; counter < framework.wizard.dlrsa.data.questions.total; counter++) {
                 results.push(jQuery('input[name="question_choice_' + counter + '"]:checked', framework.wizard.dlrsa.data.containers.questions.list).val());
             }
 
+            // since demographic questions are not required, we'll add 1 to the numeric value of each answer. if there's no answer, we'll have a zero (0) in place, and if there is an answer we'll have a number from 1 to X.
+            for (counter_outer = 0; counter_outer < framework.wizard.dlrsa.data.demographics.total; counter_outer++) {
+                for (counter_inner = 0; counter_inner < framework.wizard.dlrsa.data.dataset.demographics[counter_outer].length; counter_inner++) {
+                    if (jQuery('input[name="demo_choice_' + counter_outer + '_' + counter_inner + '"]:checked').length) {
+                        demographics.push(parseInt(jQuery('input[name="demo_choice_' + counter_outer + '_' + counter_inner + '"]:checked').val()) + 1);
+                    } else {
+                        demographics.push(0);
+                    }
+                }
+            }
+
             jQuery('#frmPrint input[name="responses"]').val(results.join(''));
+            jQuery('#frmPrint input[name="demographics"]').val(demographics.join(''));
+
+            jQuery('.addthis_button_email').attr('addthis:url', 'http://dantespulse.com/dlrsa/pdf/' + results.join(''));
+            addthis.update('share', 'url', 'http://dantespulse.com/dlrsa/pdf/' + results.join(''));
+        },
+
+        print: function(objEvent) {
+            framework.wizard.dlrsa.fn.compile_answers();
+
             jQuery('#frmPrint').submit();
         },
 
@@ -302,6 +324,8 @@ framework.wizard.dlrsa = {
 
             navigate: function(objEvent) {
                 objEvent.preventDefault();
+
+                framework.wizard.dlrsa.fn.compile_answers();
 
                 switch (true) {
                     case jQuery(this).hasClass('next') :
@@ -355,6 +379,8 @@ framework.wizard.dlrsa = {
 
             navigate: function(objEvent) {
                 objEvent.preventDefault();
+
+                framework.wizard.dlrsa.fn.compile_answers();
 
                 switch (true) {
                     case jQuery(this).hasClass('next') :

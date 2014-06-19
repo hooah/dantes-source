@@ -17,7 +17,7 @@ body {
     height: 100%; }
     body #container > header {
       position: absolute;
-      top: -83px;
+      top: -145px;
       left: 0px;
       height: 7px;
       width: 100%;
@@ -34,7 +34,7 @@ body {
         body #container > header > section:after {
           display: block;
           position: absolute;
-          top: 82px;
+          top: 144px;
           left: 50%;
           width: 100%;
           height: 1px;
@@ -46,10 +46,22 @@ body {
           position: relative;
           left: 50%;
           top: 7px;
-          height: 75px;
+          height: 143px;
           z-index: 20; }
+          body #container > header > section > nav > a.home {
+            display: block;
+            float: left;
+            margin-top: 11px;
+            width: 228px;
+            height: 53px;
+            background-image: url(../_images/sprites.png);
+            background-repeat: no-repeat;
+            background-position: -198px 0px;
+            text-indent: -9999px;
+            text-align: left; }
           body #container > header > section > nav > ul {
             display: block;
+            clear: both;
             position: relative;
             margin: 0px;
             padding: 0px;
@@ -60,17 +72,6 @@ body {
               margin: 0px;
               padding: 0px;
               list-style: none; }
-              body #container > header > section > nav > ul > li.home {
-                float: left; }
-                body #container > header > section > nav > ul > li.home > a:link, body #container > header > section > nav > ul > li.home > a:active, body #container > header > section > nav > ul > li.home > a:visited, body #container > header > section > nav > ul > li.home > a:hover {
-                  margin-top: 11px;
-                  width: 228px;
-                  height: 53px;
-                  background-image: url(../_images/sprites.png);
-                  background-repeat: no-repeat;
-                  background-position: -198px 0px;
-                  text-indent: -9999px;
-                  text-align: left; }
               body #container > header > section > nav > ul > li.search {
                 float: right; }
                 body #container > header > section > nav > ul > li.search > a {
@@ -157,7 +158,7 @@ body {
         visibility: hidden;
         opacity: 0;
         position: relative;
-        top: 83px;
+        top: 145px;
         z-index: 100;
         height: 68px;
         background-color: #fff;
@@ -210,7 +211,7 @@ body {
         transition: all 0.25s ease-out 0.3s;
         -webkit-transition: all 0.25s ease-out 0.3s;
         -moz-transition: all 0.25s ease-out 0.3s;
-        margin-top: 83px; }
+        margin-top: 145px; }
     body #container > footer {
       clear: both;
       position: relative;
@@ -279,7 +280,7 @@ body {
           text-indent: -9999px;
           text-align: left; }
   body.nav-open #container > header {
-    top: -150px;
+    top: -213px;
     transition: all 0.30s ease-out;
     -webkit-transition: all 0.30s ease-out;
     -moz-transition: all 0.30s ease-out; }
@@ -290,7 +291,7 @@ body {
       -webkit-transition: all 0.6s ease-out 0.30s;
       -moz-transition: all 0.6s ease-out 0.30s; }
   body.nav-open #container > article.call-to-action {
-    margin-top: 150px;
+    margin-top: 213px;
     transition: all 0.30s ease-out;
     -webkit-transition: all 0.30s ease-out;
     -moz-transition: all 0.30s ease-out; }
@@ -390,7 +391,7 @@ body #container > article.has-sidebar {
           text-align: left; }
       body #container > article.has-sidebar > section > .content > div {
         float: left;
-        min-height: 1500px;
+        min-height: 1560px;
         padding: 43px 35px 47px 35px;
         background-image: url(../_images/bg-tile-light.jpg);
         background-repeat: repeat;
@@ -602,6 +603,32 @@ body #container > article.has-sidebar > section > .content .flush-top ul.breadcr
   margin-top: 0px;
   margin-bottom: 1px; }
 
+.block-grid.block-grid-with-link-centered > li > div {
+  display: table;
+  width: 100%;
+  height: 100%; }
+  .block-grid.block-grid-with-link-centered > li > div > a {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle; }
+
+.block-grid.block-grid-hover-effect {
+  overflow: visible; }
+  .block-grid.block-grid-hover-effect > li > div > a img {
+    -webkit-transition: all 0.15s ease-out;
+    -moz-transition: all 0.15s ease-out;
+    -ms-transition: all 0.15s ease-out;
+    -o-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out; }
+  .block-grid.block-grid-hover-effect > li > div > a:hover img {
+    -webkit-transform: scale(1.35, 1.35);
+    -moz-transform: scale(1.35, 1.35);
+    -ms-transform: scale(1.35, 1.35);
+    -o-transform: scale(1.35, 1.35);
+    transform: scale(1.35, 1.35); }
+
 body #container > article.has-sidebar > section > .content ul.social {
   position: relative;
   height: 38px;
@@ -778,9 +805,9 @@ body #container > article.has-sidebar > section > .content > aside {
         body #container > article.has-sidebar > section > .content > aside > menu.quick-links > ul > li.multimedia > a:before {
           height: 130px;
           background-image: url(../_images/elements/sidebar-multimedia.png); }
-        body #container > article.has-sidebar > section > .content > aside > menu.quick-links > ul > li.dod-leadership > a:before {
+        body #container > article.has-sidebar > section > .content > aside > menu.quick-links > ul > li.military-education-leadership > a:before {
           height: 54px;
-          background-image: url(../_images/elements/sidebar-dod_leadership.png); }
+          background-image: url(../_images/elements/sidebar-military_education_leadership.png); }
         body #container > article.has-sidebar > section > .content > aside > menu.quick-links > ul > li.examination-calendar > a:before {
           height: 109px;
           background-image: url(../_images/elements/sidebar-examination_calendar.png); }
@@ -1036,6 +1063,8 @@ body {
                   background-image: url(../_images/bg-cta-complex-banner-green.png); }
                 body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption.complex.orange > span {
                   background-image: url(../_images/bg-cta-complex-banner-orange.png); }
+                body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption.complex.orange-dark > span {
+                  background-image: url(../_images/bg-cta-complex-banner-orange-dark.png); }
                 body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption.complex.yellow > span {
                   background-image: url(../_images/bg-cta-complex-banner-yellow.png); }
                 body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption.complex.blue > span {
@@ -1308,18 +1337,12 @@ body #container > article .slim-cta-banner {
     height: 93px;
     border: 7px #d9d9d9 solid;
     background-color: #383732;
-    background-image: url(../_images/elements/cta-slim-banner-armed_forces.jpg);
-    background-repeat: no-repeat;
-    background-position: -50px top;
     box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.88) inset;
     -moz-box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.88) inset;
     -webkit-box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.88) inset; }
     body #container > article .slim-cta-banner > h2 > strong {
       display: block;
-      width: 48%;
       position: relative;
-      left: 210px;
-      top: 29px;
       font-size: 21px;
       line-height: 21px;
       font-weight: 300;
@@ -1330,7 +1353,55 @@ body #container > article .slim-cta-banner {
       float: right;
       right: 25px;
       top: -3px; }
-  body #container > article .slim-cta-banner > div {
+  body #container > article .slim-cta-banner.slim-cta-banner-preset-tco > h2 {
+    position: relative;
+    background: #1a7fbf;
+    background: -moz-linear-gradient(left, #1a7fbf 0%, #6ccbe9 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #1a7fbf), color-stop(100%, #6ccbe9));
+    background: -webkit-linear-gradient(left, #1a7fbf 0%, #6ccbe9 100%);
+    background: -o-linear-gradient(left, #1a7fbf 0%, #6ccbe9 100%);
+    background: -ms-linear-gradient(left, #1a7fbf 0%, #6ccbe9 100%);
+    background: linear-gradient(to right, #1a7fbf 0%, #6ccbe9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1a7fbf', endColorstr='#6ccbe9',GradientType=1 ); }
+    body #container > article .slim-cta-banner.slim-cta-banner-preset-tco > h2 > strong {
+      width: 80%;
+      overflow: hidden;
+      margin-top: 13px;
+      margin-left: 15px;
+      color: #E2EEF6;
+      text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.9);
+      font-size: 20px;
+      line-height: 51px;
+      font-weight: 600; }
+      body #container > article .slim-cta-banner.slim-cta-banner-preset-tco > h2 > strong img {
+        float: left;
+        margin-right: 15px; }
+    body #container > article .slim-cta-banner.slim-cta-banner-preset-tco > h2 .button {
+      position: absolute;
+      float: none;
+      top: 18px;
+      right: 18px; }
+  body #container > article .slim-cta-banner.slim-cta-banner-preset-armed_forces > h2 {
+    margin-bottom: 0px !important;
+    height: 93px;
+    border: 7px #d9d9d9 solid;
+    background-color: #383732;
+    background-image: url(../_images/elements/cta-slim-banner-armed_forces.jpg);
+    background-repeat: no-repeat;
+    background-position: -50px top;
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.88) inset;
+    -moz-box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.88) inset;
+    -webkit-box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.88) inset; }
+    body #container > article .slim-cta-banner.slim-cta-banner-preset-armed_forces > h2 > strong {
+      width: 48%;
+      left: 210px;
+      top: 29px; }
+    body #container > article .slim-cta-banner.slim-cta-banner-preset-armed_forces > h2 .button {
+      position: relative;
+      float: right;
+      right: 25px;
+      top: -3px; }
+  body #container > article .slim-cta-banner.slim-cta-banner-preset-armed_forces > div {
     display: none;
     padding: 20px;
     background-color: #787673;
@@ -1340,7 +1411,7 @@ body #container > article .slim-cta-banner {
     box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.88) inset;
     -moz-box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.88) inset;
     -webkit-box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.88) inset; }
-    body #container > article .slim-cta-banner > div p {
+    body #container > article .slim-cta-banner.slim-cta-banner-preset-armed_forces > div p {
       color: #fff;
       font-size: 16px;
       line-height: 26px; }
@@ -1543,12 +1614,13 @@ menu .feature-box > div {
     background-image: url(../_images/elements/feature-educational_institutions.jpg); }
   .feature-box.feature-box-preset.home-dantes_counselors figure {
     background-image: url(../_images/elements/feature-dantes_counselors.jpg); }
-  .feature-box.feature-box-preset.home-dod_leadership figure {
-    background-image: url(../_images/elements/feature-dod_leadership.jpg); }
-  .feature-box.feature-box-preset.home-service_members figcaption > a > strong, .feature-box.feature-box-preset.home-educational_institutions figcaption > a > strong, .feature-box.feature-box-preset.home-dantes_counselors figcaption > a > strong, .feature-box.feature-box-preset.home-dod_leadership figcaption > a > strong {
+  .feature-box.feature-box-preset.home-military_education_leadership figure {
+    background-image: url(../_images/elements/feature-military_education_leadership.jpg); }
+  .feature-box.feature-box-preset.home-service_members figcaption > a > strong, .feature-box.feature-box-preset.home-educational_institutions figcaption > a > strong, .feature-box.feature-box-preset.home-dantes_counselors figcaption > a > strong, .feature-box.feature-box-preset.home-military_education_leadership figcaption > a > strong {
     padding: 0px;
     width: 250px;
-    text-indent: 18px; }
+    text-indent: 18px;
+    font-size: 15px; }
   .feature-box.feature-box-preset.service_members-college_credit figure, .feature-box.feature-box-preset.service_members-prep_for_college figure, .feature-box.feature-box-preset.service_members-transferable_credits figure, .feature-box.feature-box-preset.service_members-your_benefits figure, .feature-box.feature-box-preset.service_members-tuition_assistance figure, .feature-box.feature-box-preset.service_members-find_an_education_center figure, .feature-box.feature-box-preset.service_members-training figure {
     background-position: center right; }
   .feature-box.feature-box-preset.service_members-college_credit figcaption > a > strong, .feature-box.feature-box-preset.service_members-prep_for_college figcaption > a > strong, .feature-box.feature-box-preset.service_members-transferable_credits figcaption > a > strong, .feature-box.feature-box-preset.service_members-your_benefits figcaption > a > strong, .feature-box.feature-box-preset.service_members-tuition_assistance figcaption > a > strong, .feature-box.feature-box-preset.service_members-find_an_education_center figcaption > a > strong, .feature-box.feature-box-preset.service_members-training figcaption > a > strong {
@@ -1577,13 +1649,13 @@ menu .feature-box > div {
     background-image: url(../_images/elements/feature-service_members-training.jpg); }
   .feature-box.feature-box-preset.service_members-troops_to_teachers figure {
     background-image: url(../_images/elements/feature-service_members-troops_to_teachers.jpg); }
-  .feature-box.feature-box-preset.service_members-prep_for_college-earn_college_credit figure, .feature-box.feature-box-preset.service_members-prep_for_college-examinations figure, .feature-box.feature-box-preset.service_members-prep_for_college-self_assessment figure, .feature-box.feature-box-preset.service_members-prep_for_college-student_enrollment figure, .feature-box.feature-box-preset.service_members-prep_for_college-high_school_diploma figure, .feature-box.feature-box-preset.service_members-prep_for_college-tips figure {
+  .feature-box.feature-box-preset.service_members-prep_for_college-earn_college_credit figure, .feature-box.feature-box-preset.service_members-prep_for_college-examinations figure, .feature-box.feature-box-preset.service_members-prep_for_college-self_assessment figure, .feature-box.feature-box-preset.service_members-prep_for_college-student_enrollment figure, .feature-box.feature-box-preset.service_members-prep_for_college-high_school_diploma figure, .feature-box.feature-box-preset.service_members-prep_for_college-education_resources figure, .feature-box.feature-box-preset.service_members-prep_for_college-tips figure {
     background-position: center right; }
-  .feature-box.feature-box-preset.service_members-prep_for_college-earn_college_credit figcaption > a > strong, .feature-box.feature-box-preset.service_members-prep_for_college-examinations figcaption > a > strong, .feature-box.feature-box-preset.service_members-prep_for_college-self_assessment figcaption > a > strong, .feature-box.feature-box-preset.service_members-prep_for_college-student_enrollment figcaption > a > strong, .feature-box.feature-box-preset.service_members-prep_for_college-high_school_diploma figcaption > a > strong, .feature-box.feature-box-preset.service_members-prep_for_college-tips figcaption > a > strong {
+  .feature-box.feature-box-preset.service_members-prep_for_college-earn_college_credit figcaption > a > strong, .feature-box.feature-box-preset.service_members-prep_for_college-examinations figcaption > a > strong, .feature-box.feature-box-preset.service_members-prep_for_college-self_assessment figcaption > a > strong, .feature-box.feature-box-preset.service_members-prep_for_college-student_enrollment figcaption > a > strong, .feature-box.feature-box-preset.service_members-prep_for_college-high_school_diploma figcaption > a > strong, .feature-box.feature-box-preset.service_members-prep_for_college-education_resources figcaption > a > strong, .feature-box.feature-box-preset.service_members-prep_for_college-tips figcaption > a > strong {
     bottom: 22px;
     font-size: 22px;
     padding: 0px 14px; }
-  .feature-box.feature-box-preset.service_members-prep_for_college-earn_college_credit + p, .feature-box.feature-box-preset.service_members-prep_for_college-examinations + p, .feature-box.feature-box-preset.service_members-prep_for_college-self_assessment + p, .feature-box.feature-box-preset.service_members-prep_for_college-student_enrollment + p, .feature-box.feature-box-preset.service_members-prep_for_college-high_school_diploma + p, .feature-box.feature-box-preset.service_members-prep_for_college-tips + p {
+  .feature-box.feature-box-preset.service_members-prep_for_college-earn_college_credit + p, .feature-box.feature-box-preset.service_members-prep_for_college-examinations + p, .feature-box.feature-box-preset.service_members-prep_for_college-self_assessment + p, .feature-box.feature-box-preset.service_members-prep_for_college-student_enrollment + p, .feature-box.feature-box-preset.service_members-prep_for_college-high_school_diploma + p, .feature-box.feature-box-preset.service_members-prep_for_college-education_resources + p, .feature-box.feature-box-preset.service_members-prep_for_college-tips + p {
     font-size: 15px;
     padding-bottom: 30px; }
   .feature-box.feature-box-preset.service_members-prep_for_college-earn_college_credit figure {
@@ -1596,6 +1668,8 @@ menu .feature-box > div {
     background-image: url(../_images/elements/feature-service_members-distance_learning-student_enrollment.jpg); }
   .feature-box.feature-box-preset.service_members-prep_for_college-high_school_diploma figure {
     background-image: url(../_images/elements/feature-service_members-distance_learning-hs_diploma.jpg); }
+  .feature-box.feature-box-preset.service_members-prep_for_college-education_resources figure {
+    background-image: url(../_images/elements/feature-service_members-prep_for_college-education_resources.jpg); }
   .feature-box.feature-box-preset.service_members-prep_for_college-tips figure {
     background-image: url(../_images/elements/feature-service_members-distance_learning-tips.jpg); }
   .feature-box.feature-box-preset.service_members-benefits-financial_assistance figure, .feature-box.feature-box-preset.service_members-benefits-va figure, .feature-box.feature-box-preset.service_members-benefits-transferable_credits figure {
@@ -6258,7 +6332,7 @@ form li.complex p.error {
     padding-right: 10px;
     font-size: 14px;
     line-height: 47px; }
-  .feature-box.feature-box-preset.home-service_members figcaption > a > strong, .feature-box.feature-box-preset.home-educational_institutions figcaption > a > strong, .feature-box.feature-box-preset.home-dantes_counselors figcaption > a > strong, .feature-box.feature-box-preset.home-dod_leadership figcaption > a > strong {
+  .feature-box.feature-box-preset.home-service_members figcaption > a > strong, .feature-box.feature-box-preset.home-educational_institutions figcaption > a > strong, .feature-box.feature-box-preset.home-dantes_counselors figcaption > a > strong, .feature-box.feature-box-preset.home-military_education_leadership figcaption > a > strong {
     padding: 0px;
     width: 180px;
     text-indent: 10px; }
