@@ -15,7 +15,7 @@
                 &.has-sidebar {
                     & > section {
                         & > .content {
-                            & .examination-wizard {
+                            .wizard.wizard-examination {
                                 & > section {
                                     & .grid {
                                         & > ol {
@@ -78,7 +78,7 @@
             & > article.has-sidebar {
                 & > section {
                     & > .content {
-                        & .examination-wizard {
+                        & .wizard.wizard-examination {
                             & > header {
                                 & > section {
                                     height: auto;
@@ -92,14 +92,14 @@
                                         width: auto;
                                         float: none;
                                         margin-left: 35px;
-                                        margin-right: 0px;
+                                        margin-right: 35px;
                                         text-align: left;
                                     }
                                     & > h2 {
                                         width: auto;
                                         float: none;
                                         margin-left: 35px;
-                                        margin-right: 0px;
+                                        margin-right: 35px;
                                         text-align: left;
                                     }
                                 }
@@ -108,14 +108,19 @@
                             & > section {
                                 & .subject {
                                     & .section {
-                                        & .wrapper {
-                                            & > figure {
-                                                width: 20%;
-                                                padding-top: 40px;
-                                                vertical-align: top;
+                                        & > ol {
+                                            & > li {
+                                                & .wrapper {
+                                                    padding: 0px 25px;
+                                                }
                                             }
-                                            & > .content {
-                                                width: 80%;
+                                        }
+                                        & > footer {
+                                            & > nav {
+                                                margin: 0px 0px 0px 45px;
+                                            }
+                                            & > menu {
+                                                display: none;
                                             }
                                         }
                                     }
@@ -147,7 +152,7 @@
                 &.has-sidebar {
                     & > section {
                         & > .content {
-                            & .examination-wizard {
+                            & .wizard.wizard-examination {
                                 & > header {
                                     & > nav {
                                         & > ul {
@@ -165,21 +170,17 @@
                                 & > section {
                                     & .subject {
                                         & .section {
-                                            & .wrapper {
-                                                & > figure {
-                                                    display: none;
-                                                }
-                                                & > .content {
-                                                    width: 100%;
-                                                    padding: 20px 20px 0px 20px;
-                                                }
-                                            }
-                                            & > footer {
-                                                & > nav {
-                                                    margin: 0px 0px 0px 20%;
-                                                }
-                                                & > menu {
-                                                    display: none;
+                                            & > ol {
+                                                & > li {
+                                                    & .wrapper {
+                                                        & > figure {
+                                                            display: none;
+                                                        }
+                                                        & > .content {
+                                                            width: 100%;
+                                                            padding: 20px 20px 0px 20px;
+                                                        }
+                                                    }
                                                 }
                                             }
                                         }
@@ -312,7 +313,7 @@
                                 float: none;
                             }
                         }
-                        & .examination-wizard {
+                        & .wizard.wizard-examination {
                             & > header {
                                 & > nav {
                                     & > ul {

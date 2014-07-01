@@ -9,8 +9,8 @@ framework.wizard.exam = {
         init: function() {
             framework.wizard.exam.data.container    = jQuery('.wizard-examination');
 
-            jQuery('>header>nav>ul>li[class != "home"]>a, >section>.grid>ol>li>a', framework.wizard.exam.data.container).bind('click', framework.wizard.exam.fn.show_toplevel_section);
-            jQuery('>header>nav>ul>li[class != "home"]>ol>li>a, >section>.subject>.intro figure>a, >section>.subject>.intro .content>ul.programs>li>div>a', framework.wizard.exam.data.container).bind('click', framework.wizard.exam.fn.show_sub_section);
+            jQuery('>section>.grid>ol>li>a', framework.wizard.exam.data.container).bind('click', framework.wizard.exam.fn.show_toplevel_section);
+            jQuery('>header>nav>ul>li.sections>ol>li>a, >section>.subject>.intro figure>a, >section>.subject>.intro .content ul.programs>li>div>a', framework.wizard.exam.data.container).bind('click', framework.wizard.exam.fn.show_sub_section);
             jQuery('>header>nav>ul>li.home>a', framework.wizard.exam.data.container).bind('click', framework.wizard.exam.fn.return_to_grid);
             jQuery('>section>.subject .section>footer>menu>ol>li>a', framework.wizard.exam.data.container).bind('click', framework.wizard.exam.fn.control_subject_page);
             jQuery('>section>.subject .section>footer>nav>a', framework.wizard.exam.data.container).bind('click', framework.wizard.exam.fn.navigate_subject_page);
@@ -28,7 +28,7 @@ framework.wizard.exam = {
                         jQuery(this).css({display: 'none', opacity: 0}).removeClass('selected');
 
                         jQuery('>footer>menu>ul>li.print', framework.wizard.exam.data.container).hide();
-                        jQuery('>header>nav>ul>li', framework.wizard.exam.data.container).removeClass('selected');
+                        jQuery('>header>nav>ul>li.sections>ol', framework.wizard.exam.data.container).removeClass('chosen');
                         jQuery('>section>div.grid', framework.wizard.exam.data.container)
                             .addClass('selected')
                             .css({display: 'block', opacity: 0})
@@ -43,9 +43,9 @@ framework.wizard.exam = {
             var strSection          = jQuery(this).attr('data-section');
 
             if (strSection.length) {
-                jQuery('>header>nav>ul>li', framework.wizard.exam.data.container).removeClass('selected');
-                jQuery('>header>nav>ul>li>ol>li', framework.wizard.exam.data.container).removeClass('selected');
-                jQuery('>header>nav>ul>li.' + strSection, framework.wizard.exam.data.container).addClass('selected');
+                jQuery('>header>nav>ul>li.sections>ol', framework.wizard.exam.data.container).removeClass('chosen');
+                jQuery('>header>nav>ul>li.sections>ol>li', framework.wizard.exam.data.container).removeClass('selected');
+                jQuery('>header>nav>ul>li.sections>ol.' + strSection, framework.wizard.exam.data.container).addClass('chosen');
                 jQuery('>footer>menu>ul>li.print', framework.wizard.exam.data.container).hide();
 
                 jQuery('>section>div', framework.wizard.exam.data.container).stop();
@@ -71,11 +71,11 @@ framework.wizard.exam = {
             objEvent.preventDefault();
 
             var strSection          = jQuery(this).attr('data-section');
-            var strParentSection    = jQuery('>header>nav>ul>li.selected>a', framework.wizard.exam.data.container).attr('data-section');
+            var strParentSection    = jQuery('>header>nav>ul>li.sections>ol.chosen', framework.wizard.exam.data.container).attr('data-section');
 
             if ((strSection.length) && (strParentSection.length)) {
-                jQuery('>header>nav>ul>li[class != "home"]>ol>li', framework.wizard.exam.data.container).removeClass('selected');
-                jQuery('>header>nav>ul>li>ol>li>a[data-section="' + strSection + '"]', framework.wizard.exam.data.container).parent('li').addClass('selected');
+                jQuery('>header>nav>ul>li.sections>ol>li', framework.wizard.exam.data.container).removeClass('selected');
+                jQuery('>header>nav>ul>li.sections>ol>li>a[data-section="' + strSection + '"]', framework.wizard.exam.data.container).parent('li').addClass('selected');
 
                 var objSection          = jQuery('>section>div.' + strParentSection, framework.wizard.exam.data.container);
 

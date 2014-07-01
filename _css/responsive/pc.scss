@@ -103,6 +103,27 @@
 					}
 				}
 			}
+            & > article.has-sidebar {
+                & > section {
+                    & > .content {
+                        .wizard.wizard-examination {
+                            & > header {
+                                & > section {
+                                    & > h1 {
+                                        width: 70%;
+                                    }
+
+                                    &:after {
+                                        width: 330px;
+                                        bottom: -105px;
+                                        background-size: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
 		}
 	}
 
@@ -145,7 +166,7 @@
             & > article.has-sidebar {
                 & > section {
                     & > .content {
-                        & .examination-wizard {
+                        & .wizard.wizard-examination {
                             & > header {
                                 & > section {
                                     &:after {
@@ -203,7 +224,7 @@
                                                     }
 
                                                     & > li {
-                                                        margin: 0px 32px;
+                                                        margin: 0px 50px;
 
                                                         & > a {
                                                             & > strong {
