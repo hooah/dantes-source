@@ -26,6 +26,10 @@ framework.wizard.dlrsa = {
                 main: null,
                 list: null
             },
+            score: {
+                main: null,
+                list: null
+            },
             details: {
                 meta: {
                     footer: null
@@ -78,7 +82,11 @@ framework.wizard.dlrsa = {
             framework.wizard.dlrsa.data.containers.results.meta.header      = jQuery('>header', framework.wizard.dlrsa.data.containers.results.main);
             framework.wizard.dlrsa.data.containers.results.meta.footer      = jQuery('>footer', framework.wizard.dlrsa.data.containers.results.main);
 
-            // results
+            // score
+            framework.wizard.dlrsa.data.containers.score.main               = jQuery('>section>.results-score', framework.wizard.dlrsa.data.containers.main);
+            framework.wizard.dlrsa.data.containers.score.list               = jQuery('>section dl', framework.wizard.dlrsa.data.containers.score .main);
+
+            // details
             framework.wizard.dlrsa.data.containers.details.main             = jQuery('>section>.results-detail', framework.wizard.dlrsa.data.containers.main);
             framework.wizard.dlrsa.data.containers.details.content          = jQuery('>section', framework.wizard.dlrsa.data.containers.details.main);
             framework.wizard.dlrsa.data.containers.details.meta.footer      = jQuery('>footer', framework.wizard.dlrsa.data.containers.details.main);
@@ -96,7 +104,7 @@ framework.wizard.dlrsa = {
         init_required_questions: function() {
             var txtTemplateQuestion                     = jQuery('#template-question-page').html();
             var txtTemplateQuestionChoice               = jQuery('#template-question-choice').html();
-            var intCounter, intCounterInner;
+            var intCounter, intCounterInner, intNumQuestions;
             var txtQuestionHTML, txtQuestionChoiceHTML;
 
             Mustache.parse(txtTemplateQuestion);
@@ -123,6 +131,24 @@ framework.wizard.dlrsa = {
                                                                                 });
 
                 framework.wizard.dlrsa.data.containers.questions.list.append(txtQuestionHTML);
+            }
+
+            for (intCounter = 0; intCounter < framework.wizard.dlrsa.data.dataset.categories.length; intCounter++) {
+                intNumQuestions             = 0;
+
+                for (intCounterInner = 0; intCounterInner < framework.wizard.dlrsa.data.dataset.questions.length; intCounterInner++) {
+                    if (framework.wizard.dlrsa.data.dataset.questions[intCounterInner].category == framework.wizard.dlrsa.data.dataset.categories[intCounter].id) {
+                        intNumQuestions++;
+                    }
+                }
+
+                framework.wizard.dlrsa.data.containers.score.list.append(   '<dt>' +
+                                                                                '<strong>' + framework.wizard.dlrsa.data.dataset.categories[intCounter].title + '</strong>' +
+                                                                                '<em>' + framework.wizard.dlrsa.data.dataset.categories[intCounter].description + '</em>' +
+                                                                            '</dt>' +
+                                                                            '<dd data-category="' + framework.wizard.dlrsa.data.dataset.categories[intCounter].id + '">' +
+                                                                                '<strong>SCORE: <span class="passed">0</span></strong> out of <span class="total">' + intNumQuestions + '</span>' +
+                                                                            '</dd>');
             }
 
             jQuery('li>label', framework.wizard.dlrsa.data.containers.questions.list).bind('click', framework.wizard.dlrsa.fn.radio.set_class);
@@ -211,6 +237,44 @@ framework.wizard.dlrsa = {
             framework.wizard.dlrsa.data.results.total           = jQuery('>li', framework.wizard.dlrsa.data.containers.results.list).length;
         },
 
+        update_score_data: function() {
+            var intCounter, intCounterInner, intCategoryCount, intAnswer, intPoints;
+            var intScore                = 0;
+
+            for (intCounter = 0; intCounter < framework.wizard.dlrsa.data.dataset.categories.length; intCounter++) {
+                intCategoryCount            = 0;
+
+                for (intCounterInner = 0; intCounterInner < framework.wizard.dlrsa.data.dataset.questions.length; intCounterInner++) {
+                    if (framework.wizard.dlrsa.data.dataset.questions[intCounterInner].category == framework.wizard.dlrsa.data.dataset.categories[intCounter].id) {
+                        intAnswer                   = parseInt(jQuery('input[name="question_choice_' + intCounterInner + '"]:checked', framework.wizard.dlrsa.data.containers.questions.list).val());
+                        intPoints                   = framework.wizard.dlrsa.data.dataset.questions[intCounterInner].choices[intAnswer].points;
+                        intScore                    += intPoints;
+
+                        if (intPoints > 0) {
+                            intCategoryCount++;
+                        }
+                    }
+
+                }
+
+                jQuery('dd[data-category="' + framework.wizard.dlrsa.data.dataset.categories[intCounter].id + '"] span.passed', framework.wizard.dlrsa.data.containers.score.list)
+                    .html(intCategoryCount);
+            }
+
+            jQuery('img.result', framework.wizard.dlrsa.data.containers.score.main).hide();
+
+            if (intScore) {
+                for (intCounter = 0; intCounter < framework.wizard.dlrsa.data.dataset.scoring.length; intCounter++) {
+                    if (intScore >= framework.wizard.dlrsa.data.dataset.scoring[intCounter].threshold) {
+                        jQuery('h4', framework.wizard.dlrsa.data.containers.score.main).html(framework.wizard.dlrsa.data.dataset.scoring[intCounter].title);
+                        jQuery('p', framework.wizard.dlrsa.data.containers.score.main).html(framework.wizard.dlrsa.data.dataset.scoring[intCounter].description);
+                        jQuery('img.result.' + framework.wizard.dlrsa.data.dataset.scoring[intCounter].class, framework.wizard.dlrsa.data.containers.score.main).show();
+                        break;
+                    }
+                }
+            }
+        },
+
         navigate_to_main_section: function(objEvent) {
             objEvent.preventDefault();
 
@@ -246,6 +310,10 @@ framework.wizard.dlrsa = {
 
                         case 'questions-demographics' :
                             framework.wizard.dlrsa.fn.demographics.show(framework.wizard.dlrsa.data.demographics.current);
+                            break;
+
+                        case 'thanks' :
+                            framework.wizard.dlrsa.fn.update_score_data();
                             break;
 
                         case 'results' :
@@ -290,6 +358,7 @@ framework.wizard.dlrsa = {
             jQuery('#frmPrint input[name="demographics"]').val(demographics.join(''));
 
             jQuery('.addthis_button_email').attr('addthis:url', 'http://dantespulse.com/dlrsa/pdf/' + results.join(''));
+            jQuery('.print', framework.wizard.dlrsa.data.containers.score.main).attr('href', 'http://dantespulse.com/dlrsa/pdf/' + results.join(''));
             addthis.update('share', 'url', 'http://dantespulse.com/dlrsa/pdf/' + results.join(''));
         },
 

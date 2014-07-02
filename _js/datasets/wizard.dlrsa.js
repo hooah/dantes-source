@@ -4,6 +4,48 @@ framework.wizard.dlrsa.data.dataset = {
         {"title": "Almost Ready", "status": 0, "class": "almost-ready"},
         {"title": "Not Ready", "status": -1, "class": "not-ready"}
     ],
+    "categories": [
+        {
+            "id": 1,
+            "title": "Information",
+            "description": "Your level of understanding of distance learning."
+        },
+        {
+            "id": 2,
+            "title": "Skills",
+            "description": "Self-assessment of their skill levels in reading, writing, and computer use."
+        },
+        {
+            "id": 3,
+            "title": "Motivation",
+            "description": "Intrinsic or Extrinsic."
+        },
+        {
+            "id": 4,
+            "title": "Habits",
+            "description": "Self-assessment of your habits, organizational skills, seeking help, and setting aside time for study."
+        }
+    ],
+    "scoring": [
+        {
+            "class": "ready",
+            "threshold": 12,
+            "title": "Ideal",
+            "description": "Based on your responses, it appears that you have many of the characteristics that would support a successful distance learning experience. After reviewing the advice provided in your report, please discuss your plans with your counselor."
+        },
+        {
+            "class": "almost-ready",
+            "threshold": 9,
+            "title": "Supportive",
+            "description": "Based on your responses, it appears that you have some of the characteristics that would support a successful distance learning experience. After reviewing the advice provided in your report, please discuss your plans with your counselor."
+        },
+        {
+            "class": "not-ready",
+            "threshold": -999,
+            "title": "Conditional",
+            "description": "Based on your responses, it appears that you lack the necessary characteristics that would support a successful distance learning experience. After reviewing the advice provided in your report, please discuss your plans with your counselor."
+        }
+    ],
     "questions": [
         {
             "text": "Please select the statement that best describes your educational level.",

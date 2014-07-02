@@ -180,6 +180,9 @@ body {
                             background-repeat: no-repeat;
                             background-position: bottom left;
 
+                            &.grid {
+                                background-image: none;
+                            }
                             &.testing {
                                 background-image: url(../_images/wizard/examinations/bg-content-testing.jpg);
                             }

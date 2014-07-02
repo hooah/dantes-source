@@ -7,6 +7,9 @@ framework.wizard = {
             if (jQuery('.wizard-distance-learning').length) {
                 framework.wizard.dlrsa.fn.init();
             }
+            if (jQuery('.wizard-education-benefits').length) {
+                framework.wizard.edbenefits.fn.init();
+            }
         }
     }
 };

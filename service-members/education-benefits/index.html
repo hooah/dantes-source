@@ -33,18 +33,18 @@ header_extra:
                                         <ul>
                                             <li class="sections">
                                                 <ol class="option-financial-assistance" data-section="option-financial-assistance">
-                                                    <li><a href="javascript:;" data-section="usaf">Air Force</a></li>
-                                                    <li><a href="javascript:;" data-section="usa">Army</a></li>
-                                                    <li><a href="javascript:;" data-section="uscg">Coast Guard</a></li>
-                                                    <li><a href="javascript:;" data-section="usmc">Marines</a></li>
-                                                    <li><a href="javascript:;" data-section="usn">Navy</a></li>
+                                                    <li><a href="javascript:;" data-subsection="branches" data-subsection-index="1">Air Force</a></li>
+                                                    <li><a href="javascript:;" data-subsection="branches" data-subsection-index="2">Army</a></li>
+                                                    <li><a href="javascript:;" data-subsection="branches" data-subsection-index="3">Coast Guard</a></li>
+                                                    <li><a href="javascript:;" data-subsection="branches" data-subsection-index="4">Marines</a></li>
+                                                    <li><a href="javascript:;" data-subsection="branches" data-subsection-index="5">Navy</a></li>
                                                 </ol>
 
                                                 <ol class="option-va-benefits" data-section="option-va-benefits">
-                                                    <li><a href="javascript:;" data-section="active-duty">Active Duty</a></li>
-                                                    <li><a href="javascript:;" data-section="reserves">Reserves</a></li>
-                                                    <li><a href="javascript:;" data-section="national-guard">National Guard</a></li>
-                                                    <li><a href="javascript:;" data-section="veap">VEAP</a></li>
+                                                    <li><a href="javascript:;" data-subsection="active-duty">Active Duty</a></li>
+                                                    <li><a href="javascript:;" data-subsection="reserves">Reserves</a></li>
+                                                    <li><a href="javascript:;" data-subsection="national-guard">National Guard</a></li>
+                                                    <li><a href="javascript:;" data-subsection="veap">VEAP</a></li>
                                                 </ol>
 
                                                 <ol class="option-student-loans" data-section="option-student-loans">
@@ -94,30 +94,30 @@ header_extra:
 
                                                     <menu>
                                                         <h6>Select one of the programs below to find out more:</h6>
-                                                        <ul class="programs">
+                                                        <ul class="branches">
                                                             <li>
                                                                 <div>
-                                                                    <a href="javascript:;v" data-section="branches" data-jump-index="1"><img src="{{ path.path }}/_images/wizard/education-benefits/logos-small-usaf-color.png" alt="Air Force"></a>
+                                                                    <a href="javascript:;v" data-subsection="branches" data-subsection-index="1"><img src="{{ path.path }}/_images/wizard/education-benefits/logos-small-usaf-color.png" alt="Air Force"></a>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div>
-                                                                    <a href="javascript:;v" data-section="branches" data-jump-index="2"><img src="{{ path.path }}/_images/wizard/education-benefits/logos-small-usa-color.png" alt="Army"></a>
+                                                                    <a href="javascript:;v" data-subsection="branches" data-subsection-index="2"><img src="{{ path.path }}/_images/wizard/education-benefits/logos-small-usa-color.png" alt="Army"></a>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div>
-                                                                    <a href="javascript:;v" data-section="branches" data-jump-index="3"><img src="{{ path.path }}/_images/wizard/education-benefits/logos-small-uscg-color.png" alt="Coast Guard"></a>
+                                                                    <a href="javascript:;v" data-subsection="branches" data-subsection-index="3"><img src="{{ path.path }}/_images/wizard/education-benefits/logos-small-uscg-color.png" alt="Coast Guard"></a>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div>
-                                                                    <a href="javascript:;v" data-section="branches" data-jump-index="4"><img src="{{ path.path }}/_images/wizard/education-benefits/logos-small-usmc-color.png" alt="Marines"></a>
+                                                                    <a href="javascript:;v" data-subsection="branches" data-subsection-index="4"><img src="{{ path.path }}/_images/wizard/education-benefits/logos-small-usmc-color.png" alt="Marines"></a>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div>
-                                                                    <a href="javascript:;v" data-section="branches" data-jump-index="5"><img src="{{ path.path }}/_images/wizard/education-benefits/logos-small-usn-color.png" alt="Navy"></a>
+                                                                    <a href="javascript:;v" data-subsection="branches" data-subsection-index="5"><img src="{{ path.path }}/_images/wizard/education-benefits/logos-small-usn-color.png" alt="Navy"></a>
                                                                 </div>
                                                             </li>
                                                         </ul>
@@ -129,7 +129,7 @@ header_extra:
                                         <!-- branches -->
                                         <div class="section branches">
                                             <ol>
-                                                <li data-step="1">
+                                                <li data-step="1" data-set-nav-by-index="true">
                                                     <div class="wrapper">
                                                         <figure>
                                                             <img src="{{ page.path }}/_images/wizard/education-benefits/logos-large-usaf-color.png" alt="Air Force">
@@ -142,7 +142,7 @@ header_extra:
                                                         </div>
                                                     </div>
                                                 </li>
-                                                <li data-step="2">
+                                                <li data-step="2" data-set-nav-by-index="true">
                                                     <div class="wrapper">
                                                         <figure>
                                                             <img src="{{ page.path }}/_images/wizard/education-benefits/logos-large-army-color.png" alt="Army">
@@ -155,7 +155,7 @@ header_extra:
                                                         </div>
                                                     </div>
                                                 </li>
-                                                <li data-step="3">
+                                                <li data-step="3" data-set-nav-by-index="true">
                                                     <div class="wrapper">
                                                         <figure>
                                                             <img src="{{ page.path }}/_images/wizard/education-benefits/logos-large-uscg-color.png" alt="Coast Guard">
@@ -168,7 +168,7 @@ header_extra:
                                                         </div>
                                                     </div>
                                                 </li>
-                                                <li data-step="4">
+                                                <li data-step="4" data-set-nav-by-index="true">
                                                     <div class="wrapper">
                                                         <figure>
                                                             <img src="{{ page.path }}/_images/wizard/education-benefits/logos-large-usmc-color.png" alt="Marines">
@@ -181,7 +181,7 @@ header_extra:
                                                         </div>
                                                     </div>
                                                 </li>
-                                                <li data-step="5">
+                                                <li data-step="5" data-set-nav-by-index="true">
                                                     <div class="wrapper">
                                                         <figure>
                                                             <img src="{{ page.path }}/_images/wizard/education-benefits/logos-large-usn-color.png" alt="Navy">
@@ -228,25 +228,25 @@ header_extra:
 
                                                     <menu>
                                                         <h6>Select a status below to find out more:</h6>
-                                                        <ul class="programs">
+                                                        <ul class="statuses">
                                                             <li>
                                                                 <div>
-                                                                    <a href="javascript:;" data-section="active-duty"><strong>Active Duty</strong></a>
+                                                                    <a href="javascript:;" data-subsection="active-duty"><strong>Active Duty</strong></a>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div>
-                                                                    <a href="javascript:;" data-section="reserves"><strong>Reserves</strong></a>
+                                                                    <a href="javascript:;" data-subsection="reserves"><strong>Reserves</strong></a>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div>
-                                                                    <a href="javascript:;" data-section="national-guard"><strong>National Guard</strong></a>
+                                                                    <a href="javascript:;" data-subsection="national-guard"><strong>National Guard</strong></a>
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div>
-                                                                    <a href="javascript:;" data-section="veap"><strong>VEAP</strong></a>
+                                                                    <a href="javascript:;" data-subsection="veap"><strong>VEAP</strong></a>
                                                                 </div>
                                                             </li>
                                                         </ul>
@@ -261,11 +261,11 @@ header_extra:
                                                 <li data-step="1">
                                                     <div class="wrapper">
                                                         <div class="content full">
-                                                            <h3>Active Duty</h3>
-                                                            <p>Choose one of the programs below to access benefits that pertain to your Military Status.</p>
+                                                            <h3 class="inline">Active Duty</h3>
+                                                            <p class="centered">Choose one of the programs below to access benefits that pertain to your Military Status.</p>
 
-                                                            <menu>
-                                                                <ul class="statuses">
+                                                            <menu class="inline">
+                                                                <ul class="benefits">
                                                                     <li>
                                                                         <div>
                                                                             <a href="javascript:;" data-jump-index="2"><img src="{{ page.path }}/_images/wizard/education-benefits/logos-large-post911-gi-bill-color.png" alt="Post 9/11 GI Bill"></a>
@@ -323,11 +323,11 @@ header_extra:
                                                 <li data-step="1">
                                                     <div class="wrapper">
                                                         <div class="content full">
-                                                            <h3>Reserves</h3>
-                                                            <p>Choose one of the programs below to access benefits that pertain to your Military Status.</p>
+                                                            <h3 class="inline">Reserves</h3>
+                                                            <p class="centered">Choose one of the programs below to access benefits that pertain to your Military Status.</p>
 
-                                                            <menu>
-                                                                <ul class="statuses">
+                                                            <menu class="inline">
+                                                                <ul class="benefits">
                                                                     <li>
                                                                         <div>
                                                                             <a href="javascript:;" data-jump-index="2"><img src="{{ page.path }}/_images/wizard/education-benefits/logos-large-post911-gi-bill-color.png" alt="Post 9/11 GI Bill"></a>
@@ -403,11 +403,11 @@ header_extra:
                                                 <li data-step="1">
                                                     <div class="wrapper">
                                                         <div class="content full">
-                                                            <h3>National Guard</h3>
-                                                            <p>Choose one of the programs below to access benefits that pertain to your Military Status.</p>
+                                                            <h3 class="inline">National Guard</h3>
+                                                            <p class="centered">Choose one of the programs below to access benefits that pertain to your Military Status.</p>
 
-                                                            <menu>
-                                                                <ul class="statuses">
+                                                            <menu class="inline">
+                                                                <ul class="benefits">
                                                                     <li>
                                                                         <div>
                                                                             <a href="javascript:;" data-jump-index="2"><img src="{{ page.path }}/_images/wizard/education-benefits/logos-large-ang-color.png" alt="Air National Guard"></a>
@@ -460,16 +460,16 @@ header_extra:
                                         </div>
 
                                         <!-- veap -->
-                                        <div class="section national-guard">
+                                        <div class="section veap">
                                             <ol>
                                                 <li data-step="1">
                                                     <div class="wrapper">
                                                         <div class="content full">
-                                                            <h3>Veteran's Educational Assistance Program (VEAP)</h3>
-                                                            <p>Choose one of the programs below to access benefits that pertain to your Military Status.</p>
+                                                            <h3 class="inline">Veteran's Educational Assistance Program (VEAP)</h3>
+                                                            <p class="centered">Choose one of the programs below to access benefits that pertain to your Military Status.</p>
 
-                                                            <menu>
-                                                                <ul class="statuses">
+                                                            <menu class="inline">
+                                                                <ul class="benefits">
                                                                     <li>
                                                                         <div>
                                                                             <a href="javascript:;" data-jump-index="2"><img src="{{ page.path }}/_images/wizard/education-benefits/logos-large-veap-color.png" alt="Veteran's Educational Assistance Program (VEAP)"></a>
@@ -523,15 +523,7 @@ header_extra:
                                     <menu>
                                         <ul>
                                             <li class="print"><a href="javascript:;" target="_blank"><strong>Print</strong></a></li>
-                                            <li class="email" data-email-template="act"><a href="javascript:;" class="addthis_button_email" addthis:url="http://www.dantes.doded.mil/_content/examinations/DANTES_examwizard_ACT.pdf" addthis:var_examname="ACT" addthis:title="More information about the ACT examination from the DANTES website."><strong>E-mail</strong></a></li>
-                                            <li class="email" data-email-template="sat"><a href="javascript:;" class="addthis_button_email" addthis:url="http://www.dantes.doded.mil/_content/examinations/DANTES_examwizard_SAT.pdf" addthis:var_examname="SAT" addthis:title="More information about the SAT examination from the DANTES website."><strong>E-mail</strong></a></li>
-                                            <li class="email" data-email-template="gre"><a href="javascript:;" class="addthis_button_email" addthis:url="http://www.dantes.doded.mil/_content/examinations/DANTES_examwizard_GRE.pdf" addthis:var_examname="GRE" addthis:title="More information about the GRE examination from the DANTES website."><strong>E-mail</strong></a></li>
-                                            <li class="email" data-email-template="gmat"><a href="javascript:;" class="addthis_button_email" addthis:url="http://www.dantes.doded.mil/_content/examinations/DANTES_examwizard_GMAT.pdf" addthis:var_examname="GMAT" addthis:title="More information about the GMAT examination from the DANTES website."><strong>E-mail</strong></a></li>
-                                            <li class="email" data-email-template="lsat"><a href="javascript:;" class="addthis_button_email" addthis:url="http://www.dantes.doded.mil/_content/examinations/DANTES_examwizard_LSAT.pdf" addthis:var_examname="LSAT" addthis:title="More information about the LSAT examination from the DANTES website."><strong>E-mail</strong></a></li>
-                                            <li class="email" data-email-template="praxis"><a href="javascript:;" class="addthis_button_email" addthis:url="http://www.dantes.doded.mil/_content/examinations/DANTES_examwizard_PRAXIS.pdf" addthis:var_examname="PRAXIS" addthis:title="More information about the PRAXIS examination from the DANTES website."><strong>E-mail</strong></a></li>
-                                            <li class="email" data-email-template="ged"><a href="javascript:;" class="addthis_button_email" addthis:url="http://www.dantes.doded.mil/_content/examinations/DANTES_examwizard_GED.pdf" addthis:var_examname="GED" addthis:title="More information about the GED examination from the DANTES website."><strong>E-mail</strong></a></li>
-                                            <li class="email" data-email-template="clep"><a href="javascript:;" class="addthis_button_email" addthis:url="http://www.dantes.doded.mil/_content/examinations/DANTES_examwizard_CLEP.pdf" addthis:var_examname="CLEP" addthis:title="More information about the CLEP examination from the DANTES website."><strong>E-mail</strong></a></li>
-                                            <li class="email" data-email-template="dsst"><a href="javascript:;" class="addthis_button_email" addthis:url="http://www.dantes.doded.mil/_content/examinations/DANTES_examwizard_DSST.pdf" addthis:var_examname="DSST" addthis:title="More information about the DSST examination from the DANTES website."><strong>E-mail</strong></a></li>
+                                            <li class="email"><a href="javascript:;" class="addthis_button_email" addthis:url="http://www.dantes.doded.mil/service-members/education-benefits/index.html" addthis:title="More information about education benefits offered to help you further your education goals."><strong>E-mail</strong></a></li>
                                             <li class="share"><a href="javascript:;" class="addthis_button_compact"><strong>Share</strong></a></li>
                                         </ul>
                                     </menu>

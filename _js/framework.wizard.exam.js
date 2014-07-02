@@ -15,6 +15,7 @@ framework.wizard.exam = {
             jQuery('>section>.subject .section>footer>menu>ol>li>a', framework.wizard.exam.data.container).bind('click', framework.wizard.exam.fn.control_subject_page);
             jQuery('>section>.subject .section>footer>nav>a', framework.wizard.exam.data.container).bind('click', framework.wizard.exam.fn.navigate_subject_page);
             jQuery('>section>.grid', framework.wizard.exam.data.container).addClass('selected');
+            jQuery('>section', framework.wizard.exam.data.container).addClass('grid');
         },
 
         return_to_grid: function(objEvent) {
@@ -32,7 +33,7 @@ framework.wizard.exam = {
                         jQuery('>section>div.grid', framework.wizard.exam.data.container)
                             .addClass('selected')
                             .css({display: 'block', opacity: 0})
-                            .animate({opacity: 1}, framework.wizard.exam.data.animation.speed);
+                            .animate({opacity: 1}, framework.wizard.exam.data.animation.speed, function() { jQuery('>section', framework.wizard.exam.data.container).attr('class', 'grid'); });
                     });
             }
         },

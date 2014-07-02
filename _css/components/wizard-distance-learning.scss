@@ -248,6 +248,72 @@ body {
                                     display: block;
                                 }
 
+                                &.results-score {
+                                    & > section {
+                                        & h4 {
+                                            font-weight: 800;
+                                            text-transform: uppercase;
+                                        }
+
+                                        & p {
+                                            margin-top: 15px;
+                                            font-size: 13px;
+                                            line-height: 24px;
+                                        }
+
+                                        & dl {
+                                            display: block;
+                                            margin: 20px 0px;
+                                            padding: 0px;
+                                            list-style: none;
+
+                                            & > dt,
+                                            & > dd {
+                                                display: block;
+                                                margin: 0px 0px 10px 0px;
+                                                padding: 0px;
+                                                list-style: none;
+                                                font-family: "Open Sans", sans-serif;
+                                                font-size: 15px;
+                                                line-height: 15px;
+                                                color: #727272;
+                                            }
+                                            & > dt {
+                                                clear: both;
+                                                float: left;
+                                                width: 55%;
+
+                                                & > strong {
+                                                    display: block;
+                                                    clear: both;
+                                                    margin-bottom: 3px;
+                                                    color: #272793;
+                                                    font-weight: bold;
+                                                    text-transform: uppercase;
+                                                }
+                                                & > em {
+                                                    display: block;
+                                                    font-style: italic;
+                                                    font-weight: normal;
+                                                    font-size: 13px;
+                                                    line-height: 13px;
+                                                }
+                                            }
+                                            & > dd {
+                                                float: right;
+                                                width: 30%;
+                                                text-align: right;
+
+                                                & > strong {
+                                                    color: #272793;
+                                                    font-weight: bold;
+                                                    text-transform: uppercase;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
                                 &.results {
                                     & > section {
                                         padding-top: 40px;
@@ -476,6 +542,7 @@ body {
                                     }
                                 }
 
+                                &.results-score,
                                 &.results,
                                 &.results-detail,
                                 &.questions,

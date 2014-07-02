@@ -64,14 +64,6 @@ body {
                                                     white-space: nowrap;
                                                 }
 
-                                                &.option-student-loans,
-                                                &.option-college-credit-alternatives {
-                                                    &:before {
-                                                        display: none;
-                                                        content: "";
-                                                    }
-                                                }
-
                                                 & > li {
                                                     display: inline-block;
                                                     float: none;
@@ -129,6 +121,25 @@ body {
                                                         }
                                                     }
                                                 }
+
+                                                &.option-student-loans,
+                                                &.option-college-credit-alternatives {
+                                                    &:before {
+                                                        display: none;
+                                                        content: "";
+                                                    }
+                                                }
+
+                                                &.option-financial-assistance,
+                                                &.option-va-benefits {
+                                                    & > li {
+                                                        & > a {
+                                                            width: auto;
+                                                            padding: 0px 7px;
+                                                            text-transform: none;
+                                                        }
+                                                    }
+                                                }
                                             }
                                         }
                                     }
@@ -183,6 +194,8 @@ body {
                                             display: table;
                                             width: 100%;
                                             height: 100%;
+                                            background-repeat: no-repeat;
+                                            background-size: 100% 100%;
                                             border-right: 1px #c7c7c7 solid;
                                             border-bottom: 1px #c7c7c7 solid;
                                             -webkit-box-shadow: -2px -2px 2px rgba(0, 0, 0, 0.05) inset;
@@ -204,9 +217,6 @@ body {
                                                 vertical-align: middle;
                                             }
                                             &:hover {
-                                                background-repeat: no-repeat;
-                                                background-size: 100% 100%;
-
                                                 & > strong {
                                                     color: #e08c29;
                                                 }
@@ -270,8 +280,8 @@ body {
                                 display: none;
                                 padding: 0px;
                                 position: relative;
-                                height: 470px;
-                                min-height: 470px;
+                                height: 460px;
+                                min-height: 460px;
                             }
 
                             & .subject {
@@ -347,6 +357,11 @@ body {
                                                 line-height: 18px;
                                                 text-shadow: none;
                                                 text-align: center;
+
+                                                &.inline {
+                                                    padding-top: 0px;
+                                                    padding-bottom: 35px;
+                                                }
                                             }
                                             & h6 {
                                                 display: block;
@@ -366,6 +381,10 @@ body {
                                                 font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida", sans-serif;
                                                 color: #727272;
                                                 text-align: justify;
+
+                                                &.centered {
+                                                    text-align: center;
+                                                }
                                             }
 
                                             & > menu {
@@ -373,7 +392,15 @@ body {
                                                 width: 100%;
                                                 bottom: 0px;
 
-                                                & ul.programs {
+                                                &.inline {
+                                                    position: static;
+                                                    bottom: auto;
+                                                }
+
+                                                & ul.programs,
+                                                & ul.branches,
+                                                & ul.statuses,
+                                                & ul.benefits {
                                                     display: block;
                                                     margin: 20px 0px 0px 0px;
                                                     padding: 0px 0px 35px 0px;
@@ -406,6 +433,59 @@ body {
                                                                 text-align: center;
                                                                 vertical-align: middle;
                                                                 text-decoration: none;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+
+                                                & ul.branches {
+                                                    & > li {
+                                                        width: 98px;
+                                                        height: 89px;
+                                                        margin: 0px 15px;
+                                                    }
+                                                }
+
+                                                & ul.statuses {
+                                                    & > li {
+                                                        width: 151px;
+                                                        height: 89px;
+                                                        margin: 0px 8px;
+                                                        background: #010b47;
+                                                        background: -moz-linear-gradient(top,  #010b47 0%, #1a1a62 100%);
+                                                        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#010b47), color-stop(100%,#1a1a62));
+                                                        background: -webkit-linear-gradient(top,  #010b47 0%,#1a1a62 100%);
+                                                        background: -o-linear-gradient(top,  #010b47 0%,#1a1a62 100%);
+                                                        background: -ms-linear-gradient(top,  #010b47 0%,#1a1a62 100%);
+                                                        background: linear-gradient(to bottom,  #010b47 0%,#1a1a62 100%);
+                                                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#010b47', endColorstr='#1a1a62',GradientType=0 );
+                                                        -webkit-box-shadow: none;
+                                                        -moz-box-shadow: none;
+                                                        box-shadow: none;
+
+                                                        & > div {
+                                                            & > a {
+                                                                font-size: 16px;
+                                                                line-height: 89px;
+                                                                color: #fff;
+                                                                font-weight: 800;
+                                                                font-family: "Open Sans", sans-serif;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+
+                                                & ul.benefits {
+                                                    margin-top: 40px;
+
+                                                    & > li {
+                                                        width: 182px;
+                                                        height: 164px;
+                                                        margin: 0px 15px;
+
+                                                        & > div {
+                                                            & > a {
+                                                                padding: 0px;
                                                             }
                                                         }
                                                     }
@@ -514,7 +594,7 @@ body {
                                     & > footer {
                                         display: block;
                                         position: absolute;
-                                        bottom: 35px;
+                                        bottom: 0px;
                                         width: 100%;
                                         height: 70px;
                                         clear: both;
@@ -523,7 +603,7 @@ body {
                                             display: block;
                                             float: left;
                                             clear: none;
-                                            width: 35%;
+                                            width: 30%;
                                             margin: 0px;
                                             padding: 0px;
                                             text-align: center;
@@ -567,6 +647,17 @@ body {
                                                 }
                                             }
                                         }
+                                    }
+                                }
+                            }
+                        }
+
+                        & > footer {
+                            & > menu {
+                                & > ul {
+                                    & > li.email,
+                                    & > li.print {
+                                        display: block;
                                     }
                                 }
                             }
