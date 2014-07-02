@@ -22,73 +22,556 @@ header_extra:
                             </ul>
                             {% include social.html %}
 
-                        	<div class="four right inline" style="margin-top: -10px;">
-                            	<div class="feature-box feature-box-ribbon-caption feature-box-short">
-                                	<div>
-                                    	<figure style="background-image: url({{ page.path }}/_images/elements/feature-service_members-benefits-inline.jpg);"></figure>
-                                        <figcaption>
-                                        	<a href="http://www.youtube.com/watch?v=H6SyXzEvTSU" class="feature-box-link-cap-purple feature-box-link-icon-video fresco" data-scout-stop="true" data-scout-manual="Top_page_CTA, video_decision, video-decision">
-                                            	<strong>Decision</strong>
-                                            </a>
-                                        </figcaption>
-                                    </div>
-                                </div>
-                            </div>
-                            <h1>Now is the time for you to take the next step and engage the opportunity to actively advance your career.</h1>
-                            <p>Find the option below to help you on your way towards furthering your education goals.</p>
+                            <div class="wizard wizard-education-benefits">
+                                <header>
+                                    <section>
+                                        <h1>DANTES Education Benefits Wizard</h1>
+                                        <h2>Now is the time for you to take the next step and engage the opportunity to actively advance your career. Find the option below to help you on your way towards furthering your education goals.</h2>
+                                    </section>
 
-                            <hr class="clearfix" />
+                                    <nav>
+                                        <ul>
+                                            <li class="sections">
+                                                <ol class="option-financial-assistance" data-section="option-financial-assistance">
+                                                    <li><a href="javascript:;" data-section="usaf">Air Force</a></li>
+                                                    <li><a href="javascript:;" data-section="usa">Army</a></li>
+                                                    <li><a href="javascript:;" data-section="uscg">Coast Guard</a></li>
+                                                    <li><a href="javascript:;" data-section="usmc">Marines</a></li>
+                                                    <li><a href="javascript:;" data-section="usn">Navy</a></li>
+                                                </ol>
 
-                            <menu class="row">
-                                <br />
-                                <br />
+                                                <ol class="option-va-benefits" data-section="option-va-benefits">
+                                                    <li><a href="javascript:;" data-section="active-duty">Active Duty</a></li>
+                                                    <li><a href="javascript:;" data-section="reserves">Reserves</a></li>
+                                                    <li><a href="javascript:;" data-section="national-guard">National Guard</a></li>
+                                                    <li><a href="javascript:;" data-section="veap">VEAP</a></li>
+                                                </ol>
 
-                                <div class="four columns">
-                                    <div class="row feature-box feature-box-preset service_members-benefits-financial_assistance">
-                                        <div class="eleven">
-                                            <figure></figure>
-                                            <figcaption>
-                                                <a href="{{ page.path }}/service-members/education-benefits/financial-assistance/index.html" data-scout-event="mid_page_visual_nav, select_nav_area, visual-nav-financial-assist">
-                                                    <strong>Financial Assistance</strong>
+                                                <ol class="option-student-loans" data-section="option-student-loans">
+                                                </ol>
+
+                                                <ol class="option-college-credit-alternatives" data-section="option-college-credit-alternatives">
+                                                </ol>
+                                            </li>
+                                            <li class="home"><a href="javascript:;" data-section="home">Return Home</a></li>
+                                        </ul>
+                                    </nav>
+                                </header>
+                                <section>
+                                    <!-- intro grid -->
+                                    <div class="grid">
+                                        <ol>
+                                            <li class="option-financial-assistance">
+                                                <a href="javascript:;" data-section="option-financial-assistance">
+                                                    <strong>Financial Assistance by Branch</strong>
                                                 </a>
-                                            </figcaption>
-                                        </div>
-                                    </div>
-                                    <p class="flush">
-                                        The U.S. Armed Forces offers several programs to support the education goals of service members (Army, Navy, Air Force, Marine Corps and Coast Guard) – including up to 100 percent tuition assistance for college courses taken during off-duty hours.
-                                    </p>
-                                </div>
-                                <div class="four columns">
-                                    <div class="row feature-box feature-box-preset service_members-benefits-va">
-                                        <div class="eleven">
-                                            <figure></figure>
-                                            <figcaption>
-                                                <a href="{{ page.path }}/service-members/education-benefits/va-benefits/index.html" data-scout-event="mid_page_visual_nav, select_nav_area, visual-nav-va-benefit">
-                                                    <strong>VA Benefits</strong>
+                                            </li>
+                                            <li class="option-va-benefits">
+                                                <a href="javascript:;" data-section="option-va-benefits">
+                                                    <strong>VA Benefits Based on Your Status</strong>
                                                 </a>
-                                            </figcaption>
-                                        </div>
-                                    </div>
-                                    <p class="flush">
-                                        The Department of Veterans Affairs offers a variety of benefits and services that provide financial and other forms of assistance to service members, veterans, as well as their dependents and survivors.
-                                    </p>
-                                </div>
-                                <div class="four columns">
-                                    <div class="row feature-box feature-box-preset service_members-benefits-transferable_credits">
-                                        <div class="eleven">
-                                            <figure></figure>
-                                            <figcaption>
-                                                <a href="{{ page.path }}/educational-institutions/college-credit-alternatives/index.html" data-scout-event="mid_page_visual_nav, select_nav_area, visual-nav-transfer-credit">
+                                            </li>
+                                            <li class="option-student-loans">
+                                                <a href="javascript:;" data-section="option-student-loans">
+                                                    <strong>What You Need to Know About Student Loans</strong>
+                                                </a>
+                                            </li>
+                                            <li class="option-college-credit-alternatives">
+                                                <a href="javascript:;" data-section="option-college-credit-alternatives">
                                                     <strong>College Credit Alternatives</strong>
                                                 </a>
+                                            </li>
+                                        </ol>
+                                    </div>
+
+                                    <!-- financial assistance by branch -->
+                                    <div class="subject option-financial-assistance">
+                                        <div class="intro">
+                                            <div class="wrapper">
+                                                <div class="content full">
+                                                    <h3>Financial Assistance by Branch</h3>
+                                                    <p>The U.S. Armed Forces offers several programs to support the education goals of service members (Army, Navy, Air Force, Marine Corps and Coast Guard) with financial assistance for college courses taken during off-duty hours. Each service has its own criteria for eligibility, obligated service, application process and restrictions. This money is usually paid directly to the institution by the individual services. You are eligible as long as you remain active duty.</p>
+
+                                                    <menu>
+                                                        <h6>Select one of the programs below to find out more:</h6>
+                                                        <ul class="programs">
+                                                            <li>
+                                                                <div>
+                                                                    <a href="javascript:;v" data-section="branches" data-jump-index="1"><img src="{{ path.path }}/_images/wizard/education-benefits/logos-small-usaf-color.png" alt="Air Force"></a>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div>
+                                                                    <a href="javascript:;v" data-section="branches" data-jump-index="2"><img src="{{ path.path }}/_images/wizard/education-benefits/logos-small-usa-color.png" alt="Army"></a>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div>
+                                                                    <a href="javascript:;v" data-section="branches" data-jump-index="3"><img src="{{ path.path }}/_images/wizard/education-benefits/logos-small-uscg-color.png" alt="Coast Guard"></a>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div>
+                                                                    <a href="javascript:;v" data-section="branches" data-jump-index="4"><img src="{{ path.path }}/_images/wizard/education-benefits/logos-small-usmc-color.png" alt="Marines"></a>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div>
+                                                                    <a href="javascript:;v" data-section="branches" data-jump-index="5"><img src="{{ path.path }}/_images/wizard/education-benefits/logos-small-usn-color.png" alt="Navy"></a>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </menu>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- branches -->
+                                        <div class="section branches">
+                                            <ol>
+                                                <li data-step="1">
+                                                    <div class="wrapper">
+                                                        <figure>
+                                                            <img src="{{ page.path }}/_images/wizard/education-benefits/logos-large-usaf-color.png" alt="Air Force">
+                                                        </figure>
+
+                                                        <div class="content">
+                                                            <h2>Air Force Tuition Assistance (TA)</h2>
+                                                            <p>Air Force Tutition Assistance (TA) is an important quality of life program that provides tuition assistance for courses taken by active duty personnel. The program is one of the most frequent reasons given for enlisting and re-enlisting in the Air Force. Visit the Air Force website for up-to-date details on benefits and requirements.</p>
+                                                            <a href="https://www.my.af.mil/" class="button button-blue button-pointed right" target="_blank"><strong>Visit the Site &gt;</strong></a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-step="2">
+                                                    <div class="wrapper">
+                                                        <figure>
+                                                            <img src="{{ page.path }}/_images/wizard/education-benefits/logos-large-army-color.png" alt="Army">
+                                                        </figure>
+
+                                                        <div class="content">
+                                                            <h2>Army Tuition Assistance (TA)</h2>
+                                                            <p>The Army Tuition Assistance (TA) program provides financial assistance for voluntary off-duty education programs in support of a Soldier's professional and personal self-development goals. TA is available for courses that are offered in the classroom or by distance learning. The courses must be offered by schools that are registered in GoArmyEd and are accredited by accrediting agencies that are recognized by the U.S. Department of Education. Visit the Army website for up-to-date details on benefits and requirements.</p>
+                                                            <a href="https://www.goarmyed.com/public/public_tuition_assistance_policies.aspx" class="button button-blue button-pointed right" target="_blank"><strong>Visit the Site &gt;</strong></a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-step="3">
+                                                    <div class="wrapper">
+                                                        <figure>
+                                                            <img src="{{ page.path }}/_images/wizard/education-benefits/logos-large-uscg-color.png" alt="Coast Guard">
+                                                        </figure>
+
+                                                        <div class="content">
+                                                            <h2>Coast Guard Tuition Assistance (TA)</h2>
+                                                            <p>TA is available to all uniformed personnel (regular and drilling Reservists), civilian Coast Guard employees. Tuition assistance (TA) is money the Coast Guard pays to colleges and universities for the tuition costs of courses you take from them. TA is available to all uniformed personnel (regular and drilling Reservists), civilian Coast Guard employees, and commissioned Public Health Service officers who are serving with the Coast Guard. Visit the Coast Guard website for up-to-date details on benefits and requirements.</p>
+                                                            <a href="http://www.uscg.mil/hq/capemay/Education/ta-a.asp#applying" class="button button-blue button-pointed right" target="_blank"><strong>Visit the Site &gt;</strong></a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-step="4">
+                                                    <div class="wrapper">
+                                                        <figure>
+                                                            <img src="{{ page.path }}/_images/wizard/education-benefits/logos-large-usmc-color.png" alt="Marines">
+                                                        </figure>
+
+                                                        <div class="content">
+                                                            <h2>Marines Tuition Assistance (TA)</h2>
+                                                            <p>Marine Tuition Assistance (TA) is available for all active duty and active reserve Marines.Tuition assistance is available to Reservists on continuous active duty and their course must end prior to demobilization/deactivation. TA is offered to Officers with restrictions. Visit the Marines website for up-to-date details on benefits and requirements.</p>
+                                                            <a href="http://www.marforres.marines.mil/GeneralSpecialStaff/MarineCorpsCommunityServices/MarineFamilyServices/LifelongLearingCenter/TuitionAssistance.aspx" class="button button-blue button-pointed right" target="_blank"><strong>Visit the Site &gt;</strong></a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-step="5">
+                                                    <div class="wrapper">
+                                                        <figure>
+                                                            <img src="{{ page.path }}/_images/wizard/education-benefits/logos-large-usn-color.png" alt="Navy">
+                                                        </figure>
+
+                                                        <div class="content">
+                                                            <h2>Navy Tuition Assistance (TA)</h2>
+                                                            <p>Tuition Assistance (TA) is the Navy's educational financial assistance program. It provides active duty personnel funding for tuition costs for courses taken in an off-duty status at a college, university or vocational/technical institution, whose regional or national accreditation is recognized by the U.S. Department of Education. A list of approved accrediting agencies may be found online. Visit the Navy website for up-to-date benefits and requirements.</p>
+                                                            <a href="https://www.navycollege.navy.mil/ta_info.aspx" class="button button-blue button-pointed right" target="_blank"><strong>Visit the Site &gt;</strong></a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ol>
+
+                                            <footer>
+                                                <nav>
+                                                    <a href="javascript:;" class="back">&lt; Back</a>
+                                                    <a href="javascript:;" class="next">Next &gt;</a>
+                                                </nav>
+                                            </footer>
+                                        </div>
+                                    </div>
+
+                                    <!-- student loans -->
+                                    <div class="subject option-student-loans">
+                                        <div class="intro">
+                                            <div class="wrapper">
+                                                <div class="content full">
+                                                    <h3>What You Need to Know About Student Loans</h3>
+                                                    <p>Student loans should only be considered after you have exhausted all sources of "free money" - grants, scholarships and other awards. If, after exhausting all other sources of aid, you find you still have a college funding gap, you may need to take out a loan. Taking out a student loan is a big commitment that should be considered carefully. You need to understand what a loan is, its benefits and your responsibilities. Visit our blog for more information.</p>
+                                                    <a href="#" class="button button-blue button-pointed right" target="_blank"><strong>Visit the Site &gt;</strong></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- va benefits -->
+                                    <div class="subject option-va-benefits">
+                                        <div class="intro">
+                                            <div class="wrapper">
+                                                <div class="content full">
+                                                    <h3>VA Benefits Based on Your Status</h3>
+                                                    <p>Now is the time for you to take the next step and engage the opportunity to actively advance your career. The Department of Veterans Affairs offers a variety of benefits and services that provide financial and other forms of assistance to service members, veterans, as well as their dependents and survivors.</p>
+
+                                                    <menu>
+                                                        <h6>Select a status below to find out more:</h6>
+                                                        <ul class="programs">
+                                                            <li>
+                                                                <div>
+                                                                    <a href="javascript:;" data-section="active-duty"><strong>Active Duty</strong></a>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div>
+                                                                    <a href="javascript:;" data-section="reserves"><strong>Reserves</strong></a>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div>
+                                                                    <a href="javascript:;" data-section="national-guard"><strong>National Guard</strong></a>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div>
+                                                                    <a href="javascript:;" data-section="veap"><strong>VEAP</strong></a>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </menu>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- active duty -->
+                                        <div class="section active-duty">
+                                            <ol>
+                                                <li data-step="1">
+                                                    <div class="wrapper">
+                                                        <div class="content full">
+                                                            <h3>Active Duty</h3>
+                                                            <p>Choose one of the programs below to access benefits that pertain to your Military Status.</p>
+
+                                                            <menu>
+                                                                <ul class="statuses">
+                                                                    <li>
+                                                                        <div>
+                                                                            <a href="javascript:;" data-jump-index="2"><img src="{{ page.path }}/_images/wizard/education-benefits/logos-large-post911-gi-bill-color.png" alt="Post 9/11 GI Bill"></a>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div>
+                                                                            <a href="javascript:;" data-jump-index="3"><img src="{{ page.path }}/_images/wizard/education-benefits/logos-large-gi-bill-color.png" alt="Montgomery GI Bill"></a>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </menu>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-step="2">
+                                                    <div class="wrapper">
+                                                        <figure>
+                                                            <img src="{{ page.path }}/_images/wizard/education-benefits/logos-large-post911-gi-bill-color.png" alt="Post 9/11 GI Bill">
+                                                        </figure>
+
+                                                        <div class="content">
+                                                            <h2>The Post 9/11 GI Bill</h2>
+                                                            <p>The Post-9/11 GI Bill offers benefits for service members and veterans attending education and training programs taken at accredited colleges or universities, or accredited non-college institutions that grant degrees. It gives current and previously activated National Guard and Reserve members the same benefits as active duty service members. Visit the VA Affairs website for additonal information.</p>
+                                                            <a href="http://www.gibill.va.gov/benefits/post_911_gibill/" class="button button-blue button-pointed right" target="_blank"><strong>Visit the Site &gt;</strong></a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-step="3">
+                                                    <div class="wrapper">
+                                                        <figure>
+                                                            <img src="{{ page.path }}/_images/wizard/education-benefits/logos-large-gi-bill-color.png" alt="Montgomery GI Bill">
+                                                        </figure>
+
+                                                        <div class="content">
+                                                            <h2>Montgomery GI Bill</h2>
+                                                            <p>Montgomery GI Bill (MGIB) benefits are available for service members and veterans to help with education and training costs by providing financial assistance and numerous support programs. Visit the VA Affairs website for more information.</p>
+                                                            <a href="http://www.gibill.va.gov/benefits/montgomery_gibill/" class="button button-blue button-pointed right" target="_blank"><strong>Visit the Site &gt;</strong></a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ol>
+
+                                            <footer>
+                                                <nav>
+                                                    <a href="javascript:;" class="back">&lt; Back</a>
+                                                    <a href="javascript:;" class="next">Next &gt;</a>
+                                                </nav>
+                                            </footer>
+                                        </div>
+
+                                        <!-- reserves -->
+                                        <div class="section reserves">
+                                            <ol>
+                                                <li data-step="1">
+                                                    <div class="wrapper">
+                                                        <div class="content full">
+                                                            <h3>Reserves</h3>
+                                                            <p>Choose one of the programs below to access benefits that pertain to your Military Status.</p>
+
+                                                            <menu>
+                                                                <ul class="statuses">
+                                                                    <li>
+                                                                        <div>
+                                                                            <a href="javascript:;" data-jump-index="2"><img src="{{ page.path }}/_images/wizard/education-benefits/logos-large-post911-gi-bill-color.png" alt="Post 9/11 GI Bill"></a>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div>
+                                                                            <a href="javascript:;" data-jump-index="3"><img src="{{ page.path }}/_images/wizard/education-benefits/logos-large-gi-bill-color.png" alt="Montgomery GI Bill"></a>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div>
+                                                                            <a href="javascript:;" data-jump-index="4"><img src="{{ page.path }}/_images/wizard/education-benefits/logos-large-reap-color.png" alt="REAP Chapter 1607"></a>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </menu>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-step="2">
+                                                    <div class="wrapper">
+                                                        <figure>
+                                                            <img src="{{ page.path }}/_images/wizard/education-benefits/logos-large-post911-gi-bill-color.png" alt="Post 9/11 GI Bill">
+                                                        </figure>
+
+                                                        <div class="content">
+                                                            <h2>The Post 9/11 GI Bill</h2>
+                                                            <p>The Post-9/11 GI Bill offers benefits for service members and veterans attending education and training programs taken at accredited colleges or universities, or accredited non-college institutions that grant degrees. It gives current and previously activated National Guard and Reserve members the same benefits as active duty service members. Visit the VA Affairs website for additonal information.</p>
+                                                            <a href="http://www.gibill.va.gov/benefits/post_911_gibill/" class="button button-blue button-pointed right" target="_blank"><strong>Visit the Site &gt;</strong></a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-step="3">
+                                                    <div class="wrapper">
+                                                        <figure>
+                                                            <img src="{{ page.path }}/_images/wizard/education-benefits/logos-large-gi-bill-color.png" alt="Montgomery GI Bill">
+                                                        </figure>
+
+                                                        <div class="content">
+                                                            <h2>Montgomery GI Bill</h2>
+                                                            <p>Montgomery GI Bill (MGIB) benefits are available for service members and veterans to help with education and training costs by providing financial assistance and numerous support programs. Visit the VA Affairs website for more information.</p>
+                                                            <a href="http://www.gibill.va.gov/benefits/montgomery_gibill/" class="button button-blue button-pointed right" target="_blank"><strong>Visit the Site &gt;</strong></a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-step="4">
+                                                    <div class="wrapper">
+                                                        <figure>
+                                                            <img src="{{ page.path }}/_images/wizard/education-benefits/logos-large-reap-color.png" alt="REAP Chapter 1607">
+                                                        </figure>
+
+                                                        <div class="content">
+                                                            <h2>Reserve Education Assistance Program (REAP)</h2>
+                                                            <p>REAP (Chapter 1607) is an education program that provides up to 36 months of education benefits to members of the Selected Reserves, Individual Ready Reserve and National Guard called to active duty in response to a war or national emergency (contingency operation) as declared by the President or Congress. Visit the VA Affairs website for more information.</p>
+                                                            <a href="http://www.gibill.va.gov/benefits/other_programs/reap.html" class="button button-blue button-pointed right" target="_blank"><strong>Visit the Site &gt;</strong></a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ol>
+
+                                            <footer>
+                                                <nav>
+                                                    <a href="javascript:;" class="back">&lt; Back</a>
+                                                    <a href="javascript:;" class="next">Next &gt;</a>
+                                                </nav>
+                                            </footer>
+                                        </div>
+
+                                        <!-- national guard -->
+                                        <div class="section national-guard">
+                                            <ol>
+                                                <li data-step="1">
+                                                    <div class="wrapper">
+                                                        <div class="content full">
+                                                            <h3>National Guard</h3>
+                                                            <p>Choose one of the programs below to access benefits that pertain to your Military Status.</p>
+
+                                                            <menu>
+                                                                <ul class="statuses">
+                                                                    <li>
+                                                                        <div>
+                                                                            <a href="javascript:;" data-jump-index="2"><img src="{{ page.path }}/_images/wizard/education-benefits/logos-large-ang-color.png" alt="Air National Guard"></a>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div>
+                                                                            <a href="javascript:;" data-jump-index="3"><img src="{{ page.path }}/_images/wizard/education-benefits/logos-large-post911-gi-bill-color.png" alt="Post 9/11 GI Bill"></a>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </menu>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-step="2">
+                                                    <div class="wrapper">
+                                                        <figure>
+                                                            <img src="{{ page.path }}/_images/wizard/education-benefits/logos-large-ang-color.png" alt="Air National Guard">
+                                                        </figure>
+
+                                                        <div class="content">
+                                                            <h2>Air National Guard Tuition Assistance</h2>
+                                                            <p>Air National Guard Tuition Assistance is a program that provides tuition assistance for courses taken by activated Guard and Reserve members. Visit the Air National Guard website for more information.</p>
+                                                            <a href="http://goang.com/Benefits/Benefits" class="button button-blue button-pointed right" target="_blank"><strong>Visit the Site &gt;</strong></a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-step="3">
+                                                    <div class="wrapper">
+                                                        <figure>
+                                                            <img src="{{ page.path }}/_images/wizard/education-benefits/logos-large-post911-gi-bill-color.png" alt="Post 9/11 GI Bill">
+                                                        </figure>
+
+                                                        <div class="content">
+                                                            <h2>The Post 9/11 GI Bill</h2>
+                                                            <p>The Post-9/11 GI Bill offers benefits for service members and veterans attending education and training programs taken at accredited colleges or universities, or accredited non-college institutions that grant degrees. It gives current and previously activated National Guard and Reserve members the same benefits as active duty service members. Visit the VA Affairs website for additonal information.</p>
+                                                            <a href="http://www.gibill.va.gov/benefits/post_911_gibill/" class="button button-blue button-pointed right" target="_blank"><strong>Visit the Site &gt;</strong></a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ol>
+
+                                            <footer>
+                                                <nav>
+                                                    <a href="javascript:;" class="back">&lt; Back</a>
+                                                    <a href="javascript:;" class="next">Next &gt;</a>
+                                                </nav>
+                                            </footer>
+                                        </div>
+
+                                        <!-- veap -->
+                                        <div class="section national-guard">
+                                            <ol>
+                                                <li data-step="1">
+                                                    <div class="wrapper">
+                                                        <div class="content full">
+                                                            <h3>Veteran's Educational Assistance Program (VEAP)</h3>
+                                                            <p>Choose one of the programs below to access benefits that pertain to your Military Status.</p>
+
+                                                            <menu>
+                                                                <ul class="statuses">
+                                                                    <li>
+                                                                        <div>
+                                                                            <a href="javascript:;" data-jump-index="2"><img src="{{ page.path }}/_images/wizard/education-benefits/logos-large-veap-color.png" alt="Veteran's Educational Assistance Program (VEAP)"></a>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </menu>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-step="2">
+                                                    <div class="wrapper">
+                                                        <figure>
+                                                            <img src="{{ page.path }}/_images/wizard/education-benefits/logos-large-veap-color.png" alt="Veteran's Educational Assistance Program (VEAP)">
+                                                        </figure>
+
+                                                        <div class="content">
+                                                            <h2>Veteran's Educational Assistance Program (VEAP)</h2>
+                                                            <p>The Veterans' Educational Assistance Program (VEAP) is an educational assistance program that is available if you elect to make contributions from your military pay, to which the government matches. Visit the VA Affairs website for more information.</p>
+                                                            <a href="http://www.gibill.va.gov/benefits/other_programs/veap.html" class="button button-blue button-pointed right" target="_blank"><strong>Visit the Site &gt;</strong></a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ol>
+
+                                            <footer>
+                                                <nav>
+                                                    <a href="javascript:;" class="back">&lt; Back</a>
+                                                    <a href="javascript:;" class="next">Next &gt;</a>
+                                                </nav>
+                                            </footer>
+                                        </div>
+                                    </div>
+
+                                    <!-- college credit alternatives -->
+                                    <div class="subject option-college-credit-alternatives">
+                                        <div class="intro">
+                                            <div class="wrapper">
+                                                <div class="content full">
+                                                    <h3>College Credit Alternatives</h3>
+                                                    <p>Is it possible to get college credit without taking a class? The answer is yes! If you are a military member searching for no or low cost alternatives to gaining college credit while pursuing your degree, then visit the DANTES website for information about resources available to you.</p>
+                                                    <a href="#" class="button button-blue button-pointed right" target="_blank"><strong>Visit the Site &gt;</strong></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <footer>
+                                    <p>&copy; DANTES 2014. All Rights Reserved.</p>
+                                    <menu>
+                                        <ul>
+                                            <li class="print"><a href="javascript:;" target="_blank"><strong>Print</strong></a></li>
+                                            <li class="email" data-email-template="act"><a href="javascript:;" class="addthis_button_email" addthis:url="http://www.dantes.doded.mil/_content/examinations/DANTES_examwizard_ACT.pdf" addthis:var_examname="ACT" addthis:title="More information about the ACT examination from the DANTES website."><strong>E-mail</strong></a></li>
+                                            <li class="email" data-email-template="sat"><a href="javascript:;" class="addthis_button_email" addthis:url="http://www.dantes.doded.mil/_content/examinations/DANTES_examwizard_SAT.pdf" addthis:var_examname="SAT" addthis:title="More information about the SAT examination from the DANTES website."><strong>E-mail</strong></a></li>
+                                            <li class="email" data-email-template="gre"><a href="javascript:;" class="addthis_button_email" addthis:url="http://www.dantes.doded.mil/_content/examinations/DANTES_examwizard_GRE.pdf" addthis:var_examname="GRE" addthis:title="More information about the GRE examination from the DANTES website."><strong>E-mail</strong></a></li>
+                                            <li class="email" data-email-template="gmat"><a href="javascript:;" class="addthis_button_email" addthis:url="http://www.dantes.doded.mil/_content/examinations/DANTES_examwizard_GMAT.pdf" addthis:var_examname="GMAT" addthis:title="More information about the GMAT examination from the DANTES website."><strong>E-mail</strong></a></li>
+                                            <li class="email" data-email-template="lsat"><a href="javascript:;" class="addthis_button_email" addthis:url="http://www.dantes.doded.mil/_content/examinations/DANTES_examwizard_LSAT.pdf" addthis:var_examname="LSAT" addthis:title="More information about the LSAT examination from the DANTES website."><strong>E-mail</strong></a></li>
+                                            <li class="email" data-email-template="praxis"><a href="javascript:;" class="addthis_button_email" addthis:url="http://www.dantes.doded.mil/_content/examinations/DANTES_examwizard_PRAXIS.pdf" addthis:var_examname="PRAXIS" addthis:title="More information about the PRAXIS examination from the DANTES website."><strong>E-mail</strong></a></li>
+                                            <li class="email" data-email-template="ged"><a href="javascript:;" class="addthis_button_email" addthis:url="http://www.dantes.doded.mil/_content/examinations/DANTES_examwizard_GED.pdf" addthis:var_examname="GED" addthis:title="More information about the GED examination from the DANTES website."><strong>E-mail</strong></a></li>
+                                            <li class="email" data-email-template="clep"><a href="javascript:;" class="addthis_button_email" addthis:url="http://www.dantes.doded.mil/_content/examinations/DANTES_examwizard_CLEP.pdf" addthis:var_examname="CLEP" addthis:title="More information about the CLEP examination from the DANTES website."><strong>E-mail</strong></a></li>
+                                            <li class="email" data-email-template="dsst"><a href="javascript:;" class="addthis_button_email" addthis:url="http://www.dantes.doded.mil/_content/examinations/DANTES_examwizard_DSST.pdf" addthis:var_examname="DSST" addthis:title="More information about the DSST examination from the DANTES website."><strong>E-mail</strong></a></li>
+                                            <li class="share"><a href="javascript:;" class="addthis_button_compact"><strong>Share</strong></a></li>
+                                        </ul>
+                                    </menu>
+                                </footer>
+                            </div>
+
+                            <hr />
+
+                            <h2>Resources</h2>
+
+                            <div class="row">
+                                <br>
+
+                                <div class="four columns">
+                                    <div class="feature-box feature-box-short feature-box-logo">
+                                        <div>
+                                            <figure style="background-image: url({{ page.path }}/_images/elements/feature-service_members-college_credit-logo-cbe.png);"></figure>
+                                            <figcaption>
+                                                <a href="#" data-link-type="local">
+                                                    &nbsp;
+                                                </a>
                                             </figcaption>
                                         </div>
                                     </div>
-                                    <p class="flush">
-                                        Learn more about the Joint Services Transcript (JST), certified by the American Council on Education (ACE), which replaces traditional transcripts.
-                                    </p>
                                 </div>
-                            </menu>
+                                <div class="eight columns">
+                                    <p>
+                                        <strong>Credit-by-Exam</strong><br>
+                                        Credit by examination opportunities available: College-Level Examination Program (CLEP®) and DSST®.
+                                    </p>
+
+                                    <a class="button button-grey button-icon-arrow-right" href="{{ page.path }}/_content/FY13_DSST_Pass_Rates.pdf#zoom=100" data-document-warning="true" target="_blank" data-link-type="local"><strong>Download PDF FY13 Military DSST Pass Rates</strong></a>
+                                    <br />
+                                    <a class="button button-grey button-icon-arrow-right" href="{{ page.path }}/_content/FY13_CLEP_Pass_Rates.pdf#zoom=100" data-document-warning="true" target="_blank" data-link-type="local"><strong>Download PDF FY13 Military CLEP Pass Rates</strong></a>
+                                    <br />
+                                    <a class="button button-grey button-icon-arrow-right" href="{{ page.path }}/_content/FY13_DSST_Civilian_Pass_Rates.pdf#zoom=100" data-document-warning="true" target="_blank" data-link-type="local"><strong>Download PDF FY13 Civilian DSST Pass Rates</strong></a>
+                                    <br />
+                                    <a class="button button-grey button-icon-arrow-right" href="{{ page.path }}/_content/FY13_CLEP_Civilian_Pass_Rates.pdf#zoom=100" data-document-warning="true" target="_blank" data-link-type="local"><strong>Download PDF FY13 Civilian CLEP Pass Rates</strong></a>
+                                </div>
+                            </div>
                         </div>
                         {% include aside.quicklinks.generic.html %}
                     </div>

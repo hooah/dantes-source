@@ -4193,7 +4193,7 @@ body #container > article.has-sidebar > section > .content .wizard.wizard-examin
                 content: ""; }
           body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li.degree-graduate > a, body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li.testing > a {
             border-right: none; }
-          body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li.degree-fouryear-nodegree > a, body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li.degree-law > a, body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li.testing > a {
+          body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li.degree-fouryear-nodiploma > a, body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li.degree-law > a, body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li.testing > a {
             border-bottom: none; }
           body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li.degree-fouryear > a > strong:before {
             background-position: -122px -252px; }
@@ -4213,11 +4213,11 @@ body #container > article.has-sidebar > section > .content .wizard.wizard-examin
             background-image: url(../_images/wizard/examinations/bg-grid-graduate.jpg); }
             body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li.degree-graduate > a:hover > strong:before {
               background-position: -190px -63px; }
-          body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li.degree-fouryear-nodegree > a > strong:before {
+          body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li.degree-fouryear-nodiploma > a > strong:before {
             background-position: -122px 0px; }
-          body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li.degree-fouryear-nodegree > a:hover {
+          body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li.degree-fouryear-nodiploma > a:hover {
             background-image: url(../_images/wizard/examinations/bg-grid-ged.jpg); }
-            body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li.degree-fouryear-nodegree > a:hover > strong:before {
+            body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li.degree-fouryear-nodiploma > a:hover > strong:before {
               background-position: -190px 0px; }
           body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li.degree-law > a > strong:before {
             background-position: -122px -126px; }
@@ -4873,6 +4873,410 @@ body #container > article.has-sidebar > section > .content .wizard.wizard-distan
               font-size: 15px; }
       body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.finale > section .feature-box.feature-box-preset.service_members-prep_for_college figure {
         background-position: right -36px; }
+
+body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits {
+  margin-top: 150px; }
+  body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > header > section > h1 {
+    width: 65%;
+    margin-top: 20px;
+    margin-right: 25px; }
+  body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > header > section > h2 {
+    width: 60%;
+    margin-right: 25px; }
+  body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > header > section:after {
+    display: block;
+    position: absolute;
+    left: 25px;
+    bottom: -55px;
+    width: 275px;
+    height: 312px;
+    background-image: url(../_images/wizard/education-benefits/header-dantes-rep.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    content: ""; }
+  body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > header > nav > ul > li.sections {
+    border: none; }
+    body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > header > nav > ul > li.sections > ol {
+      display: none;
+      position: absolute;
+      top: 40px;
+      right: 0px;
+      margin: 0px;
+      padding: 0px;
+      white-space: nowrap;
+      font-size: 0;
+      line-height: 0; }
+      body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > header > nav > ul > li.sections > ol.chosen {
+        display: block; }
+      body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > header > nav > ul > li.sections > ol:before {
+        display: block;
+        position: absolute;
+        left: -180px;
+        height: 35px;
+        color: #727272;
+        font-size: 10px;
+        line-height: 35px;
+        content: "Choose from the following options:";
+        white-space: nowrap; }
+      body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > header > nav > ul > li.sections > ol.option-student-loans:before, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > header > nav > ul > li.sections > ol.option-college-credit-alternatives:before {
+        display: none;
+        content: ""; }
+      body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > header > nav > ul > li.sections > ol > li {
+        display: inline-block;
+        float: none;
+        height: 35px;
+        margin: 0px;
+        padding: 0px;
+        border-right: 1px #bbbbbb solid;
+        list-style: none; }
+        body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > header > nav > ul > li.sections > ol > li:first-child {
+          border-left: 1px #bbbbbb solid; }
+        body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > header > nav > ul > li.sections > ol > li > a {
+          display: block;
+          position: relative;
+          height: 35px;
+          width: 47px;
+          padding: 0px;
+          color: #3a3d9d;
+          text-decoration: none;
+          font-size: 12px;
+          line-height: 35px;
+          text-transform: uppercase;
+          font-weight: 600;
+          text-align: center; }
+          body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > header > nav > ul > li.sections > ol > li > a:hover {
+            text-decoration: underline; }
+        body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > header > nav > ul > li.sections > ol > li.selected > a {
+          background-image: url(../_images/wizard/education-benefits/bg-nav-secondary-selected.png);
+          background-repeat: no-repeat;
+          background-position: 0px 0px;
+          background-size: 100%;
+          color: #fff;
+          text-decoration: none; }
+          body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > header > nav > ul > li.sections > ol > li.selected > a:after {
+            display: block;
+            position: absolute;
+            bottom: -8px;
+            left: 0px;
+            width: 100%;
+            height: 8px;
+            background-image: url(../_images/wizard/education-benefits/bg-nav-secondary-selected.png);
+            background-repeat: no-repeat;
+            background-position: bottom center;
+            background-size: 100% 43px;
+            content: ""; }
+  body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > header > nav:before {
+    display: block;
+    clear: both;
+    position: absolute;
+    top: 41px;
+    width: 100%;
+    height: 35px;
+    background-image: url(../_images/wizard/bg-nav-secondary.png);
+    background-repeat: repeat-x;
+    background-position: 0px 0px;
+    content: ""; }
+  body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section {
+    padding-top: 35px;
+    background: #e8e7e7;
+    background: -moz-linear-gradient(top, #e8e7e7 0%, white 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e8e7e7), color-stop(100%, white));
+    background: -webkit-linear-gradient(top, #e8e7e7 0%, white 100%);
+    background: -o-linear-gradient(top, #e8e7e7 0%, white 100%);
+    background: -ms-linear-gradient(top, #e8e7e7 0%, white 100%);
+    background: linear-gradient(to bottom, #e8e7e7 0%, white 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e8e7e7', endColorstr='#ffffff',GradientType=0 ); }
+    body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .grid {
+      overflow: hidden; }
+      body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .grid > ol {
+        display: block;
+        margin: 0px;
+        padding: 0px;
+        list-style: none; }
+        body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .grid > ol > li {
+          display: block;
+          float: left;
+          width: 50%;
+          height: 230px;
+          margin: 0px;
+          padding: 0px;
+          background-color: #fff;
+          list-style: none; }
+          body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .grid > ol > li > a {
+            display: table;
+            width: 100%;
+            height: 100%;
+            border-right: 1px #c7c7c7 solid;
+            border-bottom: 1px #c7c7c7 solid;
+            -webkit-box-shadow: -2px -2px 2px rgba(0, 0, 0, 0.05) inset;
+            -moz-box-shadow: -2px -2px 2px rgba(0, 0, 0, 0.05) inset;
+            box-shadow: -2px -2px 2px rgba(0, 0, 0, 0.05) inset;
+            text-decoration: none; }
+            body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .grid > ol > li > a > strong {
+              display: table-cell;
+              width: 100%;
+              height: 100%;
+              padding: 0px 50px;
+              font-size: 24px;
+              font-family: "Open Sans", sans-serif;
+              font-weight: 800;
+              color: #000;
+              text-shadow: 1px 0px 0px rgba(255, 255, 255, 0.9);
+              text-align: center;
+              vertical-align: middle; }
+            body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .grid > ol > li > a:hover {
+              background-repeat: no-repeat;
+              background-size: 100% 100%; }
+              body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .grid > ol > li > a:hover > strong {
+                color: #e08c29; }
+          body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .grid > ol > li.option-va-benefits > a, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .grid > ol > li.option-college-credit-alternatives > a {
+            border-right: none; }
+          body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .grid > ol > li.option-student-loans > a, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .grid > ol > li.option-college-credit-alternatives > a {
+            border-bottom: none; }
+          body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .grid > ol > li.option-financial-assistance > a {
+            background-image: url(../_images/wizard/education-benefits/bg-grid-financial-assistance-color.jpg); }
+            body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .grid > ol > li.option-financial-assistance > a:hover {
+              background-image: url(../_images/wizard/education-benefits/bg-grid-financial-assistance.jpg); }
+          body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .grid > ol > li.option-va-benefits > a {
+            background-image: url(../_images/wizard/education-benefits/bg-grid-va-benefits-color.jpg); }
+            body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .grid > ol > li.option-va-benefits > a:hover {
+              background-image: url(../_images/wizard/education-benefits/bg-grid-va-benefits.jpg); }
+          body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .grid > ol > li.option-student-loans > a {
+            background-image: url(../_images/wizard/education-benefits/bg-grid-student-loans-color.jpg); }
+            body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .grid > ol > li.option-student-loans > a:hover {
+              background-image: url(../_images/wizard/education-benefits/bg-grid-student-loans.jpg); }
+          body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .grid > ol > li.option-college-credit-alternatives > a {
+            background-image: url(../_images/wizard/education-benefits/bg-grid-college-credit-alternatives-color.jpg); }
+            body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .grid > ol > li.option-college-credit-alternatives > a:hover {
+              background-image: url(../_images/wizard/education-benefits/bg-grid-college-credit-alternatives.jpg); }
+    body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject {
+      display: none;
+      padding: 0px;
+      position: relative;
+      height: 470px;
+      min-height: 470px; }
+    body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .intro, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section {
+      display: block;
+      position: absolute;
+      overflow: hidden;
+      visibility: hidden;
+      height: 0px;
+      opacity: 0;
+      -webkit-transition: opacity 0.65s ease-out, -webkit-transform 0.65s ease-out;
+      -moz-transition: opacity 0.65s ease-out, -moz-transform 0.65s ease-out;
+      -ms-transition: opacity 0.65s ease-out, -ms-transform 0.65s ease-out;
+      transition: opacity 0.65s ease-out, transform 0.65s ease-out;
+      -webkit-transform: scale(1.25);
+      -moz-transform: scale(1.25);
+      -ms-transform: scale(1.25);
+      transform: scale(1.25); }
+      body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .intro.enabled, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section.enabled {
+        visibility: visible;
+        height: 100%;
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1); }
+    body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .intro .wrapper, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section .wrapper {
+      height: auto;
+      margin: 0px 50px; }
+      body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .intro .wrapper > .content, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section .wrapper > .content {
+        position: relative;
+        height: 100%; }
+        body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .intro .wrapper > .content.full, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section .wrapper > .content.full {
+          width: 100%;
+          vertical-align: middle;
+          text-align: center; }
+        body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .intro .wrapper > .content h2, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section .wrapper > .content h2 {
+          display: block;
+          margin: 0px;
+          padding: 0px 0px 17px 0px;
+          font-family: "Open Sans", sans-serif;
+          color: #727272;
+          font-weight: 800;
+          font-size: 18px;
+          line-height: 18px;
+          text-shadow: none; }
+        body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .intro .wrapper > .content h3, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section .wrapper > .content h3 {
+          display: block;
+          margin: 0px;
+          padding: 46px 0px 44px 0px;
+          font-family: "Open Sans", sans-serif;
+          color: #272793;
+          font-weight: 800;
+          font-size: 18px;
+          line-height: 18px;
+          text-shadow: none;
+          text-align: center; }
+        body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .intro .wrapper > .content h6, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section .wrapper > .content h6 {
+          display: block;
+          margin: 0px;
+          padding: 33px 0px 0px 0px;
+          text-align: center;
+          font-family: "Open Sans", sans-serif;
+          color: #727272;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 16px;
+          text-shadow: none; }
+        body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .intro .wrapper > .content p, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section .wrapper > .content p {
+          font-size: 14px;
+          line-height: 18px;
+          font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida", sans-serif;
+          color: #727272;
+          text-align: justify; }
+        body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .intro .wrapper > .content > menu, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section .wrapper > .content > menu {
+          position: absolute;
+          width: 100%;
+          bottom: 0px; }
+          body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .intro .wrapper > .content > menu ul.programs, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section .wrapper > .content > menu ul.programs {
+            display: block;
+            margin: 20px 0px 0px 0px;
+            padding: 0px 0px 35px 0px;
+            list-style: none;
+            text-align: center; }
+            body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .intro .wrapper > .content > menu ul.programs > li, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section .wrapper > .content > menu ul.programs > li {
+              display: inline-block;
+              margin: 0px 35px;
+              padding: 0px;
+              width: 202px;
+              height: 120px;
+              border: 1px #a7a7a7 solid;
+              background-color: #f9f9f9;
+              -webkit-border-radius: 10px;
+              -moz-border-radius: 10px;
+              -ms-border-radius: 10px;
+              -o-border-radius: 10px;
+              border-radius: 10px;
+              -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1) inset;
+              -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1) inset;
+              box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1) inset; }
+              body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .intro .wrapper > .content > menu ul.programs > li > div, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section .wrapper > .content > menu ul.programs > li > div {
+                display: table;
+                width: 100%;
+                height: 100%; }
+                body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .intro .wrapper > .content > menu ul.programs > li > div > a, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section .wrapper > .content > menu ul.programs > li > div > a {
+                  display: table-cell;
+                  width: 100%;
+                  height: 100%;
+                  padding: 0px 10px;
+                  text-align: center;
+                  vertical-align: middle;
+                  text-decoration: none; }
+    body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .intro {
+      height: 100%; }
+      body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .intro .wrapper {
+        height: 100%; }
+        body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .intro .wrapper > figure > img {
+          width: auto;
+          max-width: none; }
+        body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .intro .wrapper > .content {
+          vertical-align: top; }
+    body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section {
+      width: 100%; }
+      body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > ol {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        list-style: none; }
+        body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > ol > li {
+          visibility: hidden;
+          opacity: 0;
+          position: absolute;
+          width: 100%;
+          height: 0px;
+          margin: 0px;
+          padding: 0px;
+          list-style: none;
+          -webkit-transition: opacity 0.65s ease-out, visibility 0.65s ease-out;
+          -moz-transition: opacity 0.65s ease-out, visibility 0.65s ease-out;
+          -ms-transition: opacity 0.65s ease-out, visibility 0.65s ease-out;
+          transition: opacity 0.65s ease-out, visibility 0.65s ease-out; }
+          body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > ol > li.enabled {
+            visibility: visible;
+            opacity: 1;
+            height: 100%; }
+          body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > ol > li .wrapper {
+            display: table;
+            width: 100%;
+            margin: 0px;
+            padding: 0px 50px; }
+            body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > ol > li .wrapper > figure {
+              display: table-cell;
+              width: 20%;
+              padding-top: 35px;
+              padding-right: 4%;
+              text-align: center;
+              vertical-align: top; }
+            body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > ol > li .wrapper .content {
+              display: table-cell;
+              width: 80%;
+              padding-top: 35px;
+              vertical-align: top; }
+              body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > ol > li .wrapper .content a {
+                color: #272793;
+                text-decoration: none; }
+                body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > ol > li .wrapper .content a:hover {
+                  color: #272793;
+                  text-decoration: underline; }
+              body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > ol > li .wrapper .content ol, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > ol > li .wrapper .content ul {
+                margin-bottom: 17px; }
+                body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > ol > li .wrapper .content ol > li, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > ol > li .wrapper .content ul > li {
+                  margin-bottom: 10px;
+                  font-size: 14px;
+                  line-height: 18px;
+                  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida", sans-serif;
+                  color: #727272; }
+      body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > footer {
+        display: block;
+        position: absolute;
+        bottom: 35px;
+        width: 100%;
+        height: 70px;
+        clear: both; }
+        body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > footer > nav {
+          display: block;
+          float: left;
+          clear: none;
+          width: 35%;
+          margin: 0px;
+          padding: 0px;
+          text-align: center; }
+          body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > footer > nav > a {
+            display: inline-block;
+            position: relative;
+            width: 78px;
+            height: 32px;
+            background-image: url(../_images/sprites-wizard.png);
+            background-repeat: no-repeat;
+            text-decoration: none;
+            cursor: pointer;
+            font-size: 12px;
+            line-height: 30px;
+            color: #ddd;
+            font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida", sans-serif;
+            text-transform: uppercase;
+            font-weight: normal; }
+            body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > footer > nav > a.back {
+              margin-right: -10px;
+              background-position: 0px -415px;
+              text-align: left;
+              text-indent: 11px; }
+            body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > footer > nav > a.next {
+              margin-left: -10px;
+              background-position: 0px -373px;
+              text-align: left;
+              text-indent: 21px; }
+            body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > footer > nav > a:hover {
+              color: #fff; }
+            body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > footer > nav > a.disabled {
+              opacity: 0.7;
+              color: #62668a;
+              cursor: default; }
 
 /* Vendor imports */
 .wufoo {
