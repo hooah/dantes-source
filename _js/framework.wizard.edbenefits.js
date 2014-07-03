@@ -99,13 +99,13 @@ framework.wizard.edbenefits = {
 
                     jQuery('>div.' + strSection + '>ol>li', objSection).removeClass('enabled');
                     jQuery('>div.' + strSection + '>ol>li[data-step="' + intJumpIndex + '"]', objSection).addClass('enabled');
-                    jQuery('>div.' + strSection + '>footer>nav>a.next', objSection).removeClass('disabled');
-                    jQuery('>div.' + strSection + '>footer>nav>a.back', objSection).addClass('disabled');
 
                     jQuery(objSection).parent('section').attr('class', strParentSection + ' ' + strSection);
 
                     jQuery('>div.intro', objSection).removeClass('enabled');
                     jQuery('>div.' + strSection, objSection).addClass('enabled');
+
+                    framework.wizard.edbenefits.fn.toggle_control_states();
                 }
             }
         },
@@ -114,7 +114,6 @@ framework.wizard.edbenefits = {
             var objPages            = jQuery('>section>.subject.selected>.section.enabled>ol', framework.wizard.edbenefits.data.container);
 
             if ((objPages) && (!isNaN(intTargetPage)) && (intTargetPage > 0)) {
-                var objControls         = objPages.siblings('footer').find('nav');
                 var objPage             = jQuery('>li:eq(' + (intTargetPage - 1) + ')', objPages);
 
                 if (objPage) {
@@ -124,21 +123,27 @@ framework.wizard.edbenefits = {
 
                     if (objPage.attr('data-set-nav-by-index')) {
                         jQuery('>header>nav>ul>li.sections>ol>li', framework.wizard.edbenefits.data.container).removeClass('selected');
-                        jQuery('>header>nav>ul>li.sections>ol>li>a[data-subsection-index="' + (intTargetPage - 1) + '"]', framework.wizard.edbenefits.data.container).parent('li').addClass('selected');
+                        jQuery('>header>nav>ul>li.sections>ol>li>a[data-subsection-index="' + intTargetPage + '"]', framework.wizard.edbenefits.data.container).parent('li').addClass('selected');
                     }
 
                     framework.wizard.edbenefits.data.navigation.current_page        = intTargetPage;
+                    framework.wizard.edbenefits.fn.toggle_control_states();
+                }
+            }
+        },
 
-                    if (objControls) {
-                        // control status of next/back buttons
-                        objControls.find('a').removeClass('disabled');
+        toggle_control_states: function() {
+            var objPages            = jQuery('>section>.subject.selected>.section.enabled>ol', framework.wizard.edbenefits.data.container);
+            var objControls         = objPages.siblings('footer').find('nav');
 
-                        if (intTargetPage === jQuery('>li', objPages).length) {
-                            objControls.find('a.next').addClass('disabled');
-                        } else if (intTargetPage === 1) {
-                            objControls.find('a.back').addClass('disabled');
-                        }
-                    }
+            if ((objPages) && (objControls)) {
+                // control status of next/back buttons
+                objControls.find('a').removeClass('disabled');
+
+                if (framework.wizard.edbenefits.data.navigation.current_page === jQuery('>li', objPages).length) {
+                    objControls.find('a.next').addClass('disabled');
+                } else if (framework.wizard.edbenefits.data.navigation.current_page === 1) {
+                    objControls.find('a.back').addClass('disabled');
                 }
             }
         },

@@ -4815,7 +4815,7 @@ body #container > article.has-sidebar > section > .content .wizard.wizard-distan
                 body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.results > section > ol > li > ol > li .controls .illustration {
                   width: 100%;
                   margin-bottom: 10px;
-                  font-size: 15px;
+                  font-size: 12px;
                   line-height: 30px;
                   font-weight: bold;
                   text-transform: uppercase; }
@@ -4839,8 +4839,7 @@ body #container > article.has-sidebar > section > .content .wizard.wizard-distan
                   body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.results > section > ol > li > ol > li .ready .controls .illustration:before {
                     background-position: -258px -134px; }
                 body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.results > section > ol > li > ol > li .almost-ready .controls .illustration {
-                  color: #e9a624;
-                  line-height: 15px; }
+                  color: #e9a624; }
                   body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.results > section > ol > li > ol > li .almost-ready .controls .illustration:before {
                     background-position: -258px -174px; }
                 body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div.results > section > ol > li > ol > li .not-ready .controls .illustration {
@@ -5015,7 +5014,7 @@ body #container > article.has-sidebar > section > .content .wizard.wizard-educat
         content: ""; }
       body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > header > nav > ul > li.sections > ol.option-financial-assistance > li > a, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > header > nav > ul > li.sections > ol.option-va-benefits > li > a {
         width: auto;
-        padding: 0px 7px;
+        padding: 0px 9px;
         text-transform: none; }
   body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > header > nav:before {
     display: block;

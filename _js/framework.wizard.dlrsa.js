@@ -526,17 +526,17 @@ framework.wizard.dlrsa = {
                         switch (true) {
                             case (framework.wizard.dlrsa.data.dataset.questions[intCounter].choices[intAnswerValue].points > 0) :
                                 strResultStatusClass                = 'ready';
-                                strResultStatusText                 = 'Ready';
+                                strResultStatusText                 = 'Ideal';
                                 break;
 
                             case (framework.wizard.dlrsa.data.dataset.questions[intCounter].choices[intAnswerValue].points === 0) :
                                 strResultStatusClass                = 'almost-ready';
-                                strResultStatusText                 = 'Almost Ready';
+                                strResultStatusText                 = 'Supportive';
                                 break;
 
                             case (framework.wizard.dlrsa.data.dataset.questions[intCounter].choices[intAnswerValue].points < 0) :
                                 strResultStatusClass                = 'not-ready';
-                                strResultStatusText                 = 'Not Ready';
+                                strResultStatusText                 = 'Conditional';
                                 break;
                         }
 
@@ -581,17 +581,17 @@ framework.wizard.dlrsa = {
                     switch (true) {
                         case (framework.wizard.dlrsa.data.dataset.questions[intIndex].choices[intAnswerValue].points > 0) :
                             strResultStatusClass                = 'ready';
-                            strResultStatusText                 = 'Ready';
+                            strResultStatusText                 = 'Ideal';
                             break;
 
                         case (framework.wizard.dlrsa.data.dataset.questions[intIndex].choices[intAnswerValue].points === 0) :
                             strResultStatusClass                = 'almost-ready';
-                            strResultStatusText                 = 'Almost Ready';
+                            strResultStatusText                 = 'Supportive';
                             break;
 
                         case (framework.wizard.dlrsa.data.dataset.questions[intIndex].choices[intAnswerValue].points < 0) :
                             strResultStatusClass                = 'not-ready';
-                            strResultStatusText                 = 'Not Ready';
+                            strResultStatusText                 = 'Conditional';
                             break;
                     }
 

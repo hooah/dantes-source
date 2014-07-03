@@ -1,8 +1,8 @@
 framework.wizard.dlrsa.data.dataset = {
     "statuses": [
-        {"title": "Ready", "status": 1, "class": "ready"},
-        {"title": "Almost Ready", "status": 0, "class": "almost-ready"},
-        {"title": "Not Ready", "status": -1, "class": "not-ready"}
+        {"title": "Ideal", "status": 1, "class": "ready"},
+        {"title": "Supportive", "status": 0, "class": "almost-ready"},
+        {"title": "Conditional", "status": -1, "class": "not-ready"}
     ],
     "categories": [
         {
