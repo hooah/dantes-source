@@ -73,6 +73,7 @@ framework.wizard.exam = {
 
             var strSection          = jQuery(this).attr('data-section');
             var strParentSection    = jQuery('>header>nav>ul>li.sections>ol.chosen', framework.wizard.exam.data.container).attr('data-section');
+            var intContentHeight;
 
             if ((strSection.length) && (strParentSection.length)) {
                 jQuery('>header>nav>ul>li.sections>ol>li', framework.wizard.exam.data.container).removeClass('selected');
@@ -105,6 +106,15 @@ framework.wizard.exam = {
 
                     jQuery(objSection).parent('section').attr('class', strParentSection + ' ' + strSection);
 
+                    intContentHeight            = jQuery('>div.' + strSection + '>ol>li[data-step="1"] .content', objSection).height();
+                    console.log(intContentHeight, jQuery(objSection));
+
+                    if (intContentHeight >= 300) {
+                        jQuery(objSection).height((intContentHeight + 200) + 'px');
+                    } else {
+                        jQuery(objSection).height('auto');
+                    }
+
                     jQuery('>div.intro', objSection).removeClass('enabled');
                     jQuery('>div.' + strSection, objSection).addClass('enabled');
                 }
@@ -117,6 +127,8 @@ framework.wizard.exam = {
             var intPageNum          = parseInt(jQuery(this).attr('data-step'));
             var objController       = jQuery(this).parent('li').parent('ol');
             var objPages            = jQuery(this).parents('.section').find('>ol');
+            var objSection          = jQuery(this).parents('.section').parent('.subject');
+            var intContentHeight;
 
             if ((!jQuery(this).parent('li').hasClass('selected')) && (objController) && (objPages) && (!isNaN(intPageNum)) && (intPageNum > 0)) {
                 jQuery('>li', objController).removeClass('selected');
@@ -124,6 +136,15 @@ framework.wizard.exam = {
 
                 jQuery('>li', objPages).removeClass('enabled');
                 jQuery('>li:eq(' + (intPageNum - 1) + ')', objPages).addClass('enabled');
+
+                intContentHeight        = jQuery('>li:eq(' + (intPageNum - 1) + ') .content', objPages).height();
+
+                if (intContentHeight >= 300) {
+                    jQuery(objSection).height((intContentHeight + 200) + 'px');
+                } else {
+                    jQuery(objSection).height('auto');
+                }
+
                 jQuery(objController).attr('class', 'step-' + intPageNum);
 
                 // control status of next/back buttons
