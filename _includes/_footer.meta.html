@@ -1,0 +1,140 @@
+
+        <script src="http://www.youtube.com/iframe_api"></script>
+
+        <script src="{{ page.path }}/_js/vendor/jquery-1.10.2.min.js"></script>
+        <script src="{{ page.path }}/_js/vendor/fresco.js"></script>
+        <script src="{{ page.path }}/_js/vendor/foundation/jquery.foundation.accordion.js"></script>
+        <script src="{{ page.path }}/_js/vendor/foundation/jquery.foundation.reveal.js"></script>
+        <script src="{{ page.path }}/_js/vendor/chosen.jquery.min.js"></script>
+        <script src="{{ page.path }}/_js/vendor/jquery.scrollintoview.min.js"></script>
+        <script src="{{ page.path }}/_js/vendor/date.format.js"></script>
+        <script src="{{ page.path }}/_js/vendor/jquery.bp.scout.js"></script>
+
+        <!-- framework -->
+        <script src="{{ page.path }}/_js/framework.js"></script>
+        <script src="{{ page.path }}/_js/framework.init.js"></script>
+
+        {% if page.social.title == 'Search' %}
+        <!-- search -->
+        <script src="../_js/vendor/augment.min.js"></script>
+        <script src="../_js/vendor/fuse.js"></script>
+        <script src="../search-lunr.js"></script>
+        <script src="../_js/vendor/mustache.js"></script>
+
+        <script>
+            var dbName = 'documents';
+            var documentSearchEngine = new fullproof.BooleanEngine();
+
+            var index1 = {
+                name: 'normalindex',
+                analyzer: new fullproof.StandardAnalyzer(fullproof.normalizer.to_lowercase_nomark, fullproof.normalizer.remove_duplicate_letters),
+                capabilities: new fullproof.Capabilities().setUseScores(false).setDbName(dbName),
+                initializer: initializer
+            };
+            var index2 = {
+                name: 'stemmedindex',
+                analyzer: new fullproof.StandardAnalyzer(fullproof.normalizer.to_lowercase_nomark, fullproof.english.metaphone),
+                capabilities: new fullproof.Capabilities().setUseScores(false).setDbName(dbName),
+                initializer: initializer
+            };
+
+            function initializer(injector, callback) {
+                var synchro = fullproof.make_synchro_point(callback, lunr_index.entries.length);
+
+                for (var counter = 0; counter < lunr_index.entries.length; counter++) {
+                    var text = lunr_index.entries[counter].body;
+
+                    //console.log(text);
+
+                    injector.inject(text, counter, synchro);
+                }
+            }
+
+            function engineReady(status) {
+                console.log('engine status = ', status);
+            }
+
+            function search() {
+                var value = jQuery('input[type="text"]').val();
+
+                documentSearchEngine.lookup(value, function(resultset) {
+                    var result = '';
+
+                    if ((resultset) && (resultset.getSize())) {
+                        var rsize = resultset.getSize();
+
+                        console.log('Found ' + rsize + ' character(s) matching your request');
+
+                        resultset.forEach(function(e) {
+                            var c = lunr_index.entries[e];
+
+                            console.log('### ' + c.title + ' (' + c.desc + ')');
+                        });
+                    } else {
+                        console.log('No results found.');
+                    }
+                });
+            }
+
+            documentSearchEngine.open([index1, index2], fullproof.make_callback(engineReady, true), fullproof.make_callback(engineReady, false));
+
+            jQuery('input[type="text"]').bind('keyup', search);
+        </script>
+        {% endif %}
+        {% if page.social.title == 'Examinations' %}
+        <script src="{{ page.path }}/_js/framework.wizard.js"></script>
+        <script src="{{ page.path }}/_js/framework.wizard.exam.js"></script>
+
+        <!-- addthis -->
+        <script>var addthis_config = {"data_track_addressbar": false, "services_compact": "facebook,twitter,googleplus,pinterest,tumblr", "services_exclude": "email,print"};</script>
+        <script>var addthis_share = {"email_template": "dantes_examwizard", "email_vars": {"examname": ""}};</script>
+        <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51393b9372b05326"></script>
+        {% endif %}
+        {% if page.social.title == 'DANTES Distance Learning Readiness Self-Assessment (DLRSA)' %}
+        <script src="{{ page.path }}/_js/vendor/mustache.js"></script>
+        <script src="{{ page.path }}/_js/framework.wizard.js"></script>
+        <script src="{{ page.path }}/_js/framework.wizard.dlrsa.js"></script>
+        <script src="{{ page.path }}/_js/datasets/wizard.dlrsa.js"></script>
+
+        <!-- addthis -->
+        <script>var addthis_config = {"data_track_addressbar": false, "services_compact": "facebook,twitter,googleplus,pinterest,tumblr", "services_exclude": "email,print"};</script>
+        <script>var addthis_share = {"email_template": "dantes_dlrsawizard", "email_vars": {"results": ""}};</script>
+        <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51393b9372b05326"></script>
+        {% endif %}
+        {% if page.social.title == 'Education Benefits' %}
+        <script src="{{ page.path }}/_js/framework.wizard.js"></script>
+        <script src="{{ page.path }}/_js/framework.wizard.edbenefits.js"></script>
+
+        <!-- addthis -->
+        <script>var addthis_config = {"data_track_addressbar": false, "services_compact": "facebook,twitter,googleplus,pinterest,tumblr", "services_exclude": "email,print"};</script>
+        <script>var addthis_share = {"email_template": "dantes_edbenefitswizard"};</script>
+        <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51393b9372b05326"></script>
+        {% endif %}
+
+        <script>
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+        </script>
+        <script>
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+        <script type="text/javascript">
+            (function() {
+                var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                po.src = 'https://apis.google.com/js/platform.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+            })();
+        </script>
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-39129738-1');ga('send','pageview');
+        </script>

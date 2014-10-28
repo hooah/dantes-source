@@ -231,7 +231,7 @@
 							}
 						}
 
-                        .wizard.wizard-examination {
+                        & .wizard.wizard-examination {
                             & > header {
                                 & > section {
                                     &:after {
@@ -256,7 +256,64 @@
                                         }
                                     }
                                 }
+                            }
+                        }
+                        & .wizard.wizard-education-benefits {
+                            margin-top: 35px;
 
+                            & > header {
+                                & > section {
+                                    &:after {
+                                        left: 15px;
+                                        bottom: -25px;
+                                        width: 130px;
+                                        height: 147px;
+                                        background-size: 100% 100%;
+                                    }
+
+                                    & > h1 {
+                                        width: 75%;
+                                    }
+                                    & > h2 {
+                                        width: 70%;
+                                    }
+                                }
+                            }
+                        }
+                        & .wizard.wizard-distance-learning {
+                            margin-top: 50px;
+
+                            & > header {
+                                & > section {
+                                    &:after {
+                                        width: 180px;
+                                        height: 183px;
+                                        bottom: -41px;
+                                        background-size: 100% 100%;
+                                    }
+
+                                    & > h1 {
+                                        font-size: 26px;
+                                    }
+                                }
+                            }
+                        }
+                        & .wizard.wizard-examination,
+                        & .wizard.wizard-education-benefits {
+                            & > header {
+                                & > section {
+                                    & > h1 {
+                                        margin-top: 25px;
+                                        font-size: 21px;
+                                    }
+                                    & > h2 {
+                                        margin-top: 5px;
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+
+                            & > section {
                                 & .subject {
                                     height: 800px;
                                     min-height: 800px;
@@ -317,46 +374,23 @@
 					}
 				}
 			}
-		}
-	}
 
-	.feature-box {
-		&.feature-box-ribbon-caption {
-			& > div {
-				& > figcaption {
-					& > a {
-						& > strong {
-							padding-left: 10px;
-							padding-right: 10px;
-							font-size: 14px;
-							line-height: 47px;
-						}
-					}
-				}
-			}
-		}
-		
-		&.feature-box-preset {
-			&.home-service_members, 
-			&.home-educational_institutions, 
-			&.home-dantes_counselors, 
-			&.home-military_education_leadership {
-				& figcaption {
-					& > a {
-						& > strong {
-							padding: 0px;
-							width: 180px;
-							text-indent: 10px;
-						}
-					}
-				}
-			}
+            & > article {
+                & .slim-cta-banner {
+                    &.slim-cta-banner-preset-armed_forces {
+                        & > h2 {
+                            & > strong {
+                                font-size: 17px;
+                            }
+                        }
+                    }
+                }
+            }
 		}
 	}
 
     .multimedia-features {
         & .multimedia-feature-box {
-            float: none;
             max-width: 298px;
             margin-left: auto;
             margin-right: auto;
@@ -492,17 +526,111 @@
             & > article.has-sidebar {
                 & > section {
                     & > .content {
-                        .wizard.wizard-examination {
+                        & .wizard.wizard-distance-learning {
+                            margin-top: 50px;
+
                             & > header {
                                 & > section {
+                                    &:after {
+                                        width: 140px;
+                                        height: 142px;
+                                        bottom: -31px;
+                                    }
+
                                     & > h1 {
-                                        margin-top: 25px;
-                                        font-size: 22px;
+                                        width: 60%;
                                     }
-                                    & > h2 {
-                                        margin-top: 5px;
-                                        font-size: 12px;
+                                }
+                            }
+                            & > section {
+                                & > div {
+                                    & > section {
+                                        padding: 35px;
                                     }
+                                }
+                            }
+                        }
+                        & .wizard.wizard-examination,
+                        & .wizard.wizard-education-benefits {
+                            & > section {
+                                & .grid {
+                                    & > ol {
+                                        & > li {
+                                            & > a {
+                                                & > figure {
+                                                    & > div {
+                                                        height: 70%;
+
+                                                        & > ins,
+                                                        & > del {
+                                                            & img {
+                                                                max-height: 40px;
+                                                            }
+                                                        }
+                                                    }
+                                                    & > figcaption {
+                                                        height: 30%;
+
+                                                        & > p {
+                                                            font-size: 13px;
+                                                            line-height: 17px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            & > article {
+                & .slim-cta-banner {
+                    &.slim-cta-banner-preset-armed_forces {
+                        & > h2 {
+                            background-position: -100px top;
+
+                            & > strong {
+                                left: 160px;
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .feature-box {
+        &.feature-box-ribbon-caption {
+            & > div {
+                & > figcaption {
+                    & > a {
+                        & > strong {
+                            padding-right: 0px;
+                            text-indent: 10px;
+                            font-size: 11px;
+                            line-height: 47px;
+                        }
+                    }
+                }
+            }
+            &.feature-box-preset {
+                &.home-service_members,
+                &.home-educational_institutions,
+                &.home-dantes_counselors,
+                &.home-military_education_leadership {
+                    & > div {
+                        & > figcaption {
+                            & > a {
+                                & > strong {
+                                    padding-right: 0px;
+                                    text-indent: 10px;
+                                    font-size: 11px;
+                                    line-height: 47px;
                                 }
                             }
                         }
@@ -519,14 +647,24 @@
 			& > article {
 				& .slim-cta-banner {
 					& > h2 {
-						background-position: -100px top;
-						
 						& > strong {
-							width: 40%;
-							left: 160px;
+                            font-size: 16px !important;
+                            line-height: 26px !important;
 						}
 					}
+
+                    &.slim-cta-banner-preset-armed_forces {
+                        & > h2 {
+                            background-position :-150px top;
+
+                            & > strong {
+                                left: 110px;
+                                font-size: 14px !important;
+                            }
+                        }
+                    }
 				}
+
 
                 &.call-to-action {
                     & > section {
@@ -563,7 +701,8 @@
 		.ten, 
 		.eleven, 
 		.twelve {
-			width: 100%;
+			width: 100% !important;
+            float: none !important;
 			clear: both !important;
 		}
 	}
@@ -651,28 +790,46 @@
 							width: 100%;
 							float: left;
 							clear: both;
+                            margin-top: 25px;
+                            padding-top: 5px;
 						}
-                        .wizard.wizard-examination {
+                        & .wizard.wizard-distance-learning {
+                            & > section {
+                                height: auto;
+
+                                & .intro {
+                                    position: relative;
+                                }
+                            }
+                        }
+                        & .wizard.wizard-examination,
+                        & .wizard.wizard-education-benefits {
                             & > section {
                                 & .grid {
                                     & > ol {
                                         & > li {
-                                            & > a {
-                                                & > strong {
-                                                    padding-top: 45px;
-                                                    padding-left: 82px;
-                                                    font-size: 13px;
-                                                    line-height: 17px;
+                                            width: 50%;
 
-                                                    &:before {
-                                                        top: 37px;
-                                                        left: 10px;
+                                            & > a {
+                                                &:hover {
+                                                    background-size: cover;
+                                                }
+
+                                                & > figure {
+                                                    & > div {
+                                                        & > ins,
+                                                        & > del {
+                                                            & img {
+                                                                max-height: 60px;
+                                                            }
+                                                        }
                                                     }
                                                 }
                                             }
                                         }
                                     }
                                 }
+
                                 & .subject {
                                     & .intro {
                                         & .wrapper {
@@ -684,6 +841,128 @@
                                                 & p {
                                                     font-size: 13px;
                                                     line-height: 18px;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    & .section {
+                                        & > footer {
+                                            & > menu {
+                                                position: relative;
+                                                width: 60%;
+
+                                                & > ol {
+                                                    position: absolute;
+                                                    width: 100%;
+                                                    left: 0px;
+                                                    height: 32px;
+                                                    overflow: hidden;
+                                                    background-color: #272793;
+                                                    border: 1px #272793 solid;
+                                                    -webkit-border-radius: 4px;
+                                                    -moz-border-radius: 4px;
+                                                    border-radius: 4px;
+
+                                                    &.expanded {
+                                                        overflow: visible;
+                                                    }
+
+                                                    &:after {
+                                                        display: none;
+                                                    }
+
+                                                    &:before {
+                                                        display: block;
+                                                        top: 1px;
+                                                        width: 100%;
+                                                        height: 30px;
+                                                        background-image: none;
+                                                        font-size: 14px;
+                                                        line-height: 28px;
+                                                        font-family: 'Open Sans', sans-serif;
+                                                        color: #fff;
+                                                        content: 'Select a Page';
+                                                        cursor: pointer;
+                                                    }
+
+                                                    & > li {
+                                                        position: relative;
+                                                        width: auto;
+                                                        height: 32px;
+                                                        top: -32px;
+                                                        float: none;
+                                                        margin-left: 2px !important;
+                                                        margin-right: 2px !important;
+                                                        background-image: url(../_images/bg-tile-light.jpg);
+                                                        background-repeat: repeat;
+                                                        background-position: 0px 0px;
+                                                        background-color: transparent;
+                                                        border-left: 1px #272793 solid;
+                                                        border-right: 1px #272793 solid;
+
+                                                        &:first-child {
+                                                            margin-top: -97px;
+                                                            border-top: 1px #272793 solid;
+                                                            -webkit-border-top-left-radius: 4px;
+                                                            -webkit-border-top-right-radius: 4px;
+                                                            -moz-border-radius-topleft: 4px;
+                                                            -moz-border-radius-topright: 4px;
+                                                            border-top-left-radius: 4px;
+                                                            border-top-right-radius: 4px;
+                                                        }
+
+                                                        & > a {
+                                                            width: auto;
+                                                            height: auto;
+                                                            background-image: none;
+                                                            text-decoration: none;
+
+                                                            & > strong {
+                                                                width: auto;
+                                                                left: 0;
+                                                                position: static;
+                                                                font-size: 14px;
+                                                                line-height: 32px;
+                                                                font-family: 'Open Sans', sans-serif;
+                                                                text-transform: none;
+                                                                color: #272793;
+                                                            }
+
+                                                            &:hover {
+                                                                & > strong {
+                                                                    text-decoration: underline;
+                                                                }
+                                                            }
+                                                        }
+
+                                                        &.selected {
+                                                            & > a {
+                                                                background-color: #14165C;
+
+                                                                & > strong {
+                                                                    color: #fff;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+
+                                                &.five-bullets {
+                                                    & > ol {
+                                                        & > li {
+                                                            &:first-child {
+                                                                margin-top: -129px;
+                                                            }
+
+                                                            & > a {
+                                                                & > strong {
+                                                                    width: auto !important;
+                                                                    left: auto !important;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
                                                 }
                                             }
                                         }
@@ -701,8 +980,23 @@
 				& > section {
 					& > .content {
 						& div.spotlight {
+                            margin-left: 0px;
+                            margin-right: 0px;
+
+                            &:before,
+                            &:after {
+                                display: none;
+                            }
+
 							& > div {
 								& > figcaption {
+                                    & > header {
+                                        margin: 13px 15px 0px 0px;
+
+                                        & > span.position {
+                                            font-size: 26px;
+                                        }
+                                    }
 									& > section {
 										padding: 20px 0px;
 										
@@ -743,6 +1037,33 @@
                     padding-right: 25px;
                 }
             }
+
+            & > footer {
+                padding-bottom: 0px;
+
+                & > section {
+                    & > .content {
+                        & > a.sitemap-trigger {
+                            & > strong {
+                                position: static;
+                                height: 34px;
+                            }
+                        }
+                    }
+                }
+                & > aside {
+                    display: none;
+                }
+            }
+
+            & > menu.sitemap {
+                & > section {
+                    background-image: none;
+                    -webkit-border-radius: 0px;
+                    -moz-border-radius: 0px;
+                    border-radius: 0px;
+                }
+            }
 		}
 	}
 
@@ -751,10 +1072,38 @@
 		
 		& > div {
             float: none !important;
-			width: 376px !important;
+			width: 100% !important;
+            min-width: 0px !important;
+            max-width: none !important;
 			margin-left: auto !important;
 			margin-right: auto !important;
+
+            & > figure {
+                min-width: 0px;
+                max-width: none;
+                background-size: cover;
+            }
+            & > figcaption {
+                width: 100%;
+                min-width: 0px;
+                max-width: none;
+            }
 		}
+
+        &.feature-box-ribbon-caption {
+            & > div {
+                & > figcaption {
+                    & > a {
+                        & > strong {
+                            width: 250px !important;
+                            max-width: 250px !important;
+                            font-size: 14px !important;
+                            line-height: 47px !important;
+                        }
+                    }
+                }
+            }
+        }
 	}
 
     dl.feature-box-jump-button {

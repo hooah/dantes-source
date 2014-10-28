@@ -109,7 +109,7 @@ body {
 										background-image: url(../_images/bg-orange-spotlight-tile.png);
 										background-repeat: repeat;
 										background-position: 0px 0px;
-										
+
 										&:before {
 											display: block;
 											position: absolute;
@@ -184,7 +184,8 @@ body {
 										& > section {
 											background-image: url(../_images/bg-green-texture-spotlight.jpg);
 											background-repeat: no-repeat;
-											
+                                            background-size: cover;
+
 											& > h3, 
 											& > p {
 												text-shadow: -1px 1px 3px rgba(0, 0, 0, 0.3);
@@ -214,6 +215,7 @@ body {
                                             padding-bottom: 0px;
                                             background-image: url(../_images/bg-orange-texture-angled-spotlight.jpg);
                                             background-repeat: no-repeat;
+                                            background-size: cover;
 
                                             & > h3,
                                             & > p {
@@ -263,7 +265,8 @@ body {
 											padding-bottom: 0px;
 											background-image: url(../_images/bg-green-texture-spotlight.jpg);
 											background-repeat: no-repeat;
-											
+                                            background-size: cover;
+
 											& > h3, 
 											& > p, 
 											& > span {

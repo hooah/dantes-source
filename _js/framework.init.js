@@ -66,7 +66,7 @@ jQuery(document).ready(function() {
     }
 
     // lunr.js search
-    framework.fn.search.lunr_search.init();
+    framework.fn.search.init();
 
     // scout
     jQuery.scout();

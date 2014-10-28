@@ -11,7 +11,7 @@ body {
                                 &:after {
                                     display: block;
                                     position: absolute;
-                                    left: 39px;
+                                    left: 25px;
                                     bottom: -74px;
                                     width: 317px;
                                     height: 322px;
@@ -23,6 +23,7 @@ body {
 
                                 & > h1 {
                                     width: 51%;
+                                    margin-top: 22px;
                                     font-size: 30px;
                                     text-align: left;
                                 }

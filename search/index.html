@@ -23,7 +23,7 @@ header_extra:
 
                             <h1>Search the DANTES Website</h1>
 
-                            <form action="." method="post" class="lunr-search">
+                            <form action="." method="post" class="search-form">
                                 <div id="search-controls">
                                     <input type="text" id="searchbox" class="twelve" />
                                 </div>
@@ -41,12 +41,10 @@ header_extra:
 
             {% raw %}
             <script id="results-template" type="text/mustache">
-                {{#entries}}
-                    <li>
-                        <h2><a href="{{url}}">{{title}}</a></h2>
-                        <cite>{{url}}</cite>
-                        <p>{{desc}}</p>
-                    </li>
-                {{/entries}}
+                <li>
+                    <h2><a href="{{url}}">{{title}}</a></h2>
+                    <cite>{{url}}</cite>
+                    <p>{{desc}}</p>
+                </li>
             </script>
             {% endraw %}

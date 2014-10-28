@@ -30,6 +30,7 @@ body {
 								background-image: url(../_images/elements/breadcrumb_end.png);
 								background-position: top right;
 								background-repeat: no-repeat;
+                                margin-bottom: 3px;
 								margin-right: -6px;
 								font-weight: bold;
 								
@@ -55,7 +56,7 @@ body {
 								
 								& a {
 									display: inline-block;
-									height: 38px;
+									height: 37px;
 									padding: 0px 10px 0px 12px;
                                     background-image: url(../_images/elements/breadcrumb_tile.png);
                                     background-repeat: repeat;

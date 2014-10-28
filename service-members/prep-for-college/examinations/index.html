@@ -10,7 +10,18 @@ social: {
 footer_extra:
 header_extra:
 ---
-            {% include cta.simple.html slide_name='service_members-examinations.jpg' slide_title='Examinations' %}
+            {% capture slide_html %}
+                                    <li>
+                                        <figure><img src="{{ page.path }}/_images/slides/multimedia-examinations.jpg" alt="" width="948" height="420"></figure>
+                                        <figcaption>
+                                            <a href="http://www.youtube.com/watch?v=zcqLmCO1h2k" class="hero-caption-strip fresco" data-scout-stop="true" data-scout-manual="Main_banner, view_vid, examinations-main-banner">
+                                                <h2>Examinations</h2>
+                                                <p><strong>Click here</strong> for a video overview. <span class="cap">&raquo;</span></p>
+                                            </a>
+                                        </figcaption>
+                                    </li>
+            {% endcapture %}
+            {% include cta.html slide=slide_html %}
             <article class="has-sidebar">
             	<section>
                 	<div class="content row">
@@ -875,7 +886,7 @@ header_extra:
                                                                 <li>Agree to apply for reimbursement within 90 days of the scheduled test date.</li>
                                                             </ul>
                                                             <p>After receiving the Official Examinee Score Report, review the instructions carefully and legibly complete all required sections of the current <em>&ldquo;DANTES Reimbursement Request&rdquo;</em> Form. <strong>Obsolete forms will not be accepted. Incomplete or illegible forms cannot be processed.</strong></p>
-                                                            <a href="{{ page.path }}/_content/GRE_GENERAL_REIMBURSEMENT_REQUEST_July_2013.pdf#zoom=100" data-document-warning="true" class="button button-blue button-pointed right" target="_blank"><strong>Download Reimbursement Request Form &gt;</strong></a>
+                                                            <a href="{{ page.path }}/_content/exams_reimbursement_form.pdf#zoom=100" data-document-warning="true" class="button button-blue button-pointed right" target="_blank"><strong>Download Reimbursement Request Form &gt;</strong></a>
                                                             <br class="clear" />
                                                             <br />
                                                             <p>Visit your military education center for assistance, or contact DANTES at <a href="mailto:exams@navy.mil">exams@navy.mil</a> to locate DANTES personnel near you.</p>
@@ -992,7 +1003,7 @@ header_extra:
                                                                 <li>Agree to apply for reimbursement within 90 days of the scheduled test date.</li>
                                                             </ul>
                                                             <p>After receiving the Official Examinee Score Report, review the instructions carefully and legibly complete all required sections of the current <em>&ldquo;DANTES Reimbursement Request&rdquo;</em> Form. <strong>Obsolete forms will not be accepted. Incomplete or illegible forms cannot be processed.</strong></p>
-                                                            <a href="{{ page.path }}/_content/GMAT_REIMBURSEMENT_REQUEST_July2012.pdf#zoom=100" data-document-warning="true" class="button button-blue button-pointed right" target="_blank"><strong>Download Reimbursement Request Form &gt;</strong></a>
+                                                            <a href="{{ page.path }}/_content/exams_reimbursement_form.pdf#zoom=100" data-document-warning="true" class="button button-blue button-pointed right" target="_blank"><strong>Download Reimbursement Request Form &gt;</strong></a>
                                                             <br class="clear" />
                                                             <br /><br />
                                                             <p>Visit your military education center for assistance, or contact DANTES at <a href="mailto:exams@navy.mil">exams@navy.mil</a> to locate DANTES personnel near you.</p>

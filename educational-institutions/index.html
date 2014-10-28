@@ -10,7 +10,18 @@ social: {
 footer_extra:
 header_extra:
 ---
-            {% include cta.simple.html slide_name='educational_institutions.jpg' slide_title=page.title %}
+            {% capture slide_html %}
+                                    <li>
+                                        <figure><img src="{{ page.path }}/_images/slides/multimedia-educational_institutions.jpg" alt="" width="948" height="420"></figure>
+                                        <figcaption>
+                                            <a href="http://www.youtube.com/watch?v=x5TNlcWC9dQ" class="hero-caption-strip fresco" data-scout-stop="true" data-scout-manual="Main_banner, view_vid, educational_institutions-main-banner">
+                                                <h2>Educational Institutions</h2>
+                                                <p><strong>Click here</strong> for a video overview. <span class="cap">&raquo;</span></p>
+                                            </a>
+                                        </figcaption>
+                                    </li>
+            {% endcapture %}
+            {% include cta.html slide=slide_html %}
             <article class="has-sidebar">
                 <section>
                     <div class="content row">
@@ -105,21 +116,6 @@ header_extra:
                                     </p>
                                 </div>
                                 <div class="four columns">
-                                    <div class="row feature-box feature-box-preset educational_institutions-3rd_party">
-                                        <div class="eleven">
-                                            <figure></figure>
-                                            <figcaption>
-                                                <a href="{{ page.path }}/educational-institutions/3rd-party-assessments/index.html" data-scout-event="mid_page_visual_nav, select_nav_area, visual-nav-third-party-assess">
-                                                    <strong>3rd Party Assessments</strong>
-                                                </a>
-                                            </figcaption>
-                                        </div>
-                                    </div>
-                                    <p class="flush">
-                                        The purpose of the 3rd Party Assessment is to assess the quality of off-duty post-secondary educational programs and services used by service members.
-                                    </p>
-                                </div>
-                                <div class="four columns clear">
                                     <div class="row feature-box feature-box-preset educational_counselors-counselor_support_program">
                                         <div class="eleven">
                                             <figure></figure>

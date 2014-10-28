@@ -15,6 +15,12 @@ header_extra:
             	<section>
                 	<div class="content row">
                     	<div class="nine">
+                            <ul class="breadcrumbs">
+                                <li><a href="{{ page.path }}/index.html">Home</a></li>
+                                <li><a href="{{ page.path }}/accessibility/index.html">Accessibility</a></li>
+                            </ul>
+                            {% include social.html %}
+
                             <h1>Web Accessibility</h1>
                             <p>The Defense Activity for Non-Traditional Education Support (DANTES) Web site is committed to meeting the accessibility standards set forth by Section 508 of the Rehabilitation Act. It is therefore our objective to ensure that information contained within our website is accessible to all individuals. If you encounter any accessibility obstacles within the DANTES Web site, please contact the Webmaster at <a href="mailto:dantes_webmaster@navy.mil">dantes_webmaster@navy.mil</a> and provide the URL (example: <a href="{{ page.path }}/accessibility/">{{ page.path }}/accessibility/</a>) of the file or page where you encounter problems and we will work to ensure timely access.</p>
                         </div>

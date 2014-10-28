@@ -10,7 +10,18 @@ social: {
 footer_extra:
 header_extra:
 ---
-            {% include cta.simple.html slide_name='service_members-education_benefits.jpg' slide_title='Education Benefits' %}
+            {% capture slide_html %}
+                                    <li>
+                                        <figure><img src="{{ page.path }}/_images/slides/multimedia-education_benefits.jpg" alt="" width="948" height="420"></figure>
+                                        <figcaption>
+                                            <a href="http://www.youtube.com/watch?v=WEEqLMkhmkA" class="hero-caption-strip fresco" data-scout-stop="true" data-scout-manual="Main_banner, view_vid, education_benefits-main-banner">
+                                                <h2>Education Benefits</h2>
+                                                <p><strong>Click here</strong> for a video overview. <span class="cap">&raquo;</span></p>
+                                            </a>
+                                        </figcaption>
+                                    </li>
+            {% endcapture %}
+            {% include cta.html slide=slide_html %}
             <article class="has-sidebar">
             	<section>
                 	<div class="content row">

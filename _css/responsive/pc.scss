@@ -106,7 +106,7 @@
             & > article.has-sidebar {
                 & > section {
                     & > .content {
-                        .wizard.wizard-examination {
+                        & .wizard.wizard-examination {
                             & > header {
                                 & > section {
                                     & > h1 {
@@ -121,10 +121,36 @@
                                 }
                             }
                         }
+                        & .wizard.wizard-education-benefits {
+                            & > header {
+                                & > section {
+                                    & > h1 {
+                                        width: 70%;
+                                    }
+
+                                    &:after {
+                                        width: 220px;
+                                        bottom: -107px;
+                                        background-size: 100%;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
-		}
+            & > article {
+                & .slim-cta-banner {
+                    &.slim-cta-banner-preset-tco {
+                        & > h2 {
+                            & > strong {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
 	}
 
     .multimedia-dib-menu {
@@ -167,6 +193,8 @@
                 & > section {
                     & > .content {
                         & .wizard.wizard-examination {
+                            margin-top: 50px;
+
                             & > header {
                                 & > section {
                                     &:after {
@@ -185,7 +213,6 @@
                                     }
                                 }
                             }
-
                             & > section {
                                 & .grid {
                                     & > ol {
@@ -198,7 +225,49 @@
                                         }
                                     }
                                 }
+                            }
+                        }
+                        &.wizard.wizard-education-benefits {
+                            & > header {
+                                & > section {
+                                    &:after {
+                                        left: 25px;
+                                        bottom: -32px;
+                                        width: 160px;
+                                        height: 182px;
+                                        background-size: 100% 100%;
+                                    }
 
+                                    & > h1 {
+                                        width: 75%;
+                                    }
+                                    & > h2 {
+                                        width: 70%;
+                                    }
+                                }
+                            }
+                        }
+                        &.wizard.wizard-distance-learning {
+                            margin-top: 130px;
+
+                            & > header {
+                                & > section {
+                                    &:after {
+                                        width: 240px;
+                                        height: 244px;
+                                        bottom: -56px;
+                                        background-size: 100% 100%;
+                                    }
+
+                                    & > h1 {
+                                        font-size: 26px;
+                                    }
+                                }
+                            }
+                        }
+                        &.wizard.wizard-examination,
+                        &.wizard.wizard-education-benefits {
+                            & > section {
                                 & .subject {
                                     & .section {
                                         & .wrapper {
@@ -238,6 +307,20 @@
                                         }
                                     }
                                 }
+                            }
+                        }
+                    }
+                }
+            }
+
+            & > article {
+                & .slim-cta-banner {
+                    &.slim-cta-banner-preset-tco {
+                        & > h2 {
+                            & > strong {
+                                width: 70%;
+                                font-size: 14px;
+                                line-height: 26px;
                             }
                         }
                     }
@@ -336,6 +419,7 @@
                     }
                 }
 
+                /*
 				& .slim-cta-banner {
 					& > h2 {
 						& > strong {
@@ -348,6 +432,7 @@
 						}
 					}
 				}
+				*/
 
                 & .newsgrid {
                     & > ul {
@@ -364,6 +449,25 @@
 			}
 		}
 	}
+
+    .feature-box {
+        &.feature-box-ribbon-caption {
+            & > div {
+                & > figcaption {
+                    & > a {
+                        & > strong {
+                            width: 80%;
+                            max-width: 80%;
+                            padding-left: 0px;
+                            padding-right: 0px;
+                            font-size: 14px;
+                            line-height: 47px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 
     .multimedia-features {
         & .multimedia-feature-box {

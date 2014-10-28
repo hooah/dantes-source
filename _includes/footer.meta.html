@@ -15,12 +15,11 @@
         <script src="{{ page.path }}/_js/framework.init.js"></script>
 
         {% if page.social.title == 'Search' %}
-        <!-- lunr search -->
-        <script src="{{ page.path }}/search-lunr.js"></script>
-        <script src="{{ page.path }}/_js/vendor/lunr.min.js"></script>
+        <!-- search -->
+        <script src="{{ page.path }}/_js/vendor/augment.min.js"></script>
+        <script src="{{ page.path }}/_js/vendor/fuse.js"></script>
         <script src="{{ page.path }}/_js/vendor/mustache.js"></script>
-        <script src="{{ page.path }}/_js/vendor/uri.js"></script>
-        <script src="{{ page.path }}/_js/vendor/jquery.lunr.search.js"></script>
+        <script src="{{ page.path }}/search-lunr.js"></script>
         {% endif %}
         {% if page.social.title == 'Examinations' %}
         <script src="{{ page.path }}/_js/framework.wizard.js"></script>

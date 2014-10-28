@@ -52,10 +52,8 @@ var framework = {
             }
         },
         search: {
-            index: null,
-            indexden: {
-                public_url: 'http://teqaze.api.indexden.com/v1/indexes/DANTES'
-            }
+            engine: null,
+            timer: null
         },
 		containers: {
             cta_news_view: null
@@ -608,94 +606,59 @@ var framework = {
         },
 
         search: {
-            jekyll_dynamic_search: {
-                init: function() {
-                    if (jQuery('form.jekyll-dynamic-search').length) {
-                        jQuery('form.jekyll-dynamic-search').bind('submit', framework.fn.search.jekyll_dynamic_search.run_query);
-                    }
-                },
+            init: function() {
+                var max_length  = 100;
 
-                run_query: function(objEvent) {
-                    objEvent.preventDefault();
-
-                    run_search(framework.fn.search.jekyll_dynamic_search.populate_results);
-
-                    return false;
-                },
-
-                populate_results: function() {
-                    var objContainer        = jQuery('#search-results>ul');
-
-                    objContainer.empty();
-
-                    if (final_results.length) {
-                        var strBaseURL              = window.location.protocol + '//' + window.location.hostname;
-
-                        for (var intCounter = 0; intCounter < final_results.length; intCounter++) {
-                            objContainer.append(    '<li>' +
-                                                        '<h2><a href="' + final_results[intCounter]['u'] + '">' + final_results[intCounter]['t'] + '</a></h2>' +
-                                                        '<cite>' + strBaseURL + '<strong>' + final_results[intCounter]['u'] + '</strong></cite>' +
-                                                        '<p>' + final_results[intCounter]['d'] + '</p>' +
-                                                    '</li>')
-                        }
-                    } else {
-                        objContainer.append('<li class="no-results"><h2>No results found!</h2><p><strong>No results found for your search query.  Please try different search keywords.</strong></p></li>');
+                for (var counter = 0; counter < lunr_index.entries.length; counter++) {
+                    if (lunr_index.entries[counter].body.length > max_length) {
+                        max_length      = lunr_index.entries[counter].body.length;
                     }
                 }
+
+                var options = {
+                    keys: ['title', 'body'],
+                    id: 'url',
+                    includeScore: true,
+                    shouldSort: true,
+                    threshold: 0.5,
+                    distance: Math.abs(max_length / 10),
+                    location: Math.abs(max_length / 20)
+                };
+
+                framework.data.search.engine    = new Fuse(lunr_index.entries, options);
+
+                jQuery('.search-form input[type="text"]').bind('keyup', function() {
+                    clearTimeout(framework.data.search.timer);
+
+                    framework.data.search.timer = setTimeout(framework.fn.search.get_results, 250);
+                });
             },
 
-            lunr_search: {
-                init: function() {
-                    jQuery('form.lunr-search').bind('submit', function() { return false; });
+            get_results: function(event) {
+                var query           = jQuery('.search-form input[type="text"]').val();
+                var container       = jQuery('#search-results ul');
+                var template_html   = jQuery('#results-template').html();
 
-                    if (jQuery('form.lunr-search').length) {
-                        jQuery('#searchbox').lunrSearch({
-                            indexUrl: false,
-                            results:  '#search-results',
-                            entries:  'ul',
-                            template: '#results-template'
-                        });
-                    }
-                }
-            },
+                if (container.length) {
+                    container.html('');
 
-            indexden: {
-                init: function() {
-                    if (jQuery('form.indexden-search').length) {
-                        jQuery('form.indexden-search').bind('submit', framework.fn.search.indexden.run_query);
-                    }
-                },
+                    if ((template_html.length) && (query.length > 2)) {
+                        var results     = framework.data.search.engine.search(query);
 
-                run_query: function(objEvent) {
-                    objEvent.preventDefault();
+                        if (results.length) {
+                            var result_counter, entry_counter, index_counter, template;
 
-                    var strQuery            = jQuery('#searchbox').val();
+                            for (result_counter = 0; result_counter < results.length; result_counter++) {
+                                for (index_counter = 0; index_counter < lunr_index.entries.length; index_counter++) {
+                                    if (results[result_counter].item[0] === lunr_index.entries[index_counter].url) {
+                                        template        = Mustache.render(template_html, lunr_index.entries[index_counter]);
 
-                    if (strQuery.length) {
-                        jQuery.getJSON( framework.data.search.indexden.public_url + '/search?q=' + encodeURIComponent(strQuery) + '&len=1000&fetch=*&snippet=text&callback=?',
-                                        framework.fn.search.indexden.populate_results);
-                    } else {
-                        jQuery('#search-results>ul').empty();
-                    }
-                },
-
-                populate_results: function(objData) {
-                    var objContainer        = jQuery('#search-results>ul');
-
-                    objContainer.empty();
-
-                    if (objData.results.length > 0) {
-                        var strBaseURL              = window.location.protocol + '//' + window.location.hostname;
-
-                        for (var intCounter = 0; intCounter < objData.results.length; intCounter++) {
-                            objContainer.append(    '<li>' +
-                                                        '<h2><a href="' + objData.results[intCounter].docid + '">' + objData.results[intCounter].title + '</a></h2>' +
-                                                        '<cite>' + strBaseURL + '<strong>' + objData.results[intCounter].docid + '</strong></cite>' +
-                                                        '<p>' + objData.results[intCounter].snippet_text + '</p>' +
-                                                    '</li>')
+                                        container.append(template);
+                                        break;
+                                    }
+                                }
+                            }
                         }
-                    } else {
-                        objContainer.append('<li class="no-results"><h2>No results found!</h2><p><strong>No results found for your search query.  Please try different search keywords.</strong></p></li>');
                     }
                 }
             }

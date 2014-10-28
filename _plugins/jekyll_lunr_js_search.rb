@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'json'
+require 'nokogiri'
 
 module Jekyll
 
@@ -38,16 +39,32 @@ module Jekyll
       items.each do |item|
         entry = SearchEntry.create(item, content_renderer)
 
+        puts entry.title
+
         entry.strip_index_suffix_from_url! if @strip_index_html
         entry.strip_stopwords!(stopwords, @min_length) if File.exists?(@stopwords_file) 
-        
+
+        content_start = entry.body.index('<!-- social end -->');
+        content_end = entry.body.index('<!-- sidebar start -->');
+
+        entry_text = entry.body[content_start..content_end]
+        entry_text = Nokogiri.HTML(entry_text) { |config| config.noblanks }
+        entry_text.search('script').remove()
+        entry_text.search('link').remove()
+        entry_text.search('style').remove()
+        entry_text.xpath('//text()[1]').each{ |t|      t.content = t.content.lstrip }
+        entry_text.xpath('//text()[last()]').each{ |t| t.content = t.content.rstrip }
+        entry_text = entry_text.text.gsub("\r", " ").gsub("\n", " ").gsub("\t", " ")
+
+        puts entry_text
+
         index << {
           :title => entry.title,
           :url => entry.url,
           :desc => entry.desc,
           :date => entry.date,
           :categories => entry.categories,
-          :body => entry.body
+          :body => entry_text
         }
         
         puts 'Indexed ' << "#{entry.title} (#{entry.url})"
@@ -103,13 +120,16 @@ module Jekyll
     # render the item, parse the output and get all text inside <p> elements
     def render(item)
       item.render({}, @site.site_payload)
-      doc = Nokogiri::HTML(item.output)
+
+      text = item.output
+
+      #doc = Nokogiri::HTML(item.output)
       #paragraphs = doc.search('p').map {|e| e.text }
       #paragraphs.join(" ").gsub("\r"," ").gsub("\n"," ")
-      doc.search('script').remove()
-      doc.search('link').remove()
-      doc.search('style').remove()
-      text = doc.text.gsub("\r", " ").gsub("\n", " ").gsub("\t", " ")
+      #doc.search('script').remove()
+      #doc.search('link').remove()
+      #doc.search('style').remove()
+      #text = doc.text.gsub("\r", " ").gsub("\n", " ").gsub("\t", " ")
     end
   end
   
@@ -130,7 +150,7 @@ module Jekyll
       body = renderer.render(page)
       date = nil
       categories = []
-      
+
       SearchEntry.new(title, url, date, categories, desc, body)
     end
     

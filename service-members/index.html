@@ -10,7 +10,18 @@ social: {
 footer_extra:
 header_extra:
 ---
-            {% include cta.simple.html slide_name='service_members.jpg' slide_title=page.title %}
+            {% capture slide_html %}
+                                    <li>
+                                        <figure><img src="{{ page.path }}/_images/slides/multimedia-service_members.jpg" alt="" width="948" height="420"></figure>
+                                        <figcaption>
+                                            <a href="http://www.youtube.com/watch?v=-B51xLw6g0Y" class="hero-caption-strip fresco" data-scout-stop="true" data-scout-manual="Main_banner, view_vid, service_members-main-banner">
+                                                <h2>Service Members</h2>
+                                                <p><strong>Click here</strong> for a video overview. <span class="cap">&raquo;</span></p>
+                                            </a>
+                                        </figcaption>
+                                    </li>
+            {% endcapture %}
+            {% include cta.html slide=slide_html %}
             <article class="has-sidebar">
                 <section>
                     <div class="content row">

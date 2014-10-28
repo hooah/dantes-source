@@ -121,7 +121,7 @@ body {
 										& > div {
 											display: block;
 											position: absolute;
-											width: 100%;
+											width: 85%;
 											bottom: 31px;
                                             /*
 											left: 76px;
@@ -149,6 +149,103 @@ body {
 													}
 												}
 											}
+
+                                            &.hero-caption-strip {
+                                                left: 25px;
+                                                bottom: 20px;
+
+                                                & > h2 {
+                                                    color: #fff;
+                                                    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.88);
+                                                }
+                                                & > p {
+                                                    position: relative;
+                                                    width: 50%;
+                                                    min-width: 250px;
+                                                    margin-top: 7px;
+                                                    margin-left: -25px;
+                                                    padding: 12px 56px 12px 25px;
+                                                    background: #ffbc00;
+                                                    background: -moz-linear-gradient(left,  #ffbc00 0%, #ffda00 100%);
+                                                    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffbc00), color-stop(100%,#ffda00));
+                                                    background: -webkit-linear-gradient(left,  #ffbc00 0%,#ffda00 100%);
+                                                    background: -o-linear-gradient(left,  #ffbc00 0%,#ffda00 100%);
+                                                    background: -ms-linear-gradient(left,  #ffbc00 0%,#ffda00 100%);
+                                                    background: linear-gradient(to right,  #ffbc00 0%,#ffda00 100%);
+                                                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffbc00', endColorstr='#ffda00',GradientType=1 );
+                                                    -webkit-box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.75);
+                                                    -moz-box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.75);
+                                                    box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.75);
+                                                    font-size: 18px;
+                                                    line-height: 18px;
+                                                    font-family: 'Open Sans', sans-serif;
+                                                    font-weight: bold;
+                                                    text-shadow: none;
+                                                    text-transform: uppercase;
+
+                                                    &:before {
+                                                        display: block;
+                                                        position: absolute;
+                                                        left: 0px;
+                                                        top: 0px;
+                                                        width: 25px;
+                                                        height: 100%;
+                                                        background-image: url(../_images/bg-cta-strip-shadow.png);
+                                                        background-repeat: repeat-y;
+                                                        background-position: 0px 0px;
+                                                        content: '';
+                                                    }
+
+                                                    & strong {
+                                                        color: #4849af;
+                                                    }
+
+                                                    & .cap {
+                                                        display: block;
+                                                        position: absolute;
+                                                        top: 0px;
+                                                        right: 0px;
+                                                        width: 56px;
+                                                        height: 100%;
+                                                        background: #ec9d03;
+                                                        background: -moz-linear-gradient(top,  #ec9d03 0%, #f4c305 100%);
+                                                        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ec9d03), color-stop(100%,#f4c305));
+                                                        background: -webkit-linear-gradient(top,  #ec9d03 0%,#f4c305 100%);
+                                                        background: -o-linear-gradient(top,  #ec9d03 0%,#f4c305 100%);
+                                                        background: -ms-linear-gradient(top,  #ec9d03 0%,#f4c305 100%);
+                                                        background: linear-gradient(to bottom,  #ec9d03 0%,#f4c305 100%);
+                                                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec9d03', endColorstr='#f4c305',GradientType=0 );
+                                                        @include no-text;
+
+                                                        &:before {
+                                                            display: block;
+                                                            position: absolute;
+                                                            top: 0px;
+                                                            left: 0px;
+                                                            width: 100%;
+                                                            height: 100%;
+                                                            background-image: url(../_images/elements/cta-strip-arrow.png);
+                                                            background-repeat: no-repeat;
+                                                            background-position: center center;
+                                                            content: '';
+                                                        }
+
+                                                        &:after {
+                                                            display: block;
+                                                            position: absolute;
+                                                            top: 0px;
+                                                            right: -18px;
+                                                            width: 18px;
+                                                            height: 100%;
+                                                            background-image: url(../_images/elements/cta-strip-beak.png);
+                                                            background-repeat: no-repeat;
+                                                            background-position: 0px 0px;
+                                                            background-size: 100% 100%;
+                                                            content: '';
+                                                        }
+                                                    }
+                                                }
+                                            }
 											
 											& > h2 {
 												display: block;
@@ -187,6 +284,16 @@ body {
 												color: #fff;
 												text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.88);
 											}
+
+                                            &.hero-caption-smaller {
+                                                & > p {
+                                                    width: 50%;
+                                                    margin-left: 99px;
+                                                    padding-top: 5px;
+                                                    font-size: 13px;
+                                                    text-shadow: 1px 1px 0px #000;
+                                                }
+                                            }
 										}
 
                                         &.complex {

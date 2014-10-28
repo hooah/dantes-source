@@ -12,6 +12,7 @@ framework.wizard.exam = {
             jQuery('>section>.grid>ol>li>a', framework.wizard.exam.data.container).bind('click', framework.wizard.exam.fn.show_toplevel_section);
             jQuery('>header>nav>ul>li.sections>ol>li>a, >section>.subject>.intro figure>a, >section>.subject>.intro .content ul.programs>li>div>a', framework.wizard.exam.data.container).bind('click', framework.wizard.exam.fn.show_sub_section);
             jQuery('>header>nav>ul>li.home>a', framework.wizard.exam.data.container).bind('click', framework.wizard.exam.fn.return_to_grid);
+            jQuery('>section>.subject .section>footer>menu>ol', framework.wizard.exam.data.container).bind('click', framework.wizard.exam.fn.toggle_menu);
             jQuery('>section>.subject .section>footer>menu>ol>li>a', framework.wizard.exam.data.container).bind('click', framework.wizard.exam.fn.control_subject_page);
             jQuery('>section>.subject .section>footer>nav>a', framework.wizard.exam.data.container).bind('click', framework.wizard.exam.fn.navigate_subject_page);
             jQuery('>section>.grid', framework.wizard.exam.data.container).addClass('selected');
@@ -100,7 +101,7 @@ framework.wizard.exam = {
                     jQuery('>div.' + strSection + '>ol>li[data-step="1"]', objSection).addClass('enabled');
                     jQuery('>div.' + strSection + '>footer>nav>a.next', objSection).removeClass('disabled');
                     jQuery('>div.' + strSection + '>footer>nav>a.back', objSection).addClass('disabled');
-                    jQuery('>div.' + strSection + '>footer>menu>ol', objSection).attr('class', 'step-1');
+                    jQuery('>div.' + strSection + '>footer>menu>ol', objSection).attr('class', 'step-1').removeClass('expanded');
                     jQuery('>div.' + strSection + '>footer>menu>ol>li', objSection).removeClass('selected');
                     jQuery('>div.' + strSection + '>footer>menu>ol>li:eq(0)', objSection).addClass('selected');
 
@@ -121,8 +122,17 @@ framework.wizard.exam = {
             }
         },
 
+        toggle_menu: function(objEvent) {
+            if (jQuery(this).hasClass('expanded')) {
+                jQuery(this).removeClass('expanded');
+            } else {
+                jQuery(this).addClass('expanded');
+            }
+        },
+
         control_subject_page: function(objEvent) {
             objEvent.preventDefault();
+            objEvent.stopPropagation();
 
             var intPageNum          = parseInt(jQuery(this).attr('data-step'));
             var objController       = jQuery(this).parent('li').parent('ol');
@@ -145,7 +155,7 @@ framework.wizard.exam = {
                     jQuery(objSection).height('auto');
                 }
 
-                jQuery(objController).attr('class', 'step-' + intPageNum);
+                jQuery(objController).attr('class', 'step-' + intPageNum).removeClass('expanded');
 
                 // control status of next/back buttons
                 jQuery(this).parents('menu').siblings('nav').find('a').removeClass('disabled');

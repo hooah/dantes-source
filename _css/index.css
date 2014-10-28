@@ -573,6 +573,7 @@ body #container > article.has-sidebar > section > .content ul.breadcrumbs {
     background-image: url(../_images/elements/breadcrumb_end.png);
     background-position: top right;
     background-repeat: no-repeat;
+    margin-bottom: 3px;
     margin-right: -6px;
     font-weight: bold; }
     body #container > article.has-sidebar > section > .content ul.breadcrumbs > li:first-child:before {
@@ -590,7 +591,7 @@ body #container > article.has-sidebar > section > .content ul.breadcrumbs {
       content: ""; }
     body #container > article.has-sidebar > section > .content ul.breadcrumbs > li a {
       display: inline-block;
-      height: 38px;
+      height: 37px;
       padding: 0px 10px 0px 12px;
       background-image: url(../_images/elements/breadcrumb_tile.png);
       background-repeat: repeat;
@@ -657,6 +658,7 @@ body #container > article.has-sidebar > section > .content ul.social {
     body #container > article.has-sidebar > section > .content ul.social > li.gplus div {
       margin-top: 8px !important; }
     body #container > article.has-sidebar > section > .content ul.social > li.print {
+      clear: left;
       float: left;
       text-align: left; }
       body #container > article.has-sidebar > section > .content ul.social > li.print > a {
@@ -932,7 +934,7 @@ body {
                 body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption > a, body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption > div {
                   display: block;
                   position: absolute;
-                  width: 100%;
+                  width: 85%;
                   bottom: 31px;
                                             /*
 											left: 76px;
@@ -953,6 +955,89 @@ body {
                     text-align: left; }
                   body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption > a.hero-caption-icon-video:hover:before, body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption > div.hero-caption-icon-video:hover:before {
                     background-position: -80px -190px; }
+                  body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption > a.hero-caption-strip, body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption > div.hero-caption-strip {
+                    left: 25px;
+                    bottom: 20px; }
+                    body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption > a.hero-caption-strip > h2, body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption > div.hero-caption-strip > h2 {
+                      color: #fff;
+                      text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.88); }
+                    body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption > a.hero-caption-strip > p, body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption > div.hero-caption-strip > p {
+                      position: relative;
+                      width: 50%;
+                      min-width: 250px;
+                      margin-top: 7px;
+                      margin-left: -25px;
+                      padding: 12px 56px 12px 25px;
+                      background: #ffbc00;
+                      background: -moz-linear-gradient(left, #ffbc00 0%, #ffda00 100%);
+                      background: -webkit-gradient(linear, left top, right top, color-stop(0%, #ffbc00), color-stop(100%, #ffda00));
+                      background: -webkit-linear-gradient(left, #ffbc00 0%, #ffda00 100%);
+                      background: -o-linear-gradient(left, #ffbc00 0%, #ffda00 100%);
+                      background: -ms-linear-gradient(left, #ffbc00 0%, #ffda00 100%);
+                      background: linear-gradient(to right, #ffbc00 0%, #ffda00 100%);
+                      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffbc00', endColorstr='#ffda00',GradientType=1 );
+                      -webkit-box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.75);
+                      -moz-box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.75);
+                      box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.75);
+                      font-size: 18px;
+                      line-height: 18px;
+                      font-family: 'Open Sans', sans-serif;
+                      font-weight: bold;
+                      text-shadow: none;
+                      text-transform: uppercase; }
+                      body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption > a.hero-caption-strip > p:before, body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption > div.hero-caption-strip > p:before {
+                        display: block;
+                        position: absolute;
+                        left: 0px;
+                        top: 0px;
+                        width: 25px;
+                        height: 100%;
+                        background-image: url(../_images/bg-cta-strip-shadow.png);
+                        background-repeat: repeat-y;
+                        background-position: 0px 0px;
+                        content: ''; }
+                      body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption > a.hero-caption-strip > p strong, body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption > div.hero-caption-strip > p strong {
+                        color: #4849af; }
+                      body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption > a.hero-caption-strip > p .cap, body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption > div.hero-caption-strip > p .cap {
+                        display: block;
+                        position: absolute;
+                        top: 0px;
+                        right: 0px;
+                        width: 56px;
+                        height: 100%;
+                        background: #ec9d03;
+                        background: -moz-linear-gradient(top, #ec9d03 0%, #f4c305 100%);
+                        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ec9d03), color-stop(100%, #f4c305));
+                        background: -webkit-linear-gradient(top, #ec9d03 0%, #f4c305 100%);
+                        background: -o-linear-gradient(top, #ec9d03 0%, #f4c305 100%);
+                        background: -ms-linear-gradient(top, #ec9d03 0%, #f4c305 100%);
+                        background: linear-gradient(to bottom, #ec9d03 0%, #f4c305 100%);
+                        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ec9d03', endColorstr='#f4c305',GradientType=0 );
+                        text-indent: -9999px;
+                        text-align: left; }
+                        body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption > a.hero-caption-strip > p .cap:before, body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption > div.hero-caption-strip > p .cap:before {
+                          display: block;
+                          position: absolute;
+                          top: 0px;
+                          left: 0px;
+                          width: 100%;
+                          height: 100%;
+                          background-image: url(../_images/elements/cta-strip-arrow.png);
+                          background-repeat: no-repeat;
+                          background-position: center center;
+                          content: ''; }
+                        body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption > a.hero-caption-strip > p .cap:after, body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption > div.hero-caption-strip > p .cap:after {
+                          display: block;
+                          position: absolute;
+                          top: 0px;
+                          right: -18px;
+                          width: 18px;
+                          height: 100%;
+                          background-image: url(../_images/elements/cta-strip-beak.png);
+                          background-repeat: no-repeat;
+                          background-position: 0px 0px;
+                          background-size: 100% 100%;
+                          content: ''; }
                   body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption > a > h2, body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption > div > h2 {
                     display: block;
                     position: relative;
@@ -982,6 +1067,12 @@ body {
                     font-weight: normal;
                     color: #fff;
                     text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.88); }
+                  body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption > a.hero-caption-smaller > p, body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption > div.hero-caption-smaller > p {
+                    width: 50%;
+                    margin-left: 99px;
+                    padding-top: 5px;
+                    font-size: 13px;
+                    text-shadow: 1px 1px 0px #000; }
                 body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption.complex > p {
                   display: block;
                   position: absolute;
@@ -1333,6 +1424,7 @@ body #container > article .slim-cta-banner {
     margin-left: -35px;
     margin-right: -35px; }
   body #container > article .slim-cta-banner > h2 {
+    overflow: hidden;
     margin-bottom: 0px !important;
     height: 93px;
     border: 7px #d9d9d9 solid;
@@ -1427,7 +1519,7 @@ body #container > article .slim-cta-banner {
     left: 1px;
     width: 99%;
     max-width: 376px;
-    min-width: 236px;
+    /* min-width: 236px; */
     height: 188px;
     margin: 0px;
     padding: 0px;
@@ -1445,7 +1537,7 @@ body #container > article .slim-cta-banner {
     display: block;
     width: 100%;
     max-width: 380px;
-    min-width: 240px;
+    /* min-width: 240px; */
     height: 100%;
     margin: 0px;
     padding: 0px;
@@ -2576,7 +2668,8 @@ body #container > article > section > .content > div .spotlight {
           padding-left: 20px; }
   body #container > article > section > .content > div .spotlight.spotlight-green > div > figcaption > section {
     background-image: url(../_images/bg-green-texture-spotlight.jpg);
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-size: cover; }
     body #container > article > section > .content > div .spotlight.spotlight-green > div > figcaption > section > h3, body #container > article > section > .content > div .spotlight.spotlight-green > div > figcaption > section > p {
       text-shadow: -1px 1px 3px rgba(0, 0, 0, 0.3); }
     body #container > article > section > .content > div .spotlight.spotlight-green > div > figcaption > section > p {
@@ -2591,7 +2684,8 @@ body #container > article > section > .content > div .spotlight {
     padding-top: 0px;
     padding-bottom: 0px;
     background-image: url(../_images/bg-orange-texture-angled-spotlight.jpg);
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-size: cover; }
     body #container > article > section > .content > div .spotlight.spotlight-orange-angled > div > figcaption > section > h3, body #container > article > section > .content > div .spotlight.spotlight-orange-angled > div > figcaption > section > p {
       padding-top: 15px;
       padding-bottom: 15px;
@@ -2621,7 +2715,8 @@ body #container > article > section > .content > div .spotlight {
     padding-top: 0px;
     padding-bottom: 0px;
     background-image: url(../_images/bg-green-texture-spotlight.jpg);
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-size: cover; }
     body #container > article > section > .content > div .spotlight.spotlight-compressed-caption > div > figcaption > section > h3, body #container > article > section > .content > div .spotlight.spotlight-compressed-caption > div > figcaption > section > p, body #container > article > section > .content > div .spotlight.spotlight-compressed-caption > div > figcaption > section > span {
       padding-top: 10px;
       padding-bottom: 12px; }
@@ -4122,8 +4217,10 @@ body #container > article.has-sidebar > section > .content .wizard.wizard-examin
             background: -ms-linear-gradient(top, #e7e6e6 0%, white 100%);
             background: linear-gradient(to bottom, #e7e6e6 0%, white 100%);
             filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e7e6e6', endColorstr='#ffffff',GradientType=0 );
+            /*
             border-right: 1px #c7c7c7 solid;
             border-bottom: 1px #c7c7c7 solid;
+            */
             -webkit-box-shadow: -2px -2px 2px rgba(0, 0, 0, 0.05) inset;
             -moz-box-shadow: -2px -2px 2px rgba(0, 0, 0, 0.05) inset;
             box-shadow: -2px -2px 2px rgba(0, 0, 0, 0.05) inset;
@@ -4572,7 +4669,7 @@ body #container > article.has-sidebar > section > .content .wizard.wizard-distan
   body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > header > section:after {
     display: block;
     position: absolute;
-    left: 39px;
+    left: 25px;
     bottom: -74px;
     width: 317px;
     height: 322px;
@@ -4582,6 +4679,7 @@ body #container > article.has-sidebar > section > .content .wizard.wizard-distan
     content: ""; }
   body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > header > section > h1 {
     width: 51%;
+    margin-top: 22px;
     font-size: 30px;
     text-align: left; }
   body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > header > nav > ul > li > a {
@@ -4947,7 +5045,8 @@ body #container > article.has-sidebar > section > .content .wizard.wizard-educat
   body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > header > section > h1 {
     width: 65%;
     margin-top: 20px;
-    margin-right: 25px; }
+    margin-right: 25px;
+    font-size: 26px; }
   body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > header > section > h2 {
     width: 60%;
     margin-right: 25px; }
@@ -5079,7 +5178,8 @@ body #container > article.has-sidebar > section > .content .wizard.wizard-educat
             width: 100%;
             height: 100%;
             background-repeat: no-repeat;
-            background-size: 100% 100%;
+            background-position: center center;
+            background-size: cover;
             border-right: 1px #c7c7c7 solid;
             border-bottom: 1px #c7c7c7 solid;
             -webkit-box-shadow: -2px -2px 2px rgba(0, 0, 0, 0.05) inset;
@@ -6679,6 +6779,14 @@ form li.complex p.error {
     width: 330px;
     bottom: -105px;
     background-size: 100%; }
+  body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > header > section > h1 {
+    width: 70%; }
+  body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > header > section:after {
+    width: 220px;
+    bottom: -107px;
+    background-size: 100%; }
+  body #container > article .slim-cta-banner.slim-cta-banner-preset-tco > h2 > strong {
+    font-size: 16px; }
 
   .multimedia-dib-menu > header {
     text-align: center; }
@@ -6698,34 +6806,59 @@ form li.complex p.error {
     position: static;
     width: auto; } }
 @media (max-width: 1120px) {
-  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > section:after {
-    left: -7px;
-    bottom: -39px;
-    width: 300px;
-    height: 188px;
+  body #container > article.has-sidebar > section > .content .wizard.wizard-examination {
+    margin-top: 50px; }
+    body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > section:after {
+      left: -7px;
+      bottom: -39px;
+      width: 300px;
+      height: 188px;
+      background-size: 100% 100%; }
+    body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > section > h1 {
+      width: 65%; }
+    body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > section > h2 {
+      width: 60%; }
+    body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li > a > strong {
+      font-size: 13px; }
+  body #container > article.has-sidebar > section > .content.wizard.wizard-education-benefits > header > section:after {
+    left: 25px;
+    bottom: -32px;
+    width: 160px;
+    height: 182px;
     background-size: 100% 100%; }
-  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > section > h1 {
-    width: 65%; }
-  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > section > h2 {
-    width: 60%; }
-  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li > a > strong {
-    font-size: 13px; }
-  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section .wrapper > figure {
+  body #container > article.has-sidebar > section > .content.wizard.wizard-education-benefits > header > section > h1 {
+    width: 75%; }
+  body #container > article.has-sidebar > section > .content.wizard.wizard-education-benefits > header > section > h2 {
+    width: 70%; }
+  body #container > article.has-sidebar > section > .content.wizard.wizard-distance-learning {
+    margin-top: 130px; }
+    body #container > article.has-sidebar > section > .content.wizard.wizard-distance-learning > header > section:after {
+      width: 240px;
+      height: 244px;
+      bottom: -56px;
+      background-size: 100% 100%; }
+    body #container > article.has-sidebar > section > .content.wizard.wizard-distance-learning > header > section > h1 {
+      font-size: 26px; }
+  body #container > article.has-sidebar > section > .content.wizard.wizard-examination > section .subject .section .wrapper > figure, body #container > article.has-sidebar > section > .content.wizard.wizard-education-benefits > section .subject .section .wrapper > figure {
     padding: 0px 20px; }
-  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section .wrapper .content {
+  body #container > article.has-sidebar > section > .content.wizard.wizard-examination > section .subject .section .wrapper .content, body #container > article.has-sidebar > section > .content.wizard.wizard-education-benefits > section .subject .section .wrapper .content {
     padding-top: 20px; }
-    body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section .wrapper .content p {
+    body #container > article.has-sidebar > section > .content.wizard.wizard-examination > section .subject .section .wrapper .content p, body #container > article.has-sidebar > section > .content.wizard.wizard-education-benefits > section .subject .section .wrapper .content p {
       font-size: 13px;
       line-height: 18px; }
-  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer {
+  body #container > article.has-sidebar > section > .content.wizard.wizard-examination > section .subject .section > footer, body #container > article.has-sidebar > section > .content.wizard.wizard-education-benefits > section .subject .section > footer {
     height: 65px; }
-    body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol:before {
+    body #container > article.has-sidebar > section > .content.wizard.wizard-examination > section .subject .section > footer > menu > ol:before, body #container > article.has-sidebar > section > .content.wizard.wizard-education-benefits > section .subject .section > footer > menu > ol:before {
       width: 397px; }
-    body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol > li {
+    body #container > article.has-sidebar > section > .content.wizard.wizard-examination > section .subject .section > footer > menu > ol > li, body #container > article.has-sidebar > section > .content.wizard.wizard-education-benefits > section .subject .section > footer > menu > ol > li {
       margin: 0px 50px; }
-      body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol > li > a > strong {
+      body #container > article.has-sidebar > section > .content.wizard.wizard-examination > section .subject .section > footer > menu > ol > li > a > strong, body #container > article.has-sidebar > section > .content.wizard.wizard-education-benefits > section .subject .section > footer > menu > ol > li > a > strong {
         width: 59px;
-        left: -13px; } }
+        left: -13px; }
+  body #container > article .slim-cta-banner.slim-cta-banner-preset-tco > h2 > strong {
+    width: 70%;
+    font-size: 14px;
+    line-height: 26px; } }
 @media (max-width: 1100px) {
   body #container > header > section > nav > ul > li > a:link, body #container > header > section > nav > ul > li > a:active, body #container > header > section > nav > ul > li > a:visited {
     padding-left: 10px; }
@@ -6735,27 +6868,44 @@ form li.complex p.error {
     padding-right: 0px; }
   body #container > article.has-sidebar > section > .content > aside > menu.quick-links > ul > li > a:link > p, body #container > article.has-sidebar > section > .content > aside > menu.quick-links > ul > li > a:active > p, body #container > article.has-sidebar > section > .content > aside > menu.quick-links > ul > li > a:visited > p {
     padding-right: 0px; }
-  body #container > article.call-to-action > section > .content > .hero > nav > a {
-    top: 290px; }
-  body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption.complex > span > p > strong {
-    font-size: 36px;
-    line-height: 36px; }
-  body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption.complex > span > p > em {
-    font-size: 18px;
-    line-height: 18px; }
-  body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption.complex > span .button {
-    margin-top: 4px; }
-  body #container > article .slim-cta-banner > h2 > strong {
-    width: 35%;
-    top: 20px; }
-  body #container > article .slim-cta-banner > h2 .button {
-    right: 20px;
-    top: -23px; }
-  body #container > article .newsgrid > ul > li {
-    width: 50%;
-    background-size: 100% 100%; }
-    body #container > article .newsgrid > ul > li.clear {
-      clear: none !important; }
+  body #container > article {
+                /*
+				& .slim-cta-banner {
+					& > h2 {
+						& > strong {
+							width: 35%;
+							top: 20px;
+						}
+						& .button {
+							right: 20px;
+							top: -23px;
+						}
+					}
+				}
+				*/ }
+    body #container > article.call-to-action > section > .content > .hero > nav > a {
+      top: 290px; }
+    body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption.complex > span > p > strong {
+      font-size: 36px;
+      line-height: 36px; }
+    body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption.complex > span > p > em {
+      font-size: 18px;
+      line-height: 18px; }
+    body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption.complex > span .button {
+      margin-top: 4px; }
+    body #container > article .newsgrid > ul > li {
+      width: 50%;
+      background-size: 100% 100%; }
+      body #container > article .newsgrid > ul > li.clear {
+        clear: none !important; }
+
+  .feature-box.feature-box-ribbon-caption > div > figcaption > a > strong {
+    width: 80%;
+    max-width: 80%;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 14px;
+    line-height: 47px; }
 
   .multimedia-features .multimedia-feature-box > a > figure > figcaption {
     padding-top: 10px;
@@ -6894,18 +7044,45 @@ form li.complex p.error {
     background-size: 100% 100%; }
   body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li > a > strong {
     font-size: 13px; }
-  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject {
+  body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits {
+    margin-top: 35px; }
+    body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > header > section:after {
+      left: 15px;
+      bottom: -25px;
+      width: 130px;
+      height: 147px;
+      background-size: 100% 100%; }
+    body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > header > section > h1 {
+      width: 75%; }
+    body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > header > section > h2 {
+      width: 70%; }
+  body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning {
+    margin-top: 50px; }
+    body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > header > section:after {
+      width: 180px;
+      height: 183px;
+      bottom: -41px;
+      background-size: 100% 100%; }
+    body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > header > section > h1 {
+      font-size: 26px; }
+  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > section > h1, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > header > section > h1 {
+    margin-top: 25px;
+    font-size: 21px; }
+  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > section > h2, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > header > section > h2 {
+    margin-top: 5px;
+    font-size: 12px; }
+  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject {
     height: 800px;
     min-height: 800px; }
-    body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > ol > li .wrapper {
+    body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > ol > li .wrapper, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > ol > li .wrapper {
       padding: 0px 25px; }
-    body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer {
+    body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > footer {
       bottom: 0px; }
-      body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol {
+      body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > footer > menu > ol {
         width: 350px; }
-        body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol:before {
+        body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol:before, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > footer > menu > ol:before {
           width: 293px; }
-        body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol > li {
+        body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol > li, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > footer > menu > ol > li {
           margin: 0px 31px; }
   body #container > footer > section > .content > div > nav {
     padding-bottom: 19px; }
@@ -6915,19 +7092,10 @@ form li.complex p.error {
       padding-bottom: 5px; }
       body #container > footer > section > .content > div > nav > a:link:before, body #container > footer > section > .content > div > nav > a:active:before, body #container > footer > section > .content > div > nav > a:visited:before {
         display: none; }
-
-  .feature-box.feature-box-ribbon-caption > div > figcaption > a > strong {
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 14px;
-    line-height: 47px; }
-  .feature-box.feature-box-preset.home-service_members figcaption > a > strong, .feature-box.feature-box-preset.home-educational_institutions figcaption > a > strong, .feature-box.feature-box-preset.home-dantes_counselors figcaption > a > strong, .feature-box.feature-box-preset.home-military_education_leadership figcaption > a > strong {
-    padding: 0px;
-    width: 180px;
-    text-indent: 10px; }
+  body #container > article .slim-cta-banner.slim-cta-banner-preset-armed_forces > h2 > strong {
+    font-size: 17px; }
 
   .multimedia-features .multimedia-feature-box {
-    float: none;
     max-width: 298px;
     margin-left: auto;
     margin-right: auto; }
@@ -7002,18 +7170,50 @@ form li.complex p.error {
     .multimedia-dib-menu > section > div > aside > a {
       float: none !important; } }
 @media (max-width: 976px) {
-  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > section > h1 {
-    margin-top: 25px;
-    font-size: 22px; }
-  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > section > h2 {
-    margin-top: 5px;
-    font-size: 12px; } }
-@media (max-width: 867px) {
-  body #container > article .slim-cta-banner > h2 {
+  body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning {
+    margin-top: 50px; }
+    body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > header > section:after {
+      width: 140px;
+      height: 142px;
+      bottom: -31px; }
+    body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > header > section > h1 {
+      width: 60%; }
+    body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section > div > section {
+      padding: 35px; }
+  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li > a > figure > div, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .grid > ol > li > a > figure > div {
+    height: 70%; }
+    body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li > a > figure > div > ins img, body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li > a > figure > div > del img, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .grid > ol > li > a > figure > div > ins img, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .grid > ol > li > a > figure > div > del img {
+      max-height: 40px; }
+  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li > a > figure > figcaption, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .grid > ol > li > a > figure > figcaption {
+    height: 30%; }
+    body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li > a > figure > figcaption > p, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .grid > ol > li > a > figure > figcaption > p {
+      font-size: 13px;
+      line-height: 17px; }
+  body #container > article .slim-cta-banner.slim-cta-banner-preset-armed_forces > h2 {
     background-position: -100px top; }
-    body #container > article .slim-cta-banner > h2 > strong {
-      width: 40%;
-      left: 160px; }
+    body #container > article .slim-cta-banner.slim-cta-banner-preset-armed_forces > h2 > strong {
+      left: 160px;
+      font-size: 16px; }
+
+  .feature-box.feature-box-ribbon-caption > div > figcaption > a > strong {
+    padding-right: 0px;
+    text-indent: 10px;
+    font-size: 11px;
+    line-height: 47px; }
+  .feature-box.feature-box-ribbon-caption.feature-box-preset.home-service_members > div > figcaption > a > strong, .feature-box.feature-box-ribbon-caption.feature-box-preset.home-educational_institutions > div > figcaption > a > strong, .feature-box.feature-box-ribbon-caption.feature-box-preset.home-dantes_counselors > div > figcaption > a > strong, .feature-box.feature-box-ribbon-caption.feature-box-preset.home-military_education_leadership > div > figcaption > a > strong {
+    padding-right: 0px;
+    text-indent: 10px;
+    font-size: 11px;
+    line-height: 47px; } }
+@media (max-width: 867px) {
+  body #container > article .slim-cta-banner > h2 > strong {
+    font-size: 16px !important;
+    line-height: 26px !important; }
+  body #container > article .slim-cta-banner.slim-cta-banner-preset-armed_forces > h2 {
+    background-position: -150px top; }
+    body #container > article .slim-cta-banner.slim-cta-banner-preset-armed_forces > h2 > strong {
+      left: 110px;
+      font-size: 14px !important; }
   body #container > article.call-to-action > section > .content > aside.hero-aside-news-view > ol > li {
     background-size: 100%; } }
 @media (max-width: 767px) {
@@ -7032,7 +7232,8 @@ form li.complex p.error {
   .row .ten,
   .row .eleven,
   .row .twelve {
-    width: 100%;
+    width: 100% !important;
+    float: none !important;
     clear: both !important; }
 
   body #container > article.call-to-action {
@@ -7087,31 +7288,122 @@ form li.complex p.error {
         body #container > article.has-sidebar > section > .content > aside {
           width: 100%;
           float: left;
-          clear: both; }
-        body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li > a > strong {
-          padding-top: 45px;
-          padding-left: 82px;
-          font-size: 13px;
-          line-height: 17px; }
-          body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li > a > strong:before {
-            top: 37px;
-            left: 10px; }
-        body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .intro .wrapper > figure {
+          clear: both;
+          margin-top: 25px;
+          padding-top: 5px; }
+        body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section {
+          height: auto; }
+          body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > section .intro {
+            position: relative; }
+        body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .grid > ol > li {
+          width: 50%; }
+          body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li > a:hover, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .grid > ol > li > a:hover {
+            background-size: cover; }
+          body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li > a > figure > div > ins img, body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li > a > figure > div > del img, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .grid > ol > li > a > figure > div > ins img, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .grid > ol > li > a > figure > div > del img {
+            max-height: 60px; }
+        body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .intro .wrapper > figure, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .intro .wrapper > figure {
           padding-left: 20px;
           padding-right: 20px; }
-        body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .intro .wrapper > .content p {
+        body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .intro .wrapper > .content p, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .intro .wrapper > .content p {
           font-size: 13px;
           line-height: 18px; }
-  body #container > article > section > .content div.spotlight > div > figcaption > section {
-    padding: 20px 0px; }
-    body #container > article > section > .content div.spotlight > div > figcaption > section > h3 {
-      padding: 0px 20px 10px 20px;
-      text-align: left; }
-    body #container > article > section > .content div.spotlight > div > figcaption > section > p {
-      padding: 0px 20px 10px 20px;
-      border: none; }
-      body #container > article > section > .content div.spotlight > div > figcaption > section > p:before {
-        display: none; }
+        body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > footer > menu {
+          position: relative;
+          width: 60%; }
+          body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > footer > menu > ol {
+            position: absolute;
+            width: 100%;
+            left: 0px;
+            height: 32px;
+            overflow: hidden;
+            background-color: #272793;
+            border: 1px #272793 solid;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px; }
+            body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol.expanded, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > footer > menu > ol.expanded {
+              overflow: visible; }
+            body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol:after, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > footer > menu > ol:after {
+              display: none; }
+            body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol:before, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > footer > menu > ol:before {
+              display: block;
+              top: 1px;
+              width: 100%;
+              height: 30px;
+              background-image: none;
+              font-size: 14px;
+              line-height: 28px;
+              font-family: 'Open Sans', sans-serif;
+              color: #fff;
+              content: 'Select a Page';
+              cursor: pointer; }
+            body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol > li, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > footer > menu > ol > li {
+              position: relative;
+              width: auto;
+              height: 32px;
+              top: -32px;
+              float: none;
+              margin-left: 2px !important;
+              margin-right: 2px !important;
+              background-image: url(../_images/bg-tile-light.jpg);
+              background-repeat: repeat;
+              background-position: 0px 0px;
+              background-color: transparent;
+              border-left: 1px #272793 solid;
+              border-right: 1px #272793 solid; }
+              body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol > li:first-child, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > footer > menu > ol > li:first-child {
+                margin-top: -97px;
+                border-top: 1px #272793 solid;
+                -webkit-border-top-left-radius: 4px;
+                -webkit-border-top-right-radius: 4px;
+                -moz-border-radius-topleft: 4px;
+                -moz-border-radius-topright: 4px;
+                border-top-left-radius: 4px;
+                border-top-right-radius: 4px; }
+              body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol > li > a, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > footer > menu > ol > li > a {
+                width: auto;
+                height: auto;
+                background-image: none;
+                text-decoration: none; }
+                body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol > li > a > strong, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > footer > menu > ol > li > a > strong {
+                  width: auto;
+                  left: 0;
+                  position: static;
+                  font-size: 14px;
+                  line-height: 32px;
+                  font-family: 'Open Sans', sans-serif;
+                  text-transform: none;
+                  color: #272793; }
+                body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol > li > a:hover > strong, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > footer > menu > ol > li > a:hover > strong {
+                  text-decoration: underline; }
+              body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol > li.selected > a, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > footer > menu > ol > li.selected > a {
+                background-color: #14165C; }
+                body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol > li.selected > a > strong, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > footer > menu > ol > li.selected > a > strong {
+                  color: #fff; }
+          body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu.five-bullets > ol > li:first-child, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > footer > menu.five-bullets > ol > li:first-child {
+            margin-top: -129px; }
+          body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu.five-bullets > ol > li > a > strong, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > footer > menu.five-bullets > ol > li > a > strong {
+            width: auto !important;
+            left: auto !important; }
+  body #container > article > section > .content div.spotlight {
+    margin-left: 0px;
+    margin-right: 0px; }
+    body #container > article > section > .content div.spotlight:before, body #container > article > section > .content div.spotlight:after {
+      display: none; }
+    body #container > article > section > .content div.spotlight > div > figcaption > header {
+      margin: 13px 15px 0px 0px; }
+      body #container > article > section > .content div.spotlight > div > figcaption > header > span.position {
+        font-size: 26px; }
+    body #container > article > section > .content div.spotlight > div > figcaption > section {
+      padding: 20px 0px; }
+      body #container > article > section > .content div.spotlight > div > figcaption > section > h3 {
+        padding: 0px 20px 10px 20px;
+        text-align: left; }
+      body #container > article > section > .content div.spotlight > div > figcaption > section > p {
+        padding: 0px 20px 10px 20px;
+        border: none; }
+        body #container > article > section > .content div.spotlight > div > figcaption > section > p:before {
+          display: none; }
   body #container > article .newsgrid > ul > li {
     width: 290px;
     margin-left: auto;
@@ -7120,83 +7412,168 @@ form li.complex p.error {
     padding-top: 25px;
     padding-left: 25px;
     padding-right: 25px; }
+  body #container > footer {
+    padding-bottom: 0px; }
+    body #container > footer > section > .content > a.sitemap-trigger > strong {
+      position: static;
+      height: 34px; }
+    body #container > footer > aside {
+      display: none; }
+  body #container > menu.sitemap > section {
+    background-image: none;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px; }
 
   .feature-box {
     clear: both; }
     .feature-box > div {
       float: none !important;
-      width: 376px !important;
+      width: 100% !important;
+      min-width: 0px !important;
+      max-width: none !important;
       margin-left: auto !important;
       margin-right: auto !important; }
+      .feature-box > div > figure {
+        min-width: 0px;
+        max-width: none;
+        background-size: cover; }
+      .feature-box > div > figcaption {
+        width: 100%;
+        min-width: 0px;
+        max-width: none; }
+    .feature-box.feature-box-ribbon-caption > div > figcaption > a > strong {
+      width: 250px !important;
+      max-width: 250px !important;
+      font-size: 14px !important;
+      line-height: 47px !important; }
 
   dl.feature-box-jump-button {
     text-align: center; } }
 @media (max-width: 640px) {
-  body #container > article .slim-cta-banner > h2 {
-    background-position: -150px 0px; }
-    body #container > article .slim-cta-banner > h2 > strong {
-      left: 110px; }
-  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li > a {
-    display: table; }
-    body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li > a:hover {
-      background-size: auto 100%; }
-    body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li > a > strong {
-      display: table-cell;
-      padding: 0px 10px;
-      font-size: 12px;
-      line-height: 15px;
-      vertical-align: middle;
-      text-align: center; }
-      body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li > a > strong:before {
-        display: none; }
-
-  .feature-box {
-    clear: both; }
-    .feature-box > div {
-      width: 320px !important;
-      margin-left: auto !important;
-      margin-right: auto !important; }
-      .feature-box > div > figcaption > a > strong {
-        /*font-size: 22px !important;*/
-        /*line-height: 22px !important;*/ } }
+  body #container > article.call-to-action > section > .content > .hero > ul > li > figure > img {
+    left: -25%; }
+  body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px; }
+  body #container > article .slim-cta-banner > h2 > strong {
+    font-size: 14px !important; }
+  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .grid > ol > li {
+    width: 100%; }
+    body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li > a > figure > div > ins img, body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .grid > ol > li > a > figure > div > del img, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .grid > ol > li > a > figure > div > ins img, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .grid > ol > li > a > figure > div > del img {
+      max-height: none; } }
 @media (max-width: 600px) {
-  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > section {
+  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > section, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > header > section, body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > header > section {
     height: auto;
     padding-bottom: 30px; }
-    body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > section:after {
+    body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > section:after, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > header > section:after, body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > header > section:after {
       display: none; }
-    body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > section > h1 {
+    body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > section > h1, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > header > section > h1, body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > header > section > h1 {
       width: auto;
       float: none;
       margin-left: 35px;
       margin-right: 35px;
       text-align: left; }
-    body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > section > h2 {
+    body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > section > h2, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > header > section > h2, body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > header > section > h2 {
       width: auto;
       float: none;
       margin-left: 35px;
       margin-right: 35px;
       text-align: left; }
-  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > ol > li .wrapper {
-    padding: 0px 25px; }
-  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > nav {
-    margin: 0px 0px 0px 45px; }
-  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu {
-    display: none; } }
+  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > nav > ul > li.sections > ol:before, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > header > nav > ul > li.sections > ol:before {
+    display: none; }
+  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > nav > ul > li.sections > ol > li > a, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > header > nav > ul > li.sections > ol > li > a {
+    font-size: 10px; }
+  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > nav > ul > li.sections > ol.option-financial-assistance > li > a, body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > nav > ul > li.sections > ol.option-va-benefits > li > a, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > header > nav > ul > li.sections > ol.option-financial-assistance > li > a, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > header > nav > ul > li.sections > ol.option-va-benefits > li > a {
+    min-width: 47px;
+    padding: 0px 5px; }
+  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject {
+    height: auto !important;
+    min-height: 0px !important; }
+    body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section, body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .intro, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .intro {
+      display: none;
+      opacity: 1;
+      position: relative;
+      visibility: visible;
+      -webkit-transition: none;
+      -moz-transition: none;
+      transition: none;
+      -webkit-transform: none;
+      -moz-transform: none;
+      -ms-transform: none;
+      transform: none; }
+      body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section.enabled, body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .intro.enabled, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section.enabled, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .intro.enabled {
+        display: block; }
+      body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section .wrapper > .content > menu, body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .intro .wrapper > .content > menu, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section .wrapper > .content > menu, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .intro .wrapper > .content > menu {
+        position: relative;
+        bottom: auto; }
+    body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > ol > li, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > ol > li {
+      display: none;
+      position: relative;
+      opacity: 1;
+      visibility: visible;
+      overflow: visible;
+      -webkit-transition: none;
+      -moz-transition: none;
+      transition: none; }
+      body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > ol > li.enabled, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > ol > li.enabled {
+        display: block; }
+      body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > ol > li .wrapper, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > ol > li .wrapper {
+        padding: 0px; }
+    body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > footer {
+      position: static;
+      clear: both;
+      height: auto;
+      margin-top: 25px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      border-top: 1px #272793 solid; }
+      body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > nav, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > footer > nav {
+        width: 161px;
+        float: none;
+        margin: 0px auto; }
+      body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > footer > menu {
+        clear: both;
+        top: auto;
+        width: 90%;
+        height: 32px;
+        float: none;
+        margin: 25px auto 0px auto; }
+        body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol:before, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > footer > menu > ol:before {
+          font-size: 12px; }
+        body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol > li > a > strong, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > footer > menu > ol > li > a > strong {
+          font-size: 12px; } }
 @media (max-width: 540px) {
-  body #container > article .slim-cta-banner > h2 {
-    background-image: none; }
-    body #container > article .slim-cta-banner > h2 > strong {
-      width: 60%;
-      left: 20px; }
-  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > nav > ul > li.home > a {
+  body #container > article .slim-cta-banner > h2 > strong {
+    width: 55% !important;
+    margin-left: 10px !important;
+    font-size: 13px !important;
+    line-height: 26px !important; }
+    body #container > article .slim-cta-banner > h2 > strong img {
+      display: none !important; }
+  body #container > article .slim-cta-banner.slim-cta-banner-preset-armed_forces > h2 {
+    background-position: -200px top; }
+    body #container > article .slim-cta-banner.slim-cta-banner-preset-armed_forces > h2 > strong {
+      float: left;
+      left: 51px;
+      top: 14px;
+      font-size: 18px !important; }
+    body #container > article .slim-cta-banner.slim-cta-banner-preset-armed_forces > h2 > .button {
+      top: 19px;
+      right: 15px; }
+  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > nav > ul > li.home > a, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > header > nav > ul > li.home > a {
     font-size: 0;
     line-height: 0; }
-  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > ol > li .wrapper > figure {
+  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > ol > li .wrapper > figure, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > ol > li .wrapper > figure {
     display: none; }
-  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > ol > li .wrapper > .content {
+  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > ol > li .wrapper > .content, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > ol > li .wrapper > .content {
     width: 100%;
     padding: 20px 20px 0px 20px; }
+  body #container > article > section > .content div.spotlight > div > figcaption > header > span.title {
+    font-size: 12px; }
+  body #container > article > section > .content div.spotlight > div > figcaption > header > span.position {
+    font-size: 20px; }
 
   .multimedia-dib-menu > section > div > figure {
     display: none; }
@@ -7208,14 +7585,8 @@ form li.complex p.error {
     margin-left: auto !important;
     margin-right: auto !important;
     margin-bottom: 10px !important; }
-  body #container > article .slim-cta-banner > h2 {
-    background-image: none; }
-    body #container > article .slim-cta-banner > h2 > strong {
-      width: 40%;
-      left: 20px;
-      font-size: 14px; }
   body #container > article.call-to-action > section > .content > .hero > ul > li > figure > img {
-    left: -50%; }
+    left: -35%; }
   body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption > div, body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption > a {
     bottom: 20px;
     left: 20px;
@@ -7225,7 +7596,7 @@ form li.complex p.error {
   body #container > article > section > .content div.spotlight > div > figcaption > header:after {
     display: none; }
   body #container > article > section > .content div.spotlight > div > figcaption > header > span.position {
-    padding-left: 25px;
+    padding-left: 25%;
     text-align: right;
     font-size: 26px;
     line-height: 26px; }
@@ -7241,9 +7612,13 @@ form li.complex p.error {
     body #container > article.has-sidebar > section > .content ul.social > li.print {
       clear: both;
       float: none; }
-  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > nav > ul > li.home {
-    display: none; }
-  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > nav > ul > li > ol:before {
+  body #container > article.has-sidebar > section > .content .wizard.wizard-distance-learning > header > nav > ul > li.home > a {
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px; }
+  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > nav > ul > li.home, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > header > nav > ul > li.home {
+    margin-left: 12px; }
+  body #container > article.has-sidebar > section > .content .wizard.wizard-examination > header > nav > ul > li > ol:before, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > header > nav > ul > li > ol:before {
     width: 120px;
     top: 5px;
     left: -131px;
@@ -7251,13 +7626,5 @@ form li.complex p.error {
     font-size: 10px;
     line-height: 12px;
     white-space: normal; }
-
-  .feature-box {
-    clear: both; }
-    .feature-box > div {
-      width: 240px !important;
-      margin-left: auto !important;
-      margin-right: auto !important; }
-      .feature-box > div > figcaption > a > strong {
-        /*font-size: 18px !important;*/
-        /*line-height: 18px !important;*/ } }
+  body #container > article .slim-cta-banner.slim-cta-banner-preset-armed_forces > h2 > strong {
+    width: 40% !important; } }
