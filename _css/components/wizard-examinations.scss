@@ -684,7 +684,7 @@ body {
                                                     display: table-cell;
                                                     width: 20%;
                                                     padding-top: 35px;
-                                                    padding-right: 4%;
+                                                    padding-right: 65px;
                                                     text-align: center;
                                                     vertical-align: top;
                                                 }
@@ -850,11 +850,11 @@ body {
                                                     margin: 0px 50px;
                                                     list-style: none;
 
-                                                    &:first-child {
-                                                        margin-left: 0px;
+                                                    &.first {
+                                                        margin-left: 0px !important;
                                                     }
-                                                    &:last-child {
-                                                        margin-right: 0px;
+                                                    &.last {
+                                                        margin-right: 0px !important;
                                                     }
 
                                                     & > a {

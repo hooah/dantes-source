@@ -4492,7 +4492,7 @@ body #container > article.has-sidebar > section > .content .wizard.wizard-examin
               display: table-cell;
               width: 20%;
               padding-top: 35px;
-              padding-right: 4%;
+              padding-right: 65px;
               text-align: center;
               vertical-align: top; }
             body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > ol > li .wrapper .content {
@@ -4613,10 +4613,10 @@ body #container > article.has-sidebar > section > .content .wizard.wizard-examin
               padding: 0px;
               margin: 0px 50px;
               list-style: none; }
-              body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol > li:first-child {
-                margin-left: 0px; }
-              body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol > li:last-child {
-                margin-right: 0px; }
+              body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol > li.first {
+                margin-left: 0px !important; }
+              body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol > li.last {
+                margin-right: 0px !important; }
               body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol > li > a {
                 display: block;
                 position: relative;
@@ -6852,6 +6852,8 @@ form li.complex p.error {
       width: 397px; }
     body #container > article.has-sidebar > section > .content.wizard.wizard-examination > section .subject .section > footer > menu > ol > li, body #container > article.has-sidebar > section > .content.wizard.wizard-education-benefits > section .subject .section > footer > menu > ol > li {
       margin: 0px 50px; }
+      body #container > article.has-sidebar > section > .content.wizard.wizard-examination > section .subject .section > footer > menu > ol > li.last, body #container > article.has-sidebar > section > .content.wizard.wizard-education-benefits > section .subject .section > footer > menu > ol > li.last {
+        margin-right: 0px !important; }
       body #container > article.has-sidebar > section > .content.wizard.wizard-examination > section .subject .section > footer > menu > ol > li > a > strong, body #container > article.has-sidebar > section > .content.wizard.wizard-education-benefits > section .subject .section > footer > menu > ol > li > a > strong {
         width: 59px;
         left: -13px; }
@@ -7351,7 +7353,7 @@ form li.complex p.error {
               background-color: transparent;
               border-left: 1px #272793 solid;
               border-right: 1px #272793 solid; }
-              body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol > li:first-child, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > footer > menu > ol > li:first-child {
+              body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol > li.first, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > footer > menu > ol > li.first {
                 margin-top: -97px;
                 border-top: 1px #272793 solid;
                 -webkit-border-top-left-radius: 4px;
@@ -7360,6 +7362,8 @@ form li.complex p.error {
                 -moz-border-radius-topright: 4px;
                 border-top-left-radius: 4px;
                 border-top-right-radius: 4px; }
+              body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol > li.last, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > footer > menu > ol > li.last {
+                margin-right: 0px !important; }
               body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol > li > a, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > footer > menu > ol > li > a {
                 width: auto;
                 height: auto;
@@ -7382,6 +7386,8 @@ form li.complex p.error {
                   color: #fff; }
           body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu.five-bullets > ol > li:first-child, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > footer > menu.five-bullets > ol > li:first-child {
             margin-top: -129px; }
+          body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu.five-bullets > ol > li:last-child, body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu.five-bullets > ol > li.last, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > footer > menu.five-bullets > ol > li:last-child, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > footer > menu.five-bullets > ol > li.last {
+            margin-right: 0px !important; }
           body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu.five-bullets > ol > li > a > strong, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > footer > menu.five-bullets > ol > li > a > strong {
             width: auto !important;
             left: auto !important; }
@@ -7542,6 +7548,8 @@ form li.complex p.error {
         margin: 25px auto 0px auto; }
         body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol:before, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > footer > menu > ol:before {
           font-size: 12px; }
+        body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol > li.last, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > footer > menu > ol > li.last {
+          margin-right: 0px !important; }
         body #container > article.has-sidebar > section > .content .wizard.wizard-examination > section .subject .section > footer > menu > ol > li > a > strong, body #container > article.has-sidebar > section > .content .wizard.wizard-education-benefits > section .subject .section > footer > menu > ol > li > a > strong {
           font-size: 12px; } }
 @media (max-width: 540px) {

@@ -901,7 +901,7 @@
                                                         border-left: 1px #272793 solid;
                                                         border-right: 1px #272793 solid;
 
-                                                        &:first-child {
+                                                        &.first {
                                                             margin-top: -97px;
                                                             border-top: 1px #272793 solid;
                                                             -webkit-border-top-left-radius: 4px;
@@ -910,6 +910,9 @@
                                                             -moz-border-radius-topright: 4px;
                                                             border-top-left-radius: 4px;
                                                             border-top-right-radius: 4px;
+                                                        }
+                                                        &.last {
+                                                            margin-right: 0px !important;
                                                         }
 
                                                         & > a {
@@ -953,6 +956,10 @@
                                                         & > li {
                                                             &:first-child {
                                                                 margin-top: -129px;
+                                                            }
+                                                            &:last-child,
+                                                            &.last {
+                                                                margin-right: 0px !important;
                                                             }
 
                                                             & > a {

@@ -607,31 +607,33 @@ var framework = {
 
         search: {
             init: function() {
-                var max_length  = 100;
+                if (typeof(lunr_index) !== 'undefined') {
+                    var max_length  = 100;
 
-                for (var counter = 0; counter < lunr_index.entries.length; counter++) {
-                    if (lunr_index.entries[counter].body.length > max_length) {
-                        max_length      = lunr_index.entries[counter].body.length;
+                    for (var counter = 0; counter < lunr_index.entries.length; counter++) {
+                        if (lunr_index.entries[counter].body.length > max_length) {
+                            max_length      = lunr_index.entries[counter].body.length;
+                        }
                     }
+
+                    var options = {
+                        keys: ['title', 'body'],
+                        id: 'url',
+                        includeScore: true,
+                        shouldSort: true,
+                        threshold: 0.5,
+                        distance: Math.abs(max_length / 10),
+                        location: Math.abs(max_length / 20)
+                    };
+
+                    framework.data.search.engine    = new Fuse(lunr_index.entries, options);
+
+                    jQuery('.search-form input[type="text"]').bind('keyup', function() {
+                        clearTimeout(framework.data.search.timer);
+
+                        framework.data.search.timer = setTimeout(framework.fn.search.get_results, 250);
+                    });
                 }
-
-                var options = {
-                    keys: ['title', 'body'],
-                    id: 'url',
-                    includeScore: true,
-                    shouldSort: true,
-                    threshold: 0.5,
-                    distance: Math.abs(max_length / 10),
-                    location: Math.abs(max_length / 20)
-                };
-
-                framework.data.search.engine    = new Fuse(lunr_index.entries, options);
-
-                jQuery('.search-form input[type="text"]').bind('keyup', function() {
-                    clearTimeout(framework.data.search.timer);
-
-                    framework.data.search.timer = setTimeout(framework.fn.search.get_results, 250);
-                });
             },
 
             get_results: function(event) {

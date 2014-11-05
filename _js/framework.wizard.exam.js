@@ -108,7 +108,6 @@ framework.wizard.exam = {
                     jQuery(objSection).parent('section').attr('class', strParentSection + ' ' + strSection);
 
                     intContentHeight            = jQuery('>div.' + strSection + '>ol>li[data-step="1"] .content', objSection).height();
-                    console.log(intContentHeight, jQuery(objSection));
 
                     if (intContentHeight >= 300) {
                         jQuery(objSection).height((intContentHeight + 200) + 'px');

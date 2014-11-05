@@ -218,6 +218,10 @@
                                                     }
 
                                                     & > li {
+                                                        &.last {
+                                                            margin-right: 0px !important;
+                                                        }
+
                                                         & > a {
                                                             & > strong {
                                                                 font-size: 12px;

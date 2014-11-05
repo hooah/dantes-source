@@ -295,6 +295,10 @@
                                                     & > li {
                                                         margin: 0px 50px;
 
+                                                        &.last {
+                                                            margin-right: 0px !important;
+                                                        }
+
                                                         & > a {
                                                             & > strong {
                                                                 width: 59px;
