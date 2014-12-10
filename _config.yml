@@ -2,7 +2,7 @@ name: DANTES - Defense Activity for Non-Traditional Education Support
 base_url: http://www.dantes.doded.mil
 fb_app_id: 586726141400126
 markdown: redcarpet
-pygments: false
+highlighter: false
 destination: ../source
 searchindex: yes
 indextank_index: DANTES
