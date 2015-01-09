@@ -3,7 +3,7 @@
  * http://github.com/janl/mustache.js
  */
 
-/*global define: false*/r
+/*global define: false*/
 
 (function (global, factory) {
   if (typeof exports === "object" && exports) {

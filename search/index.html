@@ -11,7 +11,11 @@ footer_extra:
 header_extra:
 ---
             {% include cta.simple.html slide_name='military_education_leadership.jpg' slide_title=page.title %}
+    
+        
             <article class="has-sidebar">
+            
+   
             	<section>
                 	<div class="content row">
                     	<div class="nine">
@@ -47,4 +51,14 @@ header_extra:
                     <p>{{desc}}</p>
                 </li>
             </script>
+            
             {% endraw %}
+			<script type="text/javascript">
+    			function stopEnterKey(evt) {
+        		var evt = (evt) ? evt : ((event) ? event : null);
+        		var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null);
+        		if ((evt.keyCode == 13) && (node.type == "text")) { return false; }
+    		}
+		    document.onkeypress = stopEnterKey;
+			</script>
+ 
