@@ -56,7 +56,7 @@ module Jekyll
         entry_text.xpath('//text()[last()]').each{ |t| t.content = t.content.rstrip }
         entry_text = entry_text.text.gsub("\r", " ").gsub("\n", " ").gsub("\t", " ")
 
-        puts entry_text
+        #puts entry_text
 
         index << {
           :title => entry.title,
