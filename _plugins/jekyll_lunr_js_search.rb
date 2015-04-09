@@ -119,6 +119,7 @@ module Jekyll
     
     # render the item, parse the output and get all text inside <p> elements
     def render(item)
+      item.data["layout"] = nil
       item.render({}, @site.site_payload)
 
       text = item.output
