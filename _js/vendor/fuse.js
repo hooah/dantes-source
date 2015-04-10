@@ -179,7 +179,7 @@
       finish = Math.min(LOCATION + binMid, textLen) + this.patternLen;
 
       // Initialize the bit array
-      bitArr = Array(finish + 2);
+      bitArr = Array(Math.ceil(finish) + 2);
 
       bitArr[finish + 1] = (1 << i) - 1;
 
