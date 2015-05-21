@@ -1122,7 +1122,7 @@ body {
                     body #container > article.call-to-action > section > .content > .hero > ul > li > figcaption.complex > span > p > strong {
                       display: block;
                       clear: both;
-                      font-size: 48px;
+                      font-size: 36px;
                       line-height: 48px;
                       text-transform: uppercase;
                       font-weight: 600;
